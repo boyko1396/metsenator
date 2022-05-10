@@ -1,166 +1,166 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body
+    body
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.p-project
-        .container-large.p-project__container
-            h1.p-project__title Проекты
-            .filter-group.p-project__filter
-                .filter-item.filter-group__item
-                    button(type="button").filter-item__btn Новые
-                    .filter-item__dropdown Dropdown
-                .filter-item.filter-group__item
-                    button(type="button").filter-item__btn Все каттегории
-                    .filter-item__dropdown Dropdown
-                .filter-item.filter-group__item
-                    button(type="button").filter-item__btn Все города
-                    .filter-item__dropdown Dropdown
-            .appeal-alert.p-project__appeal-alert
-                button(type="button", title="Close").btn-close.appeal-alert__close
-                    svg.u-icon
-                        use(xlink:href="img/sprite.svg#close")
-                .appeal-alert__inner
-                    .content.appeal-alert__content
-                        p Мы совсем недавно открылись, поэтому если вы знаете о проекте, которого не хватает на нашей площадке, расскажите нам о нём или пришлите ссылку и мы обязательно свяжемся с автором, чтобы проект получил поддержку
-                    a(href="#").btn.btn--size-md.btn-green-accent.appeal-alert__btn Рассказать о проекте
-            .projects-list.p-project__projects-list
-                .row.projects-list__row
-                    .row__col.row__col--4.projects-list__col
-                        article.project-card.projects-list__card
-                            .project-card__header
-                                .project-card__info
-                                    picture.img-cover.project-card__logo
-                                        img(src="img/project-ava.jpg")
-                                    h3.project-card__title
-                                        a(href="#").project-card__link Опыт развития различных форм деятельности
-                                picture.img-cover.project-card__media
-                                    img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития различных форм деятельности")
-                            .project-card__content
-                                .project-card__target
-                                    .project-card__price 5256 ₽
-                                    .project-card__price-title собрано
-                                .content.project-card__description
-                                    p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                footer.project-card__footer
-                                    time.project-card__time 2 недели назад
-                                    .city-label.project-card__city-label
-                                        svg.u-icon.city-label__icon
-                                            use(xlink:href="img/sprite.svg#map-marker")
-                                        | Сургут
-                    .row__col.row__col--4.projects-list__col
-                        article.project-card.projects-list__card
-                            .project-card__header
-                                .project-card__info
-                                    picture.img-cover.project-card__logo
-                                        img(src="img/project-ava.jpg")
-                                    h3.project-card__title
-                                        a(href="#").project-card__link Опыт развития форм
-                                picture.img-cover.project-card__media
-                                    img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития форм")
-                            .project-card__content
-                                .project-card__target
-                                    .project-card__price 5256 ₽
-                                    .project-card__price-title собрано
-                                .content.project-card__description
-                                    p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                footer.project-card__footer
-                                    time.project-card__time 2 недели назад
-                                    .city-label.project-card__city-label
-                                        svg.u-icon.city-label__icon
-                                            use(xlink:href="img/sprite.svg#map-marker")
-                                        | Сургут
-                    .row__col.row__col--4.projects-list__col
-                        article.project-card.projects-list__card
-                            .project-card__header
-                                .project-card__info
-                                    picture.img-cover.project-card__logo
-                                        img(src="img/project-ava.jpg")
-                                    h3.project-card__title
-                                        a(href="#").project-card__link Опыт развития форм Опыт развития форм Опыт развития форм
-                                picture.img-cover.project-card__media
-                                    img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития форм Опыт развития форм Опыт развития форм")
-                            .project-card__content
-                                .project-card__target
-                                    .project-card__price 5256 ₽
-                                    .project-card__price-title собрано
-                                .content.project-card__description
-                                    p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует коура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                footer.project-card__footer
-                                    time.project-card__time 2 недели назад
-                                    .city-label.project-card__city-label
-                                        svg.u-icon.city-label__icon
-                                            use(xlink:href="img/sprite.svg#map-marker")
-                                        | Сургут
-                    .row__col.row__col--4.projects-list__col
-                        article.project-card.projects-list__card
-                            .project-card__header
-                                .project-card__info
-                                    picture.img-cover.project-card__logo
-                                        img(src="img/project-ava.jpg")
-                                    h3.project-card__title
-                                        a(href="#").project-card__link Опыт развития различных форм деятельности
-                                picture.img-cover.project-card__media
-                                    img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития различных форм деятельности")
-                            .project-card__content
-                                .project-card__target
-                                    .project-card__price 5256 ₽
-                                    .project-card__price-title собрано
-                                .content.project-card__description
-                                    p Потребительская ирует комплексный.
-                                footer.project-card__footer
-                                    time.project-card__time 2 недели назад
-                                    .city-label.project-card__city-label
-                                        svg.u-icon.city-label__icon
-                                            use(xlink:href="img/sprite.svg#map-marker")
-                                        | Сургут
-                    .row__col.row__col--4.projects-list__col
-                        article.project-card.projects-list__card
-                            .project-card__header
-                                .project-card__info
-                                    picture.img-cover.project-card__logo
-                                        img(src="img/project-ava.jpg")
-                                    h3.project-card__title
-                                        a(href="#").project-card__link Опыт развития различных форм деятельности
-                                picture.img-cover.project-card__media
-                                    img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития различных форм деятельности")
-                            .project-card__content
-                                .project-card__target
-                                    .project-card__price 5256 ₽
-                                    .project-card__price-title собрано
-                                .content.project-card__description
-                                    p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                footer.project-card__footer
-                                    time.project-card__time 2 недели назад
-                                    .city-label.project-card__city-label
-                                        svg.u-icon.city-label__icon
-                                            use(xlink:href="img/sprite.svg#map-marker")
-                                        | Сургут
-                    .row__col.row__col--4.projects-list__col
-                        article.project-card.projects-list__card
-                            .project-card__header
-                                .project-card__info
-                                    picture.img-cover.project-card__logo
-                                        img(src="img/project-ava.jpg")
-                                    h3.project-card__title
-                                        a(href="#").project-card__link Опыт развития форм
-                                picture.img-cover.project-card__media
-                                    img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития форм")
-                            .project-card__content
-                                .project-card__target
-                                    .project-card__price 5256 ₽
-                                    .project-card__price-title собрано
-                                .content.project-card__description
-                                    p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                footer.project-card__footer
-                                    time.project-card__time 2 недели назад
-                                    .city-label.project-card__city-label
-                                        svg.u-icon.city-label__icon
-                                            use(xlink:href="img/sprite.svg#map-marker")
-                                        | Сургут
+        main.p-project
+            .container-large.p-project__container
+                h1.p-project__title Проекты
+                .filter-group.p-project__filter
+                    .filter-item.filter-group__item
+                        button(type="button").filter-item__btn Новые
+                        .filter-item__dropdown Dropdown
+                    .filter-item.filter-group__item
+                        button(type="button").filter-item__btn Все каттегории
+                        .filter-item__dropdown Dropdown
+                    .filter-item.filter-group__item
+                        button(type="button").filter-item__btn Все города
+                        .filter-item__dropdown Dropdown
+                .appeal-alert.p-project__appeal-alert
+                    button(type="button", title="Close").btn-close.appeal-alert__close
+                        svg.u-icon
+                            use(xlink:href="img/sprite.svg#close")
+                    .appeal-alert__inner
+                        .content.appeal-alert__content
+                            p Мы совсем недавно открылись, поэтому если вы знаете о проекте, которого не хватает на нашей площадке, расскажите нам о нём или пришлите ссылку и мы обязательно свяжемся с автором, чтобы проект получил поддержку
+                        a(href="#").btn.btn--size-md.btn-green-accent.appeal-alert__btn Рассказать о проекте
+                .projects-list.p-project__projects-list
+                    .row.projects-list__row
+                        .row__col.row__col--4.projects-list__col
+                            article.project-card.projects-list__card
+                                .project-card__header
+                                    .project-card__info
+                                        picture.img-cover.project-card__logo
+                                            img(src="img/project-ava.jpg")
+                                        h3.project-card__title
+                                            a(href="#").project-card__link Опыт развития различных форм деятельности
+                                    picture.img-cover.project-card__media
+                                        img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития различных форм деятельности")
+                                .project-card__content
+                                    .project-card__target
+                                        .project-card__price 5256 ₽
+                                        .project-card__price-title собрано
+                                    .content.project-card__description
+                                        p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                                    footer.project-card__footer
+                                        time.project-card__time 2 недели назад
+                                        .city-label.project-card__city-label
+                                            svg.u-icon.city-label__icon
+                                                use(xlink:href="img/sprite.svg#map-marker")
+                                            | Сургут
+                        .row__col.row__col--4.projects-list__col
+                            article.project-card.projects-list__card
+                                .project-card__header
+                                    .project-card__info
+                                        picture.img-cover.project-card__logo
+                                            img(src="img/project-ava.jpg")
+                                        h3.project-card__title
+                                            a(href="#").project-card__link Опыт развития форм
+                                    picture.img-cover.project-card__media
+                                        img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития форм")
+                                .project-card__content
+                                    .project-card__target
+                                        .project-card__price 5256 ₽
+                                        .project-card__price-title собрано
+                                    .content.project-card__description
+                                        p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                                    footer.project-card__footer
+                                        time.project-card__time 2 недели назад
+                                        .city-label.project-card__city-label
+                                            svg.u-icon.city-label__icon
+                                                use(xlink:href="img/sprite.svg#map-marker")
+                                            | Сургут
+                        .row__col.row__col--4.projects-list__col
+                            article.project-card.projects-list__card
+                                .project-card__header
+                                    .project-card__info
+                                        picture.img-cover.project-card__logo
+                                            img(src="img/project-ava.jpg")
+                                        h3.project-card__title
+                                            a(href="#").project-card__link Опыт развития форм Опыт развития форм Опыт развития форм
+                                    picture.img-cover.project-card__media
+                                        img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития форм Опыт развития форм Опыт развития форм")
+                                .project-card__content
+                                    .project-card__target
+                                        .project-card__price 5256 ₽
+                                        .project-card__price-title собрано
+                                    .content.project-card__description
+                                        p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует коура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                                    footer.project-card__footer
+                                        time.project-card__time 2 недели назад
+                                        .city-label.project-card__city-label
+                                            svg.u-icon.city-label__icon
+                                                use(xlink:href="img/sprite.svg#map-marker")
+                                            | Сургут
+                        .row__col.row__col--4.projects-list__col
+                            article.project-card.projects-list__card
+                                .project-card__header
+                                    .project-card__info
+                                        picture.img-cover.project-card__logo
+                                            img(src="img/project-ava.jpg")
+                                        h3.project-card__title
+                                            a(href="#").project-card__link Опыт развития различных форм деятельности
+                                    picture.img-cover.project-card__media
+                                        img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития различных форм деятельности")
+                                .project-card__content
+                                    .project-card__target
+                                        .project-card__price 5256 ₽
+                                        .project-card__price-title собрано
+                                    .content.project-card__description
+                                        p Потребительская ирует комплексный.
+                                    footer.project-card__footer
+                                        time.project-card__time 2 недели назад
+                                        .city-label.project-card__city-label
+                                            svg.u-icon.city-label__icon
+                                                use(xlink:href="img/sprite.svg#map-marker")
+                                            | Сургут
+                        .row__col.row__col--4.projects-list__col
+                            article.project-card.projects-list__card
+                                .project-card__header
+                                    .project-card__info
+                                        picture.img-cover.project-card__logo
+                                            img(src="img/project-ava.jpg")
+                                        h3.project-card__title
+                                            a(href="#").project-card__link Опыт развития различных форм деятельности
+                                    picture.img-cover.project-card__media
+                                        img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития различных форм деятельности")
+                                .project-card__content
+                                    .project-card__target
+                                        .project-card__price 5256 ₽
+                                        .project-card__price-title собрано
+                                    .content.project-card__description
+                                        p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                                    footer.project-card__footer
+                                        time.project-card__time 2 недели назад
+                                        .city-label.project-card__city-label
+                                            svg.u-icon.city-label__icon
+                                                use(xlink:href="img/sprite.svg#map-marker")
+                                            | Сургут
+                        .row__col.row__col--4.projects-list__col
+                            article.project-card.projects-list__card
+                                .project-card__header
+                                    .project-card__info
+                                        picture.img-cover.project-card__logo
+                                            img(src="img/project-ava.jpg")
+                                        h3.project-card__title
+                                            a(href="#").project-card__link Опыт развития форм
+                                    picture.img-cover.project-card__media
+                                        img(src="img/project-poster-1.jpg", width="384", height="204", alt="Опыт развития форм")
+                                .project-card__content
+                                    .project-card__target
+                                        .project-card__price 5256 ₽
+                                        .project-card__price-title собрано
+                                    .content.project-card__description
+                                        p Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                                    footer.project-card__footer
+                                        time.project-card__time 2 недели назад
+                                        .city-label.project-card__city-label
+                                            svg.u-icon.city-label__icon
+                                                use(xlink:href="img/sprite.svg#map-marker")
+                                            | Сургут
 
-    include includes/footer.pug
+        include includes/footer.pug

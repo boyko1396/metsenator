@@ -1,198 +1,179 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Меценатор</title>
-  <!--link(rel='icon', href='favicon.ico')-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container-large header__container">
-      <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
-      <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
-      <div class="header__menu">
-        <nav class="header-nav header__nav" role="navigation">
-          <ul class="header-nav__list">
-            <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
-          </ul>
-        </nav>
-        <button class="js-header-search btn-action header__btn-search" type="button">
-          <svg class="u-icon btn-action__icon">
-            <use xlink:href="img/sprite.svg#search"></use>
-          </svg>
-        </button>
-        <form class="header-search header__search" action="#">
-          <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
-          <button class="js-header-search btn-close header-search__close" type="button">
-            <svg class="u-icon btn-close__icon">
-              <use xlink:href="img/sprite.svg#close"></use>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Меценатор</title>
+    <!--link(rel='icon', href='favicon.ico')-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-large header__container">
+        <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
+        <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
+        <div class="header__menu">
+          <nav class="header-nav header__nav" role="navigation">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+            </ul>
+          </nav>
+          <button class="js-header-search btn-action header__btn-search" type="button">
+            <svg class="u-icon btn-action__icon">
+              <use xlink:href="img/sprite.svg#search"></use>
             </svg>
           </button>
-        </form>
-      </div><a class="btn-action header__btn-login-mobile" href="#">
-        <svg class="u-icon btn-action__icon">
-          <use xlink:href="img/sprite.svg#login"></use>
-        </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
-    </div>
-    <div class="header-menu-mobile header__menu-mobile">
-      <div class="header-menu-mobile__inner">
-        <div class="header-menu-mobile__nav-list">
-          <ul class="header-menu-mobile__nav">
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
-          </ul>
-        </div>
-        <div class="js-language-select language-site header-menu-mobile__language">
-          <div class="language-site__current">
-            <div class="language-site__current-title">Русский</div>
-            <svg class="u-icon language-site__current-icon">
-              <use xlink:href="img/sprite.svg#arrow-down"></use>
-            </svg>
-          </div>
-          <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
-        </div>
-        <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
+          <form class="header-search header__search" action="#">
+            <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
+            <button class="js-header-search btn-close header-search__close" type="button">
+              <svg class="u-icon btn-close__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div><a class="btn-action header__btn-login-mobile" href="#">
+          <svg class="u-icon btn-action__icon">
+            <use xlink:href="img/sprite.svg#login"></use>
+          </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
       </div>
-    </div>
-    <div class="js-header-menu-mobile header__overlay-mobile"></div>
-  </header>
-  <main class="project">
-    <div class="container">        
-      <section class="project-header">           
-        <div class="project-header-img"><img src="img/project-ava.jpg" alt=""></div>
-        <div class="project-header-block"> 
-          <div class="project-header-ttl">Опыт развития форм деятельности</div>
-          <div class="project-header-subs header-info-subs"> <span class="project-header-subs-num header-info-subs-num">270&nbsp;</span><span>подписчиков</span></div>
+      <div class="header-menu-mobile header__menu-mobile">
+        <div class="header-menu-mobile__inner">
+          <div class="header-menu-mobile__nav-list">
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
+            </ul>
+          </div>
+          <div class="js-language-select language-site header-menu-mobile__language">
+            <div class="language-site__current">
+              <div class="language-site__current-title">Русский</div>
+              <svg class="u-icon language-site__current-icon">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
+          </div>
+          <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
+        </div>
+      </div>
+      <div class="js-header-menu-mobile header__overlay-mobile"></div>
+    </header>
+    <main class="project">
+      <div class="container">        
+        <section class="project-header">           
+          <div class="project-header-img"><img src="img/project-ava.jpg" alt=""></div>
+          <div class="project-header-block"> 
+            <div class="project-header-ttl">Опыт развития форм деятельности</div>
+            <div class="project-header-subs header-info-subs"> <span class="project-header-subs-num header-info-subs-num">270&nbsp;</span><span>подписчиков</span></div>
+          </div>
+        </section>
+      </div>
+      <section class="project-main">
+        <div class="container"> 
+          <div class="project-main-wrap"> 
+            <div class="project-main-media"><img src="img/post.jpg" alt=""></div>
+            <div class="project-main-info">
+              <div class="project-main-info-amount"><span class="project-main-amount-summ">5256&nbsp;</span><span>₽&nbsp;</span><span>собрано</span></div>
+              <div class="project-main-info-subs"><span class="project-main-info-subs-num">15&nbsp;</span><span>человек поддержали</span></div>
+              <div class="project-main-info-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный поведенческий таргетинг.   </div>
+              <div class="project-main-info-btn btn btn-green">Поддержать</div>
+              <div class="project-main-info-footer"><span>Опубликован&nbsp;</span><span class="project-main-info-date">2 недели назад</span></div>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
-    <section class="project-main">
-      <div class="container"> 
-        <div class="project-main-wrap"> 
-          <div class="project-main-media"><img src="img/post.jpg" alt=""></div>
-          <div class="project-main-info">
-            <div class="project-main-info-amount"><span class="project-main-amount-summ">5256&nbsp;</span><span>₽&nbsp;</span><span>собрано</span></div>
-            <div class="project-main-info-subs"><span class="project-main-info-subs-num">15&nbsp;</span><span>человек поддержали</span></div>
-            <div class="project-main-info-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный поведенческий таргетинг.   </div>
-            <div class="project-main-info-btn btn btn-green">Поддержать</div>
-            <div class="project-main-info-footer"><span>Опубликован&nbsp;</span><span class="project-main-info-date">2 недели назад</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="project-tabs"> 
-      <div class="container"> 
-        <div class="project-tabs-wrap">
-          <div class="project-tabs-overflow"> 
-            <div class="project-tabs-nav">
-              <div class="project-tabs-tab active"><span>О&nbsp;прoекте</span></div>
-              <div class="project-tabs-tab"><span>Блог&nbsp;</span><span class="project-tabs-tab-count">7  </span></div>
-              <div class="project-tabs-tab"><span>Поддержали&nbsp;</span><span class="project-tabs-tab-count">15</span></div>
-              <div class="project-tabs-tab mobile"><span>Ещё</span></div>
-            </div>
-          </div>
-          <div class="project-tabs-buttons">
-            <div class="project-tabs-subscribe btn btn-trp">Подписаться </div>
-            <div class="project-tabs-share btn btn-trp"><img src="img/share.svg" alt=""></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="project-content"> 
-      <div class="container">
-        <div class="project-content-wrap">
-          <div class="project-content-inner project-about">                        
-            <div class="project-content-text">
-              <p>Рекламная акция подсознательно тормозит сублимированный инструмент маркетинга. Медиамикс, в рамках сегодняшних воззрений, усиливает коллективный пул лояльных изданий, невзирая на действия конкурентов. Таргетирование недостижимо. Надо сказать, что взаимодействие корпорации и клиента концентрирует презентационный материал. Начальная стадия проведения исследования изоморфна времени. Интересно отметить, что особенность рекламы масштабирует межличностный рекламный бриф.</p>
-            </div>
-            <div class="project-content-img"><img src="img/project.jpg" alt=""></div>
-            <div class="project-content-text">
-              <p>Российская специфика традиционно нейтрализует эмпирический рекламоноситель. Целевая аудитория определяет из ряда вон выходящий SWOT-анализ, не считаясь с затратами. Партисипативное планирование директивно переворачивает креативный пак-шот. В рамках концепции Акоффа и Стэка, соц-дем характеристика аудитории директивно масштабирует связанный принцип восприятия. Имиджевая реклама, не меняя концепции, изложенной выше, усиливает диктат потребителя. Потребление однородно тормозит баинг и селлинг, опираясь на опыт коллег.</p>
-              <p>Бизнес-план неверно уравновешивает принцип восприятия, опираясь на опыт западных коллег. Узнавание бренда порождает межличностный рейтинг. Инструмент маркетинга продуцирует принцип восприятия. Рекламоноситель парадоксально искажает из ряда вон выходящий сегмент рынка.</p>
-            </div>
-            <form class="comments project-content-comments">
-              <div class="comments-ttl">Комментарии</div>
-              <div class="comments-input">
-                <div class="comments-input-wrap">
-                  <div class="comments-item-person"><img src="img/person.png" alt=""></div>
-                  <div class="input input-no-label">
-                    <input id="1" type="text" name="input-1" placeholder="Написать комментарий">
-                  </div>
-                </div>
-                <div class="comments-input-buttons">
-                  <div class="comments-input-cancel">Отмена</div>
-                  <div class="comments-input-public btn btn-green">Опубликовать</div>
-                </div>
+      <section class="project-tabs"> 
+        <div class="container"> 
+          <div class="project-tabs-wrap">
+            <div class="project-tabs-overflow"> 
+              <div class="project-tabs-nav">
+                <div class="project-tabs-tab active"><span>О&nbsp;прoекте</span></div>
+                <div class="project-tabs-tab"><span>Блог&nbsp;</span><span class="project-tabs-tab-count">7  </span></div>
+                <div class="project-tabs-tab"><span>Поддержали&nbsp;</span><span class="project-tabs-tab-count">15</span></div>
+                <div class="project-tabs-tab mobile"><span>Ещё</span></div>
               </div>
-              <div class="comments-list"> 
-                <div class="comments-tree">
-                  <div class="comments-item">
-                    <div class="comments-item-header">
-                      <div class="comments-item-person"><img src="img/person.png" alt=""></div>
-                      <div class="comments-item-info">
-                        <div class="comments-item-name">Андрей Эдуардович</div>
-                        <div class="comments-item-time"><span class="comments-item-time-day">вчера&nbsp;    </span><span class="comments-item-time-at">в&nbsp;    </span><span class="comments-item-time-clock">17:40&nbsp;</span></div>
-                      </div>
-                    </div>
-                    <div class="comments-item-text">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
-                    <div class="likes-group">
-                      <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
-                      <div class="likes-count">0</div>
-                      <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
-                      <div class="likes-answer" area-disabled="true">Ответить </div>
+            </div>
+            <div class="project-tabs-buttons">
+              <div class="project-tabs-subscribe btn btn-trp">Подписаться </div>
+              <div class="project-tabs-share btn btn-trp"><img src="img/share.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-content"> 
+        <div class="container">
+          <div class="project-content-wrap">
+            <div class="project-content-inner project-about">                        
+              <div class="project-content-text">
+                <p>Рекламная акция подсознательно тормозит сублимированный инструмент маркетинга. Медиамикс, в рамках сегодняшних воззрений, усиливает коллективный пул лояльных изданий, невзирая на действия конкурентов. Таргетирование недостижимо. Надо сказать, что взаимодействие корпорации и клиента концентрирует презентационный материал. Начальная стадия проведения исследования изоморфна времени. Интересно отметить, что особенность рекламы масштабирует межличностный рекламный бриф.</p>
+              </div>
+              <div class="project-content-img"><img src="img/project.jpg" alt=""></div>
+              <div class="project-content-text">
+                <p>Российская специфика традиционно нейтрализует эмпирический рекламоноситель. Целевая аудитория определяет из ряда вон выходящий SWOT-анализ, не считаясь с затратами. Партисипативное планирование директивно переворачивает креативный пак-шот. В рамках концепции Акоффа и Стэка, соц-дем характеристика аудитории директивно масштабирует связанный принцип восприятия. Имиджевая реклама, не меняя концепции, изложенной выше, усиливает диктат потребителя. Потребление однородно тормозит баинг и селлинг, опираясь на опыт коллег.</p>
+                <p>Бизнес-план неверно уравновешивает принцип восприятия, опираясь на опыт западных коллег. Узнавание бренда порождает межличностный рейтинг. Инструмент маркетинга продуцирует принцип восприятия. Рекламоноситель парадоксально искажает из ряда вон выходящий сегмент рынка.</p>
+              </div>
+              <form class="comments project-content-comments">
+                <div class="comments-ttl">Комментарии</div>
+                <div class="comments-input">
+                  <div class="comments-input-wrap">
+                    <div class="comments-item-person"><img src="img/person.png" alt=""></div>
+                    <div class="input input-no-label">
+                      <input id="1" type="text" name="input-1" placeholder="Написать комментарий">
                     </div>
                   </div>
-                  <div class="comments-tree__child">
-                    <div class="comments-tree">
-                      <div class="comments-item">
-                        <div class="comments-item-header">
-                          <div class="comments-item-person"><img src="img/person.png" alt=""></div>
-                          <div class="comments-item-info">
-                            <div class="comments-item-name topic-starter">Андрей Эдуардович</div>
-                            <div class="comments-item-time"><span class="comments-item-time-day">вчера&nbsp;    </span><span class="comments-item-time-at">в&nbsp;    </span><span class="comments-item-time-clock">17:40&nbsp;</span></div>
-                          </div>
-                        </div>
-                        <div class="comments-item-text">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
-                        <div class="likes-group">
-                          <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
-                          <div class="likes-count">0</div>
-                          <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
-                          <div class="likes-answer" area-disabled="true">Ответить        </div>
+                  <div class="comments-input-buttons">
+                    <div class="comments-input-cancel">Отмена</div>
+                    <div class="comments-input-public btn btn-green">Опубликовать</div>
+                  </div>
+                </div>
+                <div class="comments-list"> 
+                  <div class="comments-tree">
+                    <div class="comments-item">
+                      <div class="comments-item-header">
+                        <div class="comments-item-person"><img src="img/person.png" alt=""></div>
+                        <div class="comments-item-info">
+                          <div class="comments-item-name">Андрей Эдуардович</div>
+                          <div class="comments-item-time"><span class="comments-item-time-day">вчера&nbsp;    </span><span class="comments-item-time-at">в&nbsp;    </span><span class="comments-item-time-clock">17:40&nbsp;</span></div>
                         </div>
                       </div>
-                      <div class="comments-item">
-                        <div class="comments-item-header">
-                          <div class="comments-item-person"><img src="img/person.png" alt=""></div>
-                          <div class="comments-item-info">
-                            <div class="comments-item-name">Андрей Эдуардович</div>
-                            <div class="comments-item-time"><span class="comments-item-time-day">вчера&nbsp;    </span><span class="comments-item-time-at">в&nbsp;    </span><span class="comments-item-time-clock">17:40&nbsp;</span></div>
-                          </div>
-                        </div>
-                        <div class="comments-item-text">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
-                        <div class="likes-group">
-                          <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
-                          <div class="likes-count">0</div>
-                          <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
-                          <div class="likes-answer" area-disabled="true">Ответить</div>
-                        </div>
+                      <div class="comments-item-text">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
+                      <div class="likes-group">
+                        <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
+                        <div class="likes-count">0</div>
+                        <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
+                        <div class="likes-answer" area-disabled="true">Ответить </div>
                       </div>
                     </div>
                     <div class="comments-tree__child">
                       <div class="comments-tree">
+                        <div class="comments-item">
+                          <div class="comments-item-header">
+                            <div class="comments-item-person"><img src="img/person.png" alt=""></div>
+                            <div class="comments-item-info">
+                              <div class="comments-item-name topic-starter">Андрей Эдуардович</div>
+                              <div class="comments-item-time"><span class="comments-item-time-day">вчера&nbsp;    </span><span class="comments-item-time-at">в&nbsp;    </span><span class="comments-item-time-clock">17:40&nbsp;</span></div>
+                            </div>
+                          </div>
+                          <div class="comments-item-text">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
+                          <div class="likes-group">
+                            <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
+                            <div class="likes-count">0</div>
+                            <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
+                            <div class="likes-answer" area-disabled="true">Ответить        </div>
+                          </div>
+                        </div>
                         <div class="comments-item">
                           <div class="comments-item-header">
                             <div class="comments-item-person"><img src="img/person.png" alt=""></div>
@@ -210,191 +191,211 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="comments-tree">
-                  <div class="comments-item">
-                    <div class="comments-item-header">
-                      <div class="comments-item-person"><img src="img/person.png" alt=""></div>
-                      <div class="comments-item-info">
-                        <div class="comments-item-name">Андрей Эдуардович</div>
-                        <div class="comments-item-time"><span class="comments-item-time-day">вчера&nbsp;    </span><span class="comments-item-time-at">в&nbsp;    </span><span class="comments-item-time-clock">17:40&nbsp;</span></div>
+                      <div class="comments-tree__child">
+                        <div class="comments-tree">
+                          <div class="comments-item">
+                            <div class="comments-item-header">
+                              <div class="comments-item-person"><img src="img/person.png" alt=""></div>
+                              <div class="comments-item-info">
+                                <div class="comments-item-name">Андрей Эдуардович</div>
+                                <div class="comments-item-time"><span class="comments-item-time-day">вчера&nbsp;    </span><span class="comments-item-time-at">в&nbsp;    </span><span class="comments-item-time-clock">17:40&nbsp;</span></div>
+                              </div>
+                            </div>
+                            <div class="comments-item-text">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
+                            <div class="likes-group">
+                              <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
+                              <div class="likes-count">0</div>
+                              <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
+                              <div class="likes-answer" area-disabled="true">Ответить</div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="comments-item-text">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
-                    <div class="likes-group">
-                      <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
-                      <div class="likes-count">0</div>
-                      <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
-                      <div class="likes-answer" area-disabled="true">Ответить</div>
+                  </div>
+                  <div class="comments-tree">
+                    <div class="comments-item">
+                      <div class="comments-item-header">
+                        <div class="comments-item-person"><img src="img/person.png" alt=""></div>
+                        <div class="comments-item-info">
+                          <div class="comments-item-name">Андрей Эдуардович</div>
+                          <div class="comments-item-time"><span class="comments-item-time-day">вчера&nbsp;    </span><span class="comments-item-time-at">в&nbsp;    </span><span class="comments-item-time-clock">17:40&nbsp;</span></div>
+                        </div>
+                      </div>
+                      <div class="comments-item-text">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
+                      <div class="likes-group">
+                        <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
+                        <div class="likes-count">0</div>
+                        <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
+                        <div class="likes-answer" area-disabled="true">Ответить</div>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </form>
+            </div>
+            <aside class="aside project-aside">
+              <div class="aside-section aside-persons"> 
+                <div class="aside-person"> 
+                  <div class="aside-person-img"><img src="img/person.png" alt=""></div>
+                  <div class="aside-person-block"> 
+                    <div class="aside-person-name">Алексей Иванов              </div>
+                    <div class="aside-person-role">автор проекта             </div>
+                  </div>
+                </div>
+                <div class="aside-person"> 
+                  <div class="aside-person-img"><img src="img/person.png" alt=""></div>
+                  <div class="aside-person-block"> 
+                    <div class="aside-person-name">Александр Смирнов              </div>
+                    <div class="aside-person-role">модератор         </div>
+                  </div>
+                </div>
               </div>
-            </form>
+              <div class="aside-section aside-links">
+                <div class="aside-links-block">
+                  <div class="aside-links-ttl">Соцсети</div><a class="aside-links-link" href="#">Вконтакте</a><a class="aside-links-link" href="#">Telegram</a><a class="aside-links-link" href="#">YouTube</a>
+                </div>
+                <div class="aside-links-block">
+                  <div class="aside-links-ttl">Другие платформы</div><a class="aside-links-link" href="#">Rickstarter</a><a class="aside-links-link" href="#">Donationalerts</a><a class="aside-links-link" href="#">Boomstarter</a>
+                </div>
+              </div>
+              <div class="aside-section aside-top"> 
+                <div class="aside-top-person">
+                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
+                  <div class="aside-top-person-name">Иван Иванов                </div>
+                </div>
+                <div class="aside-top-person">
+                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
+                  <div class="aside-top-person-name">Иван Иванов                </div>
+                </div>
+                <div class="aside-top-person">
+                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
+                  <div class="aside-top-person-name">Иван Иванов                </div>
+                </div>
+                <div class="aside-top-person">
+                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
+                  <div class="aside-top-person-name">Иван Иванов                </div>
+                </div>
+                <div class="aside-top-person">
+                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
+                  <div class="aside-top-person-name">Иван Иванов                </div>
+                </div>
+              </div>
+            </aside>
           </div>
-          <aside class="aside project-aside">
-            <div class="aside-section aside-persons"> 
-              <div class="aside-person"> 
-                <div class="aside-person-img"><img src="img/person.png" alt=""></div>
-                <div class="aside-person-block"> 
-                  <div class="aside-person-name">Алексей Иванов              </div>
-                  <div class="aside-person-role">автор проекта             </div>
-                </div>
-              </div>
-              <div class="aside-person"> 
-                <div class="aside-person-img"><img src="img/person.png" alt=""></div>
-                <div class="aside-person-block"> 
-                  <div class="aside-person-name">Александр Смирнов              </div>
-                  <div class="aside-person-role">модератор         </div>
-                </div>
-              </div>
-            </div>
-            <div class="aside-section aside-links">
-              <div class="aside-links-block">
-                <div class="aside-links-ttl">Соцсети</div><a class="aside-links-link" href="#">Вконтакте</a><a class="aside-links-link" href="#">Telegram</a><a class="aside-links-link" href="#">YouTube</a>
-              </div>
-              <div class="aside-links-block">
-                <div class="aside-links-ttl">Другие платформы</div><a class="aside-links-link" href="#">Rickstarter</a><a class="aside-links-link" href="#">Donationalerts</a><a class="aside-links-link" href="#">Boomstarter</a>
-              </div>
-            </div>
-            <div class="aside-section aside-top"> 
-              <div class="aside-top-person">
-                <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                <div class="aside-top-person-name">Иван Иванов                </div>
-              </div>
-              <div class="aside-top-person">
-                <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                <div class="aside-top-person-name">Иван Иванов                </div>
-              </div>
-              <div class="aside-top-person">
-                <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                <div class="aside-top-person-name">Иван Иванов                </div>
-              </div>
-              <div class="aside-top-person">
-                <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                <div class="aside-top-person-name">Иван Иванов                </div>
-              </div>
-              <div class="aside-top-person">
-                <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                <div class="aside-top-person-name">Иван Иванов                </div>
-              </div>
-            </div>
-          </aside>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container-large">
-      <div class="footer-wrap">
-        <div class="footer-block"> 
-          <div class="footer-copyrights">© 2022 Uppora</div>
-          <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
-        </div>
-        <div class="footer-block">
-          <div class="footer-lang">Русский</div>
-          <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="popup-profile">
-    <div class="popup-profile-wrap">
-      <div class="popup-profile-section">
-        <div class="popup-profile-user"> 
-          <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
-          <div class="popup-profile-user-info"> 
-            <div class="popup-profile-user-name">Илья Панов</div>
-            <div class="popup-profile-user-email">email@website.com</div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-large">
+        <div class="footer-wrap">
+          <div class="footer-block"> 
+            <div class="footer-copyrights">© 2022 Uppora</div>
+            <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
+          </div>
+          <div class="footer-block">
+            <div class="footer-lang">Русский</div>
+            <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
           </div>
         </div>
       </div>
-      <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
-      <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
-      <div class="popup-profile-section popup-profile-section-bottom">
-        <div class="popup-profile-lang">Русский</div>
-        <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
-          <div class="popup-profile-copyrights">© 2022 Uppora</div>
+    </footer>
+    <div class="popup-profile">
+      <div class="popup-profile-wrap">
+        <div class="popup-profile-section">
+          <div class="popup-profile-user"> 
+            <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
+            <div class="popup-profile-user-info"> 
+              <div class="popup-profile-user-name">Илья Панов</div>
+              <div class="popup-profile-user-email">email@website.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
+        <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
+        <div class="popup-profile-section popup-profile-section-bottom">
+          <div class="popup-profile-lang">Русский</div>
+          <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
+            <div class="popup-profile-copyrights">© 2022 Uppora</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="popup-subs"> 
-    <div class="popup-subs-wrap">
-      <div class="popup-subs-header">
-        <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
-        <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
-        <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
-      </div>
-      <div class="popup-subs-list"> 
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
-            <div class="popup-subs-user-name">Алексей Иванов</div></a>
-          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+    <div class="popup-subs"> 
+      <div class="popup-subs-wrap">
+        <div class="popup-subs-header">
+          <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
+          <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
+          <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
         </div>
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
-            <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
-          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
-        </div>
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
-            <div class="popup-subs-user-name">Алексей Иванов</div></a>
-          <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
+        <div class="popup-subs-list"> 
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
+              <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="popup-cover"> 
-    <div class="popup-cover-wrap">
-      <form class="popup-cover-header">
-        <div class="popup-cover-ttl">Обложка профиля</div>
-        <div class="popup-cover-buttons"> 
+    <div class="popup-cover"> 
+      <div class="popup-cover-wrap">
+        <form class="popup-cover-header">
+          <div class="popup-cover-ttl">Обложка профиля</div>
+          <div class="popup-cover-buttons"> 
+            <div class="popup-cover-delete">Удалить</div>
+            <div class="popup-cover-input">
+              <input id="cover-input" type="file" name="cover-input">
+              <label class="btn btn-white" for="cover-input">Загрузить</label>
+            </div>
+          </div>
+          <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
+        </form>
+        <div class="popup-cover-grid"> 
+          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+        </div>
+        <form class="popup-cover-footer"> 
           <div class="popup-cover-delete">Удалить</div>
           <div class="popup-cover-input">
             <input id="cover-input" type="file" name="cover-input">
             <label class="btn btn-white" for="cover-input">Загрузить</label>
           </div>
-        </div>
-        <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
-      </form>
-      <div class="popup-cover-grid"> 
-        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+        </form>
       </div>
-      <form class="popup-cover-footer"> 
-        <div class="popup-cover-delete">Удалить</div>
-        <div class="popup-cover-input">
-          <input id="cover-input" type="file" name="cover-input">
-          <label class="btn btn-white" for="cover-input">Загрузить</label>
-        </div>
-      </form>
     </div>
-  </div>
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

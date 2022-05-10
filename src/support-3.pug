@@ -1,48 +1,48 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body
+    body
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.s-support
-        .s-support__inner
-            section.s-support-main
-                .container.s-support-main__container
-                    .s-support-main__top
-                        h1.support-title.s-support-main__title Служба поддержки
-                    form(action="#").s-support-main__form
-                        .input-block.s-support-main__form-area-item
-                            label(for="support-subject").input-block__label
-                                span.input-block__label-name Тема обращения *
-                            select(name="", id="support-subject").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
-                                option(value="Выберите", disabled, selected) Выберите
-                                option(value="Выбор 1") Выбор 1
-                                option(value="Выбор 2") Выбор 2
-                        .input-block.s-support-main__form-area-item
-                            label(for="support-message").input-block__label
-                                span.input-block__label-name Сообщение *
-                            .input-block__textarea-wrapper
-                                textarea(type="text", name="", id="support-message", rows="", cols="", value="").input-el.input-el--textarea.input-el--textarea-size-lg.input-block__el
-                        input(type="file", id="support-file").files-hidden
-                        .files-attach-list.s-support-main__form-files-attach-list
-                            .file-attach.files-attach-list__item
-                                .file-attach__text
-                                    .text-overflow.file-attach__name Screenshot_01.jpeg
-                                button(type="button").file-attach__remove
-                                    svg.u-icon.file-attach__icon
-                                        use(xlink:href="img/sprite.svg#close")
-                            .file-attach.files-attach-list__item
-                                .file-attach__text
-                                    .text-overflow.file-attach__name Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong.jpeg
-                                button(type="button").file-attach__remove
-                                    svg.u-icon.file-attach__icon
-                                        use(xlink:href="img/sprite.svg#close")
-                        .group-btns.s-support-main__form-btns
-                            button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Отправить
-                            label(for="support-file").btn.btn--size-sm.btn-trp.group-btns__item Прикрепить файл
-                            .group-btns__item.s-support-main__form-file-text Вы можете прикрепить до 5 файлов
+        main.s-support
+            .s-support__inner
+                section.s-support-main
+                    .container.s-support-main__container
+                        .s-support-main__top
+                            h1.support-title.s-support-main__title Служба поддержки
+                        form(action="#").s-support-main__form
+                            .input-block.s-support-main__form-area-item
+                                label(for="support-subject").input-block__label
+                                    span.input-block__label-name Тема обращения *
+                                select(name="", id="support-subject").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
+                                    option(value="Выберите", disabled, selected) Выберите
+                                    option(value="Выбор 1") Выбор 1
+                                    option(value="Выбор 2") Выбор 2
+                            .input-block.s-support-main__form-area-item
+                                label(for="support-message").input-block__label
+                                    span.input-block__label-name Сообщение *
+                                .input-block__textarea-wrapper
+                                    textarea(type="text", name="", id="support-message", rows="", cols="", value="").input-el.input-el--textarea.input-el--textarea-size-lg.input-block__el
+                            input(type="file", id="support-file").files-hidden
+                            .files-attach-list.s-support-main__form-files-attach-list
+                                .file-attach.files-attach-list__item
+                                    .file-attach__text
+                                        .text-overflow.file-attach__name Screenshot_01.jpeg
+                                    button(type="button").file-attach__remove
+                                        svg.u-icon.file-attach__icon
+                                            use(xlink:href="img/sprite.svg#close")
+                                .file-attach.files-attach-list__item
+                                    .file-attach__text
+                                        .text-overflow.file-attach__name Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong.jpeg
+                                    button(type="button").file-attach__remove
+                                        svg.u-icon.file-attach__icon
+                                            use(xlink:href="img/sprite.svg#close")
+                            .group-btns.s-support-main__form-btns
+                                button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Отправить
+                                label(for="support-file").btn.btn--size-sm.btn-trp.group-btns__item Прикрепить файл
+                                .group-btns__item.s-support-main__form-file-text Вы можете прикрепить до 5 файлов
 
-    include includes/footer.pug
+        include includes/footer.pug

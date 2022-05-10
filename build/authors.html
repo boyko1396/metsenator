@@ -1,292 +1,293 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Меценатор</title>
-  <!--link(rel='icon', href='favicon.ico')-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container-large header__container">
-      <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
-      <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
-      <div class="header__menu">
-        <nav class="header-nav header__nav" role="navigation">
-          <ul class="header-nav__list">
-            <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
-          </ul>
-        </nav>
-        <button class="js-header-search btn-action header__btn-search" type="button">
-          <svg class="u-icon btn-action__icon">
-            <use xlink:href="img/sprite.svg#search"></use>
-          </svg>
-        </button>
-        <form class="header-search header__search" action="#">
-          <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
-          <button class="js-header-search btn-close header-search__close" type="button">
-            <svg class="u-icon btn-close__icon">
-              <use xlink:href="img/sprite.svg#close"></use>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Меценатор</title>
+    <!--link(rel='icon', href='favicon.ico')-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-large header__container">
+        <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
+        <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
+        <div class="header__menu">
+          <nav class="header-nav header__nav" role="navigation">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+            </ul>
+          </nav>
+          <button class="js-header-search btn-action header__btn-search" type="button">
+            <svg class="u-icon btn-action__icon">
+              <use xlink:href="img/sprite.svg#search"></use>
             </svg>
           </button>
+          <form class="header-search header__search" action="#">
+            <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
+            <button class="js-header-search btn-close header-search__close" type="button">
+              <svg class="u-icon btn-close__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div><a class="btn-action header__btn-login-mobile" href="#">
+          <svg class="u-icon btn-action__icon">
+            <use xlink:href="img/sprite.svg#login"></use>
+          </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
+      </div>
+      <div class="header-menu-mobile header__menu-mobile">
+        <div class="header-menu-mobile__inner">
+          <div class="header-menu-mobile__nav-list">
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
+            </ul>
+          </div>
+          <div class="js-language-select language-site header-menu-mobile__language">
+            <div class="language-site__current">
+              <div class="language-site__current-title">Русский</div>
+              <svg class="u-icon language-site__current-icon">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
+          </div>
+          <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
+        </div>
+      </div>
+      <div class="js-header-menu-mobile header__overlay-mobile"></div>
+    </header>
+    <main class="authors">
+      <section class="authors-intro">
+        <div class="container-large authors-intro__container">
+          <div class="row authors-intro__row">
+            <div class="row__col row__col--6 authors-intro__col authors-intro__col--content">
+              <div class="authors-intro__content">
+                <h1 class="authors-intro__title">Есть <span class='text-accent'>интересный</span> проект?</h1>
+                <div class="content authors-intro__desription">
+                  <p>Добавье его на нашей платформе, чтобы аудитория поддержала вас донатом и словом</p>
+                </div>
+                <div class="group-btns authors-intro__btns"><a class="btn btn--size-md btn-green-accent group-btns__item" href="#">Создать проект</a><a class="btn btn--size-md btn-trp group-btns__item" href="#">Посмотреть демо проект</a></div>
+                <div class="tinkoff-bank authors-intro__tinkoff-bank"><img class="tinkoff-bank__logo" src="img/tinkoff-logo.svg" alt="Тинькофф банк">
+                  <div class="tinkoff-bank__description">Безопасность и надежность всех финансовых операций гарантирует Тинькофф&nbsp;Банк</div>
+                </div>
+              </div>
+            </div>
+            <div class="row__col row__col--6 authors-intro__col authors-intro__col--media">
+              <picture class="img-cover authors-intro__picture"><img src="img/authors-intro-img.jpg" alt="Есть интересный проект?"></picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="a-section-card">
+        <div class="container-large a-section-card__container">
+          <div class="a-section-card__inner">
+            <div class="a-section-card__media">
+              <picture class="a-section-card__picture"><img width="530" height="490" srcset="img/section-card-1@2x.png 2x" src="img/section-card-1.png"></picture>
+            </div>
+            <div class="a-section-card__content">
+              <h2 class="section-title a-section-card__title"><span class='text-accent'>Без</span> обязательной <span class='text-accent'>регистрации</span>, подписок и&nbsp;продаж</h2>
+              <div class="content a-section-card__text">
+                <p>Сделать донат можно в пару кликов, без регистраци, скрытых условий и подписок. Вы получите денежные средства просто так, не продавая и не предлагая ничего взамен</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="a-section-info">
+        <div class="container-large a-section-info__container">
+          <div class="a-section-info__inner">
+            <div class="a-section-info__content">
+              <h2 class="section-title a-section-info__title">Удобная и прозрачная платформа <span class='text-accent'>для всех</span></h2>
+              <div class="content a-section-info__text">
+                <p>Аудитории легко поддержать вас рублем, оставить комментарий, получить обратную связь и видеть результаты сбора донатов</p>
+              </div><a class="btn btn--size-md btn-green-accent a-section-info__btn" href="#">Зарегистрироваться</a>
+            </div>
+            <div class="a-section-info__media">
+              <picture class="a-section-info__picture"><img width="381" height="462" srcset="img/section-card-2@2x.png 2x" src="img/section-card-2.png">
+                <div class="a-section-info__decor" style="background-image: url(../img/section-card-decor-1.svg)"></div>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why-uppora">
+        <div class="container-large why-uppora__container">
+          <h2 class="section-title why-uppora__title">Почему <span class='text-accent'>Uppora</span></h2>
+          <div class="why-uppora-list">
+            <div class="row why-uppora-list__row">
+              <div class="row__col row__col--4 why-uppora-list__col">
+                <article class="why-uppora-card why-uppora-list__card">
+                  <picture class="img-cover why-uppora-card__picture"><img src="img/why-uppora-card-1@2x.jpg" alt="Обратная связь"></picture>
+                  <div class="why-uppora-card__content">
+                    <h3 class="why-uppora-card__title">Обратная связь</h3>
+                    <div class="content why-uppora-card__text">
+                      <p>Получайте вместе с донатами сообщения от пользователей, вступайте в переписку, используйте обратную связь и делитесь новостями чтобы двигаться вверх</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col row__col--4 why-uppora-list__col">
+                <article class="why-uppora-card why-uppora-list__card">
+                  <picture class="img-cover why-uppora-card__picture"><img src="img/why-uppora-card-2.svg" alt="Детализация и статистика"></picture>
+                  <div class="why-uppora-card__content">
+                    <h3 class="why-uppora-card__title">Детализация и статистика</h3>
+                    <div class="content why-uppora-card__text">
+                      <p>В личном кабинете есть статистика о собранных донатах, посещениях и другие полезные данные, чтобы вы могли проанализировать эффективность</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col row__col--4 why-uppora-list__col">
+                <article class="why-uppora-card why-uppora-list__card">
+                  <picture class="img-cover why-uppora-card__picture"><img src="img/why-uppora-card-3.svg" alt="Комиссия всего 1%"></picture>
+                  <div class="why-uppora-card__content">
+                    <h3 class="why-uppora-card__title">Комиссия всего 1%</h3>
+                    <div class="content why-uppora-card__text">
+                      <p>Вывести собранные средства можно в любой момент. Комиссия банка составляет всего 1%, а комиссия платформы полностью отсутствует</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="appeal-section">
+        <div class="container-large appeal-section__container">
+          <div class="appeal-section__content">
+            <h2 class="section-title appeal-section__title">Есть вопросы или пожелания?</h2>
+            <div class="content appeal-section__text">
+              <p>Воспользуйтесь формой обратной связи, чтобы написать нам сообщение, или опубликуйте их в нашем блоге, чтобы обсудить с сообществом</p>
+            </div>
+            <div class="group-btns appeal-section__btns"><a class="btn btn--size-md btn-green-accent group-btns__item" href="#">Написать сообщение</a><a class="btn btn--size-md btn-trp group-btns__item" href="#">Перейти в блог</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-large">
+        <div class="footer-wrap">
+          <div class="footer-block"> 
+            <div class="footer-copyrights">© 2022 Uppora</div>
+            <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
+          </div>
+          <div class="footer-block">
+            <div class="footer-lang">Русский</div>
+            <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup-profile">
+      <div class="popup-profile-wrap">
+        <div class="popup-profile-section">
+          <div class="popup-profile-user"> 
+            <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
+            <div class="popup-profile-user-info"> 
+              <div class="popup-profile-user-name">Илья Панов</div>
+              <div class="popup-profile-user-email">email@website.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
+        <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
+        <div class="popup-profile-section popup-profile-section-bottom">
+          <div class="popup-profile-lang">Русский</div>
+          <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
+            <div class="popup-profile-copyrights">© 2022 Uppora</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-subs"> 
+      <div class="popup-subs-wrap">
+        <div class="popup-subs-header">
+          <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
+          <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
+          <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
+        </div>
+        <div class="popup-subs-list"> 
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
+              <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-cover"> 
+      <div class="popup-cover-wrap">
+        <form class="popup-cover-header">
+          <div class="popup-cover-ttl">Обложка профиля</div>
+          <div class="popup-cover-buttons"> 
+            <div class="popup-cover-delete">Удалить</div>
+            <div class="popup-cover-input">
+              <input id="cover-input" type="file" name="cover-input">
+              <label class="btn btn-white" for="cover-input">Загрузить</label>
+            </div>
+          </div>
+          <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
         </form>
-      </div><a class="btn-action header__btn-login-mobile" href="#">
-        <svg class="u-icon btn-action__icon">
-          <use xlink:href="img/sprite.svg#login"></use>
-        </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
-    </div>
-    <div class="header-menu-mobile header__menu-mobile">
-      <div class="header-menu-mobile__inner">
-        <div class="header-menu-mobile__nav-list">
-          <ul class="header-menu-mobile__nav">
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
-          </ul>
+        <div class="popup-cover-grid"> 
+          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
         </div>
-        <div class="js-language-select language-site header-menu-mobile__language">
-          <div class="language-site__current">
-            <div class="language-site__current-title">Русский</div>
-            <svg class="u-icon language-site__current-icon">
-              <use xlink:href="img/sprite.svg#arrow-down"></use>
-            </svg>
-          </div>
-          <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
-        </div>
-        <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
-      </div>
-    </div>
-    <div class="js-header-menu-mobile header__overlay-mobile"></div>
-  </header>
-  <main class="authors">
-    <section class="authors-intro">
-      <div class="container-large authors-intro__container">
-        <div class="row authors-intro__row">
-          <div class="row__col row__col--6 authors-intro__col authors-intro__col--content">
-            <div class="authors-intro__content">
-              <h1 class="authors-intro__title">Есть <span class='text-accent'>интересный</span> проект?</h1>
-              <div class="content authors-intro__desription">
-                <p>Добавье его на нашей платформе, чтобы аудитория поддержала вас донатом и словом</p>
-              </div>
-              <div class="group-btns authors-intro__btns"><a class="btn btn--size-md btn-green-accent group-btns__item" href="#">Создать проект</a><a class="btn btn--size-md btn-trp group-btns__item" href="#">Посмотреть демо проект</a></div>
-              <div class="tinkoff-bank authors-intro__tinkoff-bank"><img class="tinkoff-bank__logo" src="img/tinkoff-logo.svg" alt="Тинькофф банк">
-                <div class="tinkoff-bank__description">Безопасность и надежность всех финансовых операций гарантирует Тинькофф&nbsp;Банк</div>
-              </div>
-            </div>
-          </div>
-          <div class="row__col row__col--6 authors-intro__col authors-intro__col--media">
-            <picture class="img-cover authors-intro__picture"><img src="img/authors-intro-img.jpg" alt="Есть интересный проект?"></picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="a-section-card">
-      <div class="container-large a-section-card__container">
-        <div class="a-section-card__inner">
-          <div class="a-section-card__media">
-            <picture class="a-section-card__picture"><img width="530" height="490" srcset="img/section-card-1@2x.png 2x" src="img/section-card-1.png"></picture>
-          </div>
-          <div class="a-section-card__content">
-            <h2 class="section-title a-section-card__title"><span class='text-accent'>Без</span> обязательной <span class='text-accent'>регистрации</span>, подписок и&nbsp;продаж</h2>
-            <div class="content a-section-card__text">
-              <p>Сделать донат можно в пару кликов, без регистраци, скрытых условий и подписок. Вы получите денежные средства просто так, не продавая и не предлагая ничего взамен</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="a-section-info">
-      <div class="container-large a-section-info__container">
-        <div class="a-section-info__inner">
-          <div class="a-section-info__content">
-            <h2 class="section-title a-section-info__title">Удобная и прозрачная платформа <span class='text-accent'>для всех</span></h2>
-            <div class="content a-section-info__text">
-              <p>Аудитории легко поддержать вас рублем, оставить комментарий, получить обратную связь и видеть результаты сбора донатов</p>
-            </div><a class="btn btn--size-md btn-green-accent a-section-info__btn" href="#">Зарегистрироваться</a>
-          </div>
-          <div class="a-section-info__media">
-            <picture class="a-section-info__picture"><img width="381" height="462" srcset="img/section-card-2@2x.png 2x" src="img/section-card-2.png">
-              <div class="a-section-info__decor" style="background-image: url(../img/section-card-decor-1.svg)"></div>
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="why-uppora">
-      <div class="container-large why-uppora__container">
-        <h2 class="section-title why-uppora__title">Почему <span class='text-accent'>Uppora</span></h2>
-        <div class="why-uppora-list">
-          <div class="row why-uppora-list__row">
-            <div class="row__col row__col--4 why-uppora-list__col">
-              <article class="why-uppora-card why-uppora-list__card">
-                <picture class="img-cover why-uppora-card__picture"><img src="img/why-uppora-card-1@2x.jpg" alt="Обратная связь"></picture>
-                <div class="why-uppora-card__content">
-                  <h3 class="why-uppora-card__title">Обратная связь</h3>
-                  <div class="content why-uppora-card__text">
-                    <p>Получайте вместе с донатами сообщения от пользователей, вступайте в переписку, используйте обратную связь и делитесь новостями чтобы двигаться вверх</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="row__col row__col--4 why-uppora-list__col">
-              <article class="why-uppora-card why-uppora-list__card">
-                <picture class="img-cover why-uppora-card__picture"><img src="img/why-uppora-card-2.svg" alt="Детализация и статистика"></picture>
-                <div class="why-uppora-card__content">
-                  <h3 class="why-uppora-card__title">Детализация и статистика</h3>
-                  <div class="content why-uppora-card__text">
-                    <p>В личном кабинете есть статистика о собранных донатах, посещениях и другие полезные данные, чтобы вы могли проанализировать эффективность</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="row__col row__col--4 why-uppora-list__col">
-              <article class="why-uppora-card why-uppora-list__card">
-                <picture class="img-cover why-uppora-card__picture"><img src="img/why-uppora-card-3.svg" alt="Комиссия всего 1%"></picture>
-                <div class="why-uppora-card__content">
-                  <h3 class="why-uppora-card__title">Комиссия всего 1%</h3>
-                  <div class="content why-uppora-card__text">
-                    <p>Вывести собранные средства можно в любой момент. Комиссия банка составляет всего 1%, а комиссия платформы полностью отсутствует</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="appeal-section">
-      <div class="container-large appeal-section__container">
-        <div class="appeal-section__content">
-          <h2 class="section-title appeal-section__title">Есть вопросы или пожелания?</h2>
-          <div class="content appeal-section__text">
-            <p>Воспользуйтесь формой обратной связи, чтобы написать нам сообщение, или опубликуйте их в нашем блоге, чтобы обсудить с сообществом</p>
-          </div>
-          <div class="group-btns appeal-section__btns"><a class="btn btn--size-md btn-green-accent group-btns__item" href="#">Написать сообщение</a><a class="btn btn--size-md btn-trp group-btns__item" href="#">Перейти в блог</a></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container-large">
-      <div class="footer-wrap">
-        <div class="footer-block"> 
-          <div class="footer-copyrights">© 2022 Uppora</div>
-          <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
-        </div>
-        <div class="footer-block">
-          <div class="footer-lang">Русский</div>
-          <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="popup-profile">
-    <div class="popup-profile-wrap">
-      <div class="popup-profile-section">
-        <div class="popup-profile-user"> 
-          <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
-          <div class="popup-profile-user-info"> 
-            <div class="popup-profile-user-name">Илья Панов</div>
-            <div class="popup-profile-user-email">email@website.com</div>
-          </div>
-        </div>
-      </div>
-      <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
-      <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
-      <div class="popup-profile-section popup-profile-section-bottom">
-        <div class="popup-profile-lang">Русский</div>
-        <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
-          <div class="popup-profile-copyrights">© 2022 Uppora</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup-subs"> 
-    <div class="popup-subs-wrap">
-      <div class="popup-subs-header">
-        <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
-        <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
-        <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
-      </div>
-      <div class="popup-subs-list"> 
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
-            <div class="popup-subs-user-name">Алексей Иванов</div></a>
-          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
-        </div>
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
-            <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
-          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
-        </div>
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
-            <div class="popup-subs-user-name">Алексей Иванов</div></a>
-          <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup-cover"> 
-    <div class="popup-cover-wrap">
-      <form class="popup-cover-header">
-        <div class="popup-cover-ttl">Обложка профиля</div>
-        <div class="popup-cover-buttons"> 
+        <form class="popup-cover-footer"> 
           <div class="popup-cover-delete">Удалить</div>
           <div class="popup-cover-input">
             <input id="cover-input" type="file" name="cover-input">
             <label class="btn btn-white" for="cover-input">Загрузить</label>
           </div>
-        </div>
-        <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
-      </form>
-      <div class="popup-cover-grid"> 
-        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+        </form>
       </div>
-      <form class="popup-cover-footer"> 
-        <div class="popup-cover-delete">Удалить</div>
-        <div class="popup-cover-input">
-          <input id="cover-input" type="file" name="cover-input">
-          <label class="btn btn-white" for="cover-input">Загрузить</label>
-        </div>
-      </form>
     </div>
-  </div>
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,80 +1,80 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body
+    body
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.settings.settings-profile
-        .container
-            .settings-wrap
+        main.settings.settings-profile
+            .container
+                .settings-wrap
 
-                .settings-tabs
-                    .settings-tabs-head
-                        .settings-tabs-img.setting-profile-img
-                            img(src="img/person.png", alt="")
-                        .settings-tabs-info
-                            .settings-tabs-info-top.settings-profile-name Илья Панов    
-                            .settings-tabs-info-bottom.settings-profile-email adress@website.com
-                    .settings-tabs-list
-                        .settings-tabs-tab Основное
-                        .settings-tabs-tab Безопасность
-                        .settings-tabs-tab.active Способ оплаты
-                        .settings-tabs-tab Уведомления
+                    .settings-tabs
+                        .settings-tabs-head
+                            .settings-tabs-img.setting-profile-img
+                                img(src="img/person.png", alt="")
+                            .settings-tabs-info
+                                .settings-tabs-info-top.settings-profile-name Илья Панов    
+                                .settings-tabs-info-bottom.settings-profile-email adress@website.com
+                        .settings-tabs-list
+                            .settings-tabs-tab Основное
+                            .settings-tabs-tab Безопасность
+                            .settings-tabs-tab.active Способ оплаты
+                            .settings-tabs-tab Уведомления
 
-                .settings-inner
-                    .settings-inner-form-group
-                        .settings-inner-ttl Способ оплаты
-                    
-                    //- Добавить карту
-                    .settings-inner-form-group
-                        .settings-inner-form-add.settings-inner-form-add-payment
-                            img(src="img/plus-blue.svg", alt="")
-                            span Добавить&nbsp;карту
-
-                    //- Форма добавления карты
-                    form.settings-inner-form.notice
-                    
+                    .settings-inner
                         .settings-inner-form-group
-                            .settings-inner-form-label Добавление новой карты
-                            .settings-inner-form-text Visa, Mastercard, Maestro, МИР
-
+                            .settings-inner-ttl Способ оплаты
+                        
+                        //- Добавить карту
                         .settings-inner-form-group
-                            .input.input-payment
-                                .input-payment-label Номер карты
-                                input#profile-card-number(type="text", name="profile-card-number", placeholder="ХХХХ ХХХХ ХХХХ ХХХХ")
-                            .input-group-payment.input-payment
-                                .input-card-block
-                                    .input-payment-label Срок действия
-                                    .input-card-group
-                                        .input.input-card
-                                            input#profile-card-month(type="text", name="profile-card-month", placeholder="ММ")
-                                        .input-card-devider /
-                                        .input.input-card
-                                            input#profile-card-year(type="text", name="profile-card-year", placeholder="ГГ")    
-                                .input-card-block
-                                    .input-payment-label Код
-                                    .input-card-group
-                                        .input.input-card
-                                            input#profile-card-cvc(type="text", name="profile-card-cvc", placeholder="CVC")
+                            .settings-inner-form-add.settings-inner-form-add-payment
+                                img(src="img/plus-blue.svg", alt="")
+                                span Добавить&nbsp;карту
 
-                    //- Результат(Добавленные карты)
-                    .settings-inner-form-group
-                        .settings-inner-form-text Сохраненные карты
-                        .settings-inner-card
-                            .settings-inner-card-logo
-                                img(src="img/visa.png", alt="")
-                            .settings-inner-card-data    
-                                .settings-inner-card-number **** 1234   
-                                .settings-inner-card-date добавлена 8 сент 2021
-                            .settings-inner-card-close
-                                img(src="img/close.svg", alt="")
-                    .settings-inner-form-group
-                        .settings-inner-form-add.settings-inner-form-add-payment
-                            img(src="img/plus-blue.svg", alt="")
-                            span Добавить&nbsp;карту
+                        //- Форма добавления карты
+                        form.settings-inner-form.notice
+                        
+                            .settings-inner-form-group
+                                .settings-inner-form-label Добавление новой карты
+                                .settings-inner-form-text Visa, Mastercard, Maestro, МИР
 
-                                        
-    include includes/footer.pug
+                            .settings-inner-form-group
+                                .input.input-payment
+                                    .input-payment-label Номер карты
+                                    input#profile-card-number(type="text", name="profile-card-number", placeholder="ХХХХ ХХХХ ХХХХ ХХХХ")
+                                .input-group-payment.input-payment
+                                    .input-card-block
+                                        .input-payment-label Срок действия
+                                        .input-card-group
+                                            .input.input-card
+                                                input#profile-card-month(type="text", name="profile-card-month", placeholder="ММ")
+                                            .input-card-devider /
+                                            .input.input-card
+                                                input#profile-card-year(type="text", name="profile-card-year", placeholder="ГГ")    
+                                    .input-card-block
+                                        .input-payment-label Код
+                                        .input-card-group
+                                            .input.input-card
+                                                input#profile-card-cvc(type="text", name="profile-card-cvc", placeholder="CVC")
+
+                        //- Результат(Добавленные карты)
+                        .settings-inner-form-group
+                            .settings-inner-form-text Сохраненные карты
+                            .settings-inner-card
+                                .settings-inner-card-logo
+                                    img(src="img/visa.png", alt="")
+                                .settings-inner-card-data    
+                                    .settings-inner-card-number **** 1234   
+                                    .settings-inner-card-date добавлена 8 сент 2021
+                                .settings-inner-card-close
+                                    img(src="img/close.svg", alt="")
+                        .settings-inner-form-group
+                            .settings-inner-form-add.settings-inner-form-add-payment
+                                img(src="img/plus-blue.svg", alt="")
+                                span Добавить&nbsp;карту
+
+                                            
+        include includes/footer.pug

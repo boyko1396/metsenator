@@ -1,354 +1,355 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Меценатор</title>
-  <!--link(rel='icon', href='favicon.ico')-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container-large header__container">
-      <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
-      <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
-      <div class="header__menu">
-        <nav class="header-nav header__nav" role="navigation">
-          <ul class="header-nav__list">
-            <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
-          </ul>
-        </nav>
-        <button class="js-header-search btn-action header__btn-search" type="button">
-          <svg class="u-icon btn-action__icon">
-            <use xlink:href="img/sprite.svg#search"></use>
-          </svg>
-        </button>
-        <form class="header-search header__search" action="#">
-          <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
-          <button class="js-header-search btn-close header-search__close" type="button">
-            <svg class="u-icon btn-close__icon">
-              <use xlink:href="img/sprite.svg#close"></use>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Меценатор</title>
+    <!--link(rel='icon', href='favicon.ico')-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-large header__container">
+        <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
+        <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
+        <div class="header__menu">
+          <nav class="header-nav header__nav" role="navigation">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+            </ul>
+          </nav>
+          <button class="js-header-search btn-action header__btn-search" type="button">
+            <svg class="u-icon btn-action__icon">
+              <use xlink:href="img/sprite.svg#search"></use>
             </svg>
           </button>
+          <form class="header-search header__search" action="#">
+            <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
+            <button class="js-header-search btn-close header-search__close" type="button">
+              <svg class="u-icon btn-close__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div><a class="btn-action header__btn-login-mobile" href="#">
+          <svg class="u-icon btn-action__icon">
+            <use xlink:href="img/sprite.svg#login"></use>
+          </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
+      </div>
+      <div class="header-menu-mobile header__menu-mobile">
+        <div class="header-menu-mobile__inner">
+          <div class="header-menu-mobile__nav-list">
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
+            </ul>
+          </div>
+          <div class="js-language-select language-site header-menu-mobile__language">
+            <div class="language-site__current">
+              <div class="language-site__current-title">Русский</div>
+              <svg class="u-icon language-site__current-icon">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
+          </div>
+          <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
+        </div>
+      </div>
+      <div class="js-header-menu-mobile header__overlay-mobile"></div>
+    </header>
+    <main class="a-about">
+      <div class="container-large a-about__container">
+        <div class="a-about__inner">
+          <h1 class="a-about__title">аппора: <span class='text-accent'>творческим людям</span></h1>
+          <div class="content a-about__description">
+            <p>Платформа на которой люди находят друг друга, объединяют усилия, реализовывают важные проекты, рассказывают об этом и получают от общества  финансовую и информационную поддержку. Прозрачно и безопасно.</p>
+          </div>
+        </div>
+        <picture class="img-cover a-about__poster"><img src="img/a-about-img-1.jpg" alt="аппора: творческим людям"></picture>
+        <section class="a-about-info">
+          <div class="a-about-info__content">
+            <h2 class="a-about-info__title">О платформе</h2>
+            <div class="content a-about-info__text">
+              <p>Мы собираем сообщество творческих предприимчивых людей – авторов проектов, и людей, которые хотят помогать рублем и словом проектам, которые им нравятся. Наша цель, превратить помощь и финансовую поддержку в привычку на уровне страны, создав для этого платформу, обеспечивающую прозрачность, безопасность и удобство взаимодействия авторов с аудиторией.</p>
+              <p>Наша миссия делать людей счастливее обеспечив стабильную работу платформы позволяющей помогать и поддерживать понравившиеся проекты, дав возможность проявляться себя, рассказать о своем проекте, развивать его, выражать свое отношение и не бояться быть обманутым.</p>
+            </div>
+          </div>
+          <div class="a-about-info__aside">
+            <div class="card-badge-text a-about-info__aside-card">
+              <div class="card-badge-text__title">Для прессы:</div>
+              <div class="card-badge-text__contacts"><a href="#">скачать пресс-релиз</a></div>
+            </div>
+            <div class="card-badge-text a-about-info__aside-card">
+              <div class="card-badge-text__title">Бренд:</div>
+              <div class="card-badge-text__contacts"><a href="#">скачать логотип</a></div>
+            </div>
+            <div class="card-badge-text a-about-info__aside-card">
+              <div class="card-badge-text__title">Сотрудничество:</div>
+              <div class="card-badge-text__contacts"><a href="mailto:42@uppora.org">42@uppora.org</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="clients-info">
+          <div class="clients-info__aside">
+            <div class="clients-info__aside-percent">70%</div>
+            <div class="progress clients-info__aside-progress"><span style="width: 70%;"></span></div>
+          </div>
+          <div class="clients-info__content">
+            <h2 class="clients-info__title">пользователей в интернете, согласно статистики, воздерживаются от благоворительности и донатов из-за недоверия к существующими сервисам</h2>
+            <div class="content clients-info__text">
+              <p>Люди не ощущают, что вносят вклад и не получают обратную связь от того кому помогли. <strong>Аппора</strong> – это не просто финансовая краундфайдинговая платформа. У нас есть гарант финансовой безопасности в лице Тинкофф Банка, полная прозрачность и аналитика. Благодаря инфраструктуре платформы авторы могут улучшать свои проекты и вносить вклад в развитие общества, а неравнодушные люди – открыто и безопасно благодарить, поддерживать и помогать.</p>
+            </div>
+          </div>
+        </section>
+        <section class="a-about-company">
+          <h2 class="section-title a-about-company__title">Компаниям</h2>
+          <div class="a-about-company__content">
+            <ul class="list-info a-about-company__list">
+              <li><span class="list-info__icon" style="background-image: url(img/list-info-arrow.svg)"></span>Создайте проект от лица вашей компании или сообщества, разместите на него ссылку в соцсетях и пригласите аудиторию вас поддержать</li>
+              <li><span class="list-info__icon" style="background-image: url(img/list-info-arrow.svg)"></span>Общайтесь с подпичиками в блоге проекта и расскажите на что пойдут собранные средства</li>
+              <li><span class="list-info__icon" style="background-image: url(img/list-info-arrow.svg)"></span>Поддерживая другие проекты и создавая свои, вы повышаете уровень лояльности ваших клиентов, сокращая расходы на стандартную рекламу</li>
+            </ul>
+            <div class="group-btns a-about-company__btns">
+              <button class="btn btn--size-md btn-green-accent group-btns__item" type="submit">Создать проект</button>
+              <button class="btn btn--size-md btn-trp group-btns__item" type="button">Посмотреть демо проект</button>
+            </div>
+          </div>
+        </section>
+        <section class="news-section">
+          <div class="news-section__header">
+            <h2 class="section-title news-section__title">Новости</h2><a class="link-accent-simple news-section__view-all" href="#">Смотреть все</a>
+          </div>
+          <div class="news-list">
+            <div class="row news-list__row">
+              <div class="row__col row__col--4 news-list__col">
+                <article class="news-card news-list__card">
+                  <picture class="img-cover news-card__picture"><img src="img/news-card-1.jpg" alt="Формирование дальнейших направлений развития"></picture>
+                  <div class="news-card__content">
+                    <h3 class="news-card__title"><a class="news-card__link" href="#">Формирование дальнейших направлений развития</a></h3>
+                    <footer class="news-card__footer">
+                      <time class="news-card__time">2 недели назад</time>
+                    </footer>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col row__col--4 news-list__col">
+                <article class="news-card news-list__card">
+                  <picture class="img-cover news-card__picture"><img src="img/news-card-2.jpg" alt="Формирование дальнейших направлений развития"></picture>
+                  <div class="news-card__content">
+                    <h3 class="news-card__title"><a class="news-card__link" href="#">Формирование дальнейших направлений развития</a></h3>
+                    <footer class="news-card__footer">
+                      <time class="news-card__time">2 недели назад</time>
+                    </footer>
+                  </div>
+                </article>
+              </div>
+              <div class="row__col row__col--4 news-list__col">
+                <article class="news-card news-list__card">
+                  <picture class="img-cover news-card__picture"><img src="img/news-card-3.jpg" alt="Формирование дальнейших направлений развития"></picture>
+                  <div class="news-card__content">
+                    <h3 class="news-card__title"><a class="news-card__link" href="#">Формирование дальнейших направлений развития</a></h3>
+                    <footer class="news-card__footer">
+                      <time class="news-card__time">2 недели назад</time>
+                    </footer>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="team-section">
+          <h2 class="section-title team-section__title">Команда</h2>
+          <div class="team-list">
+            <div class="row team-list__row">
+              <div class="row__col row__col--4 team-list__col">
+                <article class="team-card team-list__card">
+                  <picture class="img-cover team-card__picture"><img src="img/team-card-1.jpg" alt="Илья Панов"></picture>
+                  <div class="team-card__content">
+                    <p class="team-card__name"><a class="team-card__link" href="#">Илья Панов</a></p>
+                    <p class="team-card__position">CEO</p>
+                  </div>
+                  <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
+                </article>
+              </div>
+              <div class="row__col row__col--4 team-list__col">
+                <article class="team-card team-list__card">
+                  <picture class="img-cover team-card__picture"><img src="img/team-card-2.jpg" alt="Илья"></picture>
+                  <div class="team-card__content">
+                    <p class="team-card__name"><a class="team-card__link" href="#">Илья</a></p>
+                    <p class="team-card__position">дизайн</p>
+                  </div>
+                  <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
+                </article>
+              </div>
+              <div class="row__col row__col--4 team-list__col">
+                <article class="team-card team-list__card">
+                  <picture class="img-cover team-card__picture"><img src="img/team-card-empty.jpg" alt="Дмитрий Щукин"></picture>
+                  <div class="team-card__content">
+                    <p class="team-card__name"><a class="team-card__link" href="#">Дмитрий Щукин</a></p>
+                    <p class="team-card__position">разработка</p>
+                  </div>
+                  <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
+                </article>
+              </div>
+              <div class="row__col row__col--4 team-list__col">
+                <article class="team-card team-list__card">
+                  <picture class="img-cover team-card__picture"><img src="img/team-card-empty.jpg" alt="Маргарита Иванова"></picture>
+                  <div class="team-card__content">
+                    <p class="team-card__name"><a class="team-card__link" href="#">Маргарита Иванова</a></p>
+                    <p class="team-card__position">PR агент</p>
+                  </div>
+                  <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
+                </article>
+              </div>
+              <div class="row__col row__col--4 team-list__col">
+                <article class="team-card team-list__card">
+                  <picture class="img-cover team-card__picture"><img src="img/team-card-empty.jpg" alt="Михаил Швецов"></picture>
+                  <div class="team-card__content">
+                    <p class="team-card__name"><a class="team-card__link" href="#">Михаил Швецов </a></p>
+                    <p class="team-card__position">юридические вопросы</p>
+                  </div>
+                  <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="appeal-section">
+        <div class="container-large appeal-section__container">
+          <div class="appeal-section__content">
+            <h2 class="section-title appeal-section__title">Есть вопросы или предложения?</h2>
+            <div class="content appeal-section__text">
+              <p>Воспользуйтесь формой обратной связи или напишите блоге проекта</p>
+            </div>
+            <div class="group-btns appeal-section__btns"><a class="btn btn--size-md btn-green-accent group-btns__item" href="#">Написать сообщение</a><a class="btn btn--size-md btn-trp group-btns__item" href="#">Перейти в блог</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-large">
+        <div class="footer-wrap">
+          <div class="footer-block"> 
+            <div class="footer-copyrights">© 2022 Uppora</div>
+            <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
+          </div>
+          <div class="footer-block">
+            <div class="footer-lang">Русский</div>
+            <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup-profile">
+      <div class="popup-profile-wrap">
+        <div class="popup-profile-section">
+          <div class="popup-profile-user"> 
+            <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
+            <div class="popup-profile-user-info"> 
+              <div class="popup-profile-user-name">Илья Панов</div>
+              <div class="popup-profile-user-email">email@website.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
+        <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
+        <div class="popup-profile-section popup-profile-section-bottom">
+          <div class="popup-profile-lang">Русский</div>
+          <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
+            <div class="popup-profile-copyrights">© 2022 Uppora</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-subs"> 
+      <div class="popup-subs-wrap">
+        <div class="popup-subs-header">
+          <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
+          <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
+          <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
+        </div>
+        <div class="popup-subs-list"> 
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
+              <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-cover"> 
+      <div class="popup-cover-wrap">
+        <form class="popup-cover-header">
+          <div class="popup-cover-ttl">Обложка профиля</div>
+          <div class="popup-cover-buttons"> 
+            <div class="popup-cover-delete">Удалить</div>
+            <div class="popup-cover-input">
+              <input id="cover-input" type="file" name="cover-input">
+              <label class="btn btn-white" for="cover-input">Загрузить</label>
+            </div>
+          </div>
+          <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
         </form>
-      </div><a class="btn-action header__btn-login-mobile" href="#">
-        <svg class="u-icon btn-action__icon">
-          <use xlink:href="img/sprite.svg#login"></use>
-        </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
-    </div>
-    <div class="header-menu-mobile header__menu-mobile">
-      <div class="header-menu-mobile__inner">
-        <div class="header-menu-mobile__nav-list">
-          <ul class="header-menu-mobile__nav">
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
-            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
-          </ul>
+        <div class="popup-cover-grid"> 
+          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
         </div>
-        <div class="js-language-select language-site header-menu-mobile__language">
-          <div class="language-site__current">
-            <div class="language-site__current-title">Русский</div>
-            <svg class="u-icon language-site__current-icon">
-              <use xlink:href="img/sprite.svg#arrow-down"></use>
-            </svg>
-          </div>
-          <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
-        </div>
-        <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
-      </div>
-    </div>
-    <div class="js-header-menu-mobile header__overlay-mobile"></div>
-  </header>
-  <main class="a-about">
-    <div class="container-large a-about__container">
-      <div class="a-about__inner">
-        <h1 class="a-about__title">аппора: <span class='text-accent'>творческим людям</span></h1>
-        <div class="content a-about__description">
-          <p>Платформа на которой люди находят друг друга, объединяют усилия, реализовывают важные проекты, рассказывают об этом и получают от общества  финансовую и информационную поддержку. Прозрачно и безопасно.</p>
-        </div>
-      </div>
-      <picture class="img-cover a-about__poster"><img src="img/a-about-img-1.jpg" alt="аппора: творческим людям"></picture>
-      <section class="a-about-info">
-        <div class="a-about-info__content">
-          <h2 class="a-about-info__title">О платформе</h2>
-          <div class="content a-about-info__text">
-            <p>Мы собираем сообщество творческих предприимчивых людей – авторов проектов, и людей, которые хотят помогать рублем и словом проектам, которые им нравятся. Наша цель, превратить помощь и финансовую поддержку в привычку на уровне страны, создав для этого платформу, обеспечивающую прозрачность, безопасность и удобство взаимодействия авторов с аудиторией.</p>
-            <p>Наша миссия делать людей счастливее обеспечив стабильную работу платформы позволяющей помогать и поддерживать понравившиеся проекты, дав возможность проявляться себя, рассказать о своем проекте, развивать его, выражать свое отношение и не бояться быть обманутым.</p>
-          </div>
-        </div>
-        <div class="a-about-info__aside">
-          <div class="card-badge-text a-about-info__aside-card">
-            <div class="card-badge-text__title">Для прессы:</div>
-            <div class="card-badge-text__contacts"><a href="#">скачать пресс-релиз</a></div>
-          </div>
-          <div class="card-badge-text a-about-info__aside-card">
-            <div class="card-badge-text__title">Бренд:</div>
-            <div class="card-badge-text__contacts"><a href="#">скачать логотип</a></div>
-          </div>
-          <div class="card-badge-text a-about-info__aside-card">
-            <div class="card-badge-text__title">Сотрудничество:</div>
-            <div class="card-badge-text__contacts"><a href="mailto:42@uppora.org">42@uppora.org</a></div>
-          </div>
-        </div>
-      </section>
-      <section class="clients-info">
-        <div class="clients-info__aside">
-          <div class="clients-info__aside-percent">70%</div>
-          <div class="progress clients-info__aside-progress"><span style="width: 70%;"></span></div>
-        </div>
-        <div class="clients-info__content">
-          <h2 class="clients-info__title">пользователей в интернете, согласно статистики, воздерживаются от благоворительности и донатов из-за недоверия к существующими сервисам</h2>
-          <div class="content clients-info__text">
-            <p>Люди не ощущают, что вносят вклад и не получают обратную связь от того кому помогли. <strong>Аппора</strong> – это не просто финансовая краундфайдинговая платформа. У нас есть гарант финансовой безопасности в лице Тинкофф Банка, полная прозрачность и аналитика. Благодаря инфраструктуре платформы авторы могут улучшать свои проекты и вносить вклад в развитие общества, а неравнодушные люди – открыто и безопасно благодарить, поддерживать и помогать.</p>
-          </div>
-        </div>
-      </section>
-      <section class="a-about-company">
-        <h2 class="section-title a-about-company__title">Компаниям</h2>
-        <div class="a-about-company__content">
-          <ul class="list-info a-about-company__list">
-            <li><span class="list-info__icon" style="background-image: url(img/list-info-arrow.svg)"></span>Создайте проект от лица вашей компании или сообщества, разместите на него ссылку в соцсетях и пригласите аудиторию вас поддержать</li>
-            <li><span class="list-info__icon" style="background-image: url(img/list-info-arrow.svg)"></span>Общайтесь с подпичиками в блоге проекта и расскажите на что пойдут собранные средства</li>
-            <li><span class="list-info__icon" style="background-image: url(img/list-info-arrow.svg)"></span>Поддерживая другие проекты и создавая свои, вы повышаете уровень лояльности ваших клиентов, сокращая расходы на стандартную рекламу</li>
-          </ul>
-          <div class="group-btns a-about-company__btns">
-            <button class="btn btn--size-md btn-green-accent group-btns__item" type="submit">Создать проект</button>
-            <button class="btn btn--size-md btn-trp group-btns__item" type="button">Посмотреть демо проект</button>
-          </div>
-        </div>
-      </section>
-      <section class="news-section">
-        <div class="news-section__header">
-          <h2 class="section-title news-section__title">Новости</h2><a class="link-accent-simple news-section__view-all" href="#">Смотреть все</a>
-        </div>
-        <div class="news-list">
-          <div class="row news-list__row">
-            <div class="row__col row__col--4 news-list__col">
-              <article class="news-card news-list__card">
-                <picture class="img-cover news-card__picture"><img src="img/news-card-1.jpg" alt="Формирование дальнейших направлений развития"></picture>
-                <div class="news-card__content">
-                  <h3 class="news-card__title"><a class="news-card__link" href="#">Формирование дальнейших направлений развития</a></h3>
-                  <footer class="news-card__footer">
-                    <time class="news-card__time">2 недели назад</time>
-                  </footer>
-                </div>
-              </article>
-            </div>
-            <div class="row__col row__col--4 news-list__col">
-              <article class="news-card news-list__card">
-                <picture class="img-cover news-card__picture"><img src="img/news-card-2.jpg" alt="Формирование дальнейших направлений развития"></picture>
-                <div class="news-card__content">
-                  <h3 class="news-card__title"><a class="news-card__link" href="#">Формирование дальнейших направлений развития</a></h3>
-                  <footer class="news-card__footer">
-                    <time class="news-card__time">2 недели назад</time>
-                  </footer>
-                </div>
-              </article>
-            </div>
-            <div class="row__col row__col--4 news-list__col">
-              <article class="news-card news-list__card">
-                <picture class="img-cover news-card__picture"><img src="img/news-card-3.jpg" alt="Формирование дальнейших направлений развития"></picture>
-                <div class="news-card__content">
-                  <h3 class="news-card__title"><a class="news-card__link" href="#">Формирование дальнейших направлений развития</a></h3>
-                  <footer class="news-card__footer">
-                    <time class="news-card__time">2 недели назад</time>
-                  </footer>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="team-section">
-        <h2 class="section-title team-section__title">Команда</h2>
-        <div class="team-list">
-          <div class="row team-list__row">
-            <div class="row__col row__col--4 team-list__col">
-              <article class="team-card team-list__card">
-                <picture class="img-cover team-card__picture"><img src="img/team-card-1.jpg" alt="Илья Панов"></picture>
-                <div class="team-card__content">
-                  <p class="team-card__name"><a class="team-card__link" href="#">Илья Панов</a></p>
-                  <p class="team-card__position">CEO</p>
-                </div>
-                <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
-              </article>
-            </div>
-            <div class="row__col row__col--4 team-list__col">
-              <article class="team-card team-list__card">
-                <picture class="img-cover team-card__picture"><img src="img/team-card-2.jpg" alt="Илья"></picture>
-                <div class="team-card__content">
-                  <p class="team-card__name"><a class="team-card__link" href="#">Илья</a></p>
-                  <p class="team-card__position">дизайн</p>
-                </div>
-                <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
-              </article>
-            </div>
-            <div class="row__col row__col--4 team-list__col">
-              <article class="team-card team-list__card">
-                <picture class="img-cover team-card__picture"><img src="img/team-card-empty.jpg" alt="Дмитрий Щукин"></picture>
-                <div class="team-card__content">
-                  <p class="team-card__name"><a class="team-card__link" href="#">Дмитрий Щукин</a></p>
-                  <p class="team-card__position">разработка</p>
-                </div>
-                <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
-              </article>
-            </div>
-            <div class="row__col row__col--4 team-list__col">
-              <article class="team-card team-list__card">
-                <picture class="img-cover team-card__picture"><img src="img/team-card-empty.jpg" alt="Маргарита Иванова"></picture>
-                <div class="team-card__content">
-                  <p class="team-card__name"><a class="team-card__link" href="#">Маргарита Иванова</a></p>
-                  <p class="team-card__position">PR агент</p>
-                </div>
-                <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
-              </article>
-            </div>
-            <div class="row__col row__col--4 team-list__col">
-              <article class="team-card team-list__card">
-                <picture class="img-cover team-card__picture"><img src="img/team-card-empty.jpg" alt="Михаил Швецов"></picture>
-                <div class="team-card__content">
-                  <p class="team-card__name"><a class="team-card__link" href="#">Михаил Швецов </a></p>
-                  <p class="team-card__position">юридические вопросы</p>
-                </div>
-                <p class="team-card__arrow" style="background-image: url(img/team-card-arrow.svg)"></p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <section class="appeal-section">
-      <div class="container-large appeal-section__container">
-        <div class="appeal-section__content">
-          <h2 class="section-title appeal-section__title">Есть вопросы или предложения?</h2>
-          <div class="content appeal-section__text">
-            <p>Воспользуйтесь формой обратной связи или напишите блоге проекта</p>
-          </div>
-          <div class="group-btns appeal-section__btns"><a class="btn btn--size-md btn-green-accent group-btns__item" href="#">Написать сообщение</a><a class="btn btn--size-md btn-trp group-btns__item" href="#">Перейти в блог</a></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container-large">
-      <div class="footer-wrap">
-        <div class="footer-block"> 
-          <div class="footer-copyrights">© 2022 Uppora</div>
-          <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
-        </div>
-        <div class="footer-block">
-          <div class="footer-lang">Русский</div>
-          <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="popup-profile">
-    <div class="popup-profile-wrap">
-      <div class="popup-profile-section">
-        <div class="popup-profile-user"> 
-          <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
-          <div class="popup-profile-user-info"> 
-            <div class="popup-profile-user-name">Илья Панов</div>
-            <div class="popup-profile-user-email">email@website.com</div>
-          </div>
-        </div>
-      </div>
-      <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
-      <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
-      <div class="popup-profile-section popup-profile-section-bottom">
-        <div class="popup-profile-lang">Русский</div>
-        <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
-          <div class="popup-profile-copyrights">© 2022 Uppora</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup-subs"> 
-    <div class="popup-subs-wrap">
-      <div class="popup-subs-header">
-        <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
-        <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
-        <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
-      </div>
-      <div class="popup-subs-list"> 
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
-            <div class="popup-subs-user-name">Алексей Иванов</div></a>
-          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
-        </div>
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
-            <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
-          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
-        </div>
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
-            <div class="popup-subs-user-name">Алексей Иванов</div></a>
-          <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup-cover"> 
-    <div class="popup-cover-wrap">
-      <form class="popup-cover-header">
-        <div class="popup-cover-ttl">Обложка профиля</div>
-        <div class="popup-cover-buttons"> 
+        <form class="popup-cover-footer"> 
           <div class="popup-cover-delete">Удалить</div>
           <div class="popup-cover-input">
             <input id="cover-input" type="file" name="cover-input">
             <label class="btn btn-white" for="cover-input">Загрузить</label>
           </div>
-        </div>
-        <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
-      </form>
-      <div class="popup-cover-grid"> 
-        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+        </form>
       </div>
-      <form class="popup-cover-footer"> 
-        <div class="popup-cover-delete">Удалить</div>
-        <div class="popup-cover-input">
-          <input id="cover-input" type="file" name="cover-input">
-          <label class="btn btn-white" for="cover-input">Загрузить</label>
-        </div>
-      </form>
     </div>
-  </div>
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

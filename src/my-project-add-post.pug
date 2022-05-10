@@ -1,52 +1,52 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body    
+    body    
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.project-add
-        .container-small
+        main.project-add
+            .container-small
 
-            a.project-detail-back(href="#")
-                img(src="img/back-b.svg", alt="")
-                span Назад к проекту
+                a.project-detail-back(href="#")
+                    img(src="img/back-b.svg", alt="")
+                    span Назад к проекту
 
-            .project-detail-header
-                .project-detail-header-img 
-                    img(src="img/post-person.png", alt="")
-                .project-detail-header-info
-                    .project-detail-header-name Опыт развития форм деятельности
+                .project-detail-header
+                    .project-detail-header-img 
+                        img(src="img/post-person.png", alt="")
+                    .project-detail-header-info
+                        .project-detail-header-name Опыт развития форм деятельности
 
-            .project-detail-ttl Добавить пост
+                .project-detail-ttl Добавить пост
 
-            form.project-add-form
-                
-                .project-add-img
-                    .project-add-img-ttl Обложка
-                    .project-add-img-subttl JPEG, PNG, BMP, GIF, минимальная ширина 1080 px
-                    .project-add-img-input
-                        input#add-file(type="file", name="add-file")
-                        label(for="add-file") Загрузить
-
-                .project-add-title
-                    .project-add-title-ttl Заголовок *
-                    .project-add-title-input.input
-                        input#add-ttl(type="text", name="add-ttl")
-
-                .project-add-text
-                    .project-add-text-ttl Содержимое поста *
-                    .project-add-text-input.input
-                        textarea#add-text(name="add-text")
-
-                .project-add-buttons
-                    button.project-add-buttons-submit.btn.btn-green(type="submit") Опубликовать
-                    a.project-add-buttons-preview(href="#") Предпросмотр        
-
-
-
+                form.project-add-form
                     
-    
-    include includes/footer.pug
+                    .project-add-img
+                        .project-add-img-ttl Обложка
+                        .project-add-img-subttl JPEG, PNG, BMP, GIF, минимальная ширина 1080 px
+                        .project-add-img-input
+                            input#add-file(type="file", name="add-file")
+                            label(for="add-file") Загрузить
+
+                    .project-add-title
+                        .project-add-title-ttl Заголовок *
+                        .project-add-title-input.input
+                            input#add-ttl(type="text", name="add-ttl")
+
+                    .project-add-text
+                        .project-add-text-ttl Содержимое поста *
+                        .project-add-text-input.input
+                            textarea#add-text(name="add-text")
+
+                    .project-add-buttons
+                        button.project-add-buttons-submit.btn.btn-green(type="submit") Опубликовать
+                        a.project-add-buttons-preview(href="#") Предпросмотр        
+
+
+
+                        
+        
+        include includes/footer.pug

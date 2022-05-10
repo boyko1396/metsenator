@@ -1,93 +1,93 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body
+    body
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.authors
-        section.authors-intro
-            .container-large.authors-intro__container
-                .row.authors-intro__row
-                    .row__col.row__col--6.authors-intro__col.authors-intro__col--content
-                        .authors-intro__content
-                            h1.authors-intro__title Есть <span class='text-accent'>интересный</span> проект?
-                            .content.authors-intro__desription
-                                p Добавье его на нашей платформе, чтобы аудитория поддержала вас донатом и словом
-                            .group-btns.authors-intro__btns
-                                a(href="#").btn.btn--size-md.btn-green-accent.group-btns__item Создать проект
-                                a(href="#").btn.btn--size-md.btn-trp.group-btns__item Посмотреть демо проект
-                            .tinkoff-bank.authors-intro__tinkoff-bank
-                                img(src="img/tinkoff-logo.svg", alt="Тинькофф банк").tinkoff-bank__logo
-                                .tinkoff-bank__description Безопасность и надежность всех финансовых операций гарантирует Тинькофф&nbsp;Банк
-                    .row__col.row__col--6.authors-intro__col.authors-intro__col--media
-                        picture.img-cover.authors-intro__picture
-                            img(src="img/authors-intro-img.jpg", alt="Есть интересный проект?")
+        main.authors
+            section.authors-intro
+                .container-large.authors-intro__container
+                    .row.authors-intro__row
+                        .row__col.row__col--6.authors-intro__col.authors-intro__col--content
+                            .authors-intro__content
+                                h1.authors-intro__title Есть <span class='text-accent'>интересный</span> проект?
+                                .content.authors-intro__desription
+                                    p Добавье его на нашей платформе, чтобы аудитория поддержала вас донатом и словом
+                                .group-btns.authors-intro__btns
+                                    a(href="#").btn.btn--size-md.btn-green-accent.group-btns__item Создать проект
+                                    a(href="#").btn.btn--size-md.btn-trp.group-btns__item Посмотреть демо проект
+                                .tinkoff-bank.authors-intro__tinkoff-bank
+                                    img(src="img/tinkoff-logo.svg", alt="Тинькофф банк").tinkoff-bank__logo
+                                    .tinkoff-bank__description Безопасность и надежность всех финансовых операций гарантирует Тинькофф&nbsp;Банк
+                        .row__col.row__col--6.authors-intro__col.authors-intro__col--media
+                            picture.img-cover.authors-intro__picture
+                                img(src="img/authors-intro-img.jpg", alt="Есть интересный проект?")
 
-        section.a-section-card
-            .container-large.a-section-card__container
-                .a-section-card__inner
-                    .a-section-card__media
-                        picture.a-section-card__picture
-                            img(width="530", height="490", srcset="img/section-card-1@2x.png 2x", src="img/section-card-1.png")
-                    .a-section-card__content
-                        h2.section-title.a-section-card__title <span class='text-accent'>Без</span> обязательной <span class='text-accent'>регистрации</span>, подписок и&nbsp;продаж
-                        .content.a-section-card__text
-                            p Сделать донат можно в пару кликов, без регистраци, скрытых условий и подписок. Вы получите денежные средства просто так, не продавая и не предлагая ничего взамен
+            section.a-section-card
+                .container-large.a-section-card__container
+                    .a-section-card__inner
+                        .a-section-card__media
+                            picture.a-section-card__picture
+                                img(width="530", height="490", srcset="img/section-card-1@2x.png 2x", src="img/section-card-1.png")
+                        .a-section-card__content
+                            h2.section-title.a-section-card__title <span class='text-accent'>Без</span> обязательной <span class='text-accent'>регистрации</span>, подписок и&nbsp;продаж
+                            .content.a-section-card__text
+                                p Сделать донат можно в пару кликов, без регистраци, скрытых условий и подписок. Вы получите денежные средства просто так, не продавая и не предлагая ничего взамен
 
-        section.a-section-info
-            .container-large.a-section-info__container
-                .a-section-info__inner
-                    .a-section-info__content
-                        h2.section-title.a-section-info__title Удобная и прозрачная платформа <span class='text-accent'>для всех</span>
-                        .content.a-section-info__text
-                            p Аудитории легко поддержать вас рублем, оставить комментарий, получить обратную связь и видеть результаты сбора донатов
-                        a(href="#").btn.btn--size-md.btn-green-accent.a-section-info__btn Зарегистрироваться
-                    .a-section-info__media
-                        picture.a-section-info__picture
-                            img(width="381", height="462", srcset="img/section-card-2@2x.png 2x", src="img/section-card-2.png")
-                            .a-section-info__decor(style="background-image: url(../img/section-card-decor-1.svg)")
+            section.a-section-info
+                .container-large.a-section-info__container
+                    .a-section-info__inner
+                        .a-section-info__content
+                            h2.section-title.a-section-info__title Удобная и прозрачная платформа <span class='text-accent'>для всех</span>
+                            .content.a-section-info__text
+                                p Аудитории легко поддержать вас рублем, оставить комментарий, получить обратную связь и видеть результаты сбора донатов
+                            a(href="#").btn.btn--size-md.btn-green-accent.a-section-info__btn Зарегистрироваться
+                        .a-section-info__media
+                            picture.a-section-info__picture
+                                img(width="381", height="462", srcset="img/section-card-2@2x.png 2x", src="img/section-card-2.png")
+                                .a-section-info__decor(style="background-image: url(../img/section-card-decor-1.svg)")
 
-        section.why-uppora
-            .container-large.why-uppora__container
-                h2.section-title.why-uppora__title Почему <span class='text-accent'>Uppora</span>
-                .why-uppora-list
-                    .row.why-uppora-list__row
-                        .row__col.row__col--4.why-uppora-list__col
-                            article.why-uppora-card.why-uppora-list__card
-                                picture.img-cover.why-uppora-card__picture
-                                    img(src="img/why-uppora-card-1@2x.jpg", alt="Обратная связь")
-                                .why-uppora-card__content
-                                    h3.why-uppora-card__title Обратная связь
-                                    .content.why-uppora-card__text
-                                        p Получайте вместе с донатами сообщения от пользователей, вступайте в переписку, используйте обратную связь и делитесь новостями чтобы двигаться вверх
-                        .row__col.row__col--4.why-uppora-list__col
-                            article.why-uppora-card.why-uppora-list__card
-                                picture.img-cover.why-uppora-card__picture
-                                    img(src="img/why-uppora-card-2.svg", alt="Детализация и статистика")
-                                .why-uppora-card__content
-                                    h3.why-uppora-card__title Детализация и статистика
-                                    .content.why-uppora-card__text
-                                        p В личном кабинете есть статистика о собранных донатах, посещениях и другие полезные данные, чтобы вы могли проанализировать эффективность
-                        .row__col.row__col--4.why-uppora-list__col
-                            article.why-uppora-card.why-uppora-list__card
-                                picture.img-cover.why-uppora-card__picture
-                                    img(src="img/why-uppora-card-3.svg", alt="Комиссия всего 1%")
-                                .why-uppora-card__content
-                                    h3.why-uppora-card__title Комиссия всего 1%
-                                    .content.why-uppora-card__text
-                                        p Вывести собранные средства можно в любой момент. Комиссия банка составляет всего 1%, а комиссия платформы полностью отсутствует
+            section.why-uppora
+                .container-large.why-uppora__container
+                    h2.section-title.why-uppora__title Почему <span class='text-accent'>Uppora</span>
+                    .why-uppora-list
+                        .row.why-uppora-list__row
+                            .row__col.row__col--4.why-uppora-list__col
+                                article.why-uppora-card.why-uppora-list__card
+                                    picture.img-cover.why-uppora-card__picture
+                                        img(src="img/why-uppora-card-1@2x.jpg", alt="Обратная связь")
+                                    .why-uppora-card__content
+                                        h3.why-uppora-card__title Обратная связь
+                                        .content.why-uppora-card__text
+                                            p Получайте вместе с донатами сообщения от пользователей, вступайте в переписку, используйте обратную связь и делитесь новостями чтобы двигаться вверх
+                            .row__col.row__col--4.why-uppora-list__col
+                                article.why-uppora-card.why-uppora-list__card
+                                    picture.img-cover.why-uppora-card__picture
+                                        img(src="img/why-uppora-card-2.svg", alt="Детализация и статистика")
+                                    .why-uppora-card__content
+                                        h3.why-uppora-card__title Детализация и статистика
+                                        .content.why-uppora-card__text
+                                            p В личном кабинете есть статистика о собранных донатах, посещениях и другие полезные данные, чтобы вы могли проанализировать эффективность
+                            .row__col.row__col--4.why-uppora-list__col
+                                article.why-uppora-card.why-uppora-list__card
+                                    picture.img-cover.why-uppora-card__picture
+                                        img(src="img/why-uppora-card-3.svg", alt="Комиссия всего 1%")
+                                    .why-uppora-card__content
+                                        h3.why-uppora-card__title Комиссия всего 1%
+                                        .content.why-uppora-card__text
+                                            p Вывести собранные средства можно в любой момент. Комиссия банка составляет всего 1%, а комиссия платформы полностью отсутствует
 
-        section.appeal-section
-            .container-large.appeal-section__container
-                .appeal-section__content
-                    h2.section-title.appeal-section__title Есть вопросы или пожелания?
-                    .content.appeal-section__text
-                        p Воспользуйтесь формой обратной связи, чтобы написать нам сообщение, или опубликуйте их в нашем блоге, чтобы обсудить с сообществом
-                    .group-btns.appeal-section__btns
-                        a(href="#").btn.btn--size-md.btn-green-accent.group-btns__item Написать сообщение
-                        a(href="#").btn.btn--size-md.btn-trp.group-btns__item Перейти в блог
+            section.appeal-section
+                .container-large.appeal-section__container
+                    .appeal-section__content
+                        h2.section-title.appeal-section__title Есть вопросы или пожелания?
+                        .content.appeal-section__text
+                            p Воспользуйтесь формой обратной связи, чтобы написать нам сообщение, или опубликуйте их в нашем блоге, чтобы обсудить с сообществом
+                        .group-btns.appeal-section__btns
+                            a(href="#").btn.btn--size-md.btn-green-accent.group-btns__item Написать сообщение
+                            a(href="#").btn.btn--size-md.btn-trp.group-btns__item Перейти в блог
 
-    include includes/footer.pug
+        include includes/footer.pug

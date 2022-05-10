@@ -1,36 +1,36 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body
+    body
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.d-page
-        section.d-donate
-            .container.d-donate__container
-                form(action="#").donate-form.donate-form--size-sm.d-donate__form
-                    .donate-form__header
-                        h1.donate-form__title Оплата по карте
-                    a(href="#").link-accent.donate-form__sublink Опыт развития форм деятельности
-                    .card-block
-                        label(for="donate-number").label-card-line.card-block__number
-                            p.label-card-line__title Номер Карты
-                            input(type="text", name="", id="donate-number", placeholder="ХХХХ ХХХХ ХХХХ ХХХХ").input-el.label-card-line__input
-                        .card-block__info
-                            label(for="donate-date-1").label-card-line.card-block__info-date
-                                p.label-card-line__title Срок действия
-                                .label-card-line__date
-                                    input(type="text", name="", id="donate-date-1", placeholder="MM").input-el.label-card-line__date-input
-                                    .label-card-line__date-divider /
-                                    input(type="text", name="", id="donate-date-2", placeholder="ГГ").input-el.label-card-line__date-input
-                            label(for="donate-cvv").label-card-line.card-block__info-cvv
-                                p.label-card-line__title Код
-                                input(type="text", name="", id="donate-cvv", placeholder="CVC").input-el.label-card-line__input
-                        button(type="submit").btn.btn--size-sm.btn-green.card-block__btn Оплатить 1000 ₽
-                    .donate-form__tinkoff-bank
-                        .donate-form__tinkoff-bank-text У нас нет доступа к данным вашей карты. Обработка платежа происходит на стороне банка Тинькофф
-                        img(src="img/tinkoff-logo.svg", alt="Тинькофф банк").donate-form__tinkoff-bank-logo
+        main.d-page
+            section.d-donate
+                .container.d-donate__container
+                    form(action="#").donate-form.donate-form--size-sm.d-donate__form
+                        .donate-form__header
+                            h1.donate-form__title Оплата по карте
+                        a(href="#").link-accent.donate-form__sublink Опыт развития форм деятельности
+                        .card-block
+                            label(for="donate-number").label-card-line.card-block__number
+                                p.label-card-line__title Номер Карты
+                                input(type="text", name="", id="donate-number", placeholder="ХХХХ ХХХХ ХХХХ ХХХХ").input-el.label-card-line__input
+                            .card-block__info
+                                label(for="donate-date-1").label-card-line.card-block__info-date
+                                    p.label-card-line__title Срок действия
+                                    .label-card-line__date
+                                        input(type="text", name="", id="donate-date-1", placeholder="MM").input-el.label-card-line__date-input
+                                        .label-card-line__date-divider /
+                                        input(type="text", name="", id="donate-date-2", placeholder="ГГ").input-el.label-card-line__date-input
+                                label(for="donate-cvv").label-card-line.card-block__info-cvv
+                                    p.label-card-line__title Код
+                                    input(type="text", name="", id="donate-cvv", placeholder="CVC").input-el.label-card-line__input
+                            button(type="submit").btn.btn--size-sm.btn-green.card-block__btn Оплатить 1000 ₽
+                        .donate-form__tinkoff-bank
+                            .donate-form__tinkoff-bank-text У нас нет доступа к данным вашей карты. Обработка платежа происходит на стороне банка Тинькофф
+                            img(src="img/tinkoff-logo.svg", alt="Тинькофф банк").donate-form__tinkoff-bank-logo
 
-    include includes/footer.pug
+        include includes/footer.pug

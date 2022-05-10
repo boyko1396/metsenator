@@ -1,94 +1,94 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body
+    body
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.settings.settings-profile
-        .container
-            .settings-wrap
+        main.settings.settings-profile
+            .container
+                .settings-wrap
 
-                .settings-tabs
-                    .settings-tabs-head
-                        .settings-tabs-img.setting-profile-img
-                            img(src="img/person.png", alt="")
-                        .settings-tabs-info
-                            .settings-tabs-info-top.settings-profile-name Илья Панов    
-                            .settings-tabs-info-bottom.settings-profile-email adress@website.com
-                    .settings-tabs-list
-                        .settings-tabs-tab Основное
-                        .settings-tabs-tab Безопасность
-                        .settings-tabs-tab Способ оплаты
-                        .settings-tabs-tab.active Уведомления
+                    .settings-tabs
+                        .settings-tabs-head
+                            .settings-tabs-img.setting-profile-img
+                                img(src="img/person.png", alt="")
+                            .settings-tabs-info
+                                .settings-tabs-info-top.settings-profile-name Илья Панов    
+                                .settings-tabs-info-bottom.settings-profile-email adress@website.com
+                        .settings-tabs-list
+                            .settings-tabs-tab Основное
+                            .settings-tabs-tab Безопасность
+                            .settings-tabs-tab Способ оплаты
+                            .settings-tabs-tab.active Уведомления
 
-                .settings-inner
-                    .settings-inner-ttl Уведомления
-                    .settings-inner-desc Вне зависимости от настроек, уведомления всегда будут доступны в меню шапки сайта
+                    .settings-inner
+                        .settings-inner-ttl Уведомления
+                        .settings-inner-desc Вне зависимости от настроек, уведомления всегда будут доступны в меню шапки сайта
 
-                    form.settings-inner-form.notice
-                    
-                        .settings-inner-form-group
-                            .settings-inner-subttl Где получать
-                            
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label На email
-                                .input-choise
-                                    input#profile-notice-email(type="checkbox", name="profile-notice-email")
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label В браузере
-                                .input-choise
-                                    input#profile-notice-browser(type="checkbox", name="profile-notice-browser", checked)
+                        form.settings-inner-form.notice
+                        
+                            .settings-inner-form-group
+                                .settings-inner-subttl Где получать
+                                
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label На email
+                                    .input-choise
+                                        input#profile-notice-email(type="checkbox", name="profile-notice-email")
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label В браузере
+                                    .input-choise
+                                        input#profile-notice-browser(type="checkbox", name="profile-notice-browser", checked)
 
 
-                        .settings-inner-form-group
-                            .settings-inner-subttl События
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label Ответы
-                                    .settings-inner-form-text На ваш комментарий ответили
-                                .input-choise
-                                    input#profile-answer(type="checkbox", name="profile-answer", checked)
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label Комментарии
-                                    .settings-inner-form-text новость вашего проекта прокоментировали
-                                .input-choise
-                                    input#profile-comment(type="checkbox", name="profile-comment", checked)
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label Донат
-                                    .settings-inner-form-text ваш проект получил донат
-                                .input-choise
-                                    input#profile-donat(type="checkbox", name="profile-donat", checked)
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label Ваш подписчик
-                                    .settings-inner-form-text у вас новый подписчик
-                                .input-choise
-                                    input#profile-subs(type="checkbox", name="profile-subs", checked)
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label Подписчик проекта
-                                    .settings-inner-form-text у вашего проекта новый подписчик
-                                .input-choise
-                                    input#profile-project-subs(type="checkbox", name="profile-project-subs", checked)
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label Запросы на подписку
-                                    .settings-inner-form-text отправлен запрос на подписку вашего закрытого проекта
-                                .input-choise
-                                    input#profile-sub-request(type="checkbox", name="profile-sub-request", checked)
-                            .input-group.input-group-choise
-                                .settings-inner-form-block
-                                    .settings-inner-form-label Системные уведомления
-                                    .settings-inner-form-text уведоления от администрации и службы поддержки
-                                .input-choise
-                                    input#profile-system(type="checkbox", name="profile-system", checked)
-                           
+                            .settings-inner-form-group
+                                .settings-inner-subttl События
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label Ответы
+                                        .settings-inner-form-text На ваш комментарий ответили
+                                    .input-choise
+                                        input#profile-answer(type="checkbox", name="profile-answer", checked)
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label Комментарии
+                                        .settings-inner-form-text новость вашего проекта прокоментировали
+                                    .input-choise
+                                        input#profile-comment(type="checkbox", name="profile-comment", checked)
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label Донат
+                                        .settings-inner-form-text ваш проект получил донат
+                                    .input-choise
+                                        input#profile-donat(type="checkbox", name="profile-donat", checked)
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label Ваш подписчик
+                                        .settings-inner-form-text у вас новый подписчик
+                                    .input-choise
+                                        input#profile-subs(type="checkbox", name="profile-subs", checked)
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label Подписчик проекта
+                                        .settings-inner-form-text у вашего проекта новый подписчик
+                                    .input-choise
+                                        input#profile-project-subs(type="checkbox", name="profile-project-subs", checked)
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label Запросы на подписку
+                                        .settings-inner-form-text отправлен запрос на подписку вашего закрытого проекта
+                                    .input-choise
+                                        input#profile-sub-request(type="checkbox", name="profile-sub-request", checked)
+                                .input-group.input-group-choise
+                                    .settings-inner-form-block
+                                        .settings-inner-form-label Системные уведомления
+                                        .settings-inner-form-text уведоления от администрации и службы поддержки
+                                    .input-choise
+                                        input#profile-system(type="checkbox", name="profile-system", checked)
+                               
 
-    include includes/footer.pug
+        include includes/footer.pug

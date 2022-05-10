@@ -1,155 +1,155 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body
+    body
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.a-about
-        .container-large.a-about__container
-            .a-about__inner
-                h1.a-about__title аппора: <span class='text-accent'>творческим людям</span>
-                .content.a-about__description
-                    p Платформа на которой люди находят друг друга, объединяют усилия, реализовывают важные проекты, рассказывают об этом и получают от общества  финансовую и информационную поддержку. Прозрачно и безопасно.
-            picture.img-cover.a-about__poster
-                img(src="img/a-about-img-1.jpg", alt="аппора: творческим людям")
-            section.a-about-info
-                .a-about-info__content
-                    h2.a-about-info__title О платформе
-                    .content.a-about-info__text
-                        p Мы собираем сообщество творческих предприимчивых людей – авторов проектов, и людей, которые хотят помогать рублем и словом проектам, которые им нравятся. Наша цель, превратить помощь и финансовую поддержку в привычку на уровне страны, создав для этого платформу, обеспечивающую прозрачность, безопасность и удобство взаимодействия авторов с аудиторией.
-                        p Наша миссия делать людей счастливее обеспечив стабильную работу платформы позволяющей помогать и поддерживать понравившиеся проекты, дав возможность проявляться себя, рассказать о своем проекте, развивать его, выражать свое отношение и не бояться быть обманутым.
-                .a-about-info__aside
-                    .card-badge-text.a-about-info__aside-card
-                        .card-badge-text__title Для прессы:
-                        .card-badge-text__contacts
-                            a(href="#") скачать пресс-релиз
-                    .card-badge-text.a-about-info__aside-card
-                        .card-badge-text__title Бренд:
-                        .card-badge-text__contacts
-                            a(href="#") скачать логотип
-                    .card-badge-text.a-about-info__aside-card
-                        .card-badge-text__title Сотрудничество:
-                        .card-badge-text__contacts
-                            a(href="mailto:42@uppora.org") 42@uppora.org
-            section.clients-info
-                .clients-info__aside
-                        .clients-info__aside-percent 70%
-                        .progress.clients-info__aside-progress
-                            span(style="width: 70%;")
-                .clients-info__content
-                    h2.clients-info__title пользователей в интернете, согласно статистики, воздерживаются от благоворительности и донатов из-за недоверия к существующими сервисам
-                    .content.clients-info__text
-                        p Люди не ощущают, что вносят вклад и не получают обратную связь от того кому помогли. <strong>Аппора</strong> – это не просто финансовая краундфайдинговая платформа. У нас есть гарант финансовой безопасности в лице Тинкофф Банка, полная прозрачность и аналитика. Благодаря инфраструктуре платформы авторы могут улучшать свои проекты и вносить вклад в развитие общества, а неравнодушные люди – открыто и безопасно благодарить, поддерживать и помогать.
-            section.a-about-company
-                h2.section-title.a-about-company__title Компаниям
-                .a-about-company__content
-                    ul.list-info.a-about-company__list
-                        li
-                            span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
-                            | Создайте проект от лица вашей компании или сообщества, разместите на него ссылку в соцсетях и пригласите аудиторию вас поддержать
-                        li
-                            span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
-                            | Общайтесь с подпичиками в блоге проекта и расскажите на что пойдут собранные средства
-                        li
-                            span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
-                            | Поддерживая другие проекты и создавая свои, вы повышаете уровень лояльности ваших клиентов, сокращая расходы на стандартную рекламу
-                    .group-btns.a-about-company__btns
-                        button(type="submit").btn.btn--size-md.btn-green-accent.group-btns__item Создать проект
-                        button(type="button").btn.btn--size-md.btn-trp.group-btns__item Посмотреть демо проект
-            section.news-section
-                .news-section__header
-                    h2.section-title.news-section__title Новости
-                    a(href="#").link-accent-simple.news-section__view-all Смотреть все
-                .news-list
-                    .row.news-list__row
-                        .row__col.row__col--4.news-list__col
-                            article.news-card.news-list__card
-                                picture.img-cover.news-card__picture
-                                    img(src="img/news-card-1.jpg", alt="Формирование дальнейших направлений развития")
-                                .news-card__content
-                                    h3.news-card__title
-                                        a(href="#").news-card__link Формирование дальнейших направлений развития
-                                    footer.news-card__footer
-                                        time.news-card__time 2 недели назад
-                        .row__col.row__col--4.news-list__col
-                            article.news-card.news-list__card
-                                picture.img-cover.news-card__picture
-                                    img(src="img/news-card-2.jpg", alt="Формирование дальнейших направлений развития")
-                                .news-card__content
-                                    h3.news-card__title
-                                        a(href="#").news-card__link Формирование дальнейших направлений развития
-                                    footer.news-card__footer
-                                        time.news-card__time 2 недели назад
-                        .row__col.row__col--4.news-list__col
-                            article.news-card.news-list__card
-                                picture.img-cover.news-card__picture
-                                    img(src="img/news-card-3.jpg", alt="Формирование дальнейших направлений развития")
-                                .news-card__content
-                                    h3.news-card__title
-                                        a(href="#").news-card__link Формирование дальнейших направлений развития
-                                    footer.news-card__footer
-                                        time.news-card__time 2 недели назад
-            section.team-section
-                h2.section-title.team-section__title Команда
-                .team-list
-                    .row.team-list__row
-                        .row__col.row__col--4.team-list__col
-                            article.team-card.team-list__card
-                                picture.img-cover.team-card__picture
-                                    img(src="img/team-card-1.jpg", alt="Илья Панов")
-                                .team-card__content
-                                    p.team-card__name
-                                        a(href="#").team-card__link Илья Панов
-                                    p.team-card__position CEO
-                                p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
-                        .row__col.row__col--4.team-list__col
-                            article.team-card.team-list__card
-                                picture.img-cover.team-card__picture
-                                    img(src="img/team-card-2.jpg", alt="Илья")
-                                .team-card__content
-                                    p.team-card__name
-                                        a(href="#").team-card__link Илья
-                                    p.team-card__position дизайн
-                                p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
-                        .row__col.row__col--4.team-list__col
-                            article.team-card.team-list__card
-                                picture.img-cover.team-card__picture
-                                    img(src="img/team-card-empty.jpg", alt="Дмитрий Щукин")
-                                .team-card__content
-                                    p.team-card__name
-                                        a(href="#").team-card__link Дмитрий Щукин
-                                    p.team-card__position разработка
-                                p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
-                        .row__col.row__col--4.team-list__col
-                            article.team-card.team-list__card
-                                picture.img-cover.team-card__picture
-                                    img(src="img/team-card-empty.jpg", alt="Маргарита Иванова")
-                                .team-card__content
-                                    p.team-card__name
-                                        a(href="#").team-card__link Маргарита Иванова
-                                    p.team-card__position PR агент
-                                p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
-                        .row__col.row__col--4.team-list__col
-                            article.team-card.team-list__card
-                                picture.img-cover.team-card__picture
-                                    img(src="img/team-card-empty.jpg", alt="Михаил Швецов")
-                                .team-card__content
-                                    p.team-card__name
-                                        a(href="#").team-card__link Михаил Швецов 
-                                    p.team-card__position юридические вопросы
-                                p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
-        section.appeal-section
-            .container-large.appeal-section__container
-                .appeal-section__content
-                    h2.section-title.appeal-section__title Есть вопросы или предложения?
-                    .content.appeal-section__text
-                        p Воспользуйтесь формой обратной связи или напишите блоге проекта
-                    .group-btns.appeal-section__btns
-                        a(href="#").btn.btn--size-md.btn-green-accent.group-btns__item Написать сообщение
-                        a(href="#").btn.btn--size-md.btn-trp.group-btns__item Перейти в блог
+        main.a-about
+            .container-large.a-about__container
+                .a-about__inner
+                    h1.a-about__title аппора: <span class='text-accent'>творческим людям</span>
+                    .content.a-about__description
+                        p Платформа на которой люди находят друг друга, объединяют усилия, реализовывают важные проекты, рассказывают об этом и получают от общества  финансовую и информационную поддержку. Прозрачно и безопасно.
+                picture.img-cover.a-about__poster
+                    img(src="img/a-about-img-1.jpg", alt="аппора: творческим людям")
+                section.a-about-info
+                    .a-about-info__content
+                        h2.a-about-info__title О платформе
+                        .content.a-about-info__text
+                            p Мы собираем сообщество творческих предприимчивых людей – авторов проектов, и людей, которые хотят помогать рублем и словом проектам, которые им нравятся. Наша цель, превратить помощь и финансовую поддержку в привычку на уровне страны, создав для этого платформу, обеспечивающую прозрачность, безопасность и удобство взаимодействия авторов с аудиторией.
+                            p Наша миссия делать людей счастливее обеспечив стабильную работу платформы позволяющей помогать и поддерживать понравившиеся проекты, дав возможность проявляться себя, рассказать о своем проекте, развивать его, выражать свое отношение и не бояться быть обманутым.
+                    .a-about-info__aside
+                        .card-badge-text.a-about-info__aside-card
+                            .card-badge-text__title Для прессы:
+                            .card-badge-text__contacts
+                                a(href="#") скачать пресс-релиз
+                        .card-badge-text.a-about-info__aside-card
+                            .card-badge-text__title Бренд:
+                            .card-badge-text__contacts
+                                a(href="#") скачать логотип
+                        .card-badge-text.a-about-info__aside-card
+                            .card-badge-text__title Сотрудничество:
+                            .card-badge-text__contacts
+                                a(href="mailto:42@uppora.org") 42@uppora.org
+                section.clients-info
+                    .clients-info__aside
+                            .clients-info__aside-percent 70%
+                            .progress.clients-info__aside-progress
+                                span(style="width: 70%;")
+                    .clients-info__content
+                        h2.clients-info__title пользователей в интернете, согласно статистики, воздерживаются от благоворительности и донатов из-за недоверия к существующими сервисам
+                        .content.clients-info__text
+                            p Люди не ощущают, что вносят вклад и не получают обратную связь от того кому помогли. <strong>Аппора</strong> – это не просто финансовая краундфайдинговая платформа. У нас есть гарант финансовой безопасности в лице Тинкофф Банка, полная прозрачность и аналитика. Благодаря инфраструктуре платформы авторы могут улучшать свои проекты и вносить вклад в развитие общества, а неравнодушные люди – открыто и безопасно благодарить, поддерживать и помогать.
+                section.a-about-company
+                    h2.section-title.a-about-company__title Компаниям
+                    .a-about-company__content
+                        ul.list-info.a-about-company__list
+                            li
+                                span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
+                                | Создайте проект от лица вашей компании или сообщества, разместите на него ссылку в соцсетях и пригласите аудиторию вас поддержать
+                            li
+                                span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
+                                | Общайтесь с подпичиками в блоге проекта и расскажите на что пойдут собранные средства
+                            li
+                                span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
+                                | Поддерживая другие проекты и создавая свои, вы повышаете уровень лояльности ваших клиентов, сокращая расходы на стандартную рекламу
+                        .group-btns.a-about-company__btns
+                            button(type="submit").btn.btn--size-md.btn-green-accent.group-btns__item Создать проект
+                            button(type="button").btn.btn--size-md.btn-trp.group-btns__item Посмотреть демо проект
+                section.news-section
+                    .news-section__header
+                        h2.section-title.news-section__title Новости
+                        a(href="#").link-accent-simple.news-section__view-all Смотреть все
+                    .news-list
+                        .row.news-list__row
+                            .row__col.row__col--4.news-list__col
+                                article.news-card.news-list__card
+                                    picture.img-cover.news-card__picture
+                                        img(src="img/news-card-1.jpg", alt="Формирование дальнейших направлений развития")
+                                    .news-card__content
+                                        h3.news-card__title
+                                            a(href="#").news-card__link Формирование дальнейших направлений развития
+                                        footer.news-card__footer
+                                            time.news-card__time 2 недели назад
+                            .row__col.row__col--4.news-list__col
+                                article.news-card.news-list__card
+                                    picture.img-cover.news-card__picture
+                                        img(src="img/news-card-2.jpg", alt="Формирование дальнейших направлений развития")
+                                    .news-card__content
+                                        h3.news-card__title
+                                            a(href="#").news-card__link Формирование дальнейших направлений развития
+                                        footer.news-card__footer
+                                            time.news-card__time 2 недели назад
+                            .row__col.row__col--4.news-list__col
+                                article.news-card.news-list__card
+                                    picture.img-cover.news-card__picture
+                                        img(src="img/news-card-3.jpg", alt="Формирование дальнейших направлений развития")
+                                    .news-card__content
+                                        h3.news-card__title
+                                            a(href="#").news-card__link Формирование дальнейших направлений развития
+                                        footer.news-card__footer
+                                            time.news-card__time 2 недели назад
+                section.team-section
+                    h2.section-title.team-section__title Команда
+                    .team-list
+                        .row.team-list__row
+                            .row__col.row__col--4.team-list__col
+                                article.team-card.team-list__card
+                                    picture.img-cover.team-card__picture
+                                        img(src="img/team-card-1.jpg", alt="Илья Панов")
+                                    .team-card__content
+                                        p.team-card__name
+                                            a(href="#").team-card__link Илья Панов
+                                        p.team-card__position CEO
+                                    p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
+                            .row__col.row__col--4.team-list__col
+                                article.team-card.team-list__card
+                                    picture.img-cover.team-card__picture
+                                        img(src="img/team-card-2.jpg", alt="Илья")
+                                    .team-card__content
+                                        p.team-card__name
+                                            a(href="#").team-card__link Илья
+                                        p.team-card__position дизайн
+                                    p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
+                            .row__col.row__col--4.team-list__col
+                                article.team-card.team-list__card
+                                    picture.img-cover.team-card__picture
+                                        img(src="img/team-card-empty.jpg", alt="Дмитрий Щукин")
+                                    .team-card__content
+                                        p.team-card__name
+                                            a(href="#").team-card__link Дмитрий Щукин
+                                        p.team-card__position разработка
+                                    p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
+                            .row__col.row__col--4.team-list__col
+                                article.team-card.team-list__card
+                                    picture.img-cover.team-card__picture
+                                        img(src="img/team-card-empty.jpg", alt="Маргарита Иванова")
+                                    .team-card__content
+                                        p.team-card__name
+                                            a(href="#").team-card__link Маргарита Иванова
+                                        p.team-card__position PR агент
+                                    p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
+                            .row__col.row__col--4.team-list__col
+                                article.team-card.team-list__card
+                                    picture.img-cover.team-card__picture
+                                        img(src="img/team-card-empty.jpg", alt="Михаил Швецов")
+                                    .team-card__content
+                                        p.team-card__name
+                                            a(href="#").team-card__link Михаил Швецов 
+                                        p.team-card__position юридические вопросы
+                                    p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
+            section.appeal-section
+                .container-large.appeal-section__container
+                    .appeal-section__content
+                        h2.section-title.appeal-section__title Есть вопросы или предложения?
+                        .content.appeal-section__text
+                            p Воспользуйтесь формой обратной связи или напишите блоге проекта
+                        .group-btns.appeal-section__btns
+                            a(href="#").btn.btn--size-md.btn-green-accent.group-btns__item Написать сообщение
+                            a(href="#").btn.btn--size-md.btn-trp.group-btns__item Перейти в блог
 
 
-    include includes/footer.pug
+        include includes/footer.pug

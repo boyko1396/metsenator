@@ -1,38 +1,38 @@
 doctype html
 html(lang='ru')
 
-include includes/head.pug
+    include includes/head.pug
 
-body
+    body
 
-    include includes/header.pug
+        include includes/header.pug
 
-    main.s-support
-        .s-support__inner
-            section.s-support-main
-                .container.s-support-main__container
-                    .s-support-main__header
-                        h1.support-title.s-support-main__title Служба поддержки
-                        a(href="#").btn.btn--size-sm.btn-green.s-support-main__header-btn Обратиться
-                    h2.s-support-main__subtitle Ваши обращения
-                    .s-support-list
-                        .support-card.s-support-list__item
-                            .support-card__content
-                                .support-card__title
-                                    a(href="support-5.html").support-card__link Вывод средств на карту
-                                time.support-card__date 5 марта 2022, 17:00
-                            .support-status.support-status--new.support-card__status Новое сообщение
-                        .support-card.s-support-list__item
-                            .support-card__content
-                                .support-card__title
-                                    a(href="support-5.html").support-card__link Создание проекта
-                                time.support-card__date 6 марта 2022, 17:00
-                            .support-status.support-status--closed.support-card__status Закрыто
-                        .support-card.s-support-list__item
-                            .support-card__content
-                                .support-card__title
-                                    a(href="support-5.html").support-card__link Работа платформы
-                                time.support-card__date 7 марта 2022, 17:00
-                            .support-status.support-status--closed.support-card__status Закрыто
+        main.s-support
+            .s-support__inner
+                section.s-support-main
+                    .container.s-support-main__container
+                        .s-support-main__header
+                            h1.support-title.s-support-main__title Служба поддержки
+                            a(href="#").btn.btn--size-sm.btn-green.s-support-main__header-btn Обратиться
+                        h2.s-support-main__subtitle Ваши обращения
+                        .s-support-list
+                            .support-card.s-support-list__item
+                                .support-card__content
+                                    .support-card__title
+                                        a(href="support-5.html").support-card__link Вывод средств на карту
+                                    time.support-card__date 5 марта 2022, 17:00
+                                .support-status.support-status--new.support-card__status Новое сообщение
+                            .support-card.s-support-list__item
+                                .support-card__content
+                                    .support-card__title
+                                        a(href="support-5.html").support-card__link Создание проекта
+                                    time.support-card__date 6 марта 2022, 17:00
+                                .support-status.support-status--closed.support-card__status Закрыто
+                            .support-card.s-support-list__item
+                                .support-card__content
+                                    .support-card__title
+                                        a(href="support-5.html").support-card__link Работа платформы
+                                    time.support-card__date 7 марта 2022, 17:00
+                                .support-status.support-status--closed.support-card__status Закрыто
 
-    include includes/footer.pug
+        include includes/footer.pug
