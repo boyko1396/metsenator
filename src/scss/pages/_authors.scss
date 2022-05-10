@@ -1,58 +1,3 @@
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-.u-icon {
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    color: inherit;
-    fill: currentColor;
-}
-
-.row {
-    margin: 0 -25px;
-    display: flex;
-    flex-wrap: wrap;
-
-    &__col {
-        max-width: 100%;
-        min-height: 1px;
-        padding: 0 24px;
-        flex: 1;
-
-        &--4 {
-            max-width: 33.333333333%;
-            flex-basis: 33.333333333%;
-        }
-
-        &--6 {
-            max-width: 50%;
-            flex-basis: 50%;
-        }
-    }
-}
-
-.text-accent {
-    color: $green3;
-}
-
-.img-cover {
-    display: block;
-    position: relative;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-    }
-}
-
 .tinkoff-bank {
     display: flex;
     align-items: center;
@@ -96,7 +41,9 @@
 }
 
 .authors-intro {
+    background: $blue-light;
     padding: 72px 0;
+    overflow: hidden;
 
     &__container {
     }
@@ -110,6 +57,8 @@
         }
 
         &--media {
+            margin-bottom: -72px;
+            align-self: flex-end;
         }
     }
 
@@ -146,16 +95,30 @@
     &__picture {
         margin-right: -134px;
         padding-bottom: 104.03%;
+        border-radius: 12px 12px 0 0;
         box-shadow: 0 8px 48px rgba(15,23,42,.15);
-        border-radius: 12px;
+        position: relative;
+        z-index: 0;
+
+        &:before {
+            background: linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(0,37,74,.02) 100%);
+            width: 100%;
+            height: 32px;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
 
         img {
+            object-position: center top;
         }
     }
 }
 
 .a-section-card {
-    padding: 58px 0;
+    padding: 130px 0 100px 0;
 
     &__container {
     }
@@ -207,14 +170,16 @@
     }
 
     &__inner {
+        background: $blue-light;
         margin-top: -76px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
+        border-radius: 16px;
     }
 
     &__content {
-        padding: 44px 24px 0 5.7%;
+        padding: 86px 24px 86px 5.7%;
         flex-grow: 1;
     }
 
@@ -234,8 +199,11 @@
 
     &__media {
         max-width: 381px;
-        margin-right: 10%;
+        margin: -44px 114px 0 0;
         flex: 0 0 33.8%;
+        align-self: flex-end;
+        position: relative;
+        z-index: 0;
     }
 
     &__btn {
@@ -246,8 +214,6 @@
     &__picture {
         display: block;
         user-select: none;
-        position: relative;
-        z-index: 0;
 
         img {
             width: 100%;
@@ -264,15 +230,15 @@
         height: 286px;
         content: '';
         position: absolute;
-        top: 41px;
-        right: -115px;
+        top: 44px;
+        right: -114px;
         pointer-events: none;
         z-index: -1;
     }
 }
 
 .why-uppora {
-    padding: 62px 0;
+    padding: 62px 0 140px;
 
     &__container {
     }
@@ -324,9 +290,26 @@
 }
 
 .appeal-section {
-    padding: 157px 0 196px;
+    max-width: 1138px;
+    margin: 0 auto 80px;
+    padding: 80px 0;
+    position: relative;
+    z-index: 0;
+
+    &:before {
+        background: $blue-light;
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 16px;
+        z-index: -1;
+    }
 
     &__content {
+        padding: 0 16px;
         text-align: center;
     }
 
@@ -344,183 +327,6 @@
 
     &__btns {
         justify-content: center;
-    }
-}
-
-.input-donate {
-    width: 100%;
-    padding: 2px 0;
-    display: block;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.4;
-    color: #000;
-    border: solid $gray-light;
-    border-width: 0 0 1px;
-    border-radius: 0;
-    outline: none;
-    -moz-appearance: textfield;
-    transition: all .4s;
-    transition-property: border-color;
-
-    &:hover,
-    &:focus {
-        outline: none;
-    }
-
-    &:hover {
-
-    }
-
-    &:focus {
-        
-    }
-
-    &::placeholder {
-        color: #E5E7EB;
-    }
-
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-}
-
-.input-el {
-    background: #fff;
-    width: 100%;
-    min-height: 44px;
-    padding: 10px 11px;
-    display: block;
-    font-size: 14px;
-    line-height: 1.6;
-    color: $darknes;
-    border: 1px solid $gray-light;
-    border-radius: 8px;
-    outline: none;
-    transition: all .4s;
-    transition-property: border-color;
-
-    &:hover,
-    &:focus {
-        outline: none;
-    }
-
-    &:hover {
-
-    }
-
-    &:focus {
-        
-    }
-
-    &--textarea {
-        max-width: 100%;
-        min-width: 100%;
-        resize: vertical;
-
-        &-size-md {
-            min-height: 110px;
-        }
-
-        &-size-lg {
-            min-height: 260px;
-        }
-    }
-
-    &--select {
-        background-position: right 11px center;
-        background-size: 24px;
-        background-repeat: no-repeat;
-        padding-right: 46px;
-        appearance: none;
-
-        &::-ms-expand {
-            display: none;
-        }
-    }
-}
-
-.input-block {
-    line-height: 1.5;
-
-    &__label {
-        display: block;
-    }
-
-    &__label-name {
-        margin: 0 0 12px;
-        display: block;
-        font-weight: 500;
-        font-size: 16px;
-    }
-
-    &__label-description {
-        margin: -8px 0 12px;
-        display: block;
-        font-size: 14px;
-        color: $gray;
-    }
-
-    &__add-link {
-        margin: 12px 0 0;
-    }
-
-    &__el {
-    }
-
-    &__textarea-wrapper {
-        position: relative;
-    }
-
-    &__textarea-counter {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.35;
-        color: #D1D5DB;
-        position: absolute;
-        right: 8px;
-        bottom: 8px;
-        pointer-events: none;
-    }
-
-    &__file {
-    }
-
-    &__label-radio {
-        margin: 0 0 12px;
-    }
-
-    &__label ~ .input-file--logo {
-        margin-top: 24px;
-    }
-
-    &__template-cards {
-        margin: 16px -8px;
-        padding-bottom: 16px;
-        display: flex;
-        flex-wrap: wrap;
-
-        &-item {
-            max-width: 100%;
-            padding: 8px;
-            flex: 1;
-
-            &--size-4 {
-                max-width: 33.3333333%;
-                flex-basis: 33.3333333%;
-            }
-        }
-    }
-
-    &__editor {
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
     }
 }
 
@@ -912,32 +718,6 @@
     }
 }
 
-.btn-close {
-    background: transparent;
-    width: 24px;
-    height: 24px;
-    font-size: 0;
-    color: #9CA3AF;
-    position: relative;
-    border: none;
-    border-radius: 0;
-    outline: none;
-    cursor: pointer;
-    transition: all .4s;
-    transition-property: color;
-
-    &:before {
-        content: '';
-        position: absolute;
-        inset: -6px;
-    }
-
-    svg {
-        width: 24px;
-        height: 24px;
-    }
-}
-
 .city-label {
     display: inline-flex;
     align-items: center;
@@ -1127,7 +907,7 @@
         justify-content: space-between;
     }
     &__content {
-        margin: 0 32px 0 0;
+        margin: 0 28px 0 0;
         font-size: 14px;
         line-height: 1.7;
         color: $dark-blue;
@@ -1139,8 +919,7 @@
         }
     }
     &__btn {
-        margin-right: 56px;
-        margin-left: -16px;
+        margin-right: 32px;
         display: inline-block;
         flex-shrink: 0;
         align-self: center;
@@ -1480,6 +1259,20 @@
     padding: 100px 0;
     display: flex;
     align-items: flex-start;
+    position: relative;
+    z-index: 0;
+
+    &:before {
+        background: $blue-light;
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: -80px;
+        bottom: 0;
+        left: -80px;
+        border-radius: 16px;
+        z-index: -1;
+    }
 
     &__aside {
         max-width: 320px;
@@ -1548,6 +1341,7 @@
     flex-grow: 1;
     font-size: 14px;
     color: $darknes;
+    overflow: clip;
 
     &__container {
     }
@@ -1709,6 +1503,20 @@
 
 .news-section {
     padding: 100px 0 120px;
+    position: relative;
+    z-index: 0;
+
+    &:before {
+        background: $blue-light;
+        width: 100vw;
+        height: 100%;
+        margin-left: -50vw;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+    }
 
     &__header {
         margin: -20px 0 40px;
@@ -2213,6 +2021,7 @@
             }
 
             &--media {
+                margin-bottom: -59px;
             }
         }
 
@@ -2328,6 +2137,11 @@
         padding-top: 50px;
         padding-bottom: 50px;
 
+        &:before {
+            border-radius: 0;
+            top: 0;
+        }
+
         &__aside {
             margin-right: 40px;
         }
@@ -2405,6 +2219,12 @@
 
     .appeal-section {
         padding: 80px 0;
+
+        &:before {
+            width: auto;
+            right: 16px;
+            left: 16px;
+        }
     }
 
     .team-list {
@@ -2492,7 +2312,7 @@
         }
 
         &__inner {
-            margin: 0 -24px;
+            margin: 0;
         }
 
         &__content {
@@ -2525,6 +2345,10 @@
 
         &__picture {
             max-width: 381px;
+        }
+
+        &__decor {
+            right: 0;
         }
     }
 
@@ -2706,6 +2530,7 @@
             }
 
             &--media {
+                margin-bottom: -32px;
             }
         }
 
@@ -2813,7 +2638,7 @@
             flex-basis: initial;
         }
         &__aside-title {
-            margin: 0 0 32px;
+            margin: 0 0 16px;
             font-weight: 600;
             font-size: 16px;
             text-align: center;
@@ -2831,6 +2656,9 @@
             font-size: 24px;
         }
         &__main-pager {
+            background: $blue-light;
+            margin: 0 -16px 32px;
+            padding: 14px 16px;
             justify-content: space-between;
             order: -1;
         }
@@ -2933,6 +2761,8 @@
     }
 
     .appeal-section {
+        margin-bottom: 60px;
+        padding: 60px 0;
 
         &__content {
         }
@@ -2957,6 +2787,7 @@
     }
 
     .a-section-card {
+        padding: 90px 0 60px;
 
         &__container {
         }
@@ -2985,20 +2816,29 @@
         }
 
         &__inner {
-            margin: 0 -6px;
+            margin: 0 -22px;
+            padding: 0 16px;
+            border-radius: 0;
         }
 
         &__content {
-            padding-right: 6px;
-            padding-left: 6px;
+            max-width: initial;
+            padding: 62px 6px;
+            flex: initial;
+            flex-grow: 1;
         }
 
         &__media {
+            max-width: initial;
+            margin-right: -10px;
             padding-right: 6px;
             padding-left: 6px;
+            flex: initial;
+            flex-shrink: 0;
         }
 
         &__picture {
+            max-width: 340px;
         }
 
         &__decor {
@@ -3060,7 +2900,7 @@
         &__picture {
             max-width: 100%;
             padding-bottom: 75%;
-            border-radius: 8px;
+            border-radius: 8px 8px 0 0;
 
             img {
             }
@@ -3305,6 +3145,7 @@
     }
 
     .appeal-section {
+        margin-bottom: 40px;
         padding: 40px 0;
 
         &__content {
@@ -3344,7 +3185,7 @@
     }
 
     .a-section-card {
-        padding: 10px 0;
+        padding: 40px 0;
 
         &__container {
         }
@@ -3367,6 +3208,7 @@
 
         &__media {
             max-width: 100%;
+            margin-bottom: -40px;
             flex-basis: 100%;
         }
 
@@ -3387,9 +3229,7 @@
 
         &__content {
             max-width: 100%;
-            padding-top: 0;
-            padding-bottom: 0;
-            margin-bottom: 32px;
+            padding: 40px 0 32px;
             flex-basis: 100%;
             text-align: center;
         }
@@ -3400,6 +3240,7 @@
 
         &__media {
             max-width: 100%;
+            margin-top: 0;
             flex-basis: 100%;
         }
 
@@ -3740,8 +3581,17 @@
     }
 
     .appeal-section {
+        margin-bottom: 0;
+
+        &:before {
+            right: 0;
+            left: 0;
+            border-radius: 0;
+        }
 
         &__content {
+            padding-right: 0;
+            padding-left: 0;
         }
 
         &__title {

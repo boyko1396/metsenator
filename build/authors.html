@@ -14,27 +14,61 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="header header-small">
-    <div class="container-large">
-      <div class="header-top">
-        <div class="header-top-left"><a class="header-logo" href="#"><img src="img/logo.svg" alt=""></a><a class="header-link" href="#">О платформе</a><a class="header-link" href="#">Проекты</a><a class="header-link" href="#">Авторам</a><a class="header-link" href="#">СМИ&nbsp;о&nbsp;нас</a><a class="header-link" href="#">Поддержка</a></div>
-        <div class="header-top-right">
-          <div class="header-search"> <img src="img/search.svg" alt=""></div>
-          <div class="header-alerts"> <img src="img/bell.svg" alt=""></div><a class="header-new btn btn-white" href="#">Создать проект				</a>
-          <div class="header-profile"> <img src="img/person.png" alt=""></div>
-        </div>
-        <div class="header-mobile">
-          <div class="header-mobile-search"> <img src="img/search.svg" alt=""></div>
-          <div class="header-mobile-alerts"> <img src="img/bell.svg" alt=""></div>
-        </div>
-        <form class="header-form">
-          <div class="input">
-            <input id="search" type="search" name="search" placeholder="Поиск...">
-            <div class="input-close"><img class="svg-inline" src="img/close.svg" alt=""></div>
-          </div>
+  <header class="header">
+    <div class="container-large header__container">
+      <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
+      <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
+      <div class="header__menu">
+        <nav class="header-nav header__nav" role="navigation">
+          <ul class="header-nav__list">
+            <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+          </ul>
+        </nav>
+        <button class="js-header-search btn-action header__btn-search" type="button">
+          <svg class="u-icon btn-action__icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <form class="header-search header__search" action="#">
+          <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
+          <button class="js-header-search btn-close header-search__close" type="button">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
         </form>
+      </div><a class="btn-action header__btn-login-mobile" href="#">
+        <svg class="u-icon btn-action__icon">
+          <use xlink:href="img/sprite.svg#login"></use>
+        </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
+    </div>
+    <div class="header-menu-mobile header__menu-mobile">
+      <div class="header-menu-mobile__inner">
+        <div class="header-menu-mobile__nav-list">
+          <ul class="header-menu-mobile__nav">
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
+          </ul>
+        </div>
+        <div class="js-language-select language-site header-menu-mobile__language">
+          <div class="language-site__current">
+            <div class="language-site__current-title">Русский</div>
+            <svg class="u-icon language-site__current-icon">
+              <use xlink:href="img/sprite.svg#arrow-down"></use>
+            </svg>
+          </div>
+          <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
+        </div>
+        <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
       </div>
     </div>
+    <div class="js-header-menu-mobile header__overlay-mobile"></div>
   </header>
   <main class="authors">
     <section class="authors-intro">
@@ -97,7 +131,7 @@
           <div class="row why-uppora-list__row">
             <div class="row__col row__col--4 why-uppora-list__col">
               <article class="why-uppora-card why-uppora-list__card">
-                <picture class="img-cover why-uppora-card__picture"><img src="img/why-uppora-card-1@2x.png" alt="Обратная связь"></picture>
+                <picture class="img-cover why-uppora-card__picture"><img src="img/why-uppora-card-1@2x.jpg" alt="Обратная связь"></picture>
                 <div class="why-uppora-card__content">
                   <h3 class="why-uppora-card__title">Обратная связь</h3>
                   <div class="content why-uppora-card__text">
@@ -139,7 +173,7 @@
           <div class="content appeal-section__text">
             <p>Воспользуйтесь формой обратной связи, чтобы написать нам сообщение, или опубликуйте их в нашем блоге, чтобы обсудить с сообществом</p>
           </div>
-          <div class="group-btns appeal-section__btns"><a class="btn btn--size-md btn-green-accent group-btns__item" href="#">Создать проект</a><a class="btn btn--size-md btn-trp group-btns__item" href="#">Посмотреть демо проект</a></div>
+          <div class="group-btns appeal-section__btns"><a class="btn btn--size-md btn-green-accent group-btns__item" href="#">Написать сообщение</a><a class="btn btn--size-md btn-trp group-btns__item" href="#">Перейти в блог</a></div>
         </div>
       </div>
     </section>

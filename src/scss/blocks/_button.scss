@@ -38,11 +38,15 @@
         background-color: $green3;
     }
 
-    &--size-md {
-        padding: 11px 28px;
+    &--size-lt {
+        padding: 3px 16px;
     }
 
     &--size-sm {
         padding: 9px 20px;
+    }
+
+    &--size-md {
+        padding: 11px 28px;
     }
 }

@@ -5,6 +5,10 @@ $(document).ready(function() {
     svgInline();
     showCommentInput();
     showHeaderSearch();
+    headerMobileMenu();
+    headerMobileLanguge();
+    headerProfileDropdown();
+    headerProfileToggle();
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -136,10 +140,41 @@ $(document).ready(function() {
         });
     } 
     
-    // Поиск в шапке
+    // header search show/hide
     function showHeaderSearch() {
-        $('.header-search, .header-mobile-search, .input-close').on('click', function() {
-            $('.header-form').toggle();
+        $('.js-header-search').on('click', function() {
+            $('.header__search').toggleClass('is-show');
+        });
+    }
+    
+    // header menu mobile show/hide
+    function headerMobileMenu() {
+        $('.js-header-menu-mobile, .js-header-dropdown-profile').on('click', function() {
+            $('body').toggleClass('is-hidden');
+            $('.header__menu-mobile, .header__overlay-mobile').toggleClass('is-show');
+        });
+    }
+    
+    // header langugage mobile show/hide
+    function headerMobileLanguge() {
+        $('.js-language-select').on('click', function() {
+            $(this).toggleClass('is-active');
+        });
+    }
+    
+    // header profile dropdown show/hide
+    function headerProfileDropdown() {
+        $('.js-header-dropdown-profile').on('click', function() {
+            $('.header__profile-dropdown').toggleClass('is-show');
+        });
+    }
+    
+    // header profile toggle show/hide
+    function headerProfileToggle() {
+        $('.user-profile.user-profile--is-active').on('click', function(e) {
+            $(this).toggleClass('user-profile--is-toggle');
+            $('.user-profile:not(.user-profile--is-active)').toggleClass('user-profile--is-visible');
+            e.preventDefault();
         });
     }
 });

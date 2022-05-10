@@ -80,6 +80,29 @@
     }
 }
 
+.profile-header {
+    overflow: hidden;
+    &__poster {
+        padding-bottom: 18.75%;
+        user-select: none;
+    }
+    &__container {
+    }
+    &__inner {
+        margin: -64px 0 40px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__card {
+        margin-right: 20px;
+    }
+    &__btn-subscribe {
+        margin: 0 0 3px auto;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .profile {
 

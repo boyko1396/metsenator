@@ -15,48 +15,186 @@
 </head>
 <body id="myProfile">
   <header class="header">
-    <div class="header-top">
-      <div class="header-top-left"><a class="header-logo" href="#"><img src="img/logo.png" alt=""></a><a class="header-about" href="#">О платформе</a></div>
-      <div class="header-top-right"><a class="header-new btn btn-white" href="#">Создание проекта</a>
-        <div class="header-alerts"> <img src="img/bell.svg" alt=""></div>
-        <div class="header-profile"> </div>
-      </div>
-      <div class="header-alerts header-alerts-mobile"> <img src="img/bell.svg" alt=""></div>
-    </div>
-    <div class="header-middle isEmpty">
-      <div class="header-middle-edit"> <img src="img/edit.svg" alt=""></div>
-    </div>
-    <div class="header-bottom"> 
-      <div class="container"> 
-        <div class="header-bottom-wrap"> 
-          <div class="header-info">
-            <div class="popup-avatar">
-              <form class="popup-avatar-wrap" id="avatar"> 
-                <div class="popup-avatar-header"> 
-                  <div class="popup-avatar-ttl">Фото профиля</div>
-                  <div class="popup-avatar-close"><img src="img/close.svg" alt=""></div>
-                </div>
-                <div class="popup-avatar-close-desctop"> <img src="img/close-w.svg" alt=""></div>
-                <div class="popup-avatar-img"><img src="img/person-edit.jpg" alt=""></div>
-                <div class="popup-avatar-footer">
-                  <div class="popup-avatar-input">
-                    <input id="avatar-input" type="file" name="avatar-input">
-                    <label for="avatar-input">Загрузить</label>
-                  </div>
-                  <button class="popup-avatar-btn" type="submit">Сохранить     </button>
-                </div>
-              </form>
+    <div class="container-large header__container">
+      <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
+      <div class="header__menu">
+        <nav class="header-nav header__nav" role="navigation">
+          <ul class="header-nav__list">
+            <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+          </ul>
+        </nav>
+        <button class="js-header-search btn-action header__btn-search" type="button">
+          <svg class="u-icon btn-action__icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <form class="header-search header__search" action="#">
+          <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
+          <button class="js-header-search btn-close header-search__close" type="button">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </form>
+      </div><a class="btn-action header__btn-notification" href="#">
+        <svg class="u-icon btn-action__icon">
+          <use xlink:href="img/sprite.svg#notification"></use>
+        </svg></a><a class="btn btn-trp btn--size-lt header__btn-create-project" href="#">Создать проект</a>
+      <div class="header__profile">
+        <div class="header__profile-header">
+          <picture class="js-header-dropdown-profile img-cover header__profile-avatar"><img src="img/person.png" alt=""></picture>
+        </div>
+        <div class="profile-dropdown header__profile-dropdown">
+          <div class="profile-dropdown__user-list">
+            <div class="user-profile user-profile--is-active profile-dropdown__user-list-item">
+              <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+              <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Илья Панов</a>
+                <div class="text-overflow user-profile__content-email">email@website.com</div>
+              </div>
+              <div class="user-profile__icon-wrap">
+                <svg class="u-icon user-profile__icon user-profile__icon--active">
+                  <use xlink:href="img/sprite.svg#checked"></use>
+                </svg>
+                <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
             </div>
-            <div class="header-info-photo"></div>
-            <div class="header-info-block"> 
-              <div class="header-info-name">Алексей Иванов	</div>
-              <div class="header-info-subs"> <span class="header-info-subs-num">0&nbsp;</span><span>подписчиков</span></div>
+            <div class="user-profile profile-dropdown__user-list-item">
+              <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+              <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Александр Смирнов</a>
+                <div class="text-overflow user-profile__content-email">email@site.com</div>
+              </div>
+              <div class="user-profile__icon-wrap">
+                <svg class="u-icon user-profile__icon user-profile__icon--active">
+                  <use xlink:href="img/sprite.svg#checked"></use>
+                </svg>
+                <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
             </div>
-          </div><a class="header-subscribe btn btn-white" href="#">Редактировать	</a>
+          </div>
+          <div class="profile-dropdown__nav-wrap">
+            <ul class="profile-dropdown__nav">
+              <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Профиль</a></li>
+              <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link is-active" href="#">Настройки</a></li>
+            </ul>
+            <ul class="profile-dropdown__nav">
+              <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Добавить аккаунт</a></li>
+              <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Выйти</a></li>
+            </ul>
+          </div>
+          <div class="js-header-dropdown-profile profile-dropdown__overlay"></div>
         </div>
       </div>
     </div>
+    <div class="header-menu-mobile header__menu-mobile">
+      <div class="header-menu-mobile__inner">
+        <div class="header-menu-mobile__user-list">
+          <div class="user-profile user-profile--is-active header-menu-mobile__user-list-item">
+            <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+            <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Илья Панов</a>
+              <div class="text-overflow user-profile__content-email">email@website.com</div>
+            </div>
+            <div class="user-profile__icon-wrap">
+              <svg class="u-icon user-profile__icon user-profile__icon--active">
+                <use xlink:href="img/sprite.svg#checked"></use>
+              </svg>
+              <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="user-profile header-menu-mobile__user-list-item">
+            <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+            <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Александр Смирнов</a>
+              <div class="text-overflow user-profile__content-email">email@site.com</div>
+            </div>
+            <div class="user-profile__icon-wrap">
+              <svg class="u-icon user-profile__icon user-profile__icon--active">
+                <use xlink:href="img/sprite.svg#checked"></use>
+              </svg>
+              <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header-menu-mobile__nav-list">
+          <ul class="header-menu-mobile__nav">
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Профиль</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Настройки</a></li>
+          </ul>
+          <ul class="header-menu-mobile__nav">
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Ответы на вопросы</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link header-menu-mobile__nav-link--accent" href="#">Создать проект
+                <svg class="u-icon header-menu-mobile__nav-link-plus">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg></a></li>
+          </ul>
+          <ul class="header-menu-mobile__nav">
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Добавить аккаунт</a></li>
+            <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Выйти</a></li>
+          </ul>
+        </div>
+        <div class="js-language-select language-site header-menu-mobile__language">
+          <div class="language-site__current">
+            <div class="language-site__current-title">Русский</div>
+            <svg class="u-icon language-site__current-icon">
+              <use xlink:href="img/sprite.svg#arrow-down"></use>
+            </svg>
+          </div>
+          <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
+        </div>
+        <div class="header-menu-mobile__footer"><a class="header-menu-mobile__footer-link" href="#">Правовые документы</a>
+          <div class="header-menu-mobile__footer-copyright">© 2022 Uppora</div>
+        </div>
+      </div>
+    </div>
+    <div class="js-header-menu-mobile header__overlay-mobile"></div>
   </header>
+  <div class="header-middle isEmpty">
+    <div class="header-middle-edit"> <img src="img/edit.svg" alt=""></div>
+  </div>
+  <div class="header-bottom"> 
+    <div class="container"> 
+      <div class="header-bottom-wrap"> 
+        <div class="header-info">
+          <div class="popup-avatar">
+            <form class="popup-avatar-wrap" id="avatar"> 
+              <div class="popup-avatar-header"> 
+                <div class="popup-avatar-ttl">Фото профиля</div>
+                <div class="popup-avatar-close"><img src="img/close.svg" alt=""></div>
+              </div>
+              <div class="popup-avatar-close-desctop"> <img src="img/close-w.svg" alt=""></div>
+              <div class="popup-avatar-img"><img src="img/person-edit.jpg" alt=""></div>
+              <div class="popup-avatar-footer">
+                <div class="popup-avatar-input">
+                  <input id="avatar-input" type="file" name="avatar-input">
+                  <label for="avatar-input">Загрузить</label>
+                </div>
+                <button class="popup-avatar-btn" type="submit">Сохранить     </button>
+              </div>
+            </form>
+          </div>
+          <div class="header-info-photo"></div>
+          <div class="header-info-block"> 
+            <div class="header-info-name">Алексей Иванов    </div>
+            <div class="header-info-subs"> <span class="header-info-subs-num">0&nbsp;</span><span>подписчиков</span></div>
+          </div>
+        </div><a class="header-subscribe btn btn-white" href="#">Редактировать</a>
+      </div>
+    </div>
+  </div>
   <main class="profile"> 
     <div class="container"> 
       <div class="profile-wrap">

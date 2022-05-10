@@ -1,357 +1,392 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Меценатор</title>
-  <!--link(rel='icon', href='favicon.ico')-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="header header-small">
-    <div class="container-large">
-      <div class="header-top">
-        <div class="header-top-left"><a class="header-logo" href="#"><img src="img/logo.svg" alt=""></a><a class="header-link" href="#">О платформе</a><a class="header-link" href="#">Проекты</a><a class="header-link" href="#">Авторам</a><a class="header-link" href="#">СМИ&nbsp;о&nbsp;нас</a><a class="header-link" href="#">Поддержка</a></div>
-        <div class="header-top-right">
-          <div class="header-search"> <img src="img/search.svg" alt=""></div>
-          <div class="header-alerts"> <img src="img/bell.svg" alt=""></div><a class="header-new btn btn-white" href="#">Создать проект				</a>
-          <div class="header-profile"> <img src="img/person.png" alt=""></div>
-        </div>
-        <div class="header-mobile">
-          <div class="header-mobile-search"> <img src="img/search.svg" alt=""></div>
-          <div class="header-mobile-alerts"> <img src="img/bell.svg" alt=""></div>
-        </div>
-        <form class="header-form">
-          <div class="input">
-            <input id="search" type="search" name="search" placeholder="Поиск...">
-            <div class="input-close"><img class="svg-inline" src="img/close.svg" alt=""></div>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Меценатор</title>
+    <!--link(rel='icon', href='favicon.ico')-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-large header__container">
+        <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
+        <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
+        <div class="header__menu">
+          <nav class="header-nav header__nav" role="navigation">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+            </ul>
+          </nav>
+          <button class="js-header-search btn-action header__btn-search" type="button">
+            <svg class="u-icon btn-action__icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <form class="header-search header__search" action="#">
+            <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
+            <button class="js-header-search btn-close header-search__close" type="button">
+              <svg class="u-icon btn-close__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div><a class="btn-action header__btn-login-mobile" href="#">
+          <svg class="u-icon btn-action__icon">
+            <use xlink:href="img/sprite.svg#login"></use>
+          </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
+      </div>
+      <div class="header-menu-mobile header__menu-mobile">
+        <div class="header-menu-mobile__inner">
+          <div class="header-menu-mobile__nav-list">
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
+            </ul>
           </div>
+          <div class="js-language-select language-site header-menu-mobile__language">
+            <div class="language-site__current">
+              <div class="language-site__current-title">Русский</div>
+              <svg class="u-icon language-site__current-icon">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
+          </div>
+          <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
+        </div>
+      </div>
+      <div class="js-header-menu-mobile header__overlay-mobile"></div>
+    </header>
+    <main class="home">
+      <section class="home-main"> 
+        <div class="container-large"> 
+          <div class="home-main-grid">
+            <div class="home-main-info">
+              <div class="home-main-info-ttl">Платформа финансовой поддержки и&nbsp;общения</div>
+              <div class="home-main-info-subttl">Для тех кто донатит и тех, кто собирает донаты. Поддержите движение вверх интересных людей и проектов.</div>
+              <div class="home-main-buttons"><a class="home-main-registration btn btn-green" href="#">Стать Аппорой</a><a class="home-main-about" href="#">Подробнее о проекте</a></div>
+            </div>
+            <div class="home-main-video">
+              <div class="home-main-video-wrap">
+                <iframe src="https://www.youtube.com/embed/X8Z8okhkjv8" frameborder="0"> </iframe>
+              </div>
+            </div>
+            <div class="home-main-bank">
+              <div class="home-main-bank-logo"><img src="img/tinkoff.png" alt=""></div>
+              <div class="home-main-bank-desc">Безопасность и надежность всех финансовых операций гарантирует Тинькофф Банк</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-section home-easy">
+        <div class="container-large">
+          <div class="home-section-head">
+            <div class="home-section-ttl">Удобно и безопасно</div>
+          </div>
+        </div>
+        <div class="home-easy-wrap">
+          <div class="home-easy-item">
+            <div class="home-easy-item-icon"><img src="img/home-cards.svg" alt=""></div>
+            <div class="home-easy-item-ttl">Никаких ограничений</div>
+            <div class="home-easy-item-text">Наше основное отличие – отсутствие каких либо ограничений на сумму которую вы можете собрать за проект</div>
+          </div>
+          <div class="home-easy-item">
+            <div class="home-easy-item-icon"><img src="img/home-lock.svg" alt=""></div>
+            <div class="home-easy-item-ttl">Защита платежей</div>
+            <div class="home-easy-item-text">Введите данные карты и отправьте донат в пару кликов. Тинькофф банк гарантирует безопасность платежей</div>
+          </div>
+          <div class="home-easy-item">
+            <div class="home-easy-item-icon"><img src="img/home-circle.svg" alt=""></div>
+            <div class="home-easy-item-ttl">Без скрытых комиссий</div>
+            <div class="home-easy-item-text">Вы платите только банку за перевод и больше никаких сервисных сборов и платежей</div>
+          </div>
+        </div>
+      </section>
+      <section class="home-how">
+        <div class="container-large">
+          <div class="home-how-wrap">
+            <div class="home-how-img"><img src="img/post.jpg" alt=""></div>
+            <div class="home-how-info">
+              <div class="home-how-info-block">
+                <div class="home-how-info-block-ttl">Прозрачность</div>
+                <div class="home-how-info-block-text">Донатьте любому проекту или создайте свой. В профиле и карточке проекта сохраняется вся статистика донатов и сборов</div>
+              </div>
+              <div class="home-how-info-block">
+                <div class="home-how-info-block-ttl">Открыто или анонимно</div>
+                <div class="home-how-info-block-text">Донатить анонимно или с гордостью делиться информацией в личном профиле – степень открытости выбираете именно вы</div>
+              </div>
+              <div class="home-how-info-block">
+                <div class="home-how-info-block-ttl">Новый формат общения</div>
+                <div class="home-how-info-block-text">Вместе с донатом можно написать сообщение автору и получить ответ. Обратная связь не менее ценна, чем сам донат</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-section home-projects">
+        <div class="container-large">
+          <div class="home-section-head">
+            <div class="home-section-ttl">Проекты</div><a class="home-section-link" href="#">Смотреть все</a>
+          </div>
+        </div>
+        <div class="home-projects-slider-container">
+          <div class="home-projects-slider swiper">
+            <div class="home-projects-wrap swiper-wrapper">
+              <div class="home-projects-item swiper-slide">
+                <div class="home-projects-item-head">
+                  <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
+                  <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
+                </div>
+                <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
+                <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
+                <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
+                <div class="home-projects-item-info">
+                  <div class="home-projects-item-date">2 недели назад</div>
+                  <div class="home-projects-item-city">
+                    <div class="home-projects-item-city-mark" style="background-image: url(../img/spot.svg)"></div>Сургут
+                  </div>
+                </div>
+              </div>
+              <div class="home-projects-item swiper-slide">
+                <div class="home-projects-item-head">
+                  <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
+                  <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
+                </div>
+                <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
+                <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
+                <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
+                <div class="home-projects-item-info">
+                  <div class="home-projects-item-date">2 недели назад</div>
+                  <div class="home-projects-item-city">
+                    <div class="home-projects-item-city-mark" style="background-image: url(../img/spot.svg)"></div>Сургут
+                  </div>
+                </div>
+              </div>
+              <div class="home-projects-item swiper-slide">
+                <div class="home-projects-item-head">
+                  <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
+                  <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
+                </div>
+                <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
+                <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
+                <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
+                <div class="home-projects-item-info">
+                  <div class="home-projects-item-date">2 недели назад</div>
+                  <div class="home-projects-item-city">
+                    <div class="home-projects-item-city-mark" style="background-image: url(../img/spot.svg)"></div>Сургут
+                  </div>
+                </div>
+              </div>
+              <div class="home-projects-item swiper-slide">
+                <div class="home-projects-item-head">
+                  <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
+                  <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
+                </div>
+                <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
+                <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
+                <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
+                <div class="home-projects-item-info">
+                  <div class="home-projects-item-date">2 недели назад</div>
+                  <div class="home-projects-item-city">Сургут </div>
+                </div>
+              </div>
+              <div class="home-projects-item swiper-slide">
+                <div class="home-projects-item-head">
+                  <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
+                  <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
+                </div>
+                <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
+                <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
+                <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
+                <div class="home-projects-item-info">
+                  <div class="home-projects-item-date">2 недели назад</div>
+                  <div class="home-projects-item-city">Сургут </div>
+                </div>
+              </div>
+              <div class="home-projects-item swiper-slide">
+                <div class="home-projects-item-head">
+                  <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
+                  <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
+                </div>
+                <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
+                <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
+                <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
+                <div class="home-projects-item-info">
+                  <div class="home-projects-item-date">2 недели назад</div>
+                  <div class="home-projects-item-city">Сургут </div>
+                </div>
+              </div>
+              <div class="home-projects-item swiper-slide">
+                <div class="home-projects-item-head">
+                  <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
+                  <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
+                </div>
+                <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
+                <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
+                <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
+                <div class="home-projects-item-info">
+                  <div class="home-projects-item-date">2 недели назад</div>
+                  <div class="home-projects-item-city">Сургут </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-projects-pagination swiper-pagination"> </div>
+          <div class="home-projects-button-prev"><img src="img/prev.svg" alt=""></div>
+          <div class="home-projects-button-next"><img src="img/next.svg" alt=""></div>
+        </div>
+      </section>
+      <section class="home-interest"> 
+        <div class="container-large">
+          <div class="home-interest-inner" style="background-image: url(../img/u.png)">
+            <div class="home-interest-info">
+              <div class="home-interest-info-ttl">Есть интересный проект?</div>
+              <div class="home-interest-info-subttl">Предложите своей аудитории поддержать вас и получайте донаты и обратную связь</div>
+              <div class="home-interest-buttons"><a class="home-interest-create btn btn-green" href="#">Создать проект </a><a class="home-interest-about" href="#">Узнать подробности </a></div>
+            </div>
+            <div class="home-interest-img"><img src="img/cards.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-main">
+      <div class="container-large">
+        <div class="footer-main-head"> 
+          <div class="footer-main-logo"><img src="img/logo-light.svg" alt=""></div>
+        </div>
+        <div class="footer-main-inner"> 
+          <div class="footer-main-inner-info">
+            <div class="footer-main-inner-text">Мы не получаем прибыль за денежные переводы. Со всех операций взимается только комиссия банка. Будем рады если вы поддержите наш проект.</div><a class="footer-main-inner-button btn btn-green" href="#"><img src="img/upp-w.svg" alt=""><span>Поддержать проект</span></a>
+          </div>
+          <div class="footer-main-inner-media">
+            <div class="footer-main-inner-links"><a class="footer-main-inner-link" href="#">О&nbsp;платформе</a><a class="footer-main-inner-link" href="#">Проекты</a><a class="footer-main-inner-link" href="#">Авторам</a><a class="footer-main-inner-link" href="#">СМИ&nbsp;о&nbsp;нас</a><a class="footer-main-inner-link" href="#">Поддержка</a></div>
+            <div class="footer-main-inner-social"><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/upp-g.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/vk.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/twit.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/star.svg" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main-bottom">
+        <div class="container-large">
+          <div class="footer-main-bottom-wrap"> 
+            <div class="footer-main-bottom-copyrights">© 2022 Uppora	</div>
+            <div class="footer-main-bottom-block">
+              <div class="footer-main-bottom-lang">Русский</div>
+              <div class="footer-main-bottom-divider"></div><a class="footer-main-bottom-docs" href="#">Правовые документы</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup-profile">
+      <div class="popup-profile-wrap">
+        <div class="popup-profile-section">
+          <div class="popup-profile-user"> 
+            <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
+            <div class="popup-profile-user-info"> 
+              <div class="popup-profile-user-name">Илья Панов</div>
+              <div class="popup-profile-user-email">email@website.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
+        <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
+        <div class="popup-profile-section popup-profile-section-bottom">
+          <div class="popup-profile-lang">Русский</div>
+          <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
+            <div class="popup-profile-copyrights">© 2022 Uppora</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-subs"> 
+      <div class="popup-subs-wrap">
+        <div class="popup-subs-header">
+          <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
+          <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
+          <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
+        </div>
+        <div class="popup-subs-list"> 
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
+              <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-cover"> 
+      <div class="popup-cover-wrap">
+        <form class="popup-cover-header">
+          <div class="popup-cover-ttl">Обложка профиля</div>
+          <div class="popup-cover-buttons"> 
+            <div class="popup-cover-delete">Удалить</div>
+            <div class="popup-cover-input">
+              <input id="cover-input" type="file" name="cover-input">
+              <label class="btn btn-white" for="cover-input">Загрузить</label>
+            </div>
+          </div>
+          <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
         </form>
-      </div>
-    </div>
-  </header>
-  <main class="home">
-    <section class="home-main"> 
-      <div class="container-large"> 
-        <div class="home-main-grid">
-          <div class="home-main-info">
-            <div class="home-main-info-ttl">Платформа финансовой поддержки и&nbsp;общения</div>
-            <div class="home-main-info-subttl">Для тех кто донатит и тех, кто собирает донаты. Поддержите движение вверх интересных людей и проектов.</div>
-            <div class="home-main-buttons"><a class="home-main-registration btn btn-green" href="#">Стать Аппорой</a><a class="home-main-about" href="#">Подробнее о проекте</a></div>
-          </div>
-          <div class="home-main-video">
-            <div class="home-main-video-wrap">
-              <iframe src="https://www.youtube.com/embed/X8Z8okhkjv8" frameborder="0"> </iframe>
-            </div>
-          </div>
-          <div class="home-main-bank">
-            <div class="home-main-bank-logo"><img src="img/tinkoff.png" alt=""></div>
-            <div class="home-main-bank-desc">Безопасность и надежность всех финансовых операций гарантирует Тинькофф Банк</div>
-          </div>
+        <div class="popup-cover-grid"> 
+          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
         </div>
-      </div>
-    </section>
-    <section class="home-section home-easy">
-      <div class="container-large">
-        <div class="home-section-head">
-          <div class="home-section-ttl">Удобно и безопасно</div>
-        </div>
-      </div>
-      <div class="home-easy-wrap">
-        <div class="home-easy-item">
-          <div class="home-easy-item-icon"><img src="img/home-cards.svg" alt=""></div>
-          <div class="home-easy-item-ttl">Никаких ограничений</div>
-          <div class="home-easy-item-text">Наше основное отличие – отсутствие каких либо ограничений на сумму которую вы можете собрать за проект</div>
-        </div>
-        <div class="home-easy-item">
-          <div class="home-easy-item-icon"><img src="img/home-lock.svg" alt=""></div>
-          <div class="home-easy-item-ttl">Защита платежей</div>
-          <div class="home-easy-item-text">Введите данные карты и отправьте донат в пару кликов. Тинькофф банк гарантирует безопасность платежей</div>
-        </div>
-        <div class="home-easy-item">
-          <div class="home-easy-item-icon"><img src="img/home-circle.svg" alt=""></div>
-          <div class="home-easy-item-ttl">Без скрытых комиссий</div>
-          <div class="home-easy-item-text">Вы платите только банку за перевод и больше никаких сервисных сборов и платежей</div>
-        </div>
-      </div>
-    </section>
-    <section class="home-how">
-      <div class="container-large">
-        <div class="home-how-wrap">
-          <div class="home-how-img"><img src="img/post.jpg" alt=""></div>
-          <div class="home-how-info">
-            <div class="home-how-info-block">
-              <div class="home-how-info-block-ttl">Прозрачность</div>
-              <div class="home-how-info-block-text">Донатьте любому проекту или создайте свой. В профиле и карточке проекта сохраняется вся статистика донатов и сборов</div>
-            </div>
-            <div class="home-how-info-block">
-              <div class="home-how-info-block-ttl">Открыто или анонимно</div>
-              <div class="home-how-info-block-text">Донатить анонимно или с гордостью делиться информацией в личном профиле – степень открытости выбираете именно вы</div>
-            </div>
-            <div class="home-how-info-block">
-              <div class="home-how-info-block-ttl">Новый формат общения</div>
-              <div class="home-how-info-block-text">Вместе с донатом можно написать сообщение автору и получить ответ. Обратная связь не менее ценна, чем сам донат</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="home-section home-projects">
-      <div class="container-large">
-        <div class="home-section-head">
-          <div class="home-section-ttl">Проекты</div><a class="home-section-link" href="#">Смотреть все</a>
-        </div>
-      </div>
-      <div class="home-projects-slider-container">
-        <div class="home-projects-slider swiper">
-          <div class="home-projects-wrap swiper-wrapper">
-            <div class="home-projects-item swiper-slide">
-              <div class="home-projects-item-head">
-                <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
-                <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
-              </div>
-              <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
-              <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
-              <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
-              <div class="home-projects-item-info">
-                <div class="home-projects-item-date">2 недели назад</div>
-                <div class="home-projects-item-city">
-                  <div class="home-projects-item-city-mark" style="background-image: url(../img/spot.svg)"></div>Сургут
-                </div>
-              </div>
-            </div>
-            <div class="home-projects-item swiper-slide">
-              <div class="home-projects-item-head">
-                <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
-                <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
-              </div>
-              <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
-              <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
-              <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
-              <div class="home-projects-item-info">
-                <div class="home-projects-item-date">2 недели назад</div>
-                <div class="home-projects-item-city">
-                  <div class="home-projects-item-city-mark" style="background-image: url(../img/spot.svg)"></div>Сургут
-                </div>
-              </div>
-            </div>
-            <div class="home-projects-item swiper-slide">
-              <div class="home-projects-item-head">
-                <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
-                <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
-              </div>
-              <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
-              <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
-              <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
-              <div class="home-projects-item-info">
-                <div class="home-projects-item-date">2 недели назад</div>
-                <div class="home-projects-item-city">
-                  <div class="home-projects-item-city-mark" style="background-image: url(../img/spot.svg)"></div>Сургут
-                </div>
-              </div>
-            </div>
-            <div class="home-projects-item swiper-slide">
-              <div class="home-projects-item-head">
-                <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
-                <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
-              </div>
-              <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
-              <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
-              <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
-              <div class="home-projects-item-info">
-                <div class="home-projects-item-date">2 недели назад</div>
-                <div class="home-projects-item-city">Сургут </div>
-              </div>
-            </div>
-            <div class="home-projects-item swiper-slide">
-              <div class="home-projects-item-head">
-                <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
-                <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
-              </div>
-              <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
-              <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
-              <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
-              <div class="home-projects-item-info">
-                <div class="home-projects-item-date">2 недели назад</div>
-                <div class="home-projects-item-city">Сургут </div>
-              </div>
-            </div>
-            <div class="home-projects-item swiper-slide">
-              <div class="home-projects-item-head">
-                <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
-                <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
-              </div>
-              <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
-              <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
-              <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
-              <div class="home-projects-item-info">
-                <div class="home-projects-item-date">2 недели назад</div>
-                <div class="home-projects-item-city">Сургут </div>
-              </div>
-            </div>
-            <div class="home-projects-item swiper-slide">
-              <div class="home-projects-item-head">
-                <div class="home-projects-item-head-img"><img src="img/project-ava.jpg" alt=""></div>
-                <div class="home-projects-item-head-ttl">Опыт развития разных форм деятельности</div>
-              </div>
-              <div class="home-projects-item-img"> <img src="img/post.jpg" alt=""></div>
-              <div class="home-projects-item-amount"><span class="home-projects-item-summ">5256</span><span>&nbsp;₽</span><span>&nbsp;собрано</span></div>
-              <div class="home-projects-item-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.</div>
-              <div class="home-projects-item-info">
-                <div class="home-projects-item-date">2 недели назад</div>
-                <div class="home-projects-item-city">Сургут </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-projects-pagination swiper-pagination"> </div>
-        <div class="home-projects-button-prev"><img src="img/prev.svg" alt=""></div>
-        <div class="home-projects-button-next"><img src="img/next.svg" alt=""></div>
-      </div>
-    </section>
-    <section class="home-interest"> 
-      <div class="container-large">
-        <div class="home-interest-inner" style="background-image: url(../img/u.png)">
-          <div class="home-interest-info">
-            <div class="home-interest-info-ttl">Есть интересный проект?</div>
-            <div class="home-interest-info-subttl">Предложите своей аудитории поддержать вас и получайте донаты и обратную связь</div>
-            <div class="home-interest-buttons"><a class="home-interest-create btn btn-green" href="#">Создать проект </a><a class="home-interest-about" href="#">Узнать подробности </a></div>
-          </div>
-          <div class="home-interest-img"><img src="img/cards.png" alt=""></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer-main">
-    <div class="container-large">
-      <div class="footer-main-head"> 
-        <div class="footer-main-logo"><img src="img/logo-light.svg" alt=""></div>
-      </div>
-      <div class="footer-main-inner"> 
-        <div class="footer-main-inner-info">
-          <div class="footer-main-inner-text">Мы не получаем прибыль за денежные переводы. Со всех операций взимается только комиссия банка. Будем рады если вы поддержите наш проект.</div><a class="footer-main-inner-button btn btn-green" href="#"><img src="img/upp-w.svg" alt=""><span>Поддержать проект</span></a>
-        </div>
-        <div class="footer-main-inner-media">
-          <div class="footer-main-inner-links"><a class="footer-main-inner-link" href="#">О&nbsp;платформе</a><a class="footer-main-inner-link" href="#">Проекты</a><a class="footer-main-inner-link" href="#">Авторам</a><a class="footer-main-inner-link" href="#">СМИ&nbsp;о&nbsp;нас</a><a class="footer-main-inner-link" href="#">Поддержка</a></div>
-          <div class="footer-main-inner-social"><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/upp-g.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/vk.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/twit.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/star.svg" alt=""></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-main-bottom">
-      <div class="container-large">
-        <div class="footer-main-bottom-wrap"> 
-          <div class="footer-main-bottom-copyrights">© 2022 Uppora	</div>
-          <div class="footer-main-bottom-block">
-            <div class="footer-main-bottom-lang">Русский</div>
-            <div class="footer-main-bottom-divider"></div><a class="footer-main-bottom-docs" href="#">Правовые документы</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="popup-profile">
-    <div class="popup-profile-wrap">
-      <div class="popup-profile-section">
-        <div class="popup-profile-user"> 
-          <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
-          <div class="popup-profile-user-info"> 
-            <div class="popup-profile-user-name">Илья Панов</div>
-            <div class="popup-profile-user-email">email@website.com</div>
-          </div>
-        </div>
-      </div>
-      <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
-      <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
-      <div class="popup-profile-section popup-profile-section-bottom">
-        <div class="popup-profile-lang">Русский</div>
-        <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
-          <div class="popup-profile-copyrights">© 2022 Uppora</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup-subs"> 
-    <div class="popup-subs-wrap">
-      <div class="popup-subs-header">
-        <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
-        <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
-        <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
-      </div>
-      <div class="popup-subs-list"> 
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
-            <div class="popup-subs-user-name">Алексей Иванов</div></a>
-          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
-        </div>
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
-            <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
-          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
-        </div>
-        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
-            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
-            <div class="popup-subs-user-name">Алексей Иванов</div></a>
-          <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup-cover"> 
-    <div class="popup-cover-wrap">
-      <form class="popup-cover-header">
-        <div class="popup-cover-ttl">Обложка профиля</div>
-        <div class="popup-cover-buttons"> 
+        <form class="popup-cover-footer"> 
           <div class="popup-cover-delete">Удалить</div>
           <div class="popup-cover-input">
             <input id="cover-input" type="file" name="cover-input">
             <label class="btn btn-white" for="cover-input">Загрузить</label>
           </div>
-        </div>
-        <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
-      </form>
-      <div class="popup-cover-grid"> 
-        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+        </form>
       </div>
-      <form class="popup-cover-footer"> 
-        <div class="popup-cover-delete">Удалить</div>
-        <div class="popup-cover-input">
-          <input id="cover-input" type="file" name="cover-input">
-          <label class="btn btn-white" for="cover-input">Загрузить</label>
-        </div>
-      </form>
     </div>
-  </div>
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/home.js"></script>
-</body>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
