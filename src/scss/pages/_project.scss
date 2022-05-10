@@ -277,8 +277,10 @@
 
         &-img {
             margin-bottom: 24px;
+            padding-bottom: 56.25%;
             border-radius: 4px;
             overflow: hidden;
+            @extend .img-cover;
             img {
                 width: 100%;
                 display: block;
