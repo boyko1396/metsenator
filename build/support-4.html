@@ -36,60 +36,38 @@
       </div>
     </div>
   </header>
-  <main class="n-new-project">
-    <div class="container n-new-project__container">
-      <aside class="n-new-project__aside">
-        <div class="n-new-project__aside-title">Новый проект</div>
-        <nav class="nav-step n-new-project__aside-nav" role="navigation">
-          <ul class="nav-step__list">
-            <li class="nav-step__item"><a class="nav-step__link" href="new-project-1.html">1. Основная информация</a></li>
-            <li class="nav-step__item"><a class="nav-step__link is-active" href="new-project-2.html">2. Изображения</a></li>
-            <li class="nav-step__item"><a class="nav-step__link is-disabled" href="new-project-3.html">3. Описание</a></li>
-            <li class="nav-step__item"><a class="nav-step__link is-disabled" href="new-project-4.html">4. Вывод оплаты</a></li>
-          </ul>
-        </nav>
-      </aside>
-      <section class="n-new-project__main">
-        <h1 class="n-new-project__main-title">Изображения</h1>
-        <div class="site-pager n-new-project__main-pager"><a class="pager-link pager-link--prev site-pager__link" href="new-project-1.html">
-            <div class="pager-link__icon" style="background-image: url(img/pager-link-arrow.svg)"></div>Назад</a>
-          <p class="u-subtitle site-pager__steps">Шаг 2 из 4</p><a class="pager-link pager-link--next pager-link--is-hidden site-pager__link" href="new-project-2.html">
-            <div class="pager-link__icon" style="background-image: url(img/pager-link-arrow.svg)"></div>Вперед</a>
+  <main class="s-support">
+    <div class="s-support__inner">
+      <section class="s-support-main">
+        <div class="container s-support-main__container">
+          <div class="s-support-main__header">
+            <h1 class="support-title s-support-main__title">Служба поддержки</h1><a class="btn btn--size-sm btn-green s-support-main__header-btn" href="#">Обратиться</a>
+          </div>
+          <h2 class="s-support-main__subtitle">Ваши обращения</h2>
+          <div class="s-support-list">
+            <div class="support-card s-support-list__item">
+              <div class="support-card__content">
+                <div class="support-card__title"><a class="support-card__link" href="support-5.html">Вывод средств на карту</a></div>
+                <time class="support-card__date">5 марта 2022, 17:00</time>
+              </div>
+              <div class="support-status support-status--new support-card__status">Новое сообщение</div>
+            </div>
+            <div class="support-card s-support-list__item">
+              <div class="support-card__content">
+                <div class="support-card__title"><a class="support-card__link" href="support-5.html">Создание проекта</a></div>
+                <time class="support-card__date">6 марта 2022, 17:00</time>
+              </div>
+              <div class="support-status support-status--closed support-card__status">Закрыто</div>
+            </div>
+            <div class="support-card s-support-list__item">
+              <div class="support-card__content">
+                <div class="support-card__title"><a class="support-card__link" href="support-5.html">Работа платформы</a></div>
+                <time class="support-card__date">7 марта 2022, 17:00</time>
+              </div>
+              <div class="support-status support-status--closed support-card__status">Закрыто</div>
+            </div>
+          </div>
         </div>
-        <form class="n-new-project__main-form" action="#">
-          <input class="files-hidden" type="file" name="" id="n-new-logo" value="">
-          <div class="input-block n-new-project__main-form__area-logo">
-            <label class="input-block__label" for="n-new-logo"><span class="input-block__label-name">Логотип *</span><span class="input-block__label-description">Форматы: JPEG, PNG, BMP или GIF. Изображение которое будет отображаться в публикациях от имени проекта</span></label>
-            <label class="input-file input-file--logo input-block__file" for="n-new-logo"><span class="input-file__inner">
-                <svg class="u-icon input-file__icon">
-                  <use xlink:href="img/sprite.svg#download-arrow"></use>
-                </svg><span class="input-file__title">Загрузить</span></span></label>
-          </div>
-          <div class="input-block n-new-project__main-form__area-line">
-            <label class="input-block__label"><span class="input-block__label-name">Обложка *</span><span class="input-block__label-description">Вставьте ссылку на видео или загрузите изображение, которое будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта</span></label>
-          </div>
-          <div class="input-block n-new-project__main-form__area-line">
-            <label class="label-radio input-block__label-radio">
-              <input class="label-radio__input" type="radio" name="n-new-poster" checked value="Видео"><span class="label-radio__inner"><span class="label-radio__title">Видео</span></span>
-            </label>
-            <input class="input-el input-block__el" type="text" name="" id="n-new-project-poster-video" placeholder="Ссылка на YouTube или Vimeo">
-          </div>
-          <input class="files-hidden" type="file" name="" id="n-new-picture" value="">
-          <div class="input-block n-new-project__main-form__area-line">
-            <label class="label-radio input-block__label-radio">
-              <input class="label-radio__input" type="radio" name="n-new-poster" value="Изображение"><span class="label-radio__inner"><span class="label-radio__title">Изображение</span></span>
-            </label>
-            <label class="input-file input-file--picture input-block__file" for="n-new-picture"><span class="input-file__inner">
-                <svg class="u-icon input-file__icon">
-                  <use xlink:href="img/sprite.svg#download-arrow"></use><span class="input-file__description">JPEG, PNG, BMP, GIF<br>Минимальная ширина 1080 px, рекомендуемые пропорции 16:9</span><span class="input-file__title">Загрузить</span>
-                </svg></span></label>
-          </div>
-          <div class="group-btns n-new-project__main-form-btns">
-            <button class="btn btn--size-sm btn-green group-btns__item" type="submit">Далее</button>
-            <button class="btn btn--size-sm btn-trp group-btns__item" type="button">Сохранить в черновики</button>
-            <button class="btn btn--size-sm btn-simple group-btns__item" type="button">Предпросмотр</button>
-          </div>
-        </form>
       </section>
     </div>
   </main>

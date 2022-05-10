@@ -423,6 +423,10 @@
         &-size-md {
             min-height: 110px;
         }
+
+        &-size-lg {
+            min-height: 260px;
+        }
     }
 
     &--select {
@@ -1108,7 +1112,9 @@
 }
 
 .appeal-alert {
+    background: $blue-light;
     padding: 24px;
+    border-radius: 8px;
     position: relative;
 
     &__close {
@@ -1858,6 +1864,336 @@
     }
 }
 
+.text-overflow {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.file-attach {
+    display: flex;
+    align-items: center;
+    
+    &__text {
+        overflow: hidden;
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: $blue;
+    }
+    &__remove {
+        background: transparent;
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        flex: 0 0 24px;
+        font-size: 0;
+        color: #9CA3AF;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        cursor: pointer;
+        transition: all .4s;
+        transition-property: color;
+    }
+    &__icon {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.files-hidden {
+    display: none;
+    position: absolute;
+    left: -9999px;
+}
+
+.support-status {
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: nowrap;
+
+    &--new {
+        color: $green3;
+    }
+    &--closed {
+        color: #9CA3AF;
+    }
+}
+
+.support-card {
+    background: #F8FAFC;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 14px;
+    color: $darknes;
+    border-radius: 8px;
+    position: relative;
+
+    &__content {
+        padding-right: 20px;
+    }
+    &__title {
+        margin: 0 0 4px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    &__link {
+        display: block;
+        color: #242B33;
+        transition: all .4s;
+        transition-property: color;
+
+        &:hover {
+            color: $green3;
+            text-decoration: none;
+        }
+
+        &:before {
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 8px;
+        }
+    }
+    &__date {
+        margin: 0;
+        display: block;
+        font-size: 12px;
+        color: #9CA3AF;
+    }
+    &__status {
+        margin-left: auto;
+        flex-shrink: 0;
+        line-height: 24px;
+    }
+}
+
+.s-support-list {
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.files-attach-list {
+    
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+.s-support {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.35;
+    color: #242B33;
+    flex-grow: 1;
+    overflow: clip;
+
+    &__inner {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        flex-grow: 1;
+    }
+}
+
+.support-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.s-support-main {
+    min-height: 100%;
+    overflow: clip;
+
+    &__container {
+    }
+    &__header {
+        margin: 0 0 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__header-btn {
+        flex-shrink: 0;
+    }
+    &__top {
+        margin: 0 0 48px;
+    }
+    &__title {
+    }
+    &__subtitle {
+        margin: 0 0 20px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    &__form {
+    }
+    &__form-area-item {
+        margin: 0 0 40px;
+    }
+    &__form-files-attach-list {
+        margin: -20px 0 24px;
+    }
+    &__form-btns {
+    }
+    &__form-file-text {
+        color: $gray;
+    }
+    &__chat {
+        min-height: calc(100vh - 240px);
+    }
+}
+
+.chat-message {
+    display: flex;
+    align-items: flex-start;
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+        border-radius: 50%;
+        flex: 0 0 40px;
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__body {
+        flex-grow: 1;
+        overflow: hidden;
+    }
+    &__body-header {
+        margin: 0 0 6px;
+        display: flex;
+        align-items: center;
+    }
+    &__body-name {
+        font-weight: 500;
+        font-size: 14px;
+        color: $darknes;
+    }
+    &__body-date {
+        margin-left: 8px;
+        display: block;
+        flex-shrink: 0;
+        font-size: 12px;
+        color: $gray;
+    }
+    &__body-content {
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__body-text {
+        margin: 0 0 4px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    &__body-attach {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__body-attach-file {
+        padding: 3px 0;
+        font-weight: 500;
+        color: $blue;
+        transition: all .4s;
+        transition-property: color;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.s-support-chat {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        margin: 0 0 24px;
+        padding-bottom: 24px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $gray-light;
+    }
+    &__header-prev-link {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+        display: none;
+        flex: 0 0 24px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__title {
+    }
+    &__body {
+    }
+    &__body-message {
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+    &__footer {
+        margin-top: auto;
+        padding-top: 24px;
+    }
+    &__footer-message {
+        min-height: 80px;
+        margin: 0 0 24px;
+    }
+    &__footer-btns-group {
+    }
+    &__form-file-text {
+        color: $gray;
+    }
+}
+
 @media screen and (max-width: 1280px) {
 }
 
@@ -2263,6 +2599,91 @@
 
         &__btn {
             margin: 12px 0 0;
+        }
+    }
+
+    .s-support-main {
+
+        &__container {
+        }
+        &__header {
+            margin-bottom: 32px;
+        }
+        &__header-btn {
+        }
+        &__top {
+            margin-bottom: 32px;
+        }
+        &__title {
+        }
+        &__subtitle {
+        }
+        &__form {
+        }
+        &__form-area-item {
+            margin-bottom: 32px;
+        }
+        &__form-files-attach-list {
+            margin-top: -12px;
+        }
+        &__form-btns {
+        }
+        &__form-file-text {
+        }
+        &__chat {
+            background: #fff;
+            width: 100%;
+            min-height: 100vh;
+            padding: 0 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: clip;
+            z-index: 10000;
+        }
+    }
+
+    .s-support-chat {
+
+        &__header {
+            background: #fff;
+            margin: 0 -16px 26px;
+            padding: 14px 16px;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        &__header-prev-link {
+            display: block;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__body {
+            width: 100%;
+            max-width: 670px;
+            margin: 0 auto;
+        }
+        &__body-message {
+
+            &:not(:last-child) {
+            }
+        }
+        &__footer {
+            background: #fff;
+            width: 100%;
+            max-width: 670px;
+            margin: 0 auto;
+            padding-bottom: 24px;
+            position: sticky;
+            bottom: 0;
+            z-index: 2;
+        }
+        &__footer-message {
+        }
+        &__footer-btns-group {
+        }
+        &__form-file-text {
         }
     }
 }
@@ -2692,6 +3113,12 @@
             max-width: initial;
             margin-bottom: 32px;
         }
+        &__main-form-btns {
+            .btn {
+                width: 100%;
+                flex-basis: 100%;
+            }
+        }
     }
 
     .a-about {
@@ -3061,6 +3488,119 @@
             margin: 0 30px;
         }
     }
+
+    .s-support {
+        padding: 20px 0;
+    }
+
+    .support-title {
+        font-size: 20px;
+    }
+
+    .s-support-main {
+
+        &__container {
+        }
+        &__header {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &__header-btn {
+            margin-top: 24px;
+        }
+        &__top {
+            margin-bottom: 24px;
+        }
+        &__title {
+        }
+        &__subtitle {
+            margin-bottom: 16px;
+        }
+        &__form {
+        }
+        &__form-area-item {
+            margin-bottom: 24px;
+        }
+        &__form-files-attach-list {
+            margin-top: -4px;
+        }
+        &__form-btns {
+        }
+        &__form-file-text {
+            max-width: 100%;
+            flex: 0 0 100%;
+            order: -2;
+        }
+        &__chat {
+        }
+    }
+
+    .chat-message {
+
+        &__avatar {
+
+            img {
+            }
+        }
+        &__body {
+        }
+        &__body-header {
+            margin-bottom: 3px;
+        }
+        &__body-name {
+        }
+        &__body-date {
+        }
+        &__body-content {
+
+            > :last-child {
+            }
+        }
+        &__body-text {
+        }
+        &__body-attach {
+        }
+        &__body-attach-file {
+
+            &:hover {
+            }
+
+            &:not(:last-child) {
+            }
+        }
+    }
+
+    .s-support-chat {
+
+        &__header {
+        }
+        &__header-prev-link {
+        }
+        &__title {
+        }
+        &__body {
+        }
+        &__body-message {
+
+            &:not(:last-child) {
+                margin-bottom: 22px;
+            }
+        }
+        &__footer {
+        }
+        &__footer-message {
+            min-height: 70px;
+        }
+        &__footer-btns-group {
+        }
+        &__form-file-text {
+            max-width: 100%;
+            flex: 0 0 100%;
+            order: -2;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -3214,6 +3754,96 @@
             .btn {
                 width: 100%;
             }
+        }
+    }
+
+    .s-support-main {
+
+        &__container {
+        }
+        &__header {
+        }
+        &__header-btn {
+            width: 100%;
+        }
+        &__top {
+        }
+        &__title {
+        }
+        &__subtitle {
+        }
+        &__form {
+        }
+        &__form-area-item {
+        }
+        &__form-files-attach-list {
+        }
+        &__form-btns {
+            .btn {
+                width: 100%;
+                flex-basis: 100%;
+            }
+            .btn-trp {
+                order: -1;
+            }
+        }
+        &__form-file-text {
+        }
+        &__chat {
+        }
+    }
+
+    .support-card {
+        flex-wrap: wrap;
+
+        &__content {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        &__title {
+        }
+        &__link {
+        }
+        &__date {
+        }
+        &__status {
+            max-width: 100%;
+            margin-top: 12px;
+            flex: 0 0 100%;
+        }
+    }
+
+    .s-support-chat {
+
+        &__header {
+        }
+        &__header-prev-link {
+        }
+        &__title {
+        }
+        &__body {
+        }
+        &__body-message {
+
+            &:not(:last-child) {
+            }
+        }
+        &__footer {
+        }
+        &__footer-message {
+        }
+        &__footer-btns-group {
+
+            .btn {
+                width: 100%;
+                flex-basis: 100%;
+            }
+
+            .btn-trp {
+                order: -1;
+            }
+        }
+        &__form-file-text {
         }
     }
 }

@@ -1,0 +1,60 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.s-support
+        .s-support__inner
+            section.s-support-main
+                .container.s-support-main__container
+                    .s-support-chat.s-support-main__chat
+                        .s-support-chat__header
+                            a(href="#", style="background-image: url(img/pager-link-arrow.svg)").s-support-chat__header-prev-link
+                            h1.support-title.s-support-chat__title Вывод средств на карту
+                        .s-support-chat__body
+                            .chat-message.s-support-chat__body-message
+                                picture.chat-message__avatar
+                                    img(src="img/chat-message-avatar-1.jpg")
+                                .chat-message__body
+                                    .chat-message__body-header
+                                        .text-overflow.chat-message__body-name Андрей Эдуардович
+                                        time.chat-message__body-date 6 мар в 3:27
+                                    .chat-message__body-content
+                                        .content.chat-message__body-text
+                                            p Рекламная акция подсознательно тормозит сублимированный инструмент маркетинга. Медиамикс, в рамках сегодняшних воззрений, усиливает коллективный пул лояльных изданий, невзирая на действия конкурентов.
+                                        .chat-message__body-attach
+                                            a(href="#").text-overflow.chat-message__body-attach-file Screenshot_01.jpeg
+                                            a(href="#").text-overflow.chat-message__body-attach-file Screenshot_02.jpeg
+                            .chat-message.s-support-chat__body-message
+                                picture.chat-message__avatar
+                                    img(src="img/chat-message-avatar-uppora.svg")
+                                .chat-message__body
+                                    .chat-message__body-header
+                                        .text-overflow.chat-message__body-name Служба поддержки
+                                        time.chat-message__body-date 7 мар в 4:42
+                                    .chat-message__body-content
+                                        .content.chat-message__body-text
+                                            p Адекватная ментальность переворачивает продвигаемый ребрендинг
+                            .chat-message.s-support-chat__body-message
+                                picture.chat-message__avatar
+                                    img(src="img/chat-message-avatar-1.jpg")
+                                .chat-message__body
+                                    .chat-message__body-header
+                                        .text-overflow.chat-message__body-name Андрей Эдуардович
+                                        time.chat-message__body-date 8 мар в 5:37
+                                    .chat-message__body-content
+                                        .content.chat-message__body-text
+                                            p Спасибо
+                        form(action="#").s-support-chat__footer
+                            input(type="file", id="chat-file").files-hidden
+                            textarea(name="", id="support-message", rows="", cols="", value="").input-el.input-el--textarea.s-support-chat__footer-message
+                            .group-btns.s-support-chat__footer-btns-group
+                                button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Отправить
+                                label(for="chat-file").btn.btn--size-sm.btn-trp.group-btns__item Прикрепить файл
+                                .group-btns__item.s-support-chat__form-file-text Вы можете прикрепить до 5 файлов
+
+    include includes/footer.pug

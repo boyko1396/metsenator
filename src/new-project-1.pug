@@ -47,9 +47,9 @@ body
                         label(for="n-new-project-category").input-block__label
                             span.input-block__label-name Категория *
                         select(name="", id="n-new-project-category").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
-                            option(option="Выберите", disabled, selected) Выберите
-                            option(option="Выбор 1") Выбор 1
-                            option(option="Выбор 2") Выбор 2
+                            option(value="Выберите", disabled, selected) Выберите
+                            option(value="Выбор 1") Выбор 1
+                            option(value="Выбор 2") Выбор 2
                     .input-block.n-new-project__main-form__area-item
                         label(for="n-new-project-city").input-block__label
                             span.input-block__label-name Город
@@ -66,7 +66,7 @@ body
                             span.input-block__label-description Ссылки на соцсети или каналы в месендерах, где уже размещён ваш проект. Будут отображаться на странице проекта
                         button(type="button").add-link-btn.input-block__add-link
                             svg.u-icon.add-link-btn__icon
-                                use(xlink:href="img/sprite.svg#close")
+                                use(xlink:href="img/sprite.svg#plus")
                             | Добавить ссылку
                     .input-block.n-new-project__main-form__area-item
                         label.input-block__label
@@ -74,7 +74,7 @@ body
                             span.input-block__label-description Любые другие сайты по сбору средств, на которых уже размещён ваш проект. Будут отображаться на странице проекта
                         button(type="button").add-link-btn.input-block__add-link
                             svg.u-icon.add-link-btn__icon
-                                use(xlink:href="img/sprite.svg#close")
+                                use(xlink:href="img/sprite.svg#plus")
                             | Добавить ссылку
                     .n-new-project__main-form-privacy
                         .n-new-project__main-form-privacy-title Приватность
