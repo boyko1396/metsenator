@@ -22,6 +22,8 @@ html{
 
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-weight: normal;
     font-family: $font-basic;
     font-smooth: antialiased;

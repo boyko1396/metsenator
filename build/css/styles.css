@@ -20,6 +20,10 @@ html {
 
 body {
   min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-weight: normal;
   font-family: "Inter", arial, sans-serif;
   font-smooth: antialiased;
