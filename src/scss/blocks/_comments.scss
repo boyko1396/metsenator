@@ -15,6 +15,9 @@
         &__child {
             padding-left: 50px;
         }
+        &__child &__child {
+            padding-left: 0 !important;
+        }
     }
 
     &-item {

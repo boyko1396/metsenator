@@ -2274,6 +2274,9 @@ img {
 .comments-tree__child {
   padding-left: 50px;
 }
+.comments-tree__child .comments-tree__child {
+  padding-left: 0;
+}
 .comments-item {
   padding: 24px 0;
   border-bottom: 1px solid #e5e7eb;
