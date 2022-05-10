@@ -1,0 +1,47 @@
+.btn {
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &-white {
+        background-color: $white;
+        font-weight: 400;
+        color: $dark-blue;
+        border-color: #D1D5DB;
+    }
+
+    &-trp {
+        background-color: transparent;
+        font-weight: 400;
+        color: $dark-blue;
+        border-color: #D1D5DB;
+    }
+
+    &-simple {
+        background-color: transparent;
+        font-weight: 400;
+        color: $blue;
+    }
+
+    &-green {
+        font-weight: 500;
+        color: $white;
+        background-color: $green2;
+    }
+
+    &-green-accent {
+        font-weight: 500;
+        color: $white;
+        background-color: $green3;
+    }
+
+    &--size-md {
+        padding: 11px 28px;
+    }
+
+    &--size-sm {
+        padding: 9px 20px;
+    }
+}

@@ -1,0 +1,72 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.n-new-project
+        .container.n-new-project__container
+            aside.n-new-project__aside
+                .n-new-project__aside-title Новый проект
+                nav(role="navigation").nav-step.n-new-project__aside-nav
+                    ul.nav-step__list
+                        li.nav-step__item
+                            a(href="new-project-1.html").nav-step__link 1. Основная информация
+                        li.nav-step__item
+                            a(href="new-project-2.html").nav-step__link.is-active 2. Изображения
+                        li.nav-step__item
+                            a(href="new-project-3.html").nav-step__link.is-disabled 3. Описание
+                        li.nav-step__item
+                            a(href="new-project-4.html").nav-step__link.is-disabled 4. Вывод оплаты
+            section.n-new-project__main
+                h1.n-new-project__main-title Изображения
+                .site-pager.n-new-project__main-pager
+                    a(href="new-project-1.html").pager-link.pager-link--prev.site-pager__link
+                        .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                        | Назад
+                    p.u-subtitle.site-pager__steps Шаг 2 из 4
+                    a(href="new-project-2.html").pager-link.pager-link--next.pager-link--is-hidden.site-pager__link
+                        .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                        | Вперед
+                form(action="#").n-new-project__main-form
+                    .input-block.n-new-project__main-form__area-logo
+                        label(for="n-new-logo").input-block__label
+                            span.input-block__label-name Логотип *
+                            span.input-block__label-description Форматы: JPEG, PNG, BMP или GIF. Изображение которое будет отображаться в публикациях от имени проекта
+                        .input-file.input-file--logo.input-block__file
+                            input(type="file", name="", id="n-new-logo", value="").input-file__input
+                            span.input-file__inner
+                                svg.u-icon.input-file__icon
+                                    use(xlink:href="img/sprite.svg#download-arrow")
+                                span.input-file__title Загрузить
+                    .input-block.n-new-project__main-form__area-line
+                        label.input-block__label
+                            span.input-block__label-name Обложка *
+                            span.input-block__label-description Вставьте ссылку на видео или загрузите изображение, которое будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта
+                    .input-block.n-new-project__main-form__area-line
+                        label.label-radio.input-block__label-radio
+                            input(type="radio", name="n-new-poster", checked, value="Видео").label-radio__input
+                            span.label-radio__inner
+                                span.label-radio__title Видео
+                        input(type="text", name="", id="n-new-project-poster-video", placeholder="Ссылка на YouTube или Vimeo").input-el.input-block__el
+                    .input-block.n-new-project__main-form__area-line
+                        label.label-radio.input-block__label-radio
+                            input(type="radio", name="n-new-poster", value="Изображение").label-radio__input
+                            span.label-radio__inner
+                                span.label-radio__title Изображение
+                        .input-file.input-file--picture.input-block__file
+                            input(type="file", name="", id="n-new-picture", value="").input-file__input
+                            span.input-file__inner
+                                svg.u-icon.input-file__icon
+                                    use(xlink:href="img/sprite.svg#download-arrow")
+                                    span.input-file__description JPEG, PNG, BMP, GIF<br>Минимальная ширина 1080 px, рекомендуемые пропорции 16:9
+                                    span.input-file__title Загрузить
+                    .group-btns.n-new-project__main-form-btns
+                        button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Далее
+                        button(type="button").btn.btn--size-sm.btn-trp.group-btns__item Сохранить в черновики
+                        button(type="button").btn.btn--size-sm.btn-simple.group-btns__item Предпросмотр
+
+    include includes/footer.pug

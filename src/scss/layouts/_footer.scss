@@ -1,0 +1,41 @@
+.footer { 
+    padding: 12px 0;
+    border-top: 1px solid $gray-light;   
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;        
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: $gray;
+    }
+
+    &-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &-divider {
+        width: 1px;
+        height: 16px;
+        background-color: $gray-light;
+        margin: 0 24px;
+    }
+
+    &-copyrights {        
+        color: #9CA3AF;
+    }
+
+    &-about,
+    &-docs {
+        color: $gray;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        display: none;
+    }
+}

@@ -1,0 +1,101 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.settings.settings-profile
+        .container
+            .settings-wrap
+
+                .settings-tabs
+                    .settings-tabs-head
+                        .settings-tabs-img.setting-profile-img
+                            img(src="img/person.png", alt="")
+                        .settings-tabs-info
+                            .settings-tabs-info-top.settings-profile-name Илья Панов    
+                            .settings-tabs-info-bottom.settings-profile-email adress@website.com
+                    .settings-tabs-list
+                        .settings-tabs-tab Основное
+                        .settings-tabs-tab.active Безопасность
+                        .settings-tabs-tab Способ оплаты
+                        .settings-tabs-tab Уведомления
+
+                .settings-inner
+                    .settings-inner-ttl Безопасность
+                    .settings-inner-desc Данные для доступа к аккаунту
+
+                    form.settings-inner-form.settings-profile-form                         
+                        
+                        .settings-inner-form-group
+                            .settings-inner-form-label Email
+                            .settings-inner-form-email e***@website.com
+                        
+                        .settings-inner-form-group
+                            .settings-inner-form-label Пароль 
+                            .settings-inner-form-changepass
+                                span Обновлен 2 дня назад&nbsp;
+                                span.settings-inner-form-changepass-link Изменить
+
+                            .settings-inner-form-group-wrap
+                                .input-group
+                                    .input
+                                        label(for="#profile-password-curr") Текущий пароль *
+                                        input#profile-password-curr(type="password", name="#profile-password-curr")
+                                        .input-view-toggle
+                                            span.input-view-toggle-icon(style="background-image: url(img/no-view.svg)")
+                                            span.input-view-toggle-icon(style="background-image: url(img/view.svg)")
+                                    .input
+                                        label(for="#profile-password-new") Новый пароль (минимум 8 символов) *
+                                        input#profile-password-new(type="password", name="#profile-password-new")
+                                        .input-view-toggle
+                                .settings-inner-form-buttons
+                                    button.settings-inner-form-save.btn.btn-green(type="submit") Изменить пароль 
+                                    .settings-inner-form-cancel(type="#") Отмена
+                        .settings-inner-form-group
+                            .settings-inner-subttl Подключенные аккаунты
+                        .input-group-accounts.isConnected
+                            .settings-inner-form-block-accounts
+                                .settings-inner-form-label Вконтакте
+                                .settings-inner-form-text Вы можете войти на сайт, используя свою учетную запись. Мы никогда не будем публиковать записи или отправлять сообщения от вашего имени в Вконтаткте.
+                            .settings-inner-form-account-connected
+                                .settings-inner-form-account-connected-block
+                                    .settings-inner-form-account-connected-name Илья Белоцерковский
+                                    .settings-inner-form-account-connected-cancel отключить
+                                .settings-inner-form-account-connected-logo
+                                    img(src="img/person.png", alt="")
+                        .input-group-accounts
+                            .settings-inner-form-block-accounts
+                                .settings-inner-form-label Вконтакте
+                            a.settings-inner-form-account(href="#")
+                                .settings-inner-form-account-logo
+                                    img(src="img/vk-blue.svg", alt="")
+                                span Подключить
+                        .input-group-accounts
+                            .settings-inner-form-block-accounts
+                                .settings-inner-form-label Яндекс
+                            a.settings-inner-form-account(href="#")
+                                .settings-inner-form-account-logo
+                                    img(src="img/yandex.svg", alt="")
+                                span Подключить
+                        .input-group-accounts
+                            .settings-inner-form-block-accounts
+                                .settings-inner-form-label Google
+                            a.settings-inner-form-account(href="#")
+                                .settings-inner-form-account-logo
+                                    img(src="img/google.svg", alt="")
+                                span Подключить
+                        .input-group-accounts
+                            .settings-inner-form-block-accounts
+                                .settings-inner-form-label Apple
+                            a.settings-inner-form-account(href="#")
+                                .settings-inner-form-account-logo
+                                    img(src="img/apple.svg", alt="")
+                                span Подключить
+
+    include includes/footer.pug
+
+    script(src="js/settings-profile.js") 

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Меценатор</title>
+  <!--link(rel='icon', href='favicon.ico')-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header header-small">
+    <div class="container-large">
+      <div class="header-top">
+        <div class="header-top-left"><a class="header-logo" href="#"><img src="img/logo.svg" alt=""></a><a class="header-link" href="#">О платформе</a><a class="header-link" href="#">Проекты</a><a class="header-link" href="#">Авторам</a><a class="header-link" href="#">СМИ&nbsp;о&nbsp;нас</a><a class="header-link" href="#">Поддержка</a></div>
+        <div class="header-top-right">
+          <div class="header-search"> <img src="img/search.svg" alt=""></div>
+          <div class="header-alerts"> <img src="img/bell.svg" alt=""></div><a class="header-new btn btn-white" href="#">Создать проект				</a>
+          <div class="header-profile"> <img src="img/person.png" alt=""></div>
+        </div>
+        <div class="header-mobile">
+          <div class="header-mobile-search"> <img src="img/search.svg" alt=""></div>
+          <div class="header-mobile-alerts"> <img src="img/bell.svg" alt=""></div>
+        </div>
+        <form class="header-form">
+          <div class="input">
+            <input id="search" type="search" name="search" placeholder="Поиск...">
+            <div class="input-close"><img class="svg-inline" src="img/close.svg" alt=""></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="n-new-project">
+    <div class="container n-new-project__container">
+      <aside class="n-new-project__aside">
+        <div class="n-new-project__aside-title">Новый проект</div>
+        <nav class="nav-step n-new-project__aside-nav" role="navigation">
+          <ul class="nav-step__list">
+            <li class="nav-step__item"><a class="nav-step__link" href="new-project-1.html">1. Основная информация</a></li>
+            <li class="nav-step__item"><a class="nav-step__link" href="new-project-2.html">2. Изображения</a></li>
+            <li class="nav-step__item"><a class="nav-step__link" href="new-project-3.html">3. Описание</a></li>
+            <li class="nav-step__item"><a class="nav-step__link is-active" href="new-project-4.html">4. Вывод оплаты</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section class="n-new-project__main">
+        <h1 class="n-new-project__main-title">Вывод оплаты</h1>
+        <div class="site-pager n-new-project__main-pager"><a class="pager-link pager-link--prev site-pager__link" href="new-project-3.html">
+            <div class="pager-link__icon" style="background-image: url(img/pager-link-arrow.svg)"></div>Назад</a>
+          <p class="u-subtitle site-pager__steps">Шаг 4 из 4</p><a class="pager-link pager-link--next pager-link--is-hidden site-pager__link" href="#">
+            <div class="pager-link__icon" style="background-image: url(img/pager-link-arrow.svg)"></div>Вперед</a>
+        </div>
+        <form class="n-new-project__main-form" action="#">
+          <div class="input-block n-new-project__main-form__area-item">
+            <label class="input-block__label" for="n-new-project-cards-number"><span class="input-block__label-name">Карта *</span><span class="input-block__label-description">Введите номер карты, на которую будут выводиться донаты. Visa, Mastercard, Maestro, МИР</span>
+              <input class="input-el input-block__el" type="text" name="" id="n-new-project-cards-number" placeholder="XXXX XXXX XXXX XXXX">
+            </label>
+          </div>
+          <div class="input-block n-new-project__main-form__area-item">
+            <label class="input-block__label"><span class="input-block__label-name">Шаблоны донатов *</span><span class="input-block__label-description">Вы можете назначить шаблоны для быстрого ввода суммы доната пользователем (ручной ввод также будет доступен)</span></label>
+            <div class="input-block__template-cards">
+              <div class="input-block__template-cards-item input-block__template-cards-item--size-4">
+                <div class="template-card">
+                  <input class="input-el template-card__input" type="text" name="" placeholder="100">
+                  <div class="template-card__currency">₽</div>
+                </div>
+              </div>
+              <div class="input-block__template-cards-item input-block__template-cards-item--size-4">
+                <div class="template-card">
+                  <input class="input-el template-card__input" type="text" name="" placeholder="500">
+                  <div class="template-card__currency">₽</div>
+                </div>
+              </div>
+              <div class="input-block__template-cards-item input-block__template-cards-item--size-4">
+                <div class="template-card">
+                  <input class="input-el template-card__input" type="text" name="" placeholder="1000">
+                  <div class="template-card__currency">₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-btns n-new-project__main-form-btns">
+            <button class="btn btn--size-sm btn-green group-btns__item" type="submit">Опубликовать</button>
+            <button class="btn btn--size-sm btn-trp group-btns__item" type="button">Сохранить в черновики</button>
+            <button class="btn btn--size-sm btn-simple group-btns__item" type="button">Предпросмотр</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container-large">
+      <div class="footer-wrap">
+        <div class="footer-block"> 
+          <div class="footer-copyrights">© 2022 Uppora</div>
+          <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
+        </div>
+        <div class="footer-block">
+          <div class="footer-lang">Русский</div>
+          <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="popup-profile">
+    <div class="popup-profile-wrap">
+      <div class="popup-profile-section">
+        <div class="popup-profile-user"> 
+          <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
+          <div class="popup-profile-user-info"> 
+            <div class="popup-profile-user-name">Илья Панов</div>
+            <div class="popup-profile-user-email">email@website.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
+      <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
+      <div class="popup-profile-section popup-profile-section-bottom">
+        <div class="popup-profile-lang">Русский</div>
+        <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
+          <div class="popup-profile-copyrights">© 2022 Uppora</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup-subs"> 
+    <div class="popup-subs-wrap">
+      <div class="popup-subs-header">
+        <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
+        <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
+        <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
+      </div>
+      <div class="popup-subs-list"> 
+        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+            <div class="popup-subs-user-name">Алексей Иванов</div></a>
+          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+        </div>
+        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+            <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
+            <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
+          <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+        </div>
+        <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+            <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+            <div class="popup-subs-user-name">Алексей Иванов</div></a>
+          <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup-cover"> 
+    <div class="popup-cover-wrap">
+      <form class="popup-cover-header">
+        <div class="popup-cover-ttl">Обложка профиля</div>
+        <div class="popup-cover-buttons"> 
+          <div class="popup-cover-delete">Удалить</div>
+          <div class="popup-cover-input">
+            <input id="cover-input" type="file" name="cover-input">
+            <label class="btn btn-white" for="cover-input">Загрузить</label>
+          </div>
+        </div>
+        <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
+      </form>
+      <div class="popup-cover-grid"> 
+        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
+        <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+      </div>
+      <form class="popup-cover-footer"> 
+        <div class="popup-cover-delete">Удалить</div>
+        <div class="popup-cover-input">
+          <input id="cover-input" type="file" name="cover-input">
+          <label class="btn btn-white" for="cover-input">Загрузить</label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/main.js"></script>
+</body>

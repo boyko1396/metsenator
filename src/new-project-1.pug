@@ -1,0 +1,96 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.n-new-project
+        .container.n-new-project__container
+            aside.n-new-project__aside
+                .n-new-project__aside-title Новый проект
+                nav(role="navigation").nav-step.n-new-project__aside-nav
+                    ul.nav-step__list
+                        li.nav-step__item
+                            a(href="new-project-1.html").nav-step__link.is-active 1. Основная информация
+                        li.nav-step__item
+                            a(href="new-project-2.html").nav-step__link.is-disabled 2. Изображения
+                        li.nav-step__item
+                            a(href="new-project-3.html").nav-step__link.is-disabled 3. Описание
+                        li.nav-step__item
+                            a(href="new-project-4.html").nav-step__link.is-disabled 4. Вывод оплаты
+            section.n-new-project__main
+                h1.n-new-project__main-title Основное
+                .site-pager.n-new-project__main-pager
+                    a(href="#").pager-link.pager-link--prev.pager-link--is-hidden.site-pager__link
+                        .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                        | Назад
+                    p.u-subtitle.site-pager__steps Шаг 1 из 4
+                    a(href="#").pager-link.pager-link--next.pager-link--is-hidden.site-pager__link
+                        .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                        | Вперед
+                .appeal-alert.n-new-project__main-alert
+                    button(type="button", title="Close").btn-close.appeal-alert__close
+                        svg.u-icon
+                            use(xlink:href="img/sprite.svg#close")
+                    .appeal-alert__inner
+                        .content.appeal-alert__content
+                            p Продолжительность проекта и количество собранных вами средств не ограничены. Все полученные донаты принадлежат вам и не предполагают возврат отправителю. Подробнее в <a href="#">Правилах платформы</a>.
+                form(action="#").n-new-project__main-form
+                    .input-block.n-new-project__main-form__area-item
+                        label(for="n-new-project").input-block__label
+                            span.input-block__label-name Название проекта *
+                        input(type="text", name="", id="n-new-project", value="").input-el.input-block__el
+                    .input-block.n-new-project__main-form__area-item
+                        label(for="n-new-project-category").input-block__label
+                            span.input-block__label-name Категория *
+                        select(name="", id="n-new-project-category").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
+                            option(option="Выберите", disabled, selected) Выберите
+                            option(option="Выбор 1") Выбор 1
+                            option(option="Выбор 2") Выбор 2
+                    .input-block.n-new-project__main-form__area-item
+                        label(for="n-new-project-city").input-block__label
+                            span.input-block__label-name Город
+                            span.input-block__label-description Оставьте пустым, если нет географической привязки
+                        input(type="text", name="", id="n-new-project-city", value="").input-el.input-block__el
+                    .input-block.n-new-project__main-form__area-item
+                        label(for="n-new-project-address-page").input-block__label
+                            span.input-block__label-name Адрес страницы
+                            span.input-block__label-description Придумайте короткий URL-адрес вашей страницы. Может содержать латинские буквы, цифры, дефисы и подчёркивания
+                        input(type="text", name="", id="n-new-project-address-page", placeholder="http://uppora.org/").input-el.input-block__el
+                    .input-block.n-new-project__main-form__area-item
+                        label.input-block__label
+                            span.input-block__label-name Ссылки на соцсети
+                            span.input-block__label-description Ссылки на соцсети или каналы в месендерах, где уже размещён ваш проект. Будут отображаться на странице проекта
+                        button(type="button").add-link-btn.input-block__add-link
+                            svg.u-icon.add-link-btn__icon
+                                use(xlink:href="img/sprite.svg#close")
+                            | Добавить ссылку
+                    .input-block.n-new-project__main-form__area-item
+                        label.input-block__label
+                            span.input-block__label-name Ссылки на другие платформы
+                            span.input-block__label-description Любые другие сайты по сбору средств, на которых уже размещён ваш проект. Будут отображаться на странице проекта
+                        button(type="button").add-link-btn.input-block__add-link
+                            svg.u-icon.add-link-btn__icon
+                                use(xlink:href="img/sprite.svg#close")
+                            | Добавить ссылку
+                    .n-new-project__main-form-privacy
+                        .n-new-project__main-form-privacy-title Приватность
+                        label.label-radio.n-new-project__main-form-privacy-label-radio
+                            input(type="radio", name="n-new-project", checked, value="Публичный").label-radio__input
+                            span.label-radio__inner
+                                span.label-radio__title Публичный (рекомендуемый)
+                                span.label-radio__text Будет виден всем пользователям в интернете и поисковым сайтам. Широкий охват аудитории
+                        label.label-radio.n-new-project__main-form-privacy-label-radio
+                            input(type="radio", name="n-new-project", value="Закрытый").label-radio__input
+                            span.label-radio__inner
+                                span.label-radio__title Закрытый
+                                span.label-radio__text Будет виден узкому кругу лиц и только после одобрения вами запроса на подписку пользователя
+                    .group-btns.n-new-project__main-form-btns
+                        button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Далее
+                        button(type="button").btn.btn--size-sm.btn-trp.group-btns__item Сохранить в черновики
+                        button(type="button").btn.btn--size-sm.btn-simple.group-btns__item Предпросмотр
+
+    include includes/footer.pug

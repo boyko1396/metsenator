@@ -1,0 +1,336 @@
+.input {
+    width: 100%;
+    position: relative;
+
+    input {
+        width: 100%;
+        padding: 9px 12px;
+        font-size: 400px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $darknes;
+        border-radius: 8px;
+        border: 1px solid $gray-light;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #9ca3af;
+        }
+
+        &[type=search],
+        &[type=search]:focus {
+            -webkit-appearance: none;
+        }
+
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration { 
+            display: none; 
+        }
+            
+
+        &:focus {
+            border: 1px solid $gray;            
+        }
+    }
+
+    label {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $darknes;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $gray;
+        margin: 0 0 12px;
+    }
+
+    &-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+            display: block;
+        }
+    }
+
+    &-view-toggle {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+
+    &-view-toggle-icon {
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .4s;
+        transition-property: opacity, visibility;
+    }
+
+    &-view-toggle:not(.active) &-view-toggle-icon ~ &-view-toggle-icon,
+    &-view-toggle.active &-view-toggle-icon:first-child {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 288px;
+        padding: 9px 12px;
+        font-size: 400px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $darknes;
+        border-radius: 8px;
+        border: 1px solid $gray-light;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #9ca3af;
+        }
+
+        &:focus {
+            border: 1px solid $gray;            
+        }
+
+        .settings-inner & {
+            min-height: 112px;
+        }
+    }
+
+    &-group {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 60px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &-524 {
+            max-width: 524px;
+        }
+
+        &.input-group-choise {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-social {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+            margin-bottom: 24px;
+
+            .input {
+                label {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #4B5563;
+                    margin-bottom: 4px;
+                }
+            } 
+        }
+
+        &-accounts {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 48px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &.isConnected {
+                align-items: flex-end;
+            }            
+        }
+
+        &-payment {
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &-social-name {
+        max-width: 192px;
+    }
+
+    &-delete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+
+    &-choise {
+        width: 44px;
+        min-width: 44px;
+        height: 24px;
+
+        input {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            -webkit-appearance: none;
+            background-color: $gray-light;
+            box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+            border-radius: 80px;
+            transition: .3s;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: $white;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+                transition: .3s;
+            }
+
+            &:checked {
+                background-color: $green3;
+
+                &::before {
+                    transform: translateX(20px);
+                }
+            }
+        }
+    }
+
+    &-payment {
+        max-width: 312px;
+
+        &-label {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: #4B5563;
+            margin-bottom: 4px;
+        }
+    }
+
+    &-card {
+
+        max-width: 60px;
+
+        &-group {
+            display: flex;
+            align-items: center;
+        }
+
+        &-devider {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: $dark-blue;
+            margin: 0 8px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .input {
+
+        &-group {
+            margin-bottom: 48px;
+
+            .settings-inner-form-group-wrap & {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input {
+
+        &-group {
+            display: block;
+            margin-bottom: 32px;
+
+            .input {
+                margin-bottom: 32px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            &-social {
+                position: relative;
+                display: block;
+                padding-right: 44px;
+            }
+
+            &-accounts {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 24px;
+
+                &.isConnected {
+                    align-items: flex-start;
+                }
+            }
+        }
+
+        &-social-name {
+            max-width: none;
+            margin-bottom: 12px;
+        }
+
+        &-delete {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+
+        &-choise {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

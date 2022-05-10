@@ -1,0 +1,67 @@
+.likes {
+
+    &-group {
+        display: flex;
+        align-items: center;
+
+        &.active {
+            margin-bottom: 24px;
+        }
+    }
+
+    &-like,
+    &-dislike {
+        width: 18px;
+        height: 12px;
+        cursor: pointer;
+        overflow: hidden;
+
+        svg {
+            width: 100%;            
+
+            path {
+                stroke: #9CA3AF;
+                transition: .3s;
+            }
+        }
+    }
+
+    &-like.active {
+        svg path {
+            fill: $green3;
+            stroke: $green3;
+        }
+    }
+
+    &-dislike.active {
+        svg path {
+            fill: $red;
+            stroke: $red;
+        }
+    }
+
+    &-dislike.active {
+        svg {
+            fill: $red;
+            stroke: $red;
+        }
+    }
+
+    &-count {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: $gray;
+        margin: 0 6px;
+    }
+
+    &-answer {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: $gray;
+        text-transform: uppercase;
+        margin-left: 16px;
+        cursor: pointer;
+    }
+}

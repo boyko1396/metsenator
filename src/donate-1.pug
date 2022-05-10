@@ -1,0 +1,59 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.d-page
+        section.d-donate
+            .container.d-donate__container
+                form(action="#").donate-form.d-donate__form
+                    .donate-form__header
+                        a(href="#").pager-link.pager-link--prev.donate-form__pager-link
+                            .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                            | Назад
+                        h1.donate-form__title Поддержать проект
+                    a(href="#").link-accent.donate-form__sublink Опыт развития форм деятельности
+                    input(type="number", name="amount" placeholder="0 ₽").input-donate.donate-form__input-donate
+                    .button-badge-wrap.donate-form__button-badge-amount-wrap
+                        button(type="button").js-button-donate.button-badge-donate.button-badge-wrap__item
+                            span.button-badge-donate__amount 100
+                            span.button-badge-donate__currency ₽
+                        button(type="button").js-button-donate.button-badge-donate.button-badge-wrap__item
+                            span.button-badge-donate__amount 500
+                            span.button-badge-donate__currency ₽
+                        button(type="button").js-button-donate.button-badge-donate.button-badge-wrap__item
+                            span.button-badge-donate__amount 1000
+                            span.button-badge-donate__currency ₽
+                    .input-block.donate-form__input-name
+                        label(for="donate-name").input-block__label
+                            span.input-block__label-name Имя
+                            span.input-block__label-description Чтобы поддержать анонимно оставьте поле пустым
+                        input(type="text", name="name", id="donate-name", value="").input-el.input-block__el
+                    .input-block.donate-form__comment
+                        label(for="donate-comment").input-block__label
+                            span.input-block__label-name Комментарий
+                        textarea(type="text", name="donate-comment", id="donate-comment", rows="", cols="", value="").input-el.input-el--textarea.input-el--textarea-size-md.input-block__el
+                    .button-badge-wrap.donate-form__button-badge-comment-wrap
+                        button(type="button").js-button-donate.button-badge-donate.button-badge-wrap__item
+                            span.button-badge-donate__amount Успехов
+                        button(type="button").js-button-donate.button-badge-donate.button-badge-wrap__item
+                            span.button-badge-donate__amount Спасибо
+                        button(type="button").js-button-donate.button-badge-donate.button-badge-wrap__item
+                            span.button-badge-donate__amount Отлично
+                    label.label-checkbox.donate-form__privacy
+                        input(type="checkbox", name="").label-checkbox__input
+                        span.label-checkbox__inner
+                            span.label-checkbox__inner-icon(style="background-image: url(../img/checked.svg)")
+                            | Я хочу взять на себя транзакционные издержки (3%), чтобы проект получил всю сумму
+                    button(type="submit").btn-donate.donate-form__btn 
+                        img(src="img/btn-donate-payments.svg").btn-donate__logo
+                        span.btn-donate__title Оплатить картой
+                    .donate-form__tinkoff-bank
+                        .donate-form__tinkoff-bank-text У нас нет доступа к данным вашей карты. Обработка платежа происходит на стороне банка Тинькофф. Подтверждая оплату проекта, вы принимаете <a href='#' class='link-accent'>Пользовательское соглашение</a> и <a href='#' class='link-accent'>Политику конфиденциальности</a>
+                        img(src="img/tinkoff-logo.svg", alt="Тинькофф банк").donate-form__tinkoff-bank-logo
+
+    include includes/footer.pug

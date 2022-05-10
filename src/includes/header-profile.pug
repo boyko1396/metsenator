@@ -1,0 +1,38 @@
+header.header
+	.header-top
+		.header-top-left
+			a.header-logo(href="#")
+				img(src="img/logo.png", alt="")
+			a.header-about(href="#") О платформе
+		
+		.header-top-right
+			a.header-new.btn.btn-white(href="#") Создание проекта
+			.header-alerts 
+				img(src="img/bell.svg", alt="")
+			.header-profile 
+				img(src="img/person.png", alt="")
+
+		.header-alerts.header-alerts-mobile 
+			img(src="img/bell.svg", alt="")
+
+	.header-middle
+		img(src="img/header-bg.jpg", alt="")
+		.header-middle-edit 
+			img(src="img/edit.svg", alt="") 
+
+	.header-bottom 
+		.container 
+			.header-bottom-wrap 
+				.header-info
+
+					//- Попап смены фотографии профиля
+					include popup-photo.pug
+					
+					.header-info-photo
+						img(src="img/person-1.jpg", alt="")
+					.header-info-block 
+						.header-info-name Алексей Иванов	
+						.header-info-subs 
+							span.header-info-subs-num 270&nbsp;
+							span подписчиков
+				.header-subscribe.btn.btn-green Подписаться	

@@ -1,0 +1,231 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug  
+
+    main.project
+        .container         
+            section.project-header            
+                .project-header-img
+                    img(src="img/project-ava.jpg", alt="")
+                .project-header-block 
+                    .project-header-ttl Опыт развития форм деятельности
+                    .project-header-subs.header-info-subs 
+                        span.project-header-subs-num.header-info-subs-num 270&nbsp;
+                        span подписчиков
+
+        section.project-main
+            .container 
+                .project-main-wrap 
+                    .project-main-media
+                        img(src="img/post.jpg", alt="")
+                    .project-main-info
+                        .project-main-info-amount
+                            span.project-main-amount-summ 5256&nbsp;
+                            span ₽&nbsp;
+                            span собрано
+                        .project-main-info-subs
+                            span.project-main-info-subs-num 15&nbsp;
+                            span человек поддержали
+                        .project-main-info-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный поведенческий таргетинг.   
+                        .project-main-info-btn.btn.btn-green Поддержать
+                        .project-main-info-footer
+                            span Опубликован&nbsp;
+                            span.project-main-info-date 2 недели назад
+
+        section.project-tabs 
+            .container 
+                .project-tabs-wrap
+                    .project-tabs-overflow 
+                        .project-tabs-nav
+                            .project-tabs-tab.active
+                                span О&nbsp;прoекте
+                            .project-tabs-tab
+                                span Блог&nbsp;
+                                span.project-tabs-tab-count 7  
+                            .project-tabs-tab
+                                span Поддержали&nbsp;
+                                span.project-tabs-tab-count 15
+                            .project-tabs-tab.mobile
+                                span Ещё
+                    .project-tabs-buttons
+                        .project-tabs-subscribe.btn.btn-trp Подписаться 
+                        .project-tabs-share.btn.btn-trp
+                            img(src="img/share.svg", alt="")
+
+        section.project-content 
+            .container
+                .project-content-wrap
+                    .project-content-inner.project-about                         
+                        .project-content-text
+                            p Рекламная акция подсознательно тормозит сублимированный инструмент маркетинга. Медиамикс, в рамках сегодняшних воззрений, усиливает коллективный пул лояльных изданий, невзирая на действия конкурентов. Таргетирование недостижимо. Надо сказать, что взаимодействие корпорации и клиента концентрирует презентационный материал. Начальная стадия проведения исследования изоморфна времени. Интересно отметить, что особенность рекламы масштабирует межличностный рекламный бриф.
+                        .project-content-img
+                            img(src="img/project.jpg", alt="")
+                        .project-content-text
+                            p Российская специфика традиционно нейтрализует эмпирический рекламоноситель. Целевая аудитория определяет из ряда вон выходящий SWOT-анализ, не считаясь с затратами. Партисипативное планирование директивно переворачивает креативный пак-шот. В рамках концепции Акоффа и Стэка, соц-дем характеристика аудитории директивно масштабирует связанный принцип восприятия. Имиджевая реклама, не меняя концепции, изложенной выше, усиливает диктат потребителя. Потребление однородно тормозит баинг и селлинг, опираясь на опыт коллег.
+                            p Бизнес-план неверно уравновешивает принцип восприятия, опираясь на опыт западных коллег. Узнавание бренда порождает межличностный рейтинг. Инструмент маркетинга продуцирует принцип восприятия. Рекламоноситель парадоксально искажает из ряда вон выходящий сегмент рынка.
+
+                        form.comments.project-content-comments
+                            .comments-ttl Комментарии
+
+                            .comments-input
+                                .comments-input-wrap
+                                    .comments-item-person
+                                        img(src="img/person.png", alt="")
+                                    .input.input-no-label
+                                        input#1(type="text", name="input-1", placeholder="Написать комментарий")
+                                .comments-input-buttons
+                                    .comments-input-cancel Отмена
+                                    .comments-input-public.btn.btn-green Опубликовать
+
+                            .comments-list 
+                                .comments-tree
+                                    .comments-item
+                                        .comments-item-header
+                                            .comments-item-person
+                                                img(src="img/person.png", alt="")
+                                            .comments-item-info
+                                                .comments-item-name Андрей Эдуардович
+                                                .comments-item-time
+                                                    span.comments-item-time-day вчера&nbsp;    
+                                                    span.comments-item-time-at в&nbsp;    
+                                                    span.comments-item-time-clock 17:40&nbsp;
+                                        .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
+                                        .likes-group
+                                            .likes-like
+                                                img.svg-inline(src="img/like.svg", alt="")
+                                            .likes-count 0
+                                            .likes-dislike
+                                                img.svg-inline(src="img/dislike.svg", alt="")
+                                            .likes-answer(area-disabled="true") Ответить 
+                                    .comments-tree__child
+                                        .comments-tree
+                                            .comments-item
+                                                .comments-item-header
+                                                    .comments-item-person
+                                                        img(src="img/person.png", alt="")
+                                                    .comments-item-info
+                                                        .comments-item-name.topic-starter Андрей Эдуардович
+                                                        .comments-item-time
+                                                            span.comments-item-time-day вчера&nbsp;    
+                                                            span.comments-item-time-at в&nbsp;    
+                                                            span.comments-item-time-clock 17:40&nbsp;
+                                                .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
+                                                .likes-group
+                                                    .likes-like
+                                                        img.svg-inline(src="img/like.svg", alt="")
+                                                    .likes-count 0
+                                                    .likes-dislike
+                                                        img.svg-inline(src="img/dislike.svg", alt="")
+                                                    .likes-answer(area-disabled="true") Ответить        
+                                            .comments-item
+                                                .comments-item-header
+                                                    .comments-item-person
+                                                        img(src="img/person.png", alt="")
+                                                    .comments-item-info
+                                                        .comments-item-name Андрей Эдуардович
+                                                        .comments-item-time
+                                                            span.comments-item-time-day вчера&nbsp;    
+                                                            span.comments-item-time-at в&nbsp;    
+                                                            span.comments-item-time-clock 17:40&nbsp;
+                                                .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
+                                                .likes-group
+                                                    .likes-like
+                                                        img.svg-inline(src="img/like.svg", alt="")
+                                                    .likes-count 0
+                                                    .likes-dislike
+                                                        img.svg-inline(src="img/dislike.svg", alt="")
+                                                    .likes-answer(area-disabled="true") Ответить
+                                        .comments-tree__child
+                                            .comments-tree
+                                                .comments-item
+                                                    .comments-item-header
+                                                        .comments-item-person
+                                                            img(src="img/person.png", alt="")
+                                                        .comments-item-info
+                                                            .comments-item-name Андрей Эдуардович
+                                                            .comments-item-time
+                                                                span.comments-item-time-day вчера&nbsp;    
+                                                                span.comments-item-time-at в&nbsp;    
+                                                                span.comments-item-time-clock 17:40&nbsp;
+                                                    .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
+                                                    .likes-group
+                                                        .likes-like
+                                                            img.svg-inline(src="img/like.svg", alt="")
+                                                        .likes-count 0
+                                                        .likes-dislike
+                                                            img.svg-inline(src="img/dislike.svg", alt="")
+                                                        .likes-answer(area-disabled="true") Ответить
+                                .comments-tree
+                                    .comments-item
+                                        .comments-item-header
+                                            .comments-item-person
+                                                img(src="img/person.png", alt="")
+                                            .comments-item-info
+                                                .comments-item-name Андрей Эдуардович
+                                                .comments-item-time
+                                                    span.comments-item-time-day вчера&nbsp;    
+                                                    span.comments-item-time-at в&nbsp;    
+                                                    span.comments-item-time-clock 17:40&nbsp;
+                                        .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
+                                        .likes-group
+                                            .likes-like
+                                                img.svg-inline(src="img/like.svg", alt="")
+                                            .likes-count 0
+                                            .likes-dislike
+                                                img.svg-inline(src="img/dislike.svg", alt="")
+                                            .likes-answer(area-disabled="true") Ответить
+
+                    aside.aside.project-aside
+                        .aside-section.aside-persons 
+                            .aside-person 
+                                .aside-person-img
+                                    img(src="img/person.png", alt="")
+                                .aside-person-block 
+                                    .aside-person-name Алексей Иванов              
+                                    .aside-person-role автор проекта             
+                            .aside-person 
+                                .aside-person-img
+                                    img(src="img/person.png", alt="")
+                                .aside-person-block 
+                                    .aside-person-name Александр Смирнов              
+                                    .aside-person-role модератор         
+                        .aside-section.aside-links
+                            .aside-links-block
+                                .aside-links-ttl Соцсети
+                                a.aside-links-link(href="#") Вконтакте
+                                a.aside-links-link(href="#") Telegram
+                                a.aside-links-link(href="#") YouTube
+                            .aside-links-block
+                                .aside-links-ttl Другие платформы
+                                a.aside-links-link(href="#") Rickstarter
+                                a.aside-links-link(href="#") Donationalerts
+                                a.aside-links-link(href="#") Boomstarter
+                        .aside-section.aside-top 
+                            .aside-top-person
+                                .aside-top-person-img 
+                                    img(src="img/person.png", alt="")
+                                .aside-top-person-name Иван Иванов                
+                            .aside-top-person
+                                .aside-top-person-img 
+                                    img(src="img/person.png", alt="")
+                                .aside-top-person-name Иван Иванов                
+                            .aside-top-person
+                                .aside-top-person-img 
+                                    img(src="img/person.png", alt="")
+                                .aside-top-person-name Иван Иванов                
+                            .aside-top-person
+                                .aside-top-person-img 
+                                    img(src="img/person.png", alt="")
+                                .aside-top-person-name Иван Иванов                
+                            .aside-top-person
+                                .aside-top-person-img 
+                                    img(src="img/person.png", alt="")
+                                .aside-top-person-name Иван Иванов                
+
+
+    include includes/footer.pug

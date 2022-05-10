@@ -1,0 +1,25 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.d-page
+        section.d-donate
+            .container.d-donate__container
+                .ty-donate.d-donate__thank
+                    .ty-donate__inner
+                        .ty-donate__media
+                            img(src="img/logo-animated.gif")
+                        h1.ty-donate__title Спасибо! Всё получилось!
+                        .content.ty-donate__text
+                            p Хотите зарегистрироваться, чтобы сохранить информацию о своей помощи?
+                        a(href="#").btn.btn--size-md.btn-green.ty-donate__btn Зарегистрироваться
+                        a(href="#").prev-link.ty-donate__prev-link
+                            span.prev-link__icon(style="background-image: url(img/prev-link-arrow.svg)")
+                            | Назад к проекту
+
+    include includes/footer.pug

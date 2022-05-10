@@ -1,0 +1,63 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.n-new-project
+        .container.n-new-project__container
+            aside.n-new-project__aside
+                .n-new-project__aside-title Новый проект
+                nav(role="navigation").nav-step.n-new-project__aside-nav
+                    ul.nav-step__list
+                        li.nav-step__item
+                            a(href="new-project-1.html").nav-step__link 1. Основная информация
+                        li.nav-step__item
+                            a(href="new-project-2.html").nav-step__link 2. Изображения
+                        li.nav-step__item
+                            a(href="new-project-3.html").nav-step__link 3. Описание
+                        li.nav-step__item
+                            a(href="new-project-4.html").nav-step__link.is-active 4. Вывод оплаты
+            section.n-new-project__main
+                h1.n-new-project__main-title Вывод оплаты
+                .site-pager.n-new-project__main-pager
+                    a(href="new-project-3.html").pager-link.pager-link--prev.site-pager__link
+                        .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                        | Назад
+                    p.u-subtitle.site-pager__steps Шаг 4 из 4
+                    a(href="#").pager-link.pager-link--next.pager-link--is-hidden.site-pager__link
+                        .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                        | Вперед
+                form(action="#").n-new-project__main-form
+                    .input-block.n-new-project__main-form__area-item
+                        label(for="n-new-project-cards-number").input-block__label
+                            span.input-block__label-name Карта *
+                            span.input-block__label-description Введите номер карты, на которую будут выводиться донаты. Visa, Mastercard, Maestro, МИР
+                            input(type="text", name="", id="n-new-project-cards-number", placeholder="XXXX XXXX XXXX XXXX").input-el.input-block__el
+                    .input-block.n-new-project__main-form__area-item
+                        label.input-block__label
+                            span.input-block__label-name Шаблоны донатов *
+                            span.input-block__label-description Вы можете назначить шаблоны для быстрого ввода суммы доната пользователем (ручной ввод также будет доступен)
+                        .input-block__template-cards
+                            .input-block__template-cards-item.input-block__template-cards-item--size-4
+                                .template-card
+                                    input(type="text", name="", placeholder="100").input-el.template-card__input
+                                    .template-card__currency ₽
+                            .input-block__template-cards-item.input-block__template-cards-item--size-4
+                                .template-card
+                                    input(type="text", name="", placeholder="500").input-el.template-card__input
+                                    .template-card__currency ₽
+                            .input-block__template-cards-item.input-block__template-cards-item--size-4
+                                .template-card
+                                    input(type="text", name="", placeholder="1000").input-el.template-card__input
+                                    .template-card__currency ₽
+
+                    .group-btns.n-new-project__main-form-btns
+                        button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Опубликовать
+                        button(type="button").btn.btn--size-sm.btn-trp.group-btns__item Сохранить в черновики
+                        button(type="button").btn.btn--size-sm.btn-simple.group-btns__item Предпросмотр
+
+    include includes/footer.pug

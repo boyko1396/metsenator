@@ -1,0 +1,126 @@
+.aside {
+    flex: 1;
+    &-section {
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid $gray-light;
+
+        &:last-of-type {
+            padding-bottom: 0;
+            border: none;
+        }
+    }
+
+    &-person {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &-img {
+            width: 32px;
+            min-width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 12px;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        &-name {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: $darknes;
+        }
+
+        &-role {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #8A9199;
+        }
+    }
+
+    &-links {
+        &-ttl {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: $darknes;
+            margin-bottom: 8px;
+        }
+
+        &-block {
+            margin-bottom: 24px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &-link {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #2563EB;
+            margin-bottom: 6px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-top {
+        &-person {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &-img {
+                width: 24px;
+                min-width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 12px;
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            &-name {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: $dark-blue;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aside {
+        display: none;
+
+        &.mobile {
+            display: block;
+        }
+    }
+}

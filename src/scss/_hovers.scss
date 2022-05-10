@@ -1,0 +1,29 @@
+@media screen and (min-width: 769px)  {
+	a:hover {
+		text-decoration: none;
+		outline: 0;
+	}
+
+	.header-middle:hover {
+		.header-middle-edit {
+			opacity: 1;
+		}
+	}
+
+	.likes-like:hover {
+		svg path {
+			fill: $green3;
+            stroke: $green3;
+
+		}
+	}
+
+	.likes-dislike:hover {
+		svg path {
+			fill: $red;
+            stroke: $red;
+
+		}
+	}
+	
+}

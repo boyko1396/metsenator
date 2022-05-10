@@ -1,0 +1,209 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.home
+        section.home-main 
+            .container-large 
+                .home-main-grid
+                    .home-main-info
+                        .home-main-info-ttl Платформа финансовой поддержки и&nbsp;общения
+                        .home-main-info-subttl Для тех кто донатит и тех, кто собирает донаты. Поддержите движение вверх интересных людей и проектов.
+                        .home-main-buttons
+                            a.home-main-registration.btn.btn-green(href="#") Стать Аппорой
+                            a.home-main-about(href="#") Подробнее о проекте
+                    .home-main-video
+                        .home-main-video-wrap
+                            iframe(src="https://www.youtube.com/embed/X8Z8okhkjv8", frameborder="0") 
+                    .home-main-bank
+                        .home-main-bank-logo
+                            img(src="img/tinkoff.png", alt="")
+                        .home-main-bank-desc Безопасность и надежность всех финансовых операций гарантирует Тинькофф Банк
+
+        section.home-section.home-easy
+            .container-large
+                .home-section-head
+                    .home-section-ttl Удобно и безопасно
+            .home-easy-wrap
+                .home-easy-item
+                    .home-easy-item-icon
+                        img(src="img/home-cards.svg", alt="")
+                    .home-easy-item-ttl Никаких ограничений
+                    .home-easy-item-text Наше основное отличие – отсутствие каких либо ограничений на сумму которую вы можете собрать за проект
+                .home-easy-item
+                    .home-easy-item-icon
+                        img(src="img/home-lock.svg", alt="")
+                    .home-easy-item-ttl Защита платежей
+                    .home-easy-item-text Введите данные карты и отправьте донат в пару кликов. Тинькофф банк гарантирует безопасность платежей
+                .home-easy-item
+                    .home-easy-item-icon
+                        img(src="img/home-circle.svg", alt="")
+                    .home-easy-item-ttl Без скрытых комиссий
+                    .home-easy-item-text Вы платите только банку за перевод и больше никаких сервисных сборов и платежей
+
+        section.home-how
+            .container-large
+                .home-how-wrap
+                    .home-how-img
+                        img(src="img/post.jpg", alt="")
+                    .home-how-info
+                        .home-how-info-block
+                            .home-how-info-block-ttl Прозрачность
+                            .home-how-info-block-text Донатьте любому проекту или создайте свой. В профиле и карточке проекта сохраняется вся статистика донатов и сборов
+                        .home-how-info-block
+                            .home-how-info-block-ttl Открыто или анонимно
+                            .home-how-info-block-text Донатить анонимно или с гордостью делиться информацией в личном профиле – степень открытости выбираете именно вы
+                        .home-how-info-block
+                            .home-how-info-block-ttl Новый формат общения
+                            .home-how-info-block-text Вместе с донатом можно написать сообщение автору и получить ответ. Обратная связь не менее ценна, чем сам донат
+
+        section.home-section.home-projects
+            .container-large
+                .home-section-head
+                    .home-section-ttl Проекты
+                    a.home-section-link(href="#") Смотреть все
+            
+            .home-projects-slider-container
+                .home-projects-slider.swiper
+                    .home-projects-wrap.swiper-wrapper
+                        .home-projects-item.swiper-slide
+                            .home-projects-item-head
+                                .home-projects-item-head-img
+                                    img(src="img/project-ava.jpg", alt="")
+                                .home-projects-item-head-ttl Опыт развития разных форм деятельности
+                            .home-projects-item-img 
+                                img(src="img/post.jpg", alt="")
+                            .home-projects-item-amount
+                                span.home-projects-item-summ 5256
+                                span &nbsp;₽
+                                span &nbsp;собрано
+                            .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                            .home-projects-item-info
+                                .home-projects-item-date 2 недели назад
+                                .home-projects-item-city
+                                    .home-projects-item-city-mark(style="background-image: url(../img/spot.svg)")
+                                    | Сургут
+                        .home-projects-item.swiper-slide
+                            .home-projects-item-head
+                                .home-projects-item-head-img
+                                    img(src="img/project-ava.jpg", alt="")
+                                .home-projects-item-head-ttl Опыт развития разных форм деятельности
+                            .home-projects-item-img 
+                                img(src="img/post.jpg", alt="")
+                            .home-projects-item-amount
+                                span.home-projects-item-summ 5256
+                                span &nbsp;₽
+                                span &nbsp;собрано
+                            .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                            .home-projects-item-info
+                                .home-projects-item-date 2 недели назад
+                                .home-projects-item-city
+                                    .home-projects-item-city-mark(style="background-image: url(../img/spot.svg)")
+                                    | Сургут
+                        .home-projects-item.swiper-slide
+                            .home-projects-item-head
+                                .home-projects-item-head-img
+                                    img(src="img/project-ava.jpg", alt="")
+                                .home-projects-item-head-ttl Опыт развития разных форм деятельности
+                            .home-projects-item-img 
+                                img(src="img/post.jpg", alt="")
+                            .home-projects-item-amount
+                                span.home-projects-item-summ 5256
+                                span &nbsp;₽
+                                span &nbsp;собрано
+                            .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                            .home-projects-item-info
+                                .home-projects-item-date 2 недели назад
+                                .home-projects-item-city
+                                    .home-projects-item-city-mark(style="background-image: url(../img/spot.svg)")
+                                    | Сургут
+                        .home-projects-item.swiper-slide
+                            .home-projects-item-head
+                                .home-projects-item-head-img
+                                    img(src="img/project-ava.jpg", alt="")
+                                .home-projects-item-head-ttl Опыт развития разных форм деятельности
+                            .home-projects-item-img 
+                                img(src="img/post.jpg", alt="")
+                            .home-projects-item-amount
+                                span.home-projects-item-summ 5256
+                                span &nbsp;₽
+                                span &nbsp;собрано
+                            .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                            .home-projects-item-info
+                                .home-projects-item-date 2 недели назад
+                                .home-projects-item-city Сургут 
+                        .home-projects-item.swiper-slide
+                            .home-projects-item-head
+                                .home-projects-item-head-img
+                                    img(src="img/project-ava.jpg", alt="")
+                                .home-projects-item-head-ttl Опыт развития разных форм деятельности
+                            .home-projects-item-img 
+                                img(src="img/post.jpg", alt="")
+                            .home-projects-item-amount
+                                span.home-projects-item-summ 5256
+                                span &nbsp;₽
+                                span &nbsp;собрано
+                            .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                            .home-projects-item-info
+                                .home-projects-item-date 2 недели назад
+                                .home-projects-item-city Сургут 
+                        .home-projects-item.swiper-slide
+                            .home-projects-item-head
+                                .home-projects-item-head-img
+                                    img(src="img/project-ava.jpg", alt="")
+                                .home-projects-item-head-ttl Опыт развития разных форм деятельности
+                            .home-projects-item-img 
+                                img(src="img/post.jpg", alt="")
+                            .home-projects-item-amount
+                                span.home-projects-item-summ 5256
+                                span &nbsp;₽
+                                span &nbsp;собрано
+                            .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                            .home-projects-item-info
+                                .home-projects-item-date 2 недели назад
+                                .home-projects-item-city Сургут 
+                        .home-projects-item.swiper-slide
+                            .home-projects-item-head
+                                .home-projects-item-head-img
+                                    img(src="img/project-ava.jpg", alt="")
+                                .home-projects-item-head-ttl Опыт развития разных форм деятельности
+                            .home-projects-item-img 
+                                img(src="img/post.jpg", alt="")
+                            .home-projects-item-amount
+                                span.home-projects-item-summ 5256
+                                span &nbsp;₽
+                                span &nbsp;собрано
+                            .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
+                            .home-projects-item-info
+                                .home-projects-item-date 2 недели назад
+                                .home-projects-item-city Сургут 
+
+                .home-projects-pagination.swiper-pagination 
+                .home-projects-button-prev
+                    img(src="img/prev.svg", alt="")
+                .home-projects-button-next
+                    img(src="img/next.svg", alt="")
+
+        section.home-interest 
+            .container-large
+                .home-interest-inner(style="background-image: url(../img/u.png)")
+                    .home-interest-info
+                        .home-interest-info-ttl Есть интересный проект?
+                        .home-interest-info-subttl Предложите своей аудитории поддержать вас и получайте донаты и обратную связь
+                        .home-interest-buttons
+                            a.home-interest-create.btn.btn-green(href="#") Создать проект 
+                            a.home-interest-about(href="#") Узнать подробности 
+                    .home-interest-img
+                        img(src="img/cards.png", alt="")
+
+
+    
+    include includes/footer-main.pug
+
+    script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+    script(src="js/home.js")

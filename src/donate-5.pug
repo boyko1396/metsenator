@@ -1,0 +1,24 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.d-page
+        section.d-donate
+            .container.d-donate__container
+                .ty-donate.d-donate__thank
+                    .ty-donate__inner
+                        .ty-donate__media
+                            img(src="img/logo-animated.gif")
+                        h1.ty-donate__title Спасибо! Всё получилось!
+                        .content.ty-donate__text
+                            p Вы будете перенаправлены на страницу проекта через 10 секунд
+                        a(href="#").prev-link.ty-donate__prev-link
+                            span.prev-link__icon(style="background-image: url(img/prev-link-arrow.svg)")
+                            | Перейти к проекту
+
+    include includes/footer.pug

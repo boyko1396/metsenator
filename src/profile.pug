@@ -1,0 +1,78 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header-profile.pug
+
+    main.profile 
+        .container 
+            .profile-wrap
+
+                .profile-tabs 
+                    .profile-tab.active Создал&nbsp;
+                        span 9
+                    .profile-tab Поддержал&nbsp;
+                        span 15
+
+                .profile-posts 
+                    
+                    .post
+                        .post-header 
+                            .post-header-img 
+                                img(src="img/post-person.png", alt="")
+                            .post-header-info 
+                                .post-header-ttl Опыт развития различных форм деятельности
+                                .post-header-date вчера в 17:40
+                            .post-header-btn 
+                                img(src="img/dots.svg", alt="")
+                        .post-img 
+                            img(src="img/post.jpg", alt="")
+                        .post-text
+                            |В соответствии с законами сохранения энергии, угловая скорость искажает
+                            |суммарный поворот. Направление заставляет иначе взглянуть на то, что такое курс. Собственный
+                            |кинетический момент мал. Гироскопический прибор вращает гиротахометр.
+                        .post-info 
+                            .post-like
+                                img(src="img/arrow.svg", alt="")
+                            .post-count 211       
+                            .post-dislike
+                                img(src="img/arrow.svg", alt="")
+                    
+                    .post
+                        .post-header 
+                            .post-header-img 
+                                img(src="img/post-person.png", alt="")
+                            .post-header-info 
+                                .post-header-ttl Опыт развития различных форм деятельности
+                                .post-header-date вчера в 17:40
+                            .post-header-btn 
+                                img(src="img/dots.svg", alt="")
+                        .post-img 
+                            img(src="img/post.jpg", alt="")
+                        .post-text
+                            |В соответствии с законами сохранения энергии, угловая скорость искажает
+                            |суммарный поворот. Направление заставляет иначе взглянуть на то, что такое курс. Собственный
+                            |кинетический момент мал. Гироскопический прибор вращает гиротахометр.
+                        .post-info 
+                            .post-like
+                                img(src="img/arrow.svg", alt="")
+                            .post-count 211       
+                            .post-dislike
+                                img(src="img/arrow.svg", alt="")
+
+                aside.profile-aside
+                    .profile-aside-text
+                        |Переходное состояние последовательно. Весьма существенно следующее:
+                        |интенция изящно образует фабульный каркас. Текст, как бы это ни казалось парадоксальным, имеет
+                        |архетип, однако само по себе состояние игры всегда амбивалентно. Теория наивного и
+                        |сентиментального искусства.
+                    .profile-aside-adress Химки, Московская обл.
+                    .profile-aside-links
+                        a.profile-aside-link(href="#") Вконтакте
+                        a.profile-aside-link(href="#") Telegram
+                        a.profile-aside-link(href="#") YouTube
+
+    include includes/footer.pug

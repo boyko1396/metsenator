@@ -1,0 +1,142 @@
+.post {
+    width: 100%;
+    padding: 24px;
+    border: 1px solid $gray-light;
+    border-radius: 8px;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &-header {
+        display: flex;
+        margin-bottom: 24px;
+
+        &-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 12px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-ttl {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #111827;
+            margin-bottom: 4px;
+        }
+
+        &-date {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: $gray;
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &-img {
+        margin-bottom: 24px;
+        border-radius: 4px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    &-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #374151;
+        margin-bottom: 24px;
+    }
+
+    &-info  {
+        display: flex;
+        align-items: center;
+    }
+
+    &-count {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $gray;
+        margin: 0 8px;
+    }
+
+    &-like,
+    &-dislike {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &-dislike {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post {
+        border: none;
+        margin-bottom: 0;
+        position: relative;
+        padding: 24px 0;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: -16px;
+            width: calc(100% + 32px);
+            height: 1px;
+            background-color: $gray-light;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .post {
+        padding: 16px 0;
+
+        &-header,
+        &-img,
+        &-text {
+            margin-bottom: 16px;
+        }
+
+        &-header {
+            &-ttl {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

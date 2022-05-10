@@ -1,0 +1,110 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug  
+
+    main.project
+        .container         
+            section.project-header            
+                .project-header-img
+                    img(src="img/project-ava.jpg", alt="")
+                .project-header-block 
+                    .project-header-ttl Опыт развития форм деятельности
+                    .project-header-subs.header-info-subs 
+                        span.project-header-subs-num.header-info-subs-num 270&nbsp;
+                        span подписчиков
+
+        section.project-main
+            .container 
+                .project-main-wrap 
+                    .project-main-media
+                        img(src="img/post.jpg", alt="")
+                    .project-main-info
+                        .project-main-info-amount
+                            span.project-main-amount-summ 5256&nbsp;
+                            span ₽&nbsp;
+                            span собрано
+                        .project-main-info-subs
+                            span.project-main-info-subs-num 15&nbsp;
+                            span человек поддержали
+                        .project-main-info-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный поведенческий таргетинг.   
+                        .project-main-info-btn.btn.btn-green Поддержать
+                        .project-main-info-footer
+                            span Опубликован&nbsp;
+                            span.project-main-info-date 2 недели назад
+
+        section.project-tabs 
+            .container 
+                .project-tabs-wrap
+                    .project-tabs-overflow 
+                        .project-tabs-nav
+                            .project-tabs-tab
+                                span О&nbsp;прoекте
+                            .project-tabs-tab
+                                span Блог&nbsp;
+                                span.project-tabs-tab-count 7  
+                            .project-tabs-tab
+                                span Поддержали&nbsp;
+                                span.project-tabs-tab-count 15
+                            .project-tabs-tab.mobile.active
+                                span Ещё
+                    .project-tabs-buttons
+                        .project-tabs-subscribe.btn.btn-trp Подписаться 
+                        .project-tabs-share.btn.btn-trp
+                            img(src="img/share.svg", alt="")
+
+        section.project-content 
+            .container
+                .aside.mobile.project-aside
+                    .aside-section.aside-persons 
+                        .aside-person 
+                            .aside-person-img
+                                img(src="img/person.png", alt="")
+                            .aside-person-block 
+                                .aside-person-name Алексей Иванов              
+                                .aside-person-role автор проекта             
+                        .aside-person 
+                            .aside-person-img
+                                img(src="img/person.png", alt="")
+                            .aside-person-block 
+                                .aside-person-name Александр Смирнов              
+                                .aside-person-role модератор         
+                    .aside-section.aside-links
+                        .aside-links-block
+                            .aside-links-ttl Соцсети
+                            a.aside-links-link(href="#") Вконтакте
+                            a.aside-links-link(href="#") Telegram
+                            a.aside-links-link(href="#") YouTube
+                        .aside-links-block
+                            .aside-links-ttl Другие платформы
+                            a.aside-links-link(href="#") Rickstarter
+                            a.aside-links-link(href="#") Donationalerts
+                            a.aside-links-link(href="#") Boomstarter
+                    .aside-section.aside-top 
+                        .aside-top-person
+                            .aside-top-person-img 
+                                img(src="img/person.png", alt="")
+                            .aside-top-person-name Иван Иванов                
+                        .aside-top-person
+                            .aside-top-person-img 
+                                img(src="img/person.png", alt="")
+                            .aside-top-person-name Иван Иванов                
+                        .aside-top-person
+                            .aside-top-person-img 
+                                img(src="img/person.png", alt="")
+                            .aside-top-person-name Иван Иванов                
+                        .aside-top-person
+                            .aside-top-person-img 
+                                img(src="img/person.png", alt="")
+                            .aside-top-person-name Иван Иванов                
+                        .aside-top-person
+                            .aside-top-person-img 
+                                img(src="img/person.png", alt="")
+                            .aside-top-person-name Иван Иванов                
+
+
+    include includes/footer.pug

@@ -1,0 +1,14 @@
+.content {
+    font-size: 18px;
+    line-height: 1.55;
+    color: $dark-blue;
+    > :first-child {
+        margin-top: 0;
+    }
+    > :last-child {
+        margin-bottom: 0;
+    }
+    p {
+        margin: 0 0 1.5em;
+    }
+}

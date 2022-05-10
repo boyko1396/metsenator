@@ -1,0 +1,215 @@
+.footer-main {
+    background-color: $darknes;
+
+    &-head {
+        padding-top: 80px;
+        margin-bottom: 12px;
+    }
+
+    &-logo {
+        width: 100px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            max-width: 366px;
+            margin-right: 40px;    
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #9CA3AF;
+            margin-bottom: 20px;
+        }
+
+        &-button {
+            display: flex;
+            width: min-content;
+            white-space: nowrap;
+            align-items: center;
+            padding: 10px 24px 10px 16px;
+            height: min-content;
+
+            img {
+                margin-right: 8px;
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: $white;
+            }
+        }
+
+        &-links {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+
+        }
+
+        &-link {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #9CA3AF;
+            margin-right: 32px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            &-link {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid #9CA3AF;
+                margin-left: 8px;
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        border-top: 1px solid $dark-blue;
+        padding: 24px 0;
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-copyrights {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: $gray;
+        }
+
+        &-block {
+            display: flex;
+            align-items: center;
+        }
+
+        &-lang,
+        &-docs {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: $gray;
+        }
+
+        &-divider {
+            width: 1px;
+            height: 16px;
+            margin: 0 22px;
+            background-color: $dark-blue;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-main {
+
+        &-head {
+            padding-top: 48px;
+        }
+
+        &-inner {
+            flex-direction: column;
+            margin-bottom: 32px;
+
+            &-info {
+                flex-direction: row;
+                max-width: none;
+                margin-right: 0;                
+            }
+
+            &-text {
+                margin-right: 32px;
+                margin-bottom: 40px;
+            }
+
+            &-links,
+            &-social {
+                justify-content: flex-start;
+            }
+        }
+
+        
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .footer-main {
+
+        &-head {
+            padding-top: 40px;
+        }
+
+        &-inner {
+
+            
+            &-info {
+                flex-direction: column;
+                margin-bottom: 40px;
+            }
+
+            &-text {
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+
+            &-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        &-bottom {
+            padding: 24px 0 0;
+           
+            &-wrap {
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            
+            &-copyrights {
+                margin-bottom: 12px;
+            }
+            
+            &-block {
+                margin-bottom: 24px;
+            }
+        }
+    }    
+}
+

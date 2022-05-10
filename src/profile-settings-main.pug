@@ -1,0 +1,77 @@
+doctype html
+html(lang='ru')
+
+include includes/head.pug
+
+body
+
+    include includes/header.pug
+
+    main.settings.settings-profile
+        .container
+            .settings-wrap
+
+                .settings-tabs
+                    .settings-tabs-head
+                        .settings-tabs-img.setting-profile-img
+                            img(src="img/person.png", alt="")
+                        .settings-tabs-info
+                            .settings-tabs-info-top.settings-profile-name Илья Панов    
+                            .settings-tabs-info-bottom.settings-profile-email adress@website.com
+                    .settings-tabs-list
+                        .settings-tabs-tab.active Основное
+                        .settings-tabs-tab Безопасность
+                        .settings-tabs-tab Способ оплаты
+                        .settings-tabs-tab Уведомления
+
+                .settings-inner
+                    .settings-inner-ttl Основное
+                    .settings-inner-desc Инормация которая отображается на странице вашего профиля
+
+                    form.settings-inner-form.settings-profile-form 
+                        .input-group.input-group-524
+                            .input
+                                label(for="#profile-name") Имя *
+                                input#profile-name(type="text", name="#profile-name") 
+                            .input
+                                label(for="#profile-surname") Фамилия
+                                input#profile-surname(type="text", name="#profile-surname")
+                        .input-group.input-group-524
+                            .input
+                                label(for="#profile-city") Город
+                                p Поможет пользователям из вашего города узнать о ваших проектах
+                                input#profile-city(type="text", name="#profile-city")
+                        .input-group
+                            .input
+                                label(for="#profile-about") О себе
+                                textarea#profile-about(type="text", name="#profile-about")
+                        .input-group.input-group-524
+                            .input
+                                label(for="#profile-web") Адрес страницы
+                                p Придумайте короткий URL-адрес вашей страницы. Может содержать латинские буквы, цифры, дефисы и подчёркивания.
+                                input#profile-web(type="text", name="#profile-web")
+                        .settings-inner-form-group
+                            .settings-inner-form-label Ссылки
+                            .settings-inner-form-text Ссылки на ваш сайт, профиль в соцсетях или месендерах
+                            .settings-inner-form-content
+                                .input-group-social
+                                    .input.input-social-name
+                                        label(for="#profile-social-name") Название ссылки
+                                        input#profile-social-name(type="text", name="#profile-social-name", placeholder="Например: Вконтаке")                        
+                                    .input.input-social-link
+                                        label(for="#profile-social-link") URL
+                                        input#profile-social-link(type="text", name="#profile-social-link")
+                                    .input-delete
+                                        img(src="img/close.svg", alt="")
+                            .settings-inner-form-add
+                                img(src="img/plus-blue.svg", alt="")
+                                span Добавить&nbsp;ссылку
+                        .input-group.input-group-choise
+                            .settings-inner-form-block
+                                .settings-inner-form-label Помогать анонимно
+                                .settings-inner-form-text В отправленных донатах, ваше имя будет скрыто. Информация об отправленных донатах на вашей странице будет доступна только вам.
+                            .input-choise
+                                input#profile-anon(type="checkbox", name="profile-anon")
+                           
+
+    include includes/footer.pug

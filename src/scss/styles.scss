@@ -1,0 +1,25 @@
+@import "variables";
+@import "interface";
+@import "hovers";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/footer-main";
+@import "layouts/popup-profile";
+@import "layouts/popup-subs";
+@import "layouts/popup-cover";
+@import "layouts/popup-photo";
+
+@import "blocks/button";
+@import "blocks/post";
+@import "blocks/comments";
+@import "blocks/input";
+@import "blocks/content";
+@import "blocks/likes";
+@import "blocks/aside";
+
+@import "pages/profile";
+@import "pages/project";
+@import "pages/home";
+@import "pages/settings";
+@import "pages/authors";
