@@ -5,92 +5,139 @@ html(lang='ru')
 
     body
 
-        include includes/header-profile-new.pug
+        include includes/header.pug
 
-        main.n-new-project
-            .container.n-new-project__container
-                aside.n-new-project__aside
-                    .n-new-project__aside-title Новый проект
-                    nav(role="navigation").nav-step.n-new-project__aside-nav
+        main.project-settings
+            .container.project-settings__container
+                aside.project-settings__aside
+                    .project-tip.project-settings__aside-project-tip
+                        picture.img-cover.project-tip__picture
+                            img(src="img/project-ava.jpg", alt="Опыт развития форм деятельности").project-tip__img
+                        .project-tip__content
+                            .text-overflow.project-tip__name Опыт развития форм деятельности
+                            a(href="#").project-tip__prev-link вернуться к проекту
+                    nav(role="navigation").nav-step.nav-step--mobile-scroll.project-settings__aside-nav
                         ul.nav-step__list
                             li.nav-step__item
-                                a(href="new-project-1.html").nav-step__link.is-active 1. Основная информация
+                                a(href="project-settings-1.html").nav-step__link.is-active Донаты
                             li.nav-step__item
-                                a(href="new-project-2.html").nav-step__link.is-disabled 2. Изображения
+                                a(href="project-settings-2.html").nav-step__link Основное
                             li.nav-step__item
-                                a(href="new-project-3.html").nav-step__link.is-disabled 3. Описание
+                                a(href="project-settings-3.html").nav-step__link Изображения
                             li.nav-step__item
-                                a(href="new-project-4.html").nav-step__link.is-disabled 4. Вывод оплаты
-                section.n-new-project__main
-                    h1.n-new-project__main-title Основное
-                    .site-pager.n-new-project__main-pager
-                        a(href="#").pager-link.pager-link--prev.pager-link--is-hidden.site-pager__link
-                            .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
-                            | Назад
-                        p.u-subtitle.site-pager__steps Шаг 1 из 4
-                        a(href="#").pager-link.pager-link--next.pager-link--is-hidden.site-pager__link
-                            .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
-                            | Вперед
-                    .appeal-alert.n-new-project__main-alert
-                        button(type="button", title="Close").btn-close.appeal-alert__close
-                            svg.u-icon
-                                use(xlink:href="img/sprite.svg#close")
-                        .appeal-alert__inner
-                            .content.appeal-alert__content
-                                p Продолжительность проекта и количество собранных вами средств не ограничены. Все полученные донаты принадлежат вам и не предполагают возврат отправителю. Подробнее в <a href="#">Правилах платформы</a>.
-                    form(action="#").n-new-project__main-form
-                        .input-block.n-new-project__main-form__area-item
-                            label(for="n-new-project").input-block__label
-                                span.input-block__label-name Название проекта *
-                            input(type="text", name="", id="n-new-project", value="").input-el.input-block__el
-                        .input-block.n-new-project__main-form__area-item
-                            label(for="n-new-project-category").input-block__label
-                                span.input-block__label-name Категория *
-                            select(name="", id="n-new-project-category").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
-                                option(value="Выберите", disabled, selected) Выберите
-                                option(value="Выбор 1") Выбор 1
-                                option(value="Выбор 2") Выбор 2
-                        .input-block.n-new-project__main-form__area-item
-                            label(for="n-new-project-city").input-block__label
-                                span.input-block__label-name Город
-                                span.input-block__label-description Оставьте пустым, если нет географической привязки
-                            input(type="text", name="", id="n-new-project-city", value="").input-el.input-block__el
-                        .input-block.n-new-project__main-form__area-item
-                            label(for="n-new-project-address-page").input-block__label
-                                span.input-block__label-name Адрес страницы
-                                span.input-block__label-description Придумайте короткий URL-адрес вашей страницы. Может содержать латинские буквы, цифры, дефисы и подчёркивания
-                            input(type="text", name="", id="n-new-project-address-page", placeholder="http://uppora.org/").input-el.input-block__el
-                        .input-block.n-new-project__main-form__area-item
-                            label.input-block__label
-                                span.input-block__label-name Ссылки на соцсети
-                                span.input-block__label-description Ссылки на соцсети или каналы в месендерах, где уже размещён ваш проект. Будут отображаться на странице проекта
-                            button(type="button").add-link-btn.input-block__add-link
-                                svg.u-icon.add-link-btn__icon
-                                    use(xlink:href="img/sprite.svg#plus")
-                                | Добавить ссылку
-                        .input-block.n-new-project__main-form__area-item
-                            label.input-block__label
-                                span.input-block__label-name Ссылки на другие платформы
-                                span.input-block__label-description Любые другие сайты по сбору средств, на которых уже размещён ваш проект. Будут отображаться на странице проекта
-                            button(type="button").add-link-btn.input-block__add-link
-                                svg.u-icon.add-link-btn__icon
-                                    use(xlink:href="img/sprite.svg#plus")
-                                | Добавить ссылку
-                        .n-new-project__main-form-privacy
-                            .n-new-project__main-form-privacy-title Приватность
-                            label.label-radio.n-new-project__main-form-privacy-label-radio
-                                input(type="radio", name="n-new-project", checked, value="Публичный").label-radio__input
-                                span.label-radio__inner
-                                    span.label-radio__title Публичный (рекомендуемый)
-                                    span.label-radio__text Будет виден всем пользователям в интернете и поисковым сайтам. Широкий охват аудитории
-                            label.label-radio.n-new-project__main-form-privacy-label-radio
-                                input(type="radio", name="n-new-project", value="Закрытый").label-radio__input
-                                span.label-radio__inner
-                                    span.label-radio__title Закрытый
-                                    span.label-radio__text Будет виден узкому кругу лиц и только после одобрения вами запроса на подписку пользователя
-                        .group-btns.n-new-project__main-form-btns
-                            button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Далее
-                            button(type="button").btn.btn--size-sm.btn-trp.group-btns__item Сохранить в черновики
-                            button(type="button").btn.btn--size-sm.btn-simple.group-btns__item Предпросмотр
+                                a(href="project-settings-4.html").nav-step__link Описание
+                            li.nav-step__item
+                                a(href="project-settings-5.html").nav-step__link Ссылки
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-7.html").nav-step__link Подписчики
+                section.project-settings__main
+                    h1.project-settings__main-title Донаты
+                    .balance-alert.project-settings__main-balance-alert
+                        .balance-alert__inner
+                            .balance-alert__header
+                                .balance-alert__amount
+                                    .balance-alert__amount-current Баланс: 5297 ₽
+                                    .balance-alert__amount-all всего собрано: 7397 ₽
+                                a(href="#").btn.btn-green.btn--size-md.balance-alert__btn Вывести на карту
+                            .balance-alert__content
+                                .balance-alert__description Минимальная сумма вывода средств 2100 ₽, комиссия банка 3%
+                                .balance-alert__card-info Привязанная карта: VISA **** 1234
+                                    a(href="#").js-modal-open.balance-alert__card-change Изменить
+                    .transactions-block.project-settings__main-transactions
+                        .transactions-block__header
+                            .transactions-block__header-title Транзакции:
+                            .filter-group.transactions-block__header-filter
+                                .filter-item.filter-group__item
+                                    button(type="button").filter-item__btn всё время
+                                    .filter-item__dropdown Dropdown
+                        .transactions-block__list
+                            .transactions-item.transactions-item--balance-plus.transactions-block__list-item
+                                .transactions-item__body
+                                    .transactions-item__body-user
+                                        picture.img-cover.transactions-item__body-user-picture
+                                            img(src="img/team-card-1.jpg", alt="")
+                                        .transactions-item__body-user-content
+                                            .transactions-item__body-user-name Андрей Эдуардович
+                                            time.transactions-item__body-user-date 5 марта 2022, 17:00
+                                    .transactions-item__body-amount +500 ₽
+                            .transactions-item.transactions-item--balance-plus.transactions-item--new-comment.transactions-block__list-item
+                                .transactions-item__body
+                                    .transactions-item__body-user
+                                        picture.img-cover.transactions-item__body-user-picture
+                                            img(src="img/team-card-1.jpg", alt="")
+                                        .transactions-item__body-user-content
+                                            .transactions-item__body-user-name Андрей Эдуардович
+                                            time.transactions-item__body-user-date 5 марта 2022, 17:00
+                                    button(type="button").js-transactions-comment-open.comment-btn.transactions-item__body-comment-btn
+                                        .comment-btn__icon-wrap
+                                            svg.u-icon.comment-btn__icon
+                                                use(xlink:href="img/sprite.svg#comment-outline")
+                                            svg.u-icon.comment-btn__icon
+                                                use(xlink:href="img/sprite.svg#comment-fill")
+                                    .transactions-item__body-amount +1000 ₽
+                                .transactions-item__dropdown
+                                    .transactions-item__comment Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
+                                    button(type="button").js-transactions-form-open.btn-reply.transactions-item__btn-reply Ответить
+                                    form(action="#").comment-answer-form.transactions-item__comment-answer-form
+                                        .comment-answer-form__body
+                                            picture.img-cover.comment-answer-form__picture
+                                                img(src="img/team-card-1.jpg", alt="")
+                                            input(type="text", name="", required, placeholder="Напишите ответ").input-el.comment-answer-form__input
+                                        .group-btns.comment-answer-form__group-btns
+                                            button(type="button").btn.btn-cancel.btn--size-lt.group-btns__item Отмена
+                                            button(type="submit").btn.btn-green.btn--size-lt.group-btns__item Опубликовать
+                            .transactions-item.transactions-item--balance-plus.transactions-item--old-comment.transactions-block__list-item
+                                .transactions-item__body
+                                    .transactions-item__body-user
+                                        picture.img-cover.transactions-item__body-user-picture
+                                            img(src="img/team-card-3.jpg", alt="")
+                                        .transactions-item__body-user-content
+                                            .transactions-item__body-user-name Алёна Михайловна
+                                            time.transactions-item__body-user-date 5 марта 2022, 17:00
+                                    button(type="button").js-transactions-comment-open.comment-btn.transactions-item__body-comment-btn
+                                        .comment-btn__icon-wrap
+                                            svg.u-icon.comment-btn__icon
+                                                use(xlink:href="img/sprite.svg#comment-outline")
+                                            svg.u-icon.comment-btn__icon
+                                                use(xlink:href="img/sprite.svg#comment-fill")
+                                    .transactions-item__body-amount +100 ₽
+                                .transactions-item__dropdown
+                                    .transactions-item__comment Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
+                                    .transactions-item.transactions-item--answer.transactions-item__answer
+                                        .transactions-item__body
+                                            .transactions-item__body-user
+                                                picture.img-cover.transactions-item__body-user-picture
+                                                    img(src="img/team-card-1.jpg", alt="")
+                                                .transactions-item__body-user-content
+                                                    .transactions-item__body-user-name Илья Панов
+                                                    time.transactions-item__body-user-date 5 марта 2022, 17:00
+                                        .transactions-item__comment Продуктовый ассортимент ускоряет потребительский рынок
+                            .transactions-item.transactions-item--balance-minus.transactions-block__list-item
+                                .transactions-item__body
+                                    .transactions-item__body-user
+                                        picture.img-cover.transactions-item__body-user-picture
+                                            img(src="img/transactions-avatar-withdraw.svg", alt="")
+                                        .transactions-item__body-user-content
+                                            .transactions-item__body-user-name Вывод средств на карту
+                                            time.transactions-item__body-user-date 5 марта 2022, 17:00
+                                    .transactions-item__body-amount -2100 ₽
+
+
+        #modal-change-card.modal
+            .modal-body.modal__body
+                .modal-body__center.modal-body__center--size-sm
+                    .modal-title.modal-title--size-md.modal-body__title Изменить карту
+                    button(type="button", title="Close").js-modal-close.btn-close.modal-body__close
+                        svg.u-icon
+                            use(xlink:href="img/sprite.svg#close")
+                    .content.modal-body__text
+                        p Введите номер карты (Visa, Mastercard, МИР), на которую будут выводиться донаты. Текущая карта: VISA **** 1234 будет изменена на новую:
+                    form(action="#").modal-body__card-form
+                        input(type="text", name="", required, placeholder="XXXX XXXX XXXX XXXX").input-el.modal-body__card-form-input
+                        .group-btns.smodal-body__card-form-group-btns
+                            button(type="submit").btn.btn-green.btn--size-sm.group-btns__item Изменить
+                            button(type="button").btn.btn-cancel.btn--size-sm.group-btns__item Отмена
 
         include includes/footer.pug

@@ -1,0 +1,78 @@
+.modal-title {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.35;
+    &--size-md {
+        font-size: 24px;
+    }
+}
+
+.modal-body {
+    line-height: 1.35;
+    font-size: 0;
+    color: $darknes;
+    text-align: center;
+    &:after {
+        width: 0;
+        height: 100%;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__center {
+        background: #fff;
+        width: 100%;
+        padding: 40px;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 8px;
+        vertical-align: middle;
+        text-align: initial;
+        position: relative;
+    }
+    &__center--size-sm {
+        max-width: 448px;
+    }
+    &__title {
+        margin: 0 0 24px;
+    }
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+    &__text {
+        margin: 0 0 16px;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $gray;
+    }
+    &__card-form {
+    }
+    &__card-form-input {
+        margin: 0 0 48px;
+    }
+    &__card-form-group-btns {
+    }
+}
+
+.modal {
+    background: rgba($darknes, .5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1002;
+    &.is-show {
+        display: block;
+    }
+    &__body {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        overflow-y: auto;
+    }
+}

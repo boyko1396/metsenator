@@ -9,6 +9,9 @@ $(document).ready(function() {
     headerMobileLanguge();
     headerProfileDropdown();
     headerProfileToggle();
+    transactionsCommentToggle();
+    transactionsFormToggle();
+    modalInit();
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -174,6 +177,35 @@ $(document).ready(function() {
         $('.user-profile.user-profile--is-active').on('click', function(e) {
             $(this).toggleClass('user-profile--is-toggle');
             $('.user-profile:not(.user-profile--is-active)').toggleClass('user-profile--is-visible');
+            e.preventDefault();
+        });
+    }
+    
+    // transactions toggle comment, answer
+    function transactionsCommentToggle() {
+        $('.js-transactions-comment-open').on('click', function(e) {
+            $(this).parents('.transactions-item').toggleClass('transactions-item--show-comment');
+        });
+    }
+    
+    // transactions toggle comment, answer
+    function transactionsFormToggle() {
+        $('.js-transactions-form-open').on('click', function(e) {
+            $(this).parents('.transactions-item').toggleClass('transactions-item--show-form');
+        });
+    }
+    
+    // transactions toggle comment, answer
+    function modalInit() {
+        $('.js-modal-open').on('click', function(e) {
+            $('body').addClass('is-hidden');
+            $('#modal-change-card').addClass('is-show');
+            e.preventDefault();
+        });
+
+        $('.js-modal-close').on('click', function(e) {
+            $('body').removeClass('is-hidden');
+            $('#modal-change-card').removeClass('is-show');
             e.preventDefault();
         });
     }

@@ -1,0 +1,87 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.project-settings
+            .container.project-settings__container
+                aside.project-settings__aside
+                    .project-tip.project-settings__aside-project-tip
+                        picture.img-cover.project-tip__picture
+                            img(src="img/project-ava.jpg", alt="Опыт развития форм деятельности").project-tip__img
+                        .project-tip__content
+                            .text-overflow.project-tip__name Опыт развития форм деятельности
+                            a(href="#").project-tip__prev-link вернуться к проекту
+                    nav(role="navigation").nav-step.nav-step--mobile-scroll.project-settings__aside-nav
+                        ul.nav-step__list
+                            li.nav-step__item
+                                a(href="project-settings-1.html").nav-step__link Донаты
+                            li.nav-step__item
+                                a(href="project-settings-2.html").nav-step__link.is-active Основное
+                            li.nav-step__item
+                                a(href="project-settings-3.html").nav-step__link Изображения
+                            li.nav-step__item
+                                a(href="project-settings-4.html").nav-step__link Описание
+                            li.nav-step__item
+                                a(href="project-settings-5.html").nav-step__link Ссылки
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-7.html").nav-step__link Подписчики
+                section.project-settings__main
+                    h1.project-settings__main-title Основное
+                    form(action="#").project-settings__main-form
+                        .input-block.n-new-project__main-form__area-item
+                            label(for="n-new-project").input-block__label
+                                span.input-block__label-name Название проекта *
+                            input(type="text", name="", id="n-new-project", value="").input-el.input-block__el
+                        .input-block.n-new-project__main-form__area-item
+                            label(for="n-new-project-category").input-block__label
+                                span.input-block__label-name Категория *
+                            select(name="", id="n-new-project-category").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
+                                option(value="Выберите", disabled, selected) Выберите
+                                option(value="Выбор 1") Выбор 1
+                                option(value="Выбор 2") Выбор 2
+                        .input-block.n-new-project__main-form__area-item
+                            label(for="n-new-project-city").input-block__label
+                                span.input-block__label-name Город
+                                span.input-block__label-description Оставьте пустым, если нет географической привязки
+                            input(type="text", name="", id="n-new-project-city", value="").input-el.input-block__el
+                        .n-new-project__main-form-privacy
+                            .n-new-project__main-form-privacy-title Приватность
+                            label.label-radio.n-new-project__main-form-privacy-label-radio
+                                input(type="radio", name="n-new-project", checked, value="Публичный").label-radio__input
+                                span.label-radio__inner
+                                    span.label-radio__title Публичный (рекомендуемый)
+                                    span.label-radio__text Будет виден всем пользователям в интернете и поисковым сайтам. Широкий охват аудитории
+                            label.label-radio.n-new-project__main-form-privacy-label-radio
+                                input(type="radio", name="n-new-project", value="Закрытый").label-radio__input
+                                span.label-radio__inner
+                                    span.label-radio__title Закрытый
+                                    span.label-radio__text Будет виден узкому кругу лиц и только после одобрения вами запроса на подписку пользователя
+                        .input-block.n-new-project__main-form__area-item
+                            label.input-block__label
+                                span.input-block__label-name Шаблоны донатов *
+                                span.input-block__label-description Вы можете назначить шаблоны для быстрого ввода суммы доната пользователем (ручной ввод также будет доступен)
+                            .input-block__template-cards
+                                .input-block__template-cards-item.input-block__template-cards-item--size-4
+                                    .template-card
+                                        input(type="text", name="", placeholder="100").input-el.template-card__input
+                                        .template-card__currency ₽
+                                .input-block__template-cards-item.input-block__template-cards-item--size-4
+                                    .template-card
+                                        input(type="text", name="", placeholder="500").input-el.template-card__input
+                                        .template-card__currency ₽
+                                .input-block__template-cards-item.input-block__template-cards-item--size-4
+                                    .template-card
+                                        input(type="text", name="", placeholder="1000").input-el.template-card__input
+                                        .template-card__currency ₽
+                        .group-btns.n-new-project__main-form-btns
+                            button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Сохранить изменения
+                            button(type="button").btn.btn--size-sm.btn-simple.group-btns__item Предпросмотр
+
+        include includes/footer.pug

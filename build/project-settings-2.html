@@ -81,8 +81,8 @@
           </div>
           <nav class="nav-step nav-step--mobile-scroll project-settings__aside-nav" role="navigation">
             <ul class="nav-step__list">
-              <li class="nav-step__item"><a class="nav-step__link is-active" href="project-settings-1.html">Донаты</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-2.html">Основное</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-1.html">Донаты</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-active" href="project-settings-2.html">Основное</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-3.html">Изображения</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-4.html">Описание</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-5.html">Ссылки</a></li>
@@ -92,156 +92,64 @@
           </nav>
         </aside>
         <section class="project-settings__main">
-          <h1 class="project-settings__main-title">Донаты</h1>
-          <div class="balance-alert project-settings__main-balance-alert">
-            <div class="balance-alert__inner">
-              <div class="balance-alert__header">
-                <div class="balance-alert__amount">
-                  <div class="balance-alert__amount-current">Баланс: 5297 ₽</div>
-                  <div class="balance-alert__amount-all">всего собрано: 7397 ₽</div>
-                </div><a class="btn btn-green btn--size-md balance-alert__btn" href="#">Вывести на карту</a>
-              </div>
-              <div class="balance-alert__content">
-                <div class="balance-alert__description">Минимальная сумма вывода средств 2100 ₽, комиссия банка 3%</div>
-                <div class="balance-alert__card-info">Привязанная карта: VISA **** 1234<a class="js-modal-open balance-alert__card-change" href="#">Изменить</a></div>
-              </div>
+          <h1 class="project-settings__main-title">Основное</h1>
+          <form class="project-settings__main-form" action="#">
+            <div class="input-block n-new-project__main-form__area-item">
+              <label class="input-block__label" for="n-new-project"><span class="input-block__label-name">Название проекта *</span></label>
+              <input class="input-el input-block__el" type="text" name="" id="n-new-project" value="">
             </div>
-          </div>
-          <div class="transactions-block project-settings__main-transactions">
-            <div class="transactions-block__header">
-              <div class="transactions-block__header-title">Транзакции:</div>
-              <div class="filter-group transactions-block__header-filter">
-                <div class="filter-item filter-group__item">
-                  <button class="filter-item__btn" type="button">всё время</button>
-                  <div class="filter-item__dropdown">Dropdown</div>
-                </div>
-              </div>
+            <div class="input-block n-new-project__main-form__area-item">
+              <label class="input-block__label" for="n-new-project-category"><span class="input-block__label-name">Категория *</span></label>
+              <select class="input-el input-el--select input-block__el" name="" id="n-new-project-category" style="background-image: url(../img/select-arrow.svg)">
+                <option value="Выберите" disabled selected>Выберите</option>
+                <option value="Выбор 1">Выбор 1</option>
+                <option value="Выбор 2">Выбор 2</option>
+              </select>
             </div>
-            <div class="transactions-block__list">
-              <div class="transactions-item transactions-item--balance-plus transactions-block__list-item">
-                <div class="transactions-item__body">
-                  <div class="transactions-item__body-user">
-                    <picture class="img-cover transactions-item__body-user-picture"><img src="img/team-card-1.jpg" alt=""></picture>
-                    <div class="transactions-item__body-user-content">
-                      <div class="transactions-item__body-user-name">Андрей Эдуардович</div>
-                      <time class="transactions-item__body-user-date">5 марта 2022, 17:00</time>
-                    </div>
-                  </div>
-                  <div class="transactions-item__body-amount">+500 ₽</div>
-                </div>
-              </div>
-              <div class="transactions-item transactions-item--balance-plus transactions-item--new-comment transactions-block__list-item">
-                <div class="transactions-item__body">
-                  <div class="transactions-item__body-user">
-                    <picture class="img-cover transactions-item__body-user-picture"><img src="img/team-card-1.jpg" alt=""></picture>
-                    <div class="transactions-item__body-user-content">
-                      <div class="transactions-item__body-user-name">Андрей Эдуардович</div>
-                      <time class="transactions-item__body-user-date">5 марта 2022, 17:00</time>
-                    </div>
-                  </div>
-                  <button class="js-transactions-comment-open comment-btn transactions-item__body-comment-btn" type="button">
-                    <div class="comment-btn__icon-wrap">
-                      <svg class="u-icon comment-btn__icon">
-                        <use xlink:href="img/sprite.svg#comment-outline"></use>
-                      </svg>
-                      <svg class="u-icon comment-btn__icon">
-                        <use xlink:href="img/sprite.svg#comment-fill"></use>
-                      </svg>
-                    </div>
-                  </button>
-                  <div class="transactions-item__body-amount">+1000 ₽</div>
-                </div>
-                <div class="transactions-item__dropdown">
-                  <div class="transactions-item__comment">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
-                  <button class="js-transactions-form-open btn-reply transactions-item__btn-reply" type="button">Ответить</button>
-                  <form class="comment-answer-form transactions-item__comment-answer-form" action="#">
-                    <div class="comment-answer-form__body">
-                      <picture class="img-cover comment-answer-form__picture"><img src="img/team-card-1.jpg" alt=""></picture>
-                      <input class="input-el comment-answer-form__input" type="text" name="" required placeholder="Напишите ответ">
-                    </div>
-                    <div class="group-btns comment-answer-form__group-btns">
-                      <button class="btn btn-cancel btn--size-lt group-btns__item" type="button">Отмена</button>
-                      <button class="btn btn-green btn--size-lt group-btns__item" type="submit">Опубликовать</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="transactions-item transactions-item--balance-plus transactions-item--old-comment transactions-block__list-item">
-                <div class="transactions-item__body">
-                  <div class="transactions-item__body-user">
-                    <picture class="img-cover transactions-item__body-user-picture"><img src="img/team-card-3.jpg" alt=""></picture>
-                    <div class="transactions-item__body-user-content">
-                      <div class="transactions-item__body-user-name">Алёна Михайловна</div>
-                      <time class="transactions-item__body-user-date">5 марта 2022, 17:00</time>
-                    </div>
-                  </div>
-                  <button class="js-transactions-comment-open comment-btn transactions-item__body-comment-btn" type="button">
-                    <div class="comment-btn__icon-wrap">
-                      <svg class="u-icon comment-btn__icon">
-                        <use xlink:href="img/sprite.svg#comment-outline"></use>
-                      </svg>
-                      <svg class="u-icon comment-btn__icon">
-                        <use xlink:href="img/sprite.svg#comment-fill"></use>
-                      </svg>
-                    </div>
-                  </button>
-                  <div class="transactions-item__body-amount">+100 ₽</div>
-                </div>
-                <div class="transactions-item__dropdown">
-                  <div class="transactions-item__comment">Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события</div>
-                  <div class="transactions-item transactions-item--answer transactions-item__answer">
-                    <div class="transactions-item__body">
-                      <div class="transactions-item__body-user">
-                        <picture class="img-cover transactions-item__body-user-picture"><img src="img/team-card-1.jpg" alt=""></picture>
-                        <div class="transactions-item__body-user-content">
-                          <div class="transactions-item__body-user-name">Илья Панов</div>
-                          <time class="transactions-item__body-user-date">5 марта 2022, 17:00</time>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="transactions-item__comment">Продуктовый ассортимент ускоряет потребительский рынок</div>
+            <div class="input-block n-new-project__main-form__area-item">
+              <label class="input-block__label" for="n-new-project-city"><span class="input-block__label-name">Город</span><span class="input-block__label-description">Оставьте пустым, если нет географической привязки</span></label>
+              <input class="input-el input-block__el" type="text" name="" id="n-new-project-city" value="">
+            </div>
+            <div class="n-new-project__main-form-privacy">
+              <div class="n-new-project__main-form-privacy-title">Приватность</div>
+              <label class="label-radio n-new-project__main-form-privacy-label-radio">
+                <input class="label-radio__input" type="radio" name="n-new-project" checked value="Публичный"><span class="label-radio__inner"><span class="label-radio__title">Публичный (рекомендуемый)</span><span class="label-radio__text">Будет виден всем пользователям в интернете и поисковым сайтам. Широкий охват аудитории</span></span>
+              </label>
+              <label class="label-radio n-new-project__main-form-privacy-label-radio">
+                <input class="label-radio__input" type="radio" name="n-new-project" value="Закрытый"><span class="label-radio__inner"><span class="label-radio__title">Закрытый</span><span class="label-radio__text">Будет виден узкому кругу лиц и только после одобрения вами запроса на подписку пользователя</span></span>
+              </label>
+            </div>
+            <div class="input-block n-new-project__main-form__area-item">
+              <label class="input-block__label"><span class="input-block__label-name">Шаблоны донатов *</span><span class="input-block__label-description">Вы можете назначить шаблоны для быстрого ввода суммы доната пользователем (ручной ввод также будет доступен)</span></label>
+              <div class="input-block__template-cards">
+                <div class="input-block__template-cards-item input-block__template-cards-item--size-4">
+                  <div class="template-card">
+                    <input class="input-el template-card__input" type="text" name="" placeholder="100">
+                    <div class="template-card__currency">₽</div>
                   </div>
                 </div>
-              </div>
-              <div class="transactions-item transactions-item--balance-minus transactions-block__list-item">
-                <div class="transactions-item__body">
-                  <div class="transactions-item__body-user">
-                    <picture class="img-cover transactions-item__body-user-picture"><img src="img/transactions-avatar-withdraw.svg" alt=""></picture>
-                    <div class="transactions-item__body-user-content">
-                      <div class="transactions-item__body-user-name">Вывод средств на карту</div>
-                      <time class="transactions-item__body-user-date">5 марта 2022, 17:00</time>
-                    </div>
+                <div class="input-block__template-cards-item input-block__template-cards-item--size-4">
+                  <div class="template-card">
+                    <input class="input-el template-card__input" type="text" name="" placeholder="500">
+                    <div class="template-card__currency">₽</div>
                   </div>
-                  <div class="transactions-item__body-amount">-2100 ₽</div>
+                </div>
+                <div class="input-block__template-cards-item input-block__template-cards-item--size-4">
+                  <div class="template-card">
+                    <input class="input-el template-card__input" type="text" name="" placeholder="1000">
+                    <div class="template-card__currency">₽</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="group-btns n-new-project__main-form-btns">
+              <button class="btn btn--size-sm btn-green group-btns__item" type="submit">Сохранить изменения</button>
+              <button class="btn btn--size-sm btn-simple group-btns__item" type="button">Предпросмотр</button>
+            </div>
+          </form>
         </section>
       </div>
     </main>
-    <div class="modal" id="modal-change-card">
-      <div class="modal-body modal__body">
-        <div class="modal-body__center modal-body__center--size-sm">
-          <div class="modal-title modal-title--size-md modal-body__title">Изменить карту</div>
-          <button class="js-modal-close btn-close modal-body__close" type="button" title="Close">
-            <svg class="u-icon">
-              <use xlink:href="img/sprite.svg#close"></use>
-            </svg>
-          </button>
-          <div class="content modal-body__text">
-            <p>Введите номер карты (Visa, Mastercard, МИР), на которую будут выводиться донаты. Текущая карта: VISA **** 1234 будет изменена на новую:</p>
-          </div>
-          <form class="modal-body__card-form" action="#">
-            <input class="input-el modal-body__card-form-input" type="text" name="" required placeholder="XXXX XXXX XXXX XXXX">
-            <div class="group-btns smodal-body__card-form-group-btns">
-              <button class="btn btn-green btn--size-sm group-btns__item" type="submit">Изменить</button>
-              <button class="btn btn-cancel btn--size-sm group-btns__item" type="button">Отмена</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container-large">
         <div class="footer-wrap">
