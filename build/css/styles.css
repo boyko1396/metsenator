@@ -5689,12 +5689,23 @@ img {
   display: block;
   font-size: 0;
   text-align: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
 }
 .ty-donate__media > * {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ty-donate__media.is-loaded .ty-donate__media-gif, .ty-donate__media:not(.is-loaded) .ty-donate__media-img {
+  opacity: 0;
+  visibility: hidden;
 }
 .ty-donate__title {
   margin: 0 0 8px;

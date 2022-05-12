@@ -12,9 +12,9 @@ html(lang='ru')
                 .container.d-donate__container
                     .ty-donate.d-donate__thank
                         .ty-donate__inner
-                            .ty-donate__media
-                                video(autoplay="autoplay", muted)
-                                    source(src="img/logo-render.mp4", type="video/mp4")
+                            .js-animated-logo.ty-donate__media
+                                img(src="img/logo-animated.gif").ty-donate__media-gif
+                                img(src="img/logo-small.png").ty-donate__media-img
                             h1.ty-donate__title Спасибо! Всё получилось!
                             .content.ty-donate__text
                                 p Вы будете перенаправлены на страницу проекта через 10 секунд

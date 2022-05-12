@@ -13,6 +13,7 @@ $(document).ready(function() {
     transactionsFormToggle();
     modalInit();
     filterDropdown();
+    logoAnimated();
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -218,4 +219,14 @@ $(document).ready(function() {
             e.preventDefault();
         });
     }
+    
+    // donate page, animation logo
+    function logoAnimated() {
+        var logoAnimated = $('.js-animated-logo');
+        if ($(logoAnimated)[0]){
+            window.setTimeout(function(){
+                logoAnimated.addClass('is-loaded');
+            }, 4000);
+        }
+    } 
 });
