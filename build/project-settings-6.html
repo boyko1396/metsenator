@@ -16,7 +16,6 @@
   <body>
     <header class="header">
       <div class="container-large header__container">
-        <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
         <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
         <div class="header__menu">
           <nav class="header-nav header__nav" role="navigation">
@@ -41,19 +40,110 @@
               </svg>
             </button>
           </form>
-        </div><a class="btn-action header__btn-login-mobile" href="#">
+        </div><a class="btn-action header__btn-notification" href="#">
           <svg class="u-icon btn-action__icon">
-            <use xlink:href="img/sprite.svg#login"></use>
-          </svg></a><a class="btn btn-trp btn--size-lt header__btn-register" href="#">Регистрация</a><a class="btn btn-green btn--size-lt header__btn-login" href="#">Вход</a>
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a><a class="btn btn-trp btn--size-lt header__btn-create-project" href="#">Создать проект</a>
+        <div class="header__profile">
+          <div class="header__profile-header">
+            <picture class="js-header-dropdown-profile img-cover header__profile-avatar"><img src="img/person.png" alt=""></picture>
+          </div>
+          <div class="profile-dropdown header__profile-dropdown">
+            <div class="profile-dropdown__user-list">
+              <div class="user-profile user-profile--is-active profile-dropdown__user-list-item">
+                <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+                <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Илья Панов</a>
+                  <div class="text-overflow user-profile__content-email">email@website.com</div>
+                </div>
+                <div class="user-profile__icon-wrap">
+                  <svg class="u-icon user-profile__icon user-profile__icon--active">
+                    <use xlink:href="img/sprite.svg#checked"></use>
+                  </svg>
+                  <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="user-profile profile-dropdown__user-list-item">
+                <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+                <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Александр Смирнов</a>
+                  <div class="text-overflow user-profile__content-email">email@site.com</div>
+                </div>
+                <div class="user-profile__icon-wrap">
+                  <svg class="u-icon user-profile__icon user-profile__icon--active">
+                    <use xlink:href="img/sprite.svg#checked"></use>
+                  </svg>
+                  <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="profile-dropdown__nav-wrap">
+              <ul class="profile-dropdown__nav">
+                <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Профиль</a></li>
+                <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Настройки</a></li>
+              </ul>
+              <ul class="profile-dropdown__nav">
+                <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Добавить аккаунт</a></li>
+                <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Выйти</a></li>
+              </ul>
+            </div>
+            <div class="js-header-dropdown-profile profile-dropdown__overlay"></div>
+          </div>
+        </div>
       </div>
       <div class="header-menu-mobile header__menu-mobile">
         <div class="header-menu-mobile__inner">
+          <div class="header-menu-mobile__user-list">
+            <div class="user-profile user-profile--is-active header-menu-mobile__user-list-item">
+              <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+              <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Илья Панов</a>
+                <div class="text-overflow user-profile__content-email">email@website.com</div>
+              </div>
+              <div class="user-profile__icon-wrap">
+                <svg class="u-icon user-profile__icon user-profile__icon--active">
+                  <use xlink:href="img/sprite.svg#checked"></use>
+                </svg>
+                <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="user-profile header-menu-mobile__user-list-item">
+              <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+              <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Александр Смирнов</a>
+                <div class="text-overflow user-profile__content-email">email@site.com</div>
+              </div>
+              <div class="user-profile__icon-wrap">
+                <svg class="u-icon user-profile__icon user-profile__icon--active">
+                  <use xlink:href="img/sprite.svg#checked"></use>
+                </svg>
+                <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
           <div class="header-menu-mobile__nav-list">
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Профиль</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Настройки</a></li>
+            </ul>
             <ul class="header-menu-mobile__nav">
               <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
               <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
               <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
               <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Ответы на вопросы</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link header-menu-mobile__nav-link--accent" href="#">Создать проект
+                  <svg class="u-icon header-menu-mobile__nav-link-plus">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg></a></li>
+            </ul>
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Добавить аккаунт</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Выйти</a></li>
             </ul>
           </div>
           <div class="js-language-select language-site header-menu-mobile__language">
@@ -65,7 +155,9 @@
             </div>
             <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
           </div>
-          <div class="header-menu-mobile__btn-list"><a class="btn btn-trp btn--size-md header-menu-mobile__btn header-menu-mobile__btn--register" href="#">Регистрация</a><a class="btn btn-green btn--size-md header-menu-mobile__btn header-menu-mobile__nav-btn--login" href="#">Вход</a></div>
+          <div class="header-menu-mobile__footer"><a class="header-menu-mobile__footer-link" href="#">Правовые документы</a>
+            <div class="header-menu-mobile__footer-copyright">© 2022 Uppora</div>
+          </div>
         </div>
       </div>
       <div class="js-header-menu-mobile header__overlay-mobile"></div>
@@ -73,6 +165,10 @@
     <main class="project-settings">
       <div class="container project-settings__container">
         <aside class="project-settings__aside">
+          <div class="project-settings__aside-pager"><a class="pager-link pager-link--prev project-settings__aside-pager-link" href="#">
+              <div class="pager-link__icon" style="background-image: url(img/pager-link-arrow.svg)"></div>Назад</a>
+            <div class="project-settings__aside-pager-title">Управление проектом</div>
+          </div>
           <div class="project-tip project-settings__aside-project-tip">
             <picture class="img-cover project-tip__picture"><img class="project-tip__img" src="img/project-ava.jpg" alt="Опыт развития форм деятельности"></picture>
             <div class="project-tip__content">

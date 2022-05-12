@@ -431,9 +431,11 @@
 }
 
 .code-area {
+    margin: 0;
     display: block;
     &__body {
         background: $blue-light;
+        margin: 0;
         padding: 16px;
         display: block;
         font-size: 14px;
@@ -797,5 +799,35 @@
         &--is-active &__icon--active {
             display: none;
         }
+    }
+    .widgets-item {
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .link-add {
+        &__inner {
+            flex-wrap: wrap;
+            position: relative;
+        }
+        &__name {
+            max-width: calc(100% - 36px);
+            flex: 0 0 calc(100% - 36px);
+            order: 1;
+        }
+        &__url {
+            max-width: calc(100% - 36px);
+            margin-top: 12px;
+            flex: 0 0 calc(100% - 36px);
+            order: 3;
+        }
+        &__remove {
+            order: 2;
+        }
+    }
+    .widgets-item {
     }
 }

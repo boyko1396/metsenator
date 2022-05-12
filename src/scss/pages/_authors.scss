@@ -1006,10 +1006,11 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 1.75;
-
     &__list {
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
         list-style-type: none;
     }
     &__item {
@@ -2555,6 +2556,38 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .nav-step {
+        font-size: 14px;
+        &--mobile-scroll &__list {
+            margin: 0 -16px;
+            padding: 0 16px;
+            display: block;
+            flex-direction: initial;
+            box-shadow: inset 0 -1px $gray-light;
+            white-space: nowrap;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &--mobile-scroll &__item {
+            display: inline-block;
+            vertical-align: top;
+            &:not(:last-child) {
+                margin-right: 40px;
+                margin-bottom: 0;
+            }
+        }
+        &--mobile-scroll &__link {
+            padding: 7px 0;
+            border-bottom: 2px solid transparent;
+            &.is-active {
+                border-bottom-color: $green1;
+            }
+        }
+    }
     .authors-intro {
         padding: 32px 0;
 
@@ -2714,6 +2747,9 @@
         &__main-form__area-logo {
         }
         &__main-form__area-line {
+        }
+        &__main-form__area-link {
+            margin-bottom: 48px;
         }
         &__main-form-privacy {
             margin-bottom: 48px;
@@ -2993,6 +3029,9 @@
         }
         &__main-form__area-new {
             margin-bottom: 32px;
+        }
+        &__main-form__area-link {
+            margin-bottom: 40px;
         }
         &__main-form-privacy {
             max-width: initial;

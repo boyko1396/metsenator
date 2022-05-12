@@ -1,3 +1,30 @@
+.comment-answer-form {
+    &__body {
+        margin: 0 0 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__picture {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+        flex: 0 0 32px;
+        border-radius: 50%;
+    }
+    &__input {
+        flex-grow: 1;
+    }
+    &__group-btns {
+        justify-content: flex-end;
+        .btn {
+            min-height: 36px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
 .project-tip {
     display: flex;
     align-items: center;
@@ -32,7 +59,7 @@
         padding: 24px;
     }
     &__header {
-        margin: 0 0 36px;
+        margin: 0 0 24px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -58,6 +85,7 @@
     }
     &__content {
         font-size: 14px;
+        line-height: 1.6;
         color: $gray;
     }
     &__description {
@@ -290,7 +318,6 @@
     font-size: 14px;
     color: $darknes;
     flex-grow: 1;
-    overflow: clip;
     &__container {
         display: flex;
         align-items: flex-start;
@@ -307,6 +334,9 @@
             margin: 0 0 24px;
         }
         &-nav {
+        }
+        &-pager {
+            display: none;
         }
     }
     &__main {
@@ -343,5 +373,156 @@
         line-height: 1.3;
         color: #111827;
         border-bottom: 1px solid $gray-light;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .project-settings {
+        &__main {
+            &-title {
+                margin-bottom: 32px;
+            }
+            &-balance-alert {
+                margin-bottom: 32px;
+            }
+        }
+        &__main-subscribers-subtitle {
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1169px) {
+}
+
+@media screen and (max-width: 1000px) {
+    .project-settings {
+        &__container {
+            background: $white;
+            margin-top: -80px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 999;
+        }
+        &__aside {
+            max-width: 100%;
+            margin: 0 0 6px;
+            padding: 18px 0;
+            flex: 0 0 100%;
+            position: initial;
+            &-pager {
+                margin: 0 0 28px;
+                display: flex;
+                align-items: center;
+                line-height: 1;
+                &-link {
+                    margin-right: 12px;
+                    flex: 0 0 24px;
+                }
+                &-title {
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+            &-project-tip {
+                display: none;
+            }
+        }
+        &__main {
+            max-width: 100%;
+            flex: 0 0 100%;
+            &-title {
+                position: absolute;
+                left: -9999px;
+                pointer-events: none;
+                opacity: 0;
+            }
+        }
+        &__main-subscribers-subtitle {
+            margin-bottom: 20px;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comment-answer-form {
+        &__picture {
+            display: none;
+        }
+    }
+    .transactions-item {
+        &__body {
+            flex-wrap: wrap;
+            &-user {
+                max-width: calc(100% - 34px);
+                flex-basis: calc(100% - 34px);
+            }
+            &-comment-btn {
+                margin-right: 0;
+            }
+            &-amount {
+                max-width: 100%;
+                margin-top: 6px;
+                padding-left: 52px;
+                flex-basis: 100%;
+                text-align: left;
+            }
+        }
+        &__comment-answer-form {
+            margin-top: 16px;
+            margin-left: 0;
+        }
+    }
+    .transactions-block {
+        &__list-item {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    }
+    .project-settings {
+        &__main {
+            &-title {
+                margin-bottom: 24px;
+            }
+            &-balance-alert {
+                margin-bottom: 24px;
+            }
+            &-widgets-item {
+                margin-bottom: 32px;
+                padding-bottom: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .balance-alert {
+        &__inner {
+            padding: 16px;
+        }
+        &__header {
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        &__amount {
+            max-width: 100%;
+            margin-bottom: 20px;
+            padding-right: 0;
+            flex: 0 0 100%;
+        }
+        &__btn {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        &__card-info {
+            a {
+                display: block;
+                margin-left: 0;
+            }
+        }
     }
 }

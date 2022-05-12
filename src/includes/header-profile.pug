@@ -1,0 +1,133 @@
+header.header
+    .container-large.header__container
+        .header__logo
+            a(href="/").header__logo-link
+                img(src="img/logo.svg", alt="Uppora")
+            a(href="blog.html").header__logo-beta beta
+        .header__menu
+            nav(role="navigation").header-nav.header__nav
+                ul.header-nav__list
+                    li.header-nav__item
+                        a(href="#").header-nav__link О платформе
+                    li.header-nav__item
+                        a(href="#").header-nav__link Проекты
+                    li.header-nav__item
+                        a(href="#").header-nav__link Авторам
+                    li.header-nav__item
+                        a(href="#").header-nav__link СМИ о нас
+                    li.header-nav__item
+                        a(href="#").header-nav__link Поддержка
+            button(type="button").js-header-search.btn-action.header__btn-search
+                svg.u-icon.btn-action__icon
+                    use(xlink:href="img/sprite.svg#search")
+            form(action="#").header-search.header__search
+                input(type="search", name="search", placeholder="Поиск…").input-el.header-search__input
+                button(type="button").js-header-search.btn-close.header-search__close
+                    svg.u-icon.btn-close__icon
+                        use(xlink:href="img/sprite.svg#close")
+        a(href="#").btn-action.header__btn-notification
+            svg.u-icon.btn-action__icon
+                use(xlink:href="img/sprite.svg#notification")
+        a(href="#").btn.btn-trp.btn--size-lt.header__btn-create-project Создать проект
+        .header__profile
+            .header__profile-header
+                picture.js-header-dropdown-profile.img-cover.header__profile-avatar
+                    img(src="img/person.png", alt="")
+            .profile-dropdown.header__profile-dropdown
+                .profile-dropdown__user-list
+                    .user-profile.user-profile--is-active.profile-dropdown__user-list-item
+                        picture.img-cover.user-profile__avatar
+                            img(src="img/person.png", alt="")
+                        .user-profile__content
+                            a(href="#").text-overflow.user-profile__content-name Илья Панов
+                            .text-overflow.user-profile__content-email email@website.com
+                        .user-profile__icon-wrap
+                            svg.u-icon.user-profile__icon.user-profile__icon--active
+                                use(xlink:href="img/sprite.svg#checked")
+                            svg.u-icon.user-profile__icon.user-profile__icon--arrow
+                                use(xlink:href="img/sprite.svg#arrow-down")
+                    .user-profile.profile-dropdown__user-list-item
+                        picture.img-cover.user-profile__avatar
+                            img(src="img/person.png", alt="")
+                        .user-profile__content
+                            a(href="#").text-overflow.user-profile__content-name Александр Смирнов
+                            .text-overflow.user-profile__content-email email@site.com
+                        .user-profile__icon-wrap
+                            svg.u-icon.user-profile__icon.user-profile__icon--active
+                                use(xlink:href="img/sprite.svg#checked")
+                            svg.u-icon.user-profile__icon.user-profile__icon--arrow
+                                use(xlink:href="img/sprite.svg#arrow-down")
+                .profile-dropdown__nav-wrap
+                    ul.profile-dropdown__nav
+                        li.profile-dropdown__nav-item
+                            a(href="#").profile-dropdown__nav-link Профиль
+                        li.profile-dropdown__nav-item
+                            a(href="#").profile-dropdown__nav-link Настройки
+                    ul.profile-dropdown__nav
+                        li.profile-dropdown__nav-item
+                            a(href="#").profile-dropdown__nav-link Добавить аккаунт
+                        li.profile-dropdown__nav-item
+                            a(href="#").profile-dropdown__nav-link Выйти
+                .js-header-dropdown-profile.profile-dropdown__overlay
+    .header-menu-mobile.header__menu-mobile
+        .header-menu-mobile__inner
+            .header-menu-mobile__user-list
+                .user-profile.user-profile--is-active.header-menu-mobile__user-list-item
+                    picture.img-cover.user-profile__avatar
+                        img(src="img/person.png", alt="")
+                    .user-profile__content
+                        a(href="#").text-overflow.user-profile__content-name Илья Панов
+                        .text-overflow.user-profile__content-email email@website.com
+                    .user-profile__icon-wrap
+                        svg.u-icon.user-profile__icon.user-profile__icon--active
+                            use(xlink:href="img/sprite.svg#checked")
+                        svg.u-icon.user-profile__icon.user-profile__icon--arrow
+                            use(xlink:href="img/sprite.svg#arrow-down")
+                .user-profile.header-menu-mobile__user-list-item
+                    picture.img-cover.user-profile__avatar
+                        img(src="img/person.png", alt="")
+                    .user-profile__content
+                        a(href="#").text-overflow.user-profile__content-name Александр Смирнов
+                        .text-overflow.user-profile__content-email email@site.com
+                    .user-profile__icon-wrap
+                        svg.u-icon.user-profile__icon.user-profile__icon--active
+                            use(xlink:href="img/sprite.svg#checked")
+                        svg.u-icon.user-profile__icon.user-profile__icon--arrow
+                            use(xlink:href="img/sprite.svg#arrow-down")
+            .header-menu-mobile__nav-list
+                ul.header-menu-mobile__nav
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link Профиль
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link Настройки
+                ul.header-menu-mobile__nav
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link О платформе
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link Проекты
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link СМИ о нас
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link Поддержка
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link Ответы на вопросы
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link.header-menu-mobile__nav-link--accent Создать проект
+                            svg.u-icon.header-menu-mobile__nav-link-plus
+                                use(xlink:href="img/sprite.svg#plus")
+                ul.header-menu-mobile__nav
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link Добавить аккаунт
+                    li.header-menu-mobile__nav-item
+                        a(href="#").header-menu-mobile__nav-link Выйти
+            .js-language-select.language-site.header-menu-mobile__language
+                .language-site__current
+                    .language-site__current-title Русский
+                    svg.u-icon.language-site__current-icon
+                        use(xlink:href="img/sprite.svg#arrow-down")
+                .language-site__dropdown
+                    a(href="#").language-site__link English
+            .header-menu-mobile__footer
+                a(href="#").header-menu-mobile__footer-link Правовые документы
+                .header-menu-mobile__footer-copyright © 2022 Uppora
+    .js-header-menu-mobile.header__overlay-mobile

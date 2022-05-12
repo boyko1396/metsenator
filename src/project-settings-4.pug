@@ -5,11 +5,16 @@ html(lang='ru')
 
     body
 
-        include includes/header.pug
+        include includes/header-profile.pug
 
         main.project-settings
             .container.project-settings__container
                 aside.project-settings__aside
+                    .project-settings__aside-pager
+                        a(href="#").pager-link.pager-link--prev.project-settings__aside-pager-link
+                            .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                            | Назад
+                        .project-settings__aside-pager-title Управление проектом
                     .project-tip.project-settings__aside-project-tip
                         picture.img-cover.project-tip__picture
                             img(src="img/project-ava.jpg", alt="Опыт развития форм деятельности").project-tip__img
