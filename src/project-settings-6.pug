@@ -1,0 +1,98 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.project-settings
+            .container.project-settings__container
+                aside.project-settings__aside
+                    .project-tip.project-settings__aside-project-tip
+                        picture.img-cover.project-tip__picture
+                            img(src="img/project-ava.jpg", alt="Опыт развития форм деятельности").project-tip__img
+                        .project-tip__content
+                            .text-overflow.project-tip__name Опыт развития форм деятельности
+                            a(href="#").project-tip__prev-link вернуться к проекту
+                    nav(role="navigation").nav-step.nav-step--mobile-scroll.project-settings__aside-nav
+                        ul.nav-step__list
+                            li.nav-step__item
+                                a(href="project-settings-1.html").nav-step__link Донаты
+                            li.nav-step__item
+                                a(href="project-settings-2.html").nav-step__link Основное
+                            li.nav-step__item
+                                a(href="project-settings-3.html").nav-step__link Изображения
+                            li.nav-step__item
+                                a(href="project-settings-4.html").nav-step__link Описание
+                            li.nav-step__item
+                                a(href="project-settings-5.html").nav-step__link Ссылки
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link.is-active Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-7.html").nav-step__link Подписчики
+                section.project-settings__main
+                    h1.project-settings__main-title Виджеты
+                    .project-settings__main-widgets-list
+                        .widgets-item.widgets-item--btn.project-settings__main-widgets-item
+                            .widgets-item__title Кнопка поддержки
+                            .widgets-item__view
+                                .widgets-item__subtitle Предпросмотр
+                                .widgets-item__view-body
+                                    a(href="#").widgets-btn.widgets-btn--size-md
+                                        .widgets-btn__icon-wrap
+                                            img(src="img/widgets-btn-icon.svg").widgets-btn__icon
+                                        .widgets-btn__title Поддержать проект
+                            .widgets-item__code-wrap
+                                .widgets-item__subtitle Код для вставки
+                                pre.code-area.widgets-item__code
+                                    code.code-area__body html&gt;&lt;html class=&quot;i-ua_js_no i-ua_css_standart i-ua_browser_chrome i-ua_browser-engine_webkit m-stat i-ua_browser_desktop i-ua_platform_windows&quot; lang=&quot;ru&quot;&gt;&lt;head xmlns:og=&quot;http://ogp.me/ns#&quot;&gt;&lt;meta http-equiv='Content-Type' content='text/html;charset=UTF-8'&gt;
+                        .widgets-item.widgets-item--card-small.project-settings__main-widgets-item
+                            .widgets-item__title Карточка проекта
+                            .widgets-item__view
+                                .widgets-item__subtitle Предпросмотр
+                                .widgets-item__view-body
+                                    .widgets-card
+                                        .widgets-card__inner
+                                            header.widgets-card__header
+                                                picture.widgets-card__picture
+                                                    img(src="img/project-settings-logo.jpg").widgets-card__img
+                                                .widgets-card__header-content
+                                                    .text-overflow.widgets-card__header-title Опыт развития форм деятельностиОпыт развития форм деятельностиОпыт развития форм деятельностиОпыт развития форм деятельности
+                                                    .text-overflow.widgets-card__header-subtitle 270 подписчиков
+                                            .widgets-card__text Равным образом постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Таким образом реализация намеченных плановых заданий позволяет оценить значение условий, существенных, финансовых и административных.
+                                            a(href="#").widgets-btn.widgets-btn--size-sm.widgets-card__btn
+                                                .widgets-btn__icon-wrap
+                                                    img(src="img/widgets-btn-icon.svg").widgets-btn__icon
+                                                .widgets-btn__title Поддержать проект
+                            .widgets-item__code-wrap
+                                .widgets-item__subtitle Код для вставки
+                                pre.code-area.widgets-item__code
+                                    code.code-area__body html&gt;&lt;html class=&quot;i-ua_js_no i-ua_css_standart i-ua_browser_chrome i-ua_browser-engine_webkit m-stat i-ua_browser_desktop i-ua_platform_windows&quot; lang=&quot;ru&quot;&gt;&lt;head xmlns:og=&quot;http://ogp.me/ns#&quot;&gt;&lt;meta http-equiv='Content-Type' content='text/html;charset=UTF-8'&gt;
+                        .widgets-item.widgets-item--card-big.project-settings__main-widgets-item
+                            .widgets-item__title Большая карточка проекта
+                            .widgets-item__view
+                                .widgets-item__subtitle Предпросмотр
+                                .widgets-item__view-body
+                                    .widgets-card
+                                        .widgets-card__inner
+                                            header.widgets-card__header
+                                                picture.widgets-card__picture
+                                                    img(src="img/project-settings-logo.jpg").widgets-card__img
+                                                .widgets-card__header-content
+                                                    .text-overflow.widgets-card__header-title Опыт развития форм деятельности
+                                                    .text-overflow.widgets-card__header-subtitle 270 подписчиков
+                                            picture.widgets-card__poster
+                                                img(src="img/project-settings-img.jpg").widgets-card__img
+                                            .widgets-card__text Равным образом постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Таким образом реализация намеченных плановых
+                                            a(href="#").widgets-btn.widgets-btn--size-sm.widgets-card__btn
+                                                .widgets-btn__icon-wrap
+                                                    img(src="img/widgets-btn-icon.svg").widgets-btn__icon
+                                                .widgets-btn__title Поддержать проект
+                            .widgets-item__code-wrap
+                                .widgets-item__subtitle Код для вставки
+                                pre.code-area.widgets-item__code
+                                    code.code-area__body html&gt;&lt;html class=&quot;i-ua_js_no i-ua_css_standart i-ua_browser_chrome i-ua_browser-engine_webkit m-stat i-ua_browser_desktop i-ua_platform_windows&quot; lang=&quot;ru&quot;&gt;&lt;head xmlns:og=&quot;http://ogp.me/ns#&quot;&gt;&lt;meta http-equiv='Content-Type' content='text/html;charset=UTF-8'&gt;
+
+        include includes/footer.pug

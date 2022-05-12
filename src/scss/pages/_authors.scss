@@ -731,7 +731,7 @@
 .filter-item {
     font-size: 14px;
     line-height: 1;
-
+    position: relative;
     &__btn {
         background: transparent;
         padding: 5px 0;
@@ -747,13 +747,11 @@
         cursor: pointer;
         transition: all .4s;
         transition-property: color;
-
         &:before {
             content: '';
             position: absolute;
             inset: -6px;
         }
-
         &:after {
             width: 0;
             height: 0;
@@ -765,16 +763,54 @@
             border-width: 3px 3px 0 3px;
             border-color: $blue transparent transparent transparent;
             vertical-align: middle;
+            transition: all .4s;
+            transition-property: transform;
         }
-
         svg {
             width: 24px;
             height: 24px;
         }
     }
-
+    &.is-open &__btn:after {
+        transform: scaleY(-1);
+    }
     &__dropdown {
-        display: none;
+        background: $white;
+        padding: 4px;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),
+                    0 4px 6px -4px rgba(0,0,0,.1);
+        border-radius: 8px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        transition: all .4s;
+        transition-property: transform, visibility, opacity;
+        z-index: 2;
+        &-action-list {
+        }
+        &-action {
+            padding: 10px 12px;
+            display: block;
+            font-size: 14px;
+            line-height: 1.2;
+            color: $dark-blue;
+            border-radius: 4px;
+            user-select: none;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all .24s;
+            transition-property: background;
+            &:hover {
+                background: #F3F4F6;
+                text-decoration: none;
+            }
+        }
+    }
+    &:not(.is-open) &__dropdown {
+        transform: translateY(4px);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
     }
 }
 
@@ -1138,11 +1174,17 @@
         max-width: 480px;
         margin: 0 0 48px;
     }
+    &__main-form__area-new {
+        margin: 0 0 48px;
+    }
     &__main-form__area-logo {
         margin: 0 0 60px;
     }
     &__main-form__area-line {
         margin: 0 0 32px;
+    }
+    &__main-form__area-link {
+        margin: 0 0 60px;
     }
     &__main-form-privacy {
         max-width: 630px;
@@ -2947,6 +2989,9 @@
         }
         &__main-form__area-item {
             max-width: initial;
+            margin-bottom: 32px;
+        }
+        &__main-form__area-new {
             margin-bottom: 32px;
         }
         &__main-form-privacy {

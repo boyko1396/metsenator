@@ -323,5 +323,25 @@
         }
         &-transactions {
         }
+        &-widgets-list {
+        }
+        &-widgets-item {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            &:not(:last-child) {
+                border-bottom: 1px solid $gray-light;
+            }
+        }
+    }
+    &__main-subscribers-list {
+    }
+    &__main-subscribers-subtitle {
+        margin: -8px 0 24px;
+        padding-bottom: 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.3;
+        color: #111827;
+        border-bottom: 1px solid $gray-light;
     }
 }

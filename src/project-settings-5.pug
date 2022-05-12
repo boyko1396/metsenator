@@ -1,0 +1,90 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.project-settings
+            .container.project-settings__container
+                aside.project-settings__aside
+                    .project-tip.project-settings__aside-project-tip
+                        picture.img-cover.project-tip__picture
+                            img(src="img/project-ava.jpg", alt="Опыт развития форм деятельности").project-tip__img
+                        .project-tip__content
+                            .text-overflow.project-tip__name Опыт развития форм деятельности
+                            a(href="#").project-tip__prev-link вернуться к проекту
+                    nav(role="navigation").nav-step.nav-step--mobile-scroll.project-settings__aside-nav
+                        ul.nav-step__list
+                            li.nav-step__item
+                                a(href="project-settings-1.html").nav-step__link Донаты
+                            li.nav-step__item
+                                a(href="project-settings-2.html").nav-step__link Основное
+                            li.nav-step__item
+                                a(href="project-settings-3.html").nav-step__link Изображения
+                            li.nav-step__item
+                                a(href="project-settings-4.html").nav-step__link Описание
+                            li.nav-step__item
+                                a(href="project-settings-5.html").nav-step__link.is-active Ссылки
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-7.html").nav-step__link Подписчики
+                section.project-settings__main
+                    h1.project-settings__main-title Ссылки
+                    form(action="#").project-settings__main-form
+                        .input-block.n-new-project__main-form__area-item
+                            label(for="n-new-project-address-page").input-block__label
+                                span.input-block__label-name Адрес страницы
+                                span.input-block__label-description Придумайте короткий URL-адрес вашей страницы. Может содержать латинские буквы, цифры, дефисы и подчёркивания
+                            input(type="text", name="", id="n-new-project-address-page", placeholder="http://uppora.org/").input-el.input-block__el
+                        .input-block.n-new-project__main-form__area-link
+                            label.input-block__label
+                                span.input-block__label-name Ссылки на соцсети
+                                span.input-block__label-description Ссылки на соцсети или каналы в месендерах, где уже размещён ваш проект. Будут отображаться на странице проекта
+                            .link-add.input-block__link-add
+                                .link-add__inner
+                                    .input-link.link-add__name
+                                        label.input-link__label
+                                            span.input-link__label-title Название ссылки
+                                            input(type="text", name="", value="Вконтакте").input-el.input-link__label-input
+                                    .input-link.link-add__url
+                                        label.input-link__label
+                                            span.input-link__label-title URL
+                                            input(type="text", name="", value="https://vk.com/opyt").input-el.input-link__label-input
+                                    button(type="button", title="Close").btn-close.link-add__remove
+                                        svg.u-icon
+                                            use(xlink:href="img/sprite.svg#close")
+                            button(type="button").add-link-btn.input-block__add-link
+                                svg.u-icon.add-link-btn__icon
+                                    use(xlink:href="img/sprite.svg#plus")
+                                | Добавить ссылку
+                        .input-block.n-new-project__main-form__area-link
+                            label.input-block__label
+                                span.input-block__label-name Ссылки на другие платформы
+                                span.input-block__label-description Любые другие сайты по сбору средств, на которых уже размещён ваш проект. Будут отображаться на странице проекта
+                            .link-add.input-block__link-add
+                                .link-add__inner
+                                    .input-link.link-add__name
+                                        label.input-link__label
+                                            span.input-link__label-title Название ссылки
+                                            input(type="text", name="", value="planeta.ru").input-el.input-link__label-input
+                                    .input-link.link-add__url
+                                        label.input-link__label
+                                            span.input-link__label-title URL
+                                            input(type="text", name="", value="https://planeta.ru/opyt").input-el.input-link__label-input
+                                    button(type="button", title="Close").btn-close.link-add__remove
+                                        svg.u-icon
+                                            use(xlink:href="img/sprite.svg#close")
+                            button(type="button").add-link-btn.input-block__add-link
+                                svg.u-icon.add-link-btn__icon
+                                    use(xlink:href="img/sprite.svg#plus")
+                                | Добавить ссылку
+
+                        .group-btns.n-new-project__main-form-btns
+                            button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Сохранить изменения
+                            button(type="button").btn.btn--size-sm.btn-simple.group-btns__item Предпросмотр
+
+        include includes/footer.pug

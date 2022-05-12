@@ -12,6 +12,7 @@ $(document).ready(function() {
     transactionsCommentToggle();
     transactionsFormToggle();
     modalInit();
+    filterDropdown();
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -195,7 +196,7 @@ $(document).ready(function() {
         });
     }
     
-    // transactions toggle comment, answer
+    // modal init, close
     function modalInit() {
         $('.js-modal-open').on('click', function(e) {
             $('body').addClass('is-hidden');
@@ -206,6 +207,14 @@ $(document).ready(function() {
         $('.js-modal-close').on('click', function(e) {
             $('body').removeClass('is-hidden');
             $('#modal-change-card').removeClass('is-show');
+            e.preventDefault();
+        });
+    }
+    
+    // filter show/hide
+    function filterDropdown() {
+        $('.js-filter-open').on('click', function(e) {
+            $(this).parents('.filter-item').toggleClass('is-open');
             e.preventDefault();
         });
     }
