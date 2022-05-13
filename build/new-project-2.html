@@ -91,13 +91,15 @@
               <div class="pager-link__icon" style="background-image: url(img/pager-link-arrow.svg)"></div>Вперед</a>
           </div>
           <form class="n-new-project__main-form" action="#">
-            <input class="files-hidden" type="file" name="" id="n-new-logo" value="">
             <div class="input-block n-new-project__main-form__area-logo">
               <label class="input-block__label" for="n-new-logo"><span class="input-block__label-name">Логотип *</span><span class="input-block__label-description">Форматы: JPEG, PNG, BMP или GIF. Изображение которое будет отображаться в публикациях от имени проекта</span></label>
-              <label class="input-file input-file--logo input-block__file" for="n-new-logo"><span class="input-file__inner">
+              <label class="input-file input-file--logo input-block__file" for="n-new-logo">
+                <input class="files-hidden input-file__input" type="file" name="" id="n-new-logo" value=""><span class="input-file__inner">
                   <svg class="u-icon input-file__icon">
                     <use xlink:href="img/sprite.svg#download-arrow"></use>
-                  </svg><span class="input-file__title">Загрузить</span></span></label>
+                  </svg><span class="input-file__title">Загрузить</span></span>
+                <picture class="img-cover input-file__load"><img src="img/project-settings-logo.jpg"></picture>
+              </label>
             </div>
             <div class="input-block n-new-project__main-form__area-line">
               <label class="input-block__label"><span class="input-block__label-name">Обложка *</span><span class="input-block__label-description">Вставьте ссылку на видео или загрузите изображение, которое будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта</span></label>
@@ -108,15 +110,17 @@
               </label>
               <input class="input-el input-block__el" type="text" name="" id="n-new-project-poster-video" placeholder="Ссылка на YouTube или Vimeo">
             </div>
-            <input class="files-hidden" type="file" name="" id="n-new-picture" value="">
             <div class="input-block n-new-project__main-form__area-line">
               <label class="label-radio input-block__label-radio">
                 <input class="label-radio__input" type="radio" name="n-new-poster" value="Изображение"><span class="label-radio__inner"><span class="label-radio__title">Изображение</span></span>
               </label>
-              <label class="input-file input-file--picture input-block__file" for="n-new-picture"><span class="input-file__inner">
+              <label class="input-file input-file--picture input-block__file" for="n-new-picture">
+                <input class="files-hidden input-file__input" type="file" name="" id="n-new-picture" value=""><span class="input-file__inner">
                   <svg class="u-icon input-file__icon">
                     <use xlink:href="img/sprite.svg#download-arrow"></use><span class="input-file__description">JPEG, PNG, BMP, GIF<br>Минимальная ширина 1080 px, рекомендуемые пропорции 16:9</span><span class="input-file__title">Загрузить</span>
-                  </svg></span></label>
+                  </svg></span>
+                <div class="img-cover media-responsive input-file__load"><img src="img/project-settings-img.jpg"></div>
+              </label>
             </div>
             <div class="group-btns n-new-project__main-form-btns">
               <button class="btn btn--size-sm btn-green group-btns__item" type="submit">Далее</button>

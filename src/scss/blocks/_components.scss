@@ -376,6 +376,9 @@
         transition-property: opacity, visibility;
         overflow: hidden;
         z-index: 1;
+        img[src=''] {
+           display: none;
+        }
     }
     &:hover &__load {
         pointer-events: none;

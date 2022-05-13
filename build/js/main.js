@@ -14,6 +14,8 @@ $(document).ready(function() {
     modalInit();
     filterDropdown();
     logoAnimated();
+    fileAttachPreviewLogo();
+    fileAttachPreviewPoster();
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -228,5 +230,32 @@ $(document).ready(function() {
                 logoAnimated.addClass('is-loaded');
             }, 4000);
         }
-    } 
+    }
+    
+    // file download preview
+    function fileAttachPreviewLogo() {
+        $('#n-new-logo').change(function(){
+            const file = this.files[0];
+            if (file){
+                let reader = new FileReader();
+                reader.onload = function(event){
+                    $('.input-file--logo .input-file__load img').attr('src', event.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    }
+
+    function fileAttachPreviewPoster() {
+        $('#n-new-picture').change(function(){
+            const file = this.files[0];
+            if (file){
+                let reader = new FileReader();
+                reader.onload = function(event){
+                    $('.input-file--picture .input-file__load img').attr('src', event.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    }
 });

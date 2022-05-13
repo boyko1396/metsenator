@@ -487,6 +487,9 @@ img {
   overflow: hidden;
   z-index: 1;
 }
+.input-file__load img[src=""] {
+  display: none;
+}
 .input-file:hover .input-file__load {
   pointer-events: none;
   opacity: 0;
