@@ -45,8 +45,13 @@ html(lang='ru')
                             label(for="n-new-logo").input-block__label
                                 span.input-block__label-name Логотип *
                                 span.input-block__label-description Форматы: JPEG, PNG, BMP или GIF. Изображение которое будет отображаться в публикациях от имени проекта
-                            picture.img-cover.input-block__file-logo
-                                img(src="img/project-settings-logo.jpg")
+                            label(for="n-new-logo").input-file.input-file--logo.input-block__file
+                                span.input-file__inner
+                                    svg.u-icon.input-file__icon
+                                        use(xlink:href="img/sprite.svg#download-arrow")
+                                    span.input-file__title Загрузить
+                                picture.img-cover.input-file__load
+                                    img(src="img/project-settings-logo.jpg")
                         .input-block.n-new-project__main-form__area-line
                             label.input-block__label
                                 span.input-block__label-name Обложка *
@@ -68,8 +73,14 @@ html(lang='ru')
                                 input(type="radio", name="n-new-poster", value="Изображение").label-radio__input
                                 span.label-radio__inner
                                     span.label-radio__title Изображение
-                            .media-responsive.input-block__picture-responsive
-                                img(src="img/project-settings-img.jpg")
+                            label(for="n-new-picture").input-file.input-file--picture.input-block__file
+                                span.input-file__inner
+                                    svg.u-icon.input-file__icon
+                                        use(xlink:href="img/sprite.svg#download-arrow")
+                                        span.input-file__description JPEG, PNG, BMP, GIF<br>Минимальная ширина 1080 px, рекомендуемые пропорции 16:9
+                                        span.input-file__title Загрузить
+                                .media-responsive.input-file__load
+                                    img(src="img/project-settings-img.jpg")
                         .group-btns.n-new-project__main-form-btns
                             button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Сохранить изменения
                             button(type="button").btn.btn--size-sm.btn-simple.group-btns__item Предпросмотр

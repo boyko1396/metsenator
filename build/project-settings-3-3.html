@@ -193,7 +193,12 @@
             <input class="files-hidden" type="file" name="" id="n-new-logo" value="">
             <div class="input-block n-new-project__main-form__area-logo">
               <label class="input-block__label" for="n-new-logo"><span class="input-block__label-name">Логотип *</span><span class="input-block__label-description">Форматы: JPEG, PNG, BMP или GIF. Изображение которое будет отображаться в публикациях от имени проекта</span></label>
-              <picture class="img-cover input-block__file-logo"><img src="img/project-settings-logo.jpg"></picture>
+              <label class="input-file input-file--logo input-block__file" for="n-new-logo"><span class="input-file__inner">
+                  <svg class="u-icon input-file__icon">
+                    <use xlink:href="img/sprite.svg#download-arrow"></use>
+                  </svg><span class="input-file__title">Загрузить</span></span>
+                <picture class="img-cover input-file__load"><img src="img/project-settings-logo.jpg"></picture>
+              </label>
             </div>
             <div class="input-block n-new-project__main-form__area-line">
               <label class="input-block__label"><span class="input-block__label-name">Обложка *</span><span class="input-block__label-description">Вставьте ссылку на видео или загрузите изображение, которое будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта</span></label>
