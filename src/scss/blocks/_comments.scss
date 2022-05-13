@@ -43,12 +43,17 @@
             }
         }
 
+        &-info {
+        }
+
         &-name {
+            max-width: 100%;
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
             color: $dark-blue;
             margin-bottom: 2px;
+            flex: 0 0 100%;
 
             &.topic-starter {
                 color: $white;
@@ -58,11 +63,40 @@
             }
         }
 
+        &-info-bottom {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
         &-time {
+            margin-right: 4px;
             font-weight: 400;
             font-size: 12px;
             line-height: 16px;
             color: $gray;
+            align-self: center;
+        }
+
+        &-donate-amount {
+            background: #F3F4F6;
+            padding: 4px 6px;
+            flex-shrink: 0;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1;
+            color: $darknes;
+            align-self: center;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+
+        &-donate-hidden {
+            font-size: 12px;
+            line-height: 1;
+            color: $gray;
+            flex-shrink: 0;
+            align-self: center;
         }
 
         &-text {
