@@ -162,51 +162,117 @@
       </div>
       <div class="js-header-menu-mobile header__overlay-mobile"></div>
     </header>
-    <main class="project-settings">
-      <div class="container project-settings__container">
-        <aside class="project-settings__aside">
-          <div class="project-settings__aside-pager"><a class="pager-link pager-link--prev project-settings__aside-pager-link" href="#">
-              <div class="pager-link__icon" style="background-image: url(img/pager-link-arrow.svg)"></div>Назад</a>
-            <div class="project-settings__aside-pager-title">Управление проектом</div>
-          </div>
-          <div class="project-tip project-settings__aside-project-tip">
-            <picture class="img-cover project-tip__picture"><img class="project-tip__img" src="img/project-ava.jpg" alt="Опыт развития форм деятельности"></picture>
-            <div class="project-tip__content">
-              <div class="text-overflow project-tip__name">Опыт развития форм деятельности</div><a class="project-tip__prev-link" href="#">вернуться к проекту</a>
+    <div class="header-middle"><img src="img/header-bg.jpg" alt="">
+      <div class="header-middle-edit"> <img src="img/edit.svg" alt=""></div>
+    </div>
+    <div class="header-bottom"> 
+      <div class="container"> 
+        <div class="header-bottom-wrap"> 
+          <div class="header-info">
+            <div class="popup-avatar">
+              <form class="popup-avatar-wrap" id="avatar"> 
+                <div class="popup-avatar-header"> 
+                  <div class="popup-avatar-ttl">Фото профиля</div>
+                  <div class="popup-avatar-close"><img src="img/close.svg" alt=""></div>
+                </div>
+                <div class="popup-avatar-close-desctop"> <img src="img/close-w.svg" alt=""></div>
+                <div class="popup-avatar-img"><img src="img/person-edit.jpg" alt=""></div>
+                <div class="popup-avatar-footer">
+                  <div class="popup-avatar-input">
+                    <input id="avatar-input" type="file" name="avatar-input">
+                    <label for="avatar-input">Загрузить</label>
+                  </div>
+                  <button class="popup-avatar-btn" type="submit">Сохранить     </button>
+                </div>
+              </form>
+            </div>
+            <div class="header-info-photo"><img src="img/person-1.jpg" alt=""></div>
+            <div class="header-info-block"> 
+              <div class="header-info-name">Алексей Иванов    </div>
+              <div class="header-info-subs"> <span class="header-info-subs-num">270&nbsp;</span><span>подписчиков</span></div>
             </div>
           </div>
-          <nav class="nav-step nav-step--mobile-scroll project-settings__aside-nav" role="navigation">
-            <ul class="nav-step__list">
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-1.html">Донаты</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-2.html">Основное</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-3.html">Изображения</a></li>
-              <li class="nav-step__item"><a class="nav-step__link is-active" href="project-settings-4.html">Описание</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-5.html">Ссылки</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-6.html">Виджеты</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-7.html">Подписчики</a></li>
-            </ul>
-          </nav>
-        </aside>
-        <section class="project-settings__main">
-          <h1 class="project-settings__main-title">Описание</h1>
-          <form class="project-settings__main-form" action="#">
-            <div class="input-block n-new-project__main-form__area-new">
-              <label class="input-block__label" for="n-new-project-description"><span class="input-block__label-name">Краткое описание *</span><span class="input-block__label-description">Будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта</span></label>
-              <div class="input-block__textarea-wrapper">
-                <textarea class="input-el input-el--textarea input-el--textarea-size-md input-block__el" type="text" name="" id="n-new-project-description" rows="" cols="" maxlength="160" placeholder="Максимум 160 символов с пробелами"></textarea>
-                <div class="input-block__textarea-counter">0/160</div>
+          <div class="header-subscribe btn btn-green">Подписаться </div>
+        </div>
+      </div>
+    </div>
+    <main class="profile"> 
+      <div class="container"> 
+        <div class="profile-wrap">
+          <div class="profile-tabs"> 
+            <div class="profile-tab">Создал&nbsp;<span>9</span></div>
+            <div class="profile-tab">Поддержал&nbsp;<span>15</span></div>
+            <div class="profile-tab active">Черновики&nbsp;<span>2</span></div>
+          </div>
+          <div class="profile-posts"> 
+            <div class="post">
+              <div class="post-header"> 
+                <div class="post-header-img"> <img src="img/post-person.png" alt=""></div>
+                <div class="post-header-info"> 
+                  <div class="post-header-ttl">Опыт развития различных форм деятельности</div>
+                  <div class="post-header-date">вчера в 17:40</div>
+                </div>
+                <div class="filter-item filter-item--dotted post-header-btn">
+                  <button class="js-filter-open filter-item__btn" type="button">
+                    <svg class="u-icon filter-item__btn-dotted">
+                      <use xlink:href="img/sprite.svg#dotted"></use>
+                    </svg>
+                  </button>
+                  <div class="filter-item__dropdown">
+                    <div class="filter-item__dropdown-action-list">
+                      <div class="filter-item__dropdown-action">Опция 1</div>
+                      <div class="filter-item__dropdown-action">Опция 2</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-img"> <img src="img/post.jpg" alt=""></div>
+              <div class="post-text">
+                В соответствии с законами сохранения энергии, угловая скорость искажает
+                суммарный поворот. Направление заставляет иначе взглянуть на то, что такое курс. Собственный
+                кинетический момент мал. Гироскопический прибор вращает гиротахометр.
               </div>
             </div>
-            <div class="input-block n-new-project__main-form__area-new">
-              <label class="input-block__label" for="n-new-project-description"><span class="input-block__label-name">Полное описание *</span><span class="input-block__label-description">Расскажите, почему вы решили создать этот проект, как возникла идея и зачем вам нужна поддержка. Форматы для загружаемых изображений: JPEG, PNG, BMP или GIF</span></label>
-              <div class="e-editor input-block__editor"><img class="e-editor__img" src="img/editor.jpg"></div>
+            <div class="post">
+              <div class="post-header"> 
+                <div class="post-header-img"> <img src="img/post-person.png" alt=""></div>
+                <div class="post-header-info"> 
+                  <div class="post-header-ttl">Опыт развития различных форм деятельности</div>
+                  <div class="post-header-date">вчера в 17:40</div>
+                </div>
+                <div class="filter-item filter-item--dotted post-header-btn">
+                  <button class="js-filter-open filter-item__btn" type="button">
+                    <svg class="u-icon filter-item__btn-dotted">
+                      <use xlink:href="img/sprite.svg#dotted"></use>
+                    </svg>
+                  </button>
+                  <div class="filter-item__dropdown">
+                    <div class="filter-item__dropdown-action-list">
+                      <div class="filter-item__dropdown-action">Опция 1</div>
+                      <div class="filter-item__dropdown-action">Опция 2</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-img"> <img src="img/post.jpg" alt=""></div>
+              <div class="post-text">
+                В соответствии с законами сохранения энергии, угловая скорость искажает
+                суммарный поворот. Направление заставляет иначе взглянуть на то, что такое курс. Собственный
+                кинетический момент мал. Гироскопический прибор вращает гиротахометр.
+              </div>
             </div>
-            <div class="group-btns n-new-project__main-form-btns">
-              <button class="btn btn--size-sm btn-green group-btns__item" type="submit">Сохранить изменения</button>
-              <button class="btn btn--size-sm btn-simple group-btns__item" type="button">Предпросмотр</button>
+          </div>
+          <aside class="profile-aside">
+            <div class="profile-aside-text">
+              Переходное состояние последовательно. Весьма существенно следующее:
+              интенция изящно образует фабульный каркас. Текст, как бы это ни казалось парадоксальным, имеет
+              архетип, однако само по себе состояние игры всегда амбивалентно. Теория наивного и
+              сентиментального искусства.
             </div>
-          </form>
-        </section>
+            <div class="profile-aside-adress">Химки, Московская обл.</div>
+            <div class="profile-aside-links"><a class="profile-aside-link" href="#">Вконтакте</a><a class="profile-aside-link" href="#">Telegram</a><a class="profile-aside-link" href="#">YouTube</a></div>
+          </aside>
+        </div>
       </div>
     </main>
     <footer class="footer">

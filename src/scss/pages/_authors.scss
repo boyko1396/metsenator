@@ -123,6 +123,12 @@
     &__container {
     }
 
+    &__section-title {
+        max-width: 600px;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
     &__inner {
         display: flex;
         align-items: center;
@@ -148,7 +154,7 @@
     }
 
     &__content {
-        padding: 0 0 74px 24px;
+        padding: 0 0 24px 24px;
         flex-grow: 1;
     }
 
@@ -160,6 +166,9 @@
         font-size: 16px;
         line-height: 1.75;
         color: $dark-blue;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
     }
 }
 
@@ -730,115 +739,6 @@
     }
 }
 
-.city-label {
-    display: inline-flex;
-    align-items: center;
-
-    &__icon {
-        width: 20px;
-        height: 20px;
-        margin-right: 4px;
-        flex: 0 0 20px;
-    }
-}
-
-.filter-item {
-    font-size: 14px;
-    line-height: 1;
-    position: relative;
-    &__btn {
-        background: transparent;
-        padding: 5px 0;
-        display: flex;
-        align-items: center;
-        font-size: inherit;
-        line-height: inherit;
-        color: $blue;
-        position: relative;
-        border: none;
-        border-radius: 0;
-        outline: none;
-        cursor: pointer;
-        transition: all .4s;
-        transition-property: color;
-        &:before {
-            content: '';
-            position: absolute;
-            inset: -6px;
-        }
-        &:after {
-            width: 0;
-            height: 0;
-            margin: .2em 0 0 .3em;
-            content: '';
-            display: inline-block;
-            flex-shrink: 0;
-            border-style: solid;
-            border-width: 3px 3px 0 3px;
-            border-color: $blue transparent transparent transparent;
-            vertical-align: middle;
-            transition: all .4s;
-            transition-property: transform;
-        }
-        svg {
-            width: 24px;
-            height: 24px;
-        }
-    }
-    &.is-open &__btn:after {
-        transform: scaleY(-1);
-    }
-    &__dropdown {
-        background: $white;
-        padding: 4px;
-        box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),
-                    0 4px 6px -4px rgba(0,0,0,.1);
-        border-radius: 8px;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        transition: all .4s;
-        transition-property: transform, visibility, opacity;
-        z-index: 2;
-        &-action-list {
-        }
-        &-action {
-            padding: 10px 12px;
-            display: block;
-            font-size: 14px;
-            line-height: 1.2;
-            color: $dark-blue;
-            border-radius: 4px;
-            user-select: none;
-            cursor: pointer;
-            white-space: nowrap;
-            transition: all .24s;
-            transition-property: background;
-            &:hover {
-                background: #F3F4F6;
-                text-decoration: none;
-            }
-        }
-    }
-    &:not(.is-open) &__dropdown {
-        transform: translateY(4px);
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
-}
-
-.filter-group {
-    display: flex;
-
-    &__item {
-
-        &:not(:last-child) {
-            margin-right: 32px;
-        }
-    }
-}
-
 .project-card {
     display: flex;
     flex-direction: column;
@@ -1189,6 +1089,10 @@
         max-width: 480px;
         margin: 0 0 48px;
     }
+    &__main-form__area-d-all {
+        max-width: 100%;
+        margin-bottom: 48px;
+    }
     &__main-form__area-new {
         margin: 0 0 48px;
     }
@@ -1327,7 +1231,6 @@
         flex-shrink: 0;
     }
     &__aside-card {
-
         &:not(:last-child) {
             margin-bottom: 26px;
         }
@@ -1340,7 +1243,6 @@
     font-size: 14px;
     color: $darknes;
     overflow: clip;
-
     &__container {
     }
     &__inner {
@@ -2304,7 +2206,7 @@
     }
 
     .a-section-info {
-        padding: 30px 0;
+        padding: 30px 0 0;
 
         &__container {
         }
@@ -2821,25 +2723,26 @@
 
     .a-section-card {
         padding: 90px 0 60px;
-
         &__container {
         }
-
+        &__section-title {
+            font-size: 32px;
+        }
         &__inner {
             margin: 0 -6px;
         }
-
         &__media {
             padding-right: 6px;
             padding-left: 6px;
         }
-
         &__picture {
         }
-
         &__content {
             padding-right: 6px;
             padding-left: 6px;
+        }
+        &__group-btns {
+            display: none;
         }
     }
 
@@ -2980,6 +2883,9 @@
         }
         &__main-form__area-item {
             max-width: initial;
+            margin-bottom: 32px;
+        }
+        &__main-form__area-d-all {
             margin-bottom: 32px;
         }
         &__main-form__area-new {
@@ -3225,14 +3131,19 @@
 
     .a-section-card {
         padding: 40px 0;
-
         &__container {
         }
-
+        &__section-title {
+            max-width: 450px;
+            margin-right: initial;
+            margin-bottom: 12px;
+            margin-left: initial;
+            font-size: 24px;
+            text-align: left;
+        }
         &__inner {
             flex-wrap: wrap;
         }
-
         &__content {
             max-width: 100%;
             margin-bottom: 32px;
@@ -3244,45 +3155,39 @@
         &__title {
             font-size: 24px;
         }
-
         &__media {
             max-width: 100%;
             margin-bottom: -40px;
             flex-basis: 100%;
         }
-
         &__picture {
             max-width: 530px;
             margin: 0 auto;
+            position: relative;
+            right: -15px;
         }
     }
 
     .a-section-info {
-
         &__container {
         }
-
         &__inner {
             flex-wrap: wrap;
         }
-
         &__content {
             max-width: 100%;
             padding: 40px 0 32px;
             flex-basis: 100%;
             text-align: center;
         }
-
         &__title {
             font-size: 24px;
         }
-
         &__media {
             max-width: 100%;
             margin-top: 0;
             flex-basis: 100%;
         }
-
         &__picture {
             max-width: 288px;
             margin: 0 auto;

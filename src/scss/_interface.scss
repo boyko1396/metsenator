@@ -76,8 +76,20 @@ img {
     }
 }
 
+@media screen and (min-width: 1001px) {
+    .visible-1000 {
+        display: none !important;
+    }
+}
+
 @media screen and (min-width: 1281px) {
     body.is-hidden {
         padding-right: 17px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hidden-1000 {
+        display: none !important;
     }
 }

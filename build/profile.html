@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="container-large header__container">
-        <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
+        <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="http://uppora.org/users/1/projects/7/news_posts/5">beta</a></div>
         <div class="header__menu">
           <nav class="header-nav header__nav" role="navigation">
             <ul class="header-nav__list">
@@ -202,6 +202,7 @@
           <div class="profile-tabs"> 
             <div class="profile-tab active">Создал&nbsp;<span>9</span></div>
             <div class="profile-tab">Поддержал&nbsp;<span>15</span></div>
+            <div class="profile-tab">Черновики&nbsp;<span>2</span></div>
           </div>
           <div class="profile-posts"> 
             <div class="post">
@@ -211,7 +212,19 @@
                   <div class="post-header-ttl">Опыт развития различных форм деятельности</div>
                   <div class="post-header-date">вчера в 17:40</div>
                 </div>
-                <div class="post-header-btn"> <img src="img/dots.svg" alt=""></div>
+                <div class="filter-item filter-item--dotted post-header-btn">
+                  <button class="js-filter-open filter-item__btn" type="button">
+                    <svg class="u-icon filter-item__btn-dotted">
+                      <use xlink:href="img/sprite.svg#dotted"></use>
+                    </svg>
+                  </button>
+                  <div class="filter-item__dropdown">
+                    <div class="filter-item__dropdown-action-list">
+                      <div class="filter-item__dropdown-action">Опция 1</div>
+                      <div class="filter-item__dropdown-action">Опция 2</div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="post-img"> <img src="img/post.jpg" alt=""></div>
               <div class="post-text">
@@ -223,6 +236,9 @@
                 <div class="post-like"><img src="img/arrow.svg" alt=""></div>
                 <div class="post-count">211       </div>
                 <div class="post-dislike"><img src="img/arrow.svg" alt=""></div>
+              </div>
+              <div class="post-status">
+                <div class="post-status post-status--accept post-status__btn">На проверке</div>
               </div>
             </div>
             <div class="post">
@@ -232,7 +248,19 @@
                   <div class="post-header-ttl">Опыт развития различных форм деятельности</div>
                   <div class="post-header-date">вчера в 17:40</div>
                 </div>
-                <div class="post-header-btn"> <img src="img/dots.svg" alt=""></div>
+                <div class="filter-item filter-item--dotted post-header-btn">
+                  <button class="js-filter-open filter-item__btn" type="button">
+                    <svg class="u-icon filter-item__btn-dotted">
+                      <use xlink:href="img/sprite.svg#dotted"></use>
+                    </svg>
+                  </button>
+                  <div class="filter-item__dropdown">
+                    <div class="filter-item__dropdown-action-list">
+                      <div class="filter-item__dropdown-action">Опция 1</div>
+                      <div class="filter-item__dropdown-action">Опция 2</div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="post-img"> <img src="img/post.jpg" alt=""></div>
               <div class="post-text">
@@ -244,6 +272,9 @@
                 <div class="post-like"><img src="img/arrow.svg" alt=""></div>
                 <div class="post-count">211       </div>
                 <div class="post-dislike"><img src="img/arrow.svg" alt=""></div>
+              </div>
+              <div class="post-status">
+                <div class="post-status post-status--rejected post-status__btn">Отклонён</div>
               </div>
             </div>
           </div>

@@ -50,6 +50,21 @@ html(lang='ru')
                                 img(width="381", height="462", srcset="img/section-card-2@2x.png 2x", src="img/section-card-2.png")
                                 .a-section-info__decor(style="background-image: url(../img/section-card-decor-1.svg)")
 
+            section.a-section-card
+                .container-large.a-section-card__container
+                    h2.visible-1000.section-title.a-section-card__section-title Поделитесь QR-кодом или установите виджет
+                    .a-section-card__inner
+                        .a-section-card__media
+                            picture.a-section-card__picture
+                                img(width="530", height="425", srcset="img/section-card-3@2x.png 2x", src="img/section-card-3.png")
+                        .a-section-card__content
+                            h2.hidden-1000.section-title.a-section-card__title Поделитесь QR-кодом или установите виджет
+                            .content.a-section-card__text
+                                p Чтобы сообщить своей аудитории о возможности поддержать ваш проект у нас есть виджеты, которые можно установить себе на сайт или сгенерировать QR-код на страницу вашего проекта на Аппоре.
+                                p А еще мы подготовили несколько рекомендаций о том, как лучше обратиться к своей аудитории с предложением поддержать ваш проект
+                            .group-btns.a-section-card__group-btns
+                                a(href="#").btn.btn--size-md.btn-trp.group-btns__item Посмотреть рекомендации
+
             section.why-uppora
                 .container-large.why-uppora__container
                     h2.section-title.why-uppora__title Почему <span class='text-accent'>Uppora</span>
@@ -90,4 +105,4 @@ html(lang='ru')
                             a(href="#").btn.btn--size-md.btn-green-accent.group-btns__item Написать сообщение
                             a(href="#").btn.btn--size-md.btn-trp.group-btns__item Перейти в блог
 
-        include includes/footer.pug
+        include includes/footer-main.pug

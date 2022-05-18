@@ -237,6 +237,10 @@
             margin: 0 auto;
             padding-bottom: 1px;
 
+            & .swiper-slide {
+                height: initial;
+            }
+
             & .swiper-pagination {
                 position: absolute;
                 left: 0px;
@@ -290,6 +294,8 @@
             border: 1px solid #E5E7EB;
             max-width: 364px;
             height: auto;
+            display: flex;
+            flex-direction: column;
 
             &-head {
                 display: flex;
@@ -348,6 +354,7 @@
             }
 
             &-info {
+                margin-top: auto;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;

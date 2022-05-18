@@ -17,7 +17,7 @@
     <header class="header">
       <div class="container-large header__container">
         <button class="js-header-menu-mobile header__toggle" type="button"><span class="header__toggle-line"></span><span class="header__toggle-line"></span><span class="header__toggle-line"></span></button>
-        <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="blog.html">beta</a></div>
+        <div class="header__logo"><a class="header__logo-link header__logo-link--russia" href="/"><img src="img/logo-russia.svg" alt="Аппора"></a><a class="header__logo-beta" href="http://uppora.org/users/1/projects/7/news_posts/5">beta</a></div>
         <div class="header__menu">
           <nav class="header-nav header__nav" role="navigation">
             <ul class="header-nav__list">
@@ -73,7 +73,8 @@
     <main class="a-about">
       <div class="container-large a-about__container">
         <div class="a-about__inner">
-          <h1 class="a-about__title">аппора: <span class='text-accent'>творческим людям</span></h1>
+          <h1 class="a-about__title">
+            Аппора:&nbsp;<span class='js-animation-title text-accent'><span>творческим людям</span><span>ютуб-каналам</span><span>компаниям</span><span>телеграм-каналам</span><span>блогерам</span><span>сообществам</span><span>музыкантам</span><span>фотографам</span><span>подкастам</span></span></h1>
           <div class="content a-about__description">
             <p>Платформа на которой люди находят друг друга, объединяют усилия, реализовывают важные проекты, рассказывают об этом и получают от общества  финансовую и информационную поддержку. Прозрачно и безопасно.</p>
           </div>
@@ -83,14 +84,14 @@
           <div class="a-about-info__content">
             <h2 class="a-about-info__title">О платформе</h2>
             <div class="content a-about-info__text">
-              <p>Мы собираем сообщество творческих предприимчивых людей – авторов проектов, и людей, которые хотят помогать рублем и словом проектам, которые им нравятся. Наша цель, превратить помощь и финансовую поддержку в привычку на уровне страны, создав для этого платформу, обеспечивающую прозрачность, безопасность и удобство взаимодействия авторов с аудиторией.</p>
-              <p>Наша миссия делать людей счастливее обеспечив стабильную работу платформы позволяющей помогать и поддерживать понравившиеся проекты, дав возможность проявляться себя, рассказать о своем проекте, развивать его, выражать свое отношение и не бояться быть обманутым.</p>
+              <p>Мы собираем сообщество творческих предприимчивых людей – авторов проектов, и людей, которые хотят помогать рублем и словом проектам, которые им нравятся. <strong>Наша цель</strong>, превратить помощь и финансовую поддержку в привычку на уровне страны, создав для этого платформу, обеспечивающую прозрачность, безопасность и удобство взаимодействия авторов с аудиторией.</p>
+              <p><strong>Наша миссия</strong> делать людей счастливее обеспечив стабильную работу платформы позволяющей помогать и поддерживать понравившиеся проекты, дав возможность проявляться себя, рассказать о своем проекте, развивать его, выражать свое отношение и не бояться быть обманутым.</p>
             </div>
           </div>
           <div class="a-about-info__aside">
             <div class="card-badge-text a-about-info__aside-card">
               <div class="card-badge-text__title">Для прессы:</div>
-              <div class="card-badge-text__contacts"><a href="#">скачать пресс-релиз</a></div>
+              <div class="card-badge-text__contacts"><a href="img/press-release-uppora.pdf" target="_blank">скачать пресс-релиз</a></div>
             </div>
             <div class="card-badge-text a-about-info__aside-card">
               <div class="card-badge-text__title">Бренд:</div>
@@ -240,16 +241,29 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer-main">
       <div class="container-large">
-        <div class="footer-wrap">
-          <div class="footer-block"> 
-            <div class="footer-copyrights">© 2022 Uppora</div>
-            <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
+        <div class="footer-main-head"> 
+          <div class="footer-main-logo"><img src="img/logo-light.svg" alt=""></div>
+        </div>
+        <div class="footer-main-inner"> 
+          <div class="footer-main-inner-info">
+            <div class="footer-main-inner-text">Мы не берём себе комиссию с донатов и нас нет рекламы, поэтому будем рады если вы поддержите наш проек</div><a class="footer-main-inner-button btn btn-green" href="http://uppora.org/uppora"><img src="img/upp-w.svg" alt=""><span>Поддержать проект</span></a>
           </div>
-          <div class="footer-block">
-            <div class="footer-lang">Русский</div>
-            <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
+          <div class="footer-main-inner-media">
+            <div class="footer-main-inner-links"><a class="footer-main-inner-link" href="#">О&nbsp;платформе</a><a class="footer-main-inner-link" href="#">Проекты</a><a class="footer-main-inner-link" href="#">Авторам</a><a class="footer-main-inner-link" href="#">СМИ&nbsp;о&nbsp;нас</a><a class="footer-main-inner-link" href="#">Поддержка</a></div>
+            <div class="footer-main-inner-social"><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/upp-g.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/vk.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/twit.svg" alt=""></a><a class="footer-main-inner-social-link" href="#"><img class="svg-inline" src="img/star.svg" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main-bottom">
+        <div class="container-large">
+          <div class="footer-main-bottom-wrap"> 
+            <div class="footer-main-bottom-copyrights">© 2022 Uppora	</div>
+            <div class="footer-main-bottom-block">
+              <div class="footer-main-bottom-lang">Русский</div>
+              <div class="footer-main-bottom-divider"></div><a class="footer-main-bottom-docs" href="#">Правовые документы</a>
+            </div>
           </div>
         </div>
       </div>
