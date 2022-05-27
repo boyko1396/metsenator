@@ -1,0 +1,78 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.settings.settings-profile
+            .container
+                .settings-wrap
+
+                    .settings-tabs
+                        .settings-tabs-head
+                            .settings-tabs-img.setting-profile-img
+                                img(src="img/person.png", alt="")
+                            .settings-tabs-info
+                                .settings-tabs-info-top.settings-profile-name Илья Панов    
+                                .settings-tabs-info-bottom.settings-profile-email adress@website.com
+                        .settings-tabs-list
+                            .settings-tabs-tab Основное
+                            .settings-tabs-tab Безопасность
+                            .settings-tabs-tab Способ оплаты
+                            .settings-tabs-tab Уведомления
+                            .settings-tabs-tab.active Верификация
+
+                    .settings-inner
+                        .settings-inner-form-group
+                            .settings-inner-ttl Верификация
+                            .user-verification
+                                .user-verification__phone-wrapper
+                                    p.user-verification__paragraph Верификация – это процесс подтверждения того, что страница вашего профиля действительно принадлежит вам. Если проверка пройдена, страница получает особую отметку – зелёную галочку справа от имени.
+                                    .phone-binding.user-verification__phone-binding
+                                        .content.phone-binding__text
+                                            p Обращаем внимание, что для прохождение процесса верификации к аккаунту должен быть привязан действующий номер телефона
+                                        a(href="#modal-binding-phone-1").js-modal-open.btn.btn--size-md.btn-green.phone-binding__btn Привязать номер
+                                        a(href="#modal-binding-phone-2").js-modal-open.btn.btn--size-md.btn-green.phone-binding__btn Привязать номер
+
+        #modal-binding-phone-1.modal
+            .modal-body.modal__body
+                .modal-body__center.modal-body__center--size-md
+                    .modal-title.modal-title--size-md.modal-body__title Привязать номер
+                    button(type="button", title="Close").js-modal-close.btn-close.modal-body__close
+                        svg.u-icon
+                            use(xlink:href="img/sprite.svg#close")
+                    form(action="#").modal-body__binding-phone
+                        .content.modal-body__text
+                            p Для подтверждения действия мы совершим звонок-сброс с уникального номера на ваш мобильный телефон. Это бесплатно.
+                        label(for="binding-phone-input").modal-body__binding-phone-label Номер телефона
+                        .modal-body__binding-phone-input-wrapper
+                            input(type="text", name="", id="binding-phone-input", required, value="").input-el.modal-body__binding-phone-input
+                        .group-btns.modal-body__binding-phone-group-btns
+                            button(type="submit").btn.btn-green.btn--size-sm.group-btns__item Позвонить
+                            button(type="button").js-modal-close.btn.btn-cancel.btn--size-sm.group-btns__item Отмена
+
+        #modal-binding-phone-2.modal
+            .modal-body.modal__body
+                .modal-body__center.modal-body__center--size-md
+                    .modal-title.modal-title--size-md.modal-body__title Привязать номер
+                    button(type="button", title="Close").js-modal-close.btn-close.modal-body__close
+                        svg.u-icon
+                            use(xlink:href="img/sprite.svg#close")
+                    form(action="#").modal-body__binding-phone
+                        .content.modal-body__text
+                            p Для подтверждения действия мы совершим звонок-сброс с уникального номера на ваш мобильный телефон. Это бесплатно.
+                        label(for="binding-phone-input").modal-body__binding-phone-label Номер телефона
+                        .modal-body__binding-phone-input-wrapper
+                            input(type="text", name="", id="binding-phone-input", required, disabled, value="+7 987 654 32 10").input-el.modal-body__binding-phone-input
+                            button(type="button").btn.btn-simple.btn--size-sm.modal-body__binding-phone-btn-change Изменить
+                        label(for="binding-phone-code").modal-body__binding-phone-label Последние 4 цифры звонившего номера
+                        .modal-body__binding-phone-input-wrapper
+                            input(type="text", name="", id="binding-phone-code", required, value="").input-el.modal-body__binding-phone-input
+                        .group-btns.modal-body__binding-phone-group-btns
+                            button(type="submit").btn.btn-green.btn--size-sm.group-btns__item Отправить
+                            button(type="button").js-modal-close.btn.btn-cancel.btn--size-sm.group-btns__item Отмена
+
+        include includes/footer.pug

@@ -1,0 +1,84 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header-profile-new.pug
+
+        main.profile 
+            .container 
+                .profile-wrap
+
+                    .profile-tabs 
+                        .profile-tab Создал&nbsp;
+                            span 9
+                        .profile-tab.active Поддержал&nbsp;
+                            span 15
+                        .profile-tab Черновики&nbsp;
+                            span 2
+
+                    .profile-posts
+                        article.user-project-donate-card.profile-posts__list-item
+                            .user-project-donate-card__inner
+                                .user-project-donate-card__header
+                                    picture.img-cover.user-project-donate-card__header-logo
+                                        img(src="img/project-ava.jpg")
+                                    h3.user-project-donate-card__header-title
+                                        a(href="#").verification-checked.user-project-donate-card__header-link Опыт развития различных форм деятельности
+                                .user-project-donate-card__body
+                                    .user-project-donate-card__user
+                                        picture.img-cover.user-project-donate-card__user-avatar
+                                            img(src="img/project-ava.jpg")
+                                        .user-project-donate-card__user-content
+                                            a(href="#").verification-checked.user-project-donate-card__user-name Алексей Иванов
+                                            .user-project-donate-card__user-info
+                                                time.user-project-donate-card__user-date вчера в 17:40
+                                                .user-project-donate-card__user-amount 200 ₽
+                                    .content.user-project-donate-card__text
+                                        p Постоянный количественный требуют определения
+                                    .rating-vote.user-project-donate-card__rating
+                                        button(type="button").btn-vote.btn-vote--like.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                        .rating-vote__count 0
+                                        button(type="button").btn-vote.btn-vote--dislike.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                        article.user-project-donate-card.profile-posts__list-item
+                            .user-project-donate-card__inner
+                                .user-project-donate-card__header
+                                    picture.img-cover.user-project-donate-card__header-logo
+                                        img(src="img/project-ava.jpg")
+                                    h3.user-project-donate-card__header-title
+                                        a(href="#").user-project-donate-card__header-link Катарсис глазами современников
+                                .user-project-donate-card__body
+                                    .user-project-donate-card__user
+                                        picture.img-cover.user-project-donate-card__user-avatar
+                                            img(src="img/project-ava.jpg")
+                                        .user-project-donate-card__user-content
+                                            a(href="#").user-project-donate-card__user-name Алексей Иванов
+                                            .user-project-donate-card__user-info
+                                                time.user-project-donate-card__user-date вчера в 17:40
+                                                .user-project-donate-card__user-amount 200 ₽
+                                    .content.user-project-donate-card__text
+                                        p Направление заставляет иначе взглянуть на то, что такое курс. Собственный кинетический момент мал. Гироскоп вращает гиротахометр.
+                                    .rating-vote.user-project-donate-card__rating
+                                        button(type="button").btn-vote.btn-vote--like.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                        .rating-vote__count 0
+                                        button(type="button").btn-vote.btn-vote--dislike.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+
+                    aside.profile-aside
+                        .profile-aside-text
+                            |Переходное состояние последовательно. Весьма существенно следующее:
+                            |интенция изящно образует фабульный каркас. Текст, как бы это ни казалось парадоксальным, имеет
+                            |архетип, однако само по себе состояние игры всегда амбивалентно. Теория наивного и
+                            |сентиментального искусства.
+                        .profile-aside-adress Химки, Московская обл.
+                        .profile-aside-links
+                            a.profile-aside-link(href="#") Вконтакте
+                            a.profile-aside-link(href="#") Telegram
+                            a.profile-aside-link(href="#") YouTube
+
+        include includes/footer.pug

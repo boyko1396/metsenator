@@ -374,6 +374,69 @@
         color: #111827;
         border-bottom: 1px solid $gray-light;
     }
+    &__verification {
+        max-width: 660px;
+        margin-top: -16px;
+        font-size: 14px;
+        line-height: 1.7;
+        &-paragraph {
+            margin: 0 0 16px;
+        }
+        &-subtitle {
+            margin: 0 0 16px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        &-user-type {
+            margin: 48px 0 58px;
+            &-title {
+                margin: 0 0 16px;
+            }
+            &-label {
+                margin: 0 0 16px;
+            }
+        }
+        &-photo {
+            margin: 0 0 60px;
+            &-title {
+                margin: 0 0 16px;
+            }
+            &-list {
+            }
+        }
+        &-link {
+            .input-block__el {
+                max-width: 384px;
+            }
+        }
+        &-btns {
+            margin-top: 40px;
+        }
+        &-status {
+            margin: 0 0 16px;
+        }
+        &-status-description {
+            margin: 0 0 20px;
+            font-size: 14px;
+            line-height: 1.7;
+            color: $dark-blue;
+        }
+        &-status-btn {
+            margin: 0 0 20px;
+        }
+        &-address {
+            margin: 0 0 60px;
+        }
+        &-phone-company {
+            max-width: 384px;
+            margin: 0 0 60px;
+        }
+        &-attach-file {
+            & + & {
+                margin-top: 12px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1280px) {

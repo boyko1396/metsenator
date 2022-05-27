@@ -1,0 +1,74 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.settings.settings-profile
+            .container
+                .settings-wrap
+
+                    .settings-tabs
+                        .settings-tabs-head
+                            .settings-tabs-img.setting-profile-img
+                                img(src="img/person.png", alt="")
+                            .settings-tabs-info
+                                .settings-tabs-info-top.settings-profile-name Илья Панов    
+                                .settings-tabs-info-bottom.settings-profile-email adress@website.com
+                        .settings-tabs-list
+                            .settings-tabs-tab Основное
+                            .settings-tabs-tab Безопасность
+                            .settings-tabs-tab Способ оплаты
+                            .settings-tabs-tab Уведомления
+                            .settings-tabs-tab.active Верификация
+
+                    .settings-inner
+                        .settings-inner-form-group
+                            h1.settings-inner-ttl Верификация
+                            form(action="#").user-verification
+                                input(type="file", id="verification-photo-1").files-hidden
+                                p.user-verification__paragraph Верификация - это процесс подтверждения того, что страница вашего профиля действительно принадлежит вам. Если проверка пройдена, страница получает особую отметку – зелёную галочку справа от имени.
+                                h2.title-5.user-verification__subtitle Как пройти верефикацию?
+                                p.user-verification__paragraph Пройти верификацию можно предоставив фото документов или через любую другую соцсеть
+                                label.js-radio-tab.label-radio.label-radio--size-sm.user-verification__choose-item
+                                    input(type="radio", name="verification-type", checked, value="Предоставить фото документов").input-hidden.label-radio__input
+                                    span.label-radio__inner
+                                        span.label-radio__title Предоставить фото документов
+                                .user-verification__block
+                                    ul.list-counter.user-verification__list-content
+                                        li
+                                            p Сфотографируйтесь на фоне монитора с открытой страницей <a href="https://www.google.com/" target="_blank">своего профиля</a>.
+                                        li
+                                            p Сфотографируйте паспорт на фоне монитора с открытой страницей <a href="https://www.google.com/" target="_blank">своего профиля</a>. На фото должны быть отчетливо видны: ваше фото, фамилия, имя, дата рождения, страна и город регистрации. Серию, номер паспорта и подпись можно скрыть.
+                                            p
+                                                strong Обратите внимание, что данные указаные на странице профиля должны полностью совпадать с паспортными данными.
+                                        li
+                                            p Загрузите обе фотографии. Ваши файлы нигде не хранятся и никому не передаются, автоматически удаляются сразу после сверки.
+                                            p
+                                                .attach-file.user-verification__attach-file
+                                                    a(href="#" target="_blank").text-overflow.attach-file__name IMG_01297.jpeg
+                                                    button(type="button").attach-file__btn-remove
+                                                        svg.u-icon.attach-file__btn-remove-icon
+                                                            use(xlink:href="img/sprite.svg#close")
+                                                .attach-file.user-verification__attach-file
+                                                    a(href="#" target="_blank").text-overflow.attach-file__name IMG_01298.jpeg
+                                                    button(type="button").attach-file__btn-remove
+                                                        svg.u-icon.attach-file__btn-remove-icon
+                                                            use(xlink:href="img/sprite.svg#close")
+                                label.js-radio-tab.label-radio.label-radio--size-sm.user-verification__choose-item
+                                    input(type="radio", name="verification-type", value="Через другую соцсеть").input-hidden.label-radio__input
+                                    span.label-radio__inner
+                                        span.label-radio__title Через другую соцсеть
+                                .input-block.user-verification__link
+                                    label(for="verification-link").input-block__label
+                                        span.input-block__label-description Если у вас уже есть подтверждённые аккаунты (с галочкой) в любых других соцсетях и в них указана ссылка на ваш профиль или проект на Uppora – просто укажите ссылки на них:
+                                    input(type="text", name="", id="verification-link", placeholder="http://…").input-el.input-block__el
+                                    button(type="button").add-link-btn.input-block__add-link
+                                        svg.u-icon.add-link-btn__icon
+                                            use(xlink:href="img/sprite.svg#plus")
+                                        | Добавить ссылку
+
+        include includes/footer.pug

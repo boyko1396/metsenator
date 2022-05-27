@@ -2,6 +2,13 @@
 @import "interface";
 @import "hovers";
 
+@import "blocks/button";
+@import "blocks/post";
+@import "blocks/comments";
+@import "blocks/input";
+@import "blocks/content";
+@import "blocks/likes";
+@import "blocks/aside";
 @import "blocks/components";
 
 @import "layouts/header";
@@ -12,14 +19,6 @@
 @import "layouts/popup-cover";
 @import "layouts/popup-photo";
 
-@import "blocks/button";
-@import "blocks/post";
-@import "blocks/comments";
-@import "blocks/input";
-@import "blocks/content";
-@import "blocks/likes";
-@import "blocks/aside";
-
 @import "layouts/modal";
 
 @import "pages/profile";
@@ -28,3 +27,4 @@
 @import "pages/settings";
 @import "pages/authors";
 @import "pages/project-settings";
+@import "pages/faq";

@@ -49,7 +49,7 @@ html(lang='ru')
                             .balance-alert__content
                                 .balance-alert__description Минимальная сумма вывода средств 2100 ₽, комиссия банка 3%
                                 .balance-alert__card-info Привязанная карта: VISA **** 1234
-                                    a(href="#").js-modal-open.balance-alert__card-change Изменить
+                                    a(href="#modal-change-card").js-modal-open.balance-alert__card-change Изменить
                     .transactions-block.project-settings__main-transactions
                         .transactions-block__header
                             .transactions-block__header-title Транзакции:
@@ -143,6 +143,6 @@ html(lang='ru')
                         input(type="text", name="", required, placeholder="XXXX XXXX XXXX XXXX").input-el.modal-body__card-form-input
                         .group-btns.smodal-body__card-form-group-btns
                             button(type="submit").btn.btn-green.btn--size-sm.group-btns__item Изменить
-                            button(type="button").btn.btn-cancel.btn--size-sm.group-btns__item Отмена
+                            button(type="button").js-modal-close.btn.btn-cancel.btn--size-sm.group-btns__item Отмена
 
         include includes/footer.pug

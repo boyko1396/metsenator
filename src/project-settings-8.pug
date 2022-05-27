@@ -1,0 +1,82 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header-profile.pug
+
+        main.project-settings
+            .container.project-settings__container
+                aside.project-settings__aside
+                    .project-settings__aside-pager
+                        a(href="#").pager-link.pager-link--prev.project-settings__aside-pager-link
+                            .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                            | Назад
+                        .project-settings__aside-pager-title Управление проектом
+                    .project-tip.project-settings__aside-project-tip
+                        picture.img-cover.project-tip__picture
+                            img(src="img/project-ava.jpg", alt="Опыт развития форм деятельности").project-tip__img
+                        .project-tip__content
+                            .text-overflow.project-tip__name Опыт развития форм деятельности
+                            a(href="#").project-tip__prev-link вернуться к проекту
+                    nav(role="navigation").nav-step.nav-step--mobile-scroll.project-settings__aside-nav
+                        ul.nav-step__list
+                            li.nav-step__item
+                                a(href="project-settings-1.html").nav-step__link Донаты
+                            li.nav-step__item
+                                a(href="project-settings-2.html").nav-step__link Основное
+                            li.nav-step__item
+                                a(href="project-settings-3.html").nav-step__link Изображения
+                            li.nav-step__item
+                                a(href="project-settings-4.html").nav-step__link Описание
+                            li.nav-step__item
+                                a(href="project-settings-5.html").nav-step__link Ссылки
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-7.html").nav-step__link Подписчики
+                            li.nav-step__item
+                                a(href="project-settings-8.html").nav-step__link.is-active Верификация
+                section.project-settings__main
+                    h1.project-settings__main-title Верификация
+                    form(action="#").project-settings__verification
+                        input(type="file", id="verification-photo-1").files-hidden
+                        p.project-settings__verification-paragraph Верификация – это процесс подтверждения того, что проект действительно принадлежит персоне или организации. Если проверка пройдена, страница получает особую отметку – зелёную галочку справа от названия.
+                        .project-settings__verification-user-type
+                            .project-settings__verification-subtitle Тип
+                            label.label-radio.project-settings__verification-user-type-label
+                                input(type="radio", name="verification-user-type", checked, value="Физическое лицо").label-radio__input
+                                span.label-radio__inner
+                                    span.label-radio__title Физическое лицо
+                            label.label-radio.project-settings__verification-type-user-label
+                                input(type="radio", name="verification-user-type", disabled, value="Юридическое лицо").label-radio__input
+                                span.label-radio__inner
+                                    span.label-radio__title Юридическое лицо
+                        .project-settings__verification-photo
+                            .project-settings__verification-subtitle Фото документов *
+                            ul.list-counter.project-settings__verification-photo-list
+                                li
+                                    p Сфотографируйтесь на фоне монитора с открытой страницей <a href="https://www.google.com/" target="_blank">проекта</a>.
+                                li
+                                    p Сфотографируйте паспорт на фоне монитора с открытой страницей <a href="https://www.google.com/" target="_blank">проекта</a>. На фото должны быть отчетливо видны: ваше фото, фамилия, имя, дата рождения, страна и город регистрации. Серию, номер паспорта и подпись можно скрыть.
+                                    p
+                                        strong Обратите внимание, что данные указаные на странице вашего профиля должны полностью совпадать с паспортными данными.
+                                li
+                                    p Загрузите обе фотографии. Ваши файлы нигде не хранятся и никому не передаются, автоматически удаляются сразу после сверки.
+                                    p
+                                        label(for="verification-photo-1").btn.btn--size-sm.btn-trp Загрузить фото
+                        .input-block.project-settings__verification-link
+                            label(for="verification-link").input-block__label
+                                span.input-block__label-name Ссылки
+                                span.input-block__label-description Ссылки на ваш сайт, соцсети или каналы в месендерах где уже размещён данный проект с указанаием ссылки вашего проекта на Uppora
+                            input(type="text", name="", id="verification-link", placeholder="http://…").input-el.input-block__el
+                            button(type="button").add-link-btn.input-block__add-link
+                                svg.u-icon.add-link-btn__icon
+                                    use(xlink:href="img/sprite.svg#plus")
+                                | Добавить ссылку
+                        .group-btns.project-settings__verification-btns
+                            button(type="submit").btn.btn--size-md.btn-green.group-btns__item Отправить
+
+        include includes/footer.pug

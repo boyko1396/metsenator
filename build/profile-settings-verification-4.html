@@ -70,139 +70,57 @@
       </div>
       <div class="js-header-menu-mobile header__overlay-mobile"></div>
     </header>
-    <main class="project">
-      <div class="container">        
-        <section class="project-header">           
-          <div class="project-header-img"><img src="img/project-ava.jpg" alt=""></div>
-          <div class="project-header-block"> 
-            <div class="project-header-ttl">Опыт развития форм деятельности</div>
-            <div class="project-header-subs header-info-subs"> <span class="project-header-subs-num header-info-subs-num">270&nbsp;</span><span>подписчиков</span></div>
+    <main class="settings settings-profile">
+      <div class="container">
+        <div class="settings-wrap">
+          <div class="settings-tabs">
+            <div class="settings-tabs-head">
+              <div class="settings-tabs-img setting-profile-img"><img src="img/person.png" alt=""></div>
+              <div class="settings-tabs-info">
+                <div class="settings-tabs-info-top settings-profile-name">Илья Панов    </div>
+                <div class="settings-tabs-info-bottom settings-profile-email">adress@website.com</div>
+              </div>
+            </div>
+            <div class="settings-tabs-list">
+              <div class="settings-tabs-tab">Основное</div>
+              <div class="settings-tabs-tab">Безопасность</div>
+              <div class="settings-tabs-tab">Способ оплаты</div>
+              <div class="settings-tabs-tab">Уведомления</div>
+              <div class="settings-tabs-tab active">Верификация</div>
+            </div>
           </div>
-        </section>
+          <div class="settings-inner">
+            <div class="settings-inner-form-group">
+              <h1 class="settings-inner-ttl">Верификация</h1>
+              <form class="user-verification" action="#">
+                <div class="user-verification__status-wrap">
+                  <div class="verification-status verification-status--hold user-verification__status">
+                    <svg class="u-icon verification-status__icon">
+                      <use xlink:href="img/sprite.svg#clock"></use>
+                    </svg>
+                    <div class="verification-status__text">Заявка на рассмотрении</div>
+                  </div>
+                  <div class="user-verification__status-description">Мы получили вашу заявку, скоро всё проверим и пришлём уведомление. Также статус верификации всегда доступен на данной странице.</div>
+                  <div class="verification-status verification-status--passed user-verification__status">
+                    <svg class="u-icon verification-status__icon">
+                      <use xlink:href="img/sprite.svg#check"></use>
+                    </svg>
+                    <div class="verification-status__text">Профиль верифицирован</div>
+                  </div>
+                  <div class="user-verification__status-description">Поделитись ссылкой на ваш профиль со своей аудиторией в других соцсетях, чтобы привлечь больше внимания к вашим проектам</div><a class="btn btn--size-sm btn-trp user-verification__status-btn" href="#">Копировать ссылку</a>
+                  <div class="verification-status verification-status--failed user-verification__status">
+                    <svg class="u-icon verification-status__icon">
+                      <use xlink:href="img/sprite.svg#error"></use>
+                    </svg>
+                    <div class="verification-status__text">Не пройдена</div>
+                  </div>
+                  <div class="user-verification__status-description">Фотография, имя и фамилия, указанные в <a href="#" class="link-accent" target="_blank">вашем профиле</a> не соответствуют присланным вами документам. Пожалуйста проверьте всё ещё раз и отправьте заявку повторно.</div><a class="btn btn--size-sm btn-trp user-verification__status-btn" href="#">Отправить заявку</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <section class="project-main">
-        <div class="container"> 
-          <div class="project-main-wrap"> 
-            <div class="project-main-media-wrap">
-              <div class="project-main-media"><img src="img/post.jpg" alt=""></div>
-            </div>
-            <div class="project-main-info">
-              <div class="project-main-info-amount"><span class="project-main-amount-summ">5256&nbsp;</span><span>₽&nbsp;</span><span>собрано</span></div>
-              <div class="project-main-info-subs"><span class="project-main-info-subs-num">15&nbsp;</span><span>человек поддержали</span></div>
-              <div class="project-main-info-text">Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный поведенческий таргетинг.</div>
-              <div class="group-btns project-main-info-btns">
-                <button class="btn btn--size-sm btn-green group-btns__item" type="button">Поддержать</button>
-                <button class="btn btn--size-sm btn-trp group-btns__item" type="button">Управление</button>
-              </div>
-              <div class="city-label city-label--theme-dark project-main-info-city">
-                <svg class="u-icon city-label__icon">
-                  <use xlink:href="img/sprite.svg#map-marker"></use>
-                </svg>Санкт-Петербург
-              </div>
-              <div class="project-main-info-footer"><span>Опубликован&nbsp;</span><span class="project-main-info-date">2 недели назад</span></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="project-tabs"> 
-        <div class="container"> 
-          <div class="project-tabs-wrap">
-            <div class="project-tabs-overflow"> 
-              <div class="project-tabs-nav">
-                <div class="project-tabs-tab active"><span>О&nbsp;прoекте</span></div>
-                <div class="project-tabs-tab"><span>Блог&nbsp;</span><span class="project-tabs-tab-count">7  </span></div>
-                <div class="project-tabs-tab"><span>Поддержали&nbsp;</span><span class="project-tabs-tab-count">15</span></div>
-                <div class="project-tabs-tab mobile"><span>Ещё</span></div>
-              </div>
-            </div>
-            <div class="project-tabs-buttons">
-              <div class="project-tabs-subscribe btn btn-trp">Подписаться </div>
-              <div class="project-tabs-share btn btn-trp"><img src="img/share.svg" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="project-content"> 
-        <div class="container">
-          <div class="project-content-wrap">
-            <div class="project-content-inner project-blog">  
-              <div class="project-blog-post">
-                <div class="project-blog-img"><img src="img/project.jpg" alt=""></div>
-                <div class="project-blog-ttl">Связанный имидж: методология и особенности</div>
-                <div class="project-blog-text lines-3">Равным образом постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. Задача организации, в особенности же начало повседневной работы по формированию позиции способcnetn фиг знает какому результату</div>
-                <div class="project-blog-footer">
-                  <div class="likes-group">
-                    <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
-                    <div class="likes-count">0</div>
-                    <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
-                  </div>
-                  <div class="project-blog-time">3 часа назад</div>
-                </div>
-              </div>
-              <div class="project-blog-post">
-                <div class="project-blog-ttl">Формировании дальнейших направлений развития</div>
-                <div class="project-blog-text lines-6">Таким образом рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития. Повседневная практика показывать что-то там кому-то там</div>
-                <div class="project-blog-footer">
-                  <div class="likes-group">
-                    <div class="likes-like"><img class="svg-inline" src="img/like.svg" alt=""></div>
-                    <div class="likes-count">0</div>
-                    <div class="likes-dislike"><img class="svg-inline" src="img/dislike.svg" alt=""></div>
-                  </div>
-                  <div class="project-blog-time">4 часа назад</div>
-                </div>
-              </div>
-            </div>
-            <aside class="aside project-aside">
-              <div class="aside-section aside-persons"> 
-                <div class="aside-person"> 
-                  <div class="aside-person-img"><img src="img/person.png" alt=""></div>
-                  <div class="aside-person-block"> 
-                    <div class="aside-person-name">Алексей Иванов              </div>
-                    <div class="aside-person-role">автор проекта             </div>
-                  </div>
-                </div>
-                <div class="aside-person"> 
-                  <div class="aside-person-img"><img src="img/person.png" alt=""></div>
-                  <div class="aside-person-block"> 
-                    <div class="aside-person-name">Александр Смирнов              </div>
-                    <div class="aside-person-role">модератор         </div>
-                  </div>
-                </div>
-              </div>
-              <div class="aside-section aside-links">
-                <div class="aside-links-block">
-                  <div class="aside-links-ttl">Соцсети</div><a class="aside-links-link" href="#">Вконтакте</a><a class="aside-links-link" href="#">Telegram</a><a class="aside-links-link" href="#">YouTube</a>
-                </div>
-                <div class="aside-links-block">
-                  <div class="aside-links-ttl">Другие платформы</div><a class="aside-links-link" href="#">Rickstarter</a><a class="aside-links-link" href="#">Donationalerts</a><a class="aside-links-link" href="#">Boomstarter</a>
-                </div>
-              </div>
-              <div class="aside-section aside-top"> 
-                <div class="aside-top-person">
-                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
-                </div>
-                <div class="aside-top-person">
-                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
-                </div>
-                <div class="aside-top-person">
-                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
-                </div>
-                <div class="aside-top-person">
-                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
-                </div>
-                <div class="aside-top-person">
-                  <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
     </main>
     <footer class="footer">
       <div class="container-large">

@@ -16,6 +16,7 @@ $(document).ready(function() {
     logoAnimated();
     fileAttachPreviewLogo();
     fileAttachPreviewPoster();
+    tooltipDonate();
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -146,14 +147,14 @@ $(document).ready(function() {
             $('.popup-avatar').toggleClass('active');
         });
     } 
-    
+
     // header search show/hide
     function showHeaderSearch() {
         $('.js-header-search').on('click', function() {
             $('.header__search').toggleClass('is-show');
         });
     }
-    
+
     // header menu mobile show/hide
     function headerMobileMenu() {
         $('.js-header-menu-mobile, .js-header-dropdown-profile').on('click', function() {
@@ -161,21 +162,21 @@ $(document).ready(function() {
             $('.header__menu-mobile, .header__overlay-mobile').toggleClass('is-show');
         });
     }
-    
+
     // header langugage mobile show/hide
     function headerMobileLanguge() {
         $('.js-language-select').on('click', function() {
             $(this).toggleClass('is-active');
         });
     }
-    
+
     // header profile dropdown show/hide
     function headerProfileDropdown() {
         $('.js-header-dropdown-profile').on('click', function() {
             $('.header__profile-dropdown').toggleClass('is-show');
         });
     }
-    
+
     // header profile toggle show/hide
     function headerProfileToggle() {
         $('.user-profile.user-profile--is-active').on('click', function(e) {
@@ -184,36 +185,37 @@ $(document).ready(function() {
             e.preventDefault();
         });
     }
-    
+
     // transactions toggle comment, answer
     function transactionsCommentToggle() {
         $('.js-transactions-comment-open').on('click', function(e) {
             $(this).parents('.transactions-item').toggleClass('transactions-item--show-comment');
         });
     }
-    
+
     // transactions toggle comment, answer
     function transactionsFormToggle() {
         $('.js-transactions-form-open').on('click', function(e) {
             $(this).parents('.transactions-item').toggleClass('transactions-item--show-form');
         });
     }
-    
+
     // modal init, close
     function modalInit() {
         $('.js-modal-open').on('click', function(e) {
+            var modalName = $(this).attr('href');
             $('body').addClass('is-hidden');
-            $('#modal-change-card').addClass('is-show');
+            $(modalName).addClass('is-show');
             e.preventDefault();
         });
 
         $('.js-modal-close').on('click', function(e) {
             $('body').removeClass('is-hidden');
-            $('#modal-change-card').removeClass('is-show');
+            $('.modal').removeClass('is-show');
             e.preventDefault();
         });
     }
-    
+
     // filter show/hide
     function filterDropdown() {
         $('.js-filter-open').on('click', function(e) {
@@ -221,7 +223,7 @@ $(document).ready(function() {
             e.preventDefault();
         });
     }
-    
+
     // donate page, animation logo
     function logoAnimated() {
         var logoAnimated = $('.js-animated-logo');
@@ -231,7 +233,7 @@ $(document).ready(function() {
             }, 4000);
         }
     }
-    
+
     // file download preview
     function fileAttachPreviewLogo() {
         $('#n-new-logo').change(function(){
@@ -256,6 +258,19 @@ $(document).ready(function() {
                 }
                 reader.readAsDataURL(file);
             }
+        });
+    }
+
+    // tooltip toggle
+    function tooltipDonate() {
+        $('.js-tooltip-toggle').on('click', function(e) {
+            $(this).parent().toggleClass('is-active');
+            e.preventDefault();
+        });
+
+        $('.js-tooltip-close').on('click', function(e) {
+            $('.tooltip-donate').removeClass('is-active');
+            e.preventDefault();
         });
     }
 });

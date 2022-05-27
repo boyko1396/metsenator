@@ -4,12 +4,15 @@
 
     &-wrap {
         display: flex;
+        align-items: flex-start;
     }
 
     &-tabs {
         width: 240px;
         min-width: 240px;
         margin-right: 40px;
+        position: sticky;
+        top: 42px;
         
         &-head {
             display: flex;
@@ -70,6 +73,7 @@
         flex: 1;
 
         &-ttl {
+            margin: 0;
             font-weight: 600;
             font-size: 30px;
             line-height: 40px;
@@ -316,6 +320,56 @@
     }
 }
 
+.user-verification {
+    font-size: 14px;
+    line-height: 1.7;
+    color: $darknes;
+    &__phone-wrapper {
+        padding-top: 40px;
+    }
+    &__paragraph {
+        margin: 0 0 1.7em;
+    }
+    &__phone-binding {
+    }
+    &__subtitle {
+        margin: 32px 0 8px;
+    }
+    &__radio {
+    }
+    &__block {
+        margin: 0 0 48px;
+    }
+    &__radio:not(:checked) ~ &__block {
+        display: none;
+    }
+    &__choose-item {
+        margin: 0 0 20px;
+    }
+    &__link {
+    }
+    &__attach-file {
+        & + & {
+            margin-top: 12px;
+        }
+    }
+    &__status-wrap {
+        padding-top: 24px;
+    }
+    &__status {
+        margin: 0 0 16px;
+    }
+    &__status-description {
+        margin: 0 0 20px;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $dark-blue;
+    }
+    &__status-btn {
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .settings {
         padding: 32px 0 48px;
@@ -352,6 +406,8 @@
             width: calc(100% + 32px);
             min-width: 0;
             margin: 0 -16px 32px;
+            position: static;
+            top: 0;
             overflow-x: scroll;
             scrollbar-width: none;
             -ms-overflow-style: none;            

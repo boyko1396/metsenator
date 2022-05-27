@@ -60,19 +60,17 @@ img {
     max-width: 1072px;
     padding: 0 16px;
     margin: 0 auto;
-
     &-small {
-        width: 100%;
         max-width: 672px;
-        padding: 0 16px;
-        margin: 0 auto;
+        @extend .container;
     }
-
+    &-medium {
+        max-width: 708px;
+        @extend .container;
+    }
     &-large {
-        width: 100%;
         max-width: 1170px;
-        padding: 0 16px;
-        margin: 0 auto;  
+        @extend .container;
     }
 }
 

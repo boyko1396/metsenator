@@ -33,6 +33,9 @@
     &__center--size-sm {
         max-width: 448px;
     }
+    &__center--size-md {
+        max-width: 576px;
+    }
     &__title {
         margin: 0 0 24px;
     }
@@ -53,6 +56,34 @@
         margin: 0 0 48px;
     }
     &__card-form-group-btns {
+    }
+    &__binding-phone {
+        padding-top: 8px;
+        &-label {
+            margin: 0;
+            padding: 0 0 4px;
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #334155;
+        }
+        &-input {
+            max-width: 288px;
+            flex-grow: 1;
+        }
+        &-group-btns {
+            margin-top: 32px;
+        }
+        &-input-wrapper {
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+        }
+        &-btn-change {
+            margin-left: 4px;
+            flex-shrink: 0;
+        }
     }
 }
 

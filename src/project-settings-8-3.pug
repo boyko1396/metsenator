@@ -1,0 +1,63 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header-profile.pug
+
+        main.project-settings
+            .container.project-settings__container
+                aside.project-settings__aside
+                    .project-settings__aside-pager
+                        a(href="#").pager-link.pager-link--prev.project-settings__aside-pager-link
+                            .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                            | Назад
+                        .project-settings__aside-pager-title Управление проектом
+                    .project-tip.project-settings__aside-project-tip
+                        picture.img-cover.project-tip__picture
+                            img(src="img/project-ava.jpg", alt="Опыт развития форм деятельности").project-tip__img
+                        .project-tip__content
+                            .text-overflow.project-tip__name Опыт развития форм деятельности
+                            a(href="#").project-tip__prev-link вернуться к проекту
+                    nav(role="navigation").nav-step.nav-step--mobile-scroll.project-settings__aside-nav
+                        ul.nav-step__list
+                            li.nav-step__item
+                                a(href="project-settings-1.html").nav-step__link Донаты
+                            li.nav-step__item
+                                a(href="project-settings-2.html").nav-step__link Основное
+                            li.nav-step__item
+                                a(href="project-settings-3.html").nav-step__link Изображения
+                            li.nav-step__item
+                                a(href="project-settings-4.html").nav-step__link Описание
+                            li.nav-step__item
+                                a(href="project-settings-5.html").nav-step__link Ссылки
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-7.html").nav-step__link Подписчики
+                            li.nav-step__item
+                                a(href="project-settings-7.html").nav-step__link.is-active Верификация
+                section.project-settings__main
+                    h1.project-settings__main-title Верификация
+                    .project-settings__verification
+                        .verification-status.verification-status--hold.project-settings__verification-status
+                            svg.u-icon.verification-status__icon
+                                use(xlink:href="img/sprite.svg#clock")
+                            .verification-status__text Заявка на рассмотрении
+                        .project-settings__verification-status-description Мы получили вашу заявку, скоро всё проверим и пришлём уведомление. Также статус верификации всегда доступен на данной странице.
+                        .verification-status.verification-status--passed.project-settings__verification-status
+                            svg.u-icon.verification-status__icon
+                                use(xlink:href="img/sprite.svg#check")
+                            .verification-status__text Профиль верифицирован
+                        .project-settings__verification-status-description Поделитись ссылкой на проект со своей аудиторией в других соцсетях, чтобы увеличить охват
+                        a(href="#").btn.btn--size-sm.btn-trp.project-settings__verification-status-btn Копировать ссылку
+                        .verification-status.verification-status--failed.project-settings__verification-status
+                            svg.u-icon.verification-status__icon
+                                use(xlink:href="img/sprite.svg#error")
+                            .verification-status__text Не пройдена
+                        .project-settings__verification-status-description Фотография, имя и фамилия, указанные в <a href="#" class="link-accent" target="_blank">вашем профиле</a> не соответствуют присланным вами документам. Пожалуйста проверьте всё ещё раз и отправьте заявку повторно.
+                        a(href="#").btn.btn--size-sm.btn-trp.project-settings__verification-status-btn Отправить заявку
+
+        include includes/footer.pug

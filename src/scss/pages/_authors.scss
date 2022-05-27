@@ -18,16 +18,6 @@
     }
 }
 
-.group-btns {
-    margin: -6px;
-    display: flex;
-    align-items: center;
-
-    &__item {
-        margin: 6px;
-    }
-}
-
 .section-title {
     margin: 0;
     font-weight: 600;
@@ -895,14 +885,11 @@
     padding: 40px 0 80px;
     color: $darknes;
     overflow: clip;
-
     &__container {
     }
     &__title {
         margin: 0 0 32px;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 1.35;
+        @extend .title-3;
     }
     &__filter {
         margin: 0 0 32px;
@@ -973,20 +960,25 @@
     border-radius: 0;
     outline: none;
     cursor: pointer;
-    transition: all .4s;
-    transition-property: color;
-
+    position: relative;
     &:before {
         content: '';
         position: absolute;
-        inset: -6px;
+        top: -6px;
+        right: -6px;
+        bottom: -6px;
+        left: -6px;
     }
-
     &__icon {
         width: 20px;
         height: 20px;
         margin-right: 8px;
         flex: 0 0 20px;
+        transition: all .4s;
+        transition-property: transform;
+    }
+    &:hover &__icon {
+        transform: rotate(180deg);
     }
 }
 
@@ -996,18 +988,20 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
+    user-select: none;
     cursor: pointer;
     position: relative;
-
+    &--size-sm {
+        font-size: 16px;
+        line-height: 1.375;
+    }
     &__input {
         display: none;
         position: absolute;
         left: -9999px;
     }
-
     &__inner {
         display: block;
-
         &:before {
             width: 20px;
             height: 20px;
@@ -1021,21 +1015,25 @@
             transition-property: box-shadow;
         }
     }
-
-    &__input:checked ~ &__inner:before {
-        box-shadow: inset 0 0 0 6px $green3;
+    &__input:checked ~ &__inner {
+        &:before {
+            box-shadow: inset 0 0 0 6px $green3;
+        }
     }
-
+    &__input:disabled ~ &__inner {
+        color: #D1D5DB;
+        &:before {
+            box-shadow: inset 0 0 0 1px #D1D5DB;
+        }
+    }
     &__title,
     &__text {
         margin: 0;
         display: block;
     }
-
     &__title {
         font-weight: 500;
     }
-
     &__text {
         color: $gray;
     }
@@ -1614,7 +1612,8 @@
     }
 }
 
-.files-hidden {
+.files-hidden,
+.input-hidden {
     display: none;
     position: absolute;
     left: -9999px;
@@ -2864,15 +2863,6 @@
         }
 
         &__card {
-        }
-    }
-
-    .group-btns {
-        margin: -10px;
-        flex-wrap: wrap;
-
-        &__item {
-            margin: 10px;
         }
     }
 

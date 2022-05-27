@@ -70,7 +70,22 @@ html(lang='ru')
                                     span.label-radio__text Будет виден узкому кругу лиц и только после одобрения вами запроса на подписку пользователя
                         .input-block.n-new-project__main-form__area-item
                             label.input-block__label
-                                span.input-block__label-name Шаблоны донатов *
+                                span.input-block__label-name Шаблоны донатов
+                                    span.tooltip-donate.input-block__label-tooltip
+                                        svg.js-tooltip-toggle.u-icon.tooltip-donate__icon
+                                            use(xlink:href="img/sprite.svg#question")
+                                        .tooltip-donate__dropdown
+                                            button(type="button", title="Close").js-tooltip-close.btn-close.tooltip-donate__dropdown-close
+                                                svg.u-icon
+                                                    use(xlink:href="img/sprite.svg#close")
+                                            .content.tooltip-donate__dropdown-text
+                                                p Отображаются на странице оплаты в виде кнопок быстрого ввода суммы:
+                                            .tooltip-donate__dropdown-amount 500 ₽
+                                            .donate-btn-list.tooltip-donate__dropdown-donate-list
+                                                .donate-btn-list__inner
+                                                    button(type="button").donate-btn.donate-btn-list__item 100 ₽
+                                                    button(type="button").donate-btn.donate-btn-list__item.is-active 500 ₽
+                                                    button(type="button").donate-btn.donate-btn-list__item 1000 ₽
                                 span.input-block__label-description Вы можете назначить шаблоны для быстрого ввода суммы доната пользователем (ручной ввод также будет доступен)
                             .input-block__template-cards
                                 .input-block__template-cards-item.input-block__template-cards-item--size-4

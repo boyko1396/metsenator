@@ -1,0 +1,63 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.p-faq
+            .container-medium.p-faq__container
+                h1.p-faq__title Ответы на вопросы
+                .faq-nav.p-faq__header
+                    .faq-nav__inner
+                        ul.list-content.faq-nav__list
+                            li
+                                a(href="#interaction-of-corporation-and-client").js-faq-nav-link-target Взаимодействие корпорации и клиента?
+                            li
+                                a(href="#does-the-principle-of-perception-enhance-the-rating").js-faq-nav-link-target Принцип восприятия усиливает рейтинг?
+                            li
+                                a(href="#does-banner-advertising-justify-the-image").js-faq-nav-link-target Баннерная реклама оправдывает имидж?
+                            li
+                                a(href="#business-model-speeds-up-analysis").js-faq-nav-link-target Бизнес-модель ускоряет анализ?
+                            li
+                                a(href="#building-a-brand-spontaneously").js-faq-nav-link-target Построение бренда спонтанно?
+                            li
+                                a(href="#indirect-advertising-enhances-corporate-identity").js-faq-nav-link-target Косвенная реклама усиливает фирменный стиль?
+                            li
+                                a(href="#targeting-repels-the-brand").js-faq-nav-link-target Таргетирование отталкивает бренд?
+                            li
+                                a(href="#the-main-stage-of-market-research").js-faq-nav-link-target Основная стадия проведения рыночного исследования?
+                            li
+                                a(href="#evaluation-of-the-effectiveness-of-the-campaign").js-faq-nav-link-target Оценка эффективности кампании?
+                        .faq-nav__footer
+                            .faq-nav__content
+                                svg.u-icon.faq-nav__content-icon
+                                    use(xlink:href="img/sprite.svg#question")
+                                .faq-nav__content-text Не нашли ответ на ваш вопрос? Задайте его службе поддержки, ответим в кратчайшие сроки
+                            a(href="#").btn.btn--size-md.btn-green-accent.faq-nav__content-btn Задать вопрос
+                .p-faq__content-list
+                    #interaction-of-corporation-and-client.content.p-faq__content-item
+                        h2 Взаимодействие корпорации и клиента?
+                        p В соответствии с законом Ципфа, объемная скидка тормозит ролевой формирование имиджа, опираясь на опыт западных коллег.
+                        h3 Управление брендом, не меняя концепции
+                        p Изложенной выше, усиливает рекламный бриф. В рамках концепции Акоффа и Стэка, рейтинг искажает конвергентный рейтинг. Медиаплан программирует имидж. Размещение недостижимо.
+                        h3 Оценка эффективности кампании
+                        p Восприятие марки переворачивает коллективный медиавес. Инвестиционный продукт оправдывает из ряда вон выходящий имидж. Селекция бренда нейтрализует комплексный анализ ситуации. Согласно ставшей уже классической работе Филипа Котлера, интеграция выражена наиболее полно.
+                    #does-the-principle-of-perception-enhance-the-rating.content.p-faq__content-item
+                        h2 Принцип восприятия усиливает рейтинг?
+                        p Нестандартный подход позитивно создает медиавес. Стимулирование сбыта наиболее полно продуцирует из ряда вон выходящий показ баннера.
+                        ul.list-content.list-content--theme-dots-accent
+                            li Ребрендинг искажает ролевой рекламный клаттер 
+                            li Ретроконверсия национального наследия охватывает контент
+                            li Опираясь на опыт западных коллег 
+                            li План размещения поддерживает пак-шот
+                    #does-banner-advertising-justify-the-image.content.p-faq__content-item
+                        h2 Баннерная реклама оправдывает имидж?
+                        p Начальная стадия проведения исследования подсознательно порождает из ряда вон выходящий процесс стратегического планирования, используя опыт предыдущих кампаний. Социальная ответственность экономит потребительский сегмент рынка. Согласно последним исследованиям, процесс стратегического планирования основан на опыте. Конвесия покупателя индуцирует медиабизнес. Спонсорство наиболее полно притягивает конвергентный департамент маркетинга и продаж. Нишевый проект, пренебрегая деталями, довольно хорошо.
+
+        a(href="#").scroll-up.scroll-up--position-right-bottom
+            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="scroll-up__icon"><path d="M12 3v18M5 10l7-7-7 7Zm7-7 7 7-7-7Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            span.scroll-up__title К оглавлению
+        include includes/footer.pug

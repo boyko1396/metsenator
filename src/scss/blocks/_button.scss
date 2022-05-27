@@ -1,10 +1,13 @@
 .btn {
+    display: inline-block;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
     border: 1px solid transparent;
     border-radius: 8px;
     cursor: pointer;
+    transition: all .4s;
+    transition-property: background, color, border-color;
 
     &-white {
         background-color: $white;
@@ -18,30 +21,62 @@
         font-weight: 400;
         color: $dark-blue;
         border-color: #D1D5DB;
+        &:hover {
+            border-color: $gray-light;
+        }
+        &:focus,
+        &:active {
+            background: #F3F4F6;
+            border-color: #D1D5DB;
+        }
     }
 
     &-simple {
         background-color: transparent;
         font-weight: 400;
         color: $blue;
+        &:hover {
+            background: rgba($gray-light, .4);
+        }
+        &:focus,
+        &:active {
+            background: rgba($gray-light, .7);
+        }
     }
 
     &-cancel {
         background-color: transparent;
         font-weight: 400;
         color: $gray;
+        &:hover {
+            color: $darknes;
+        }
     }
 
     &-green {
         font-weight: 500;
         color: $white;
         background-color: $green2;
+        &:hover {
+            background: $green1;
+        }
+        &:focus,
+        &:active {
+            background: $green4;
+        }
     }
 
     &-green-accent {
         font-weight: 500;
         color: $white;
         background-color: $green3;
+        &:hover {
+            background: $green1;
+        }
+        &:focus,
+        &:active {
+            background: $green4;
+        }
     }
 
     &--size-lt {
