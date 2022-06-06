@@ -19,6 +19,7 @@ $(document).ready(function() {
     tooltipDonate();
     scrollToAnchor();
     scrollToTop();
+    faqCardCollapse();
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -283,7 +284,7 @@ $(document).ready(function() {
             $(id).addClass('is-flash');
             setTimeout(function() {
                 $(id).removeClass('is-flash');
-            }, 2000);
+            }, 1400);
             var target = $(id).offset().top;
             $('html, body').animate({scrollTop: target}, 400);
             event.preventDefault();
@@ -304,6 +305,16 @@ $(document).ready(function() {
             var target = $(id).offset().top - 100;
             $('html, body').animate({scrollTop: target}, 400);
             event.preventDefault();
+        });
+    }
+
+    function faqCardCollapse() {
+        $('.js-faq-btn-toggle').on('click', function(e) {
+            var faqCard = $(this).parents('.faq-nav__item');
+
+            $('.faq-nav__item').not(faqCard).removeClass('is-show');
+            faqCard.toggleClass('is-show');
+            e.preventDefault();
         });
     }
 });

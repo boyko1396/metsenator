@@ -4,21 +4,55 @@
     color: #4B5563;
     border-radius: 4px;
     &__inner {
-        padding: 32px 24px;
+        padding: 24px;
+    }
+    &__item {
+        & + & {
+            border-top: 1px solid $gray-light;
+        }
+    }
+    &__btn {
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+        display: block;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+        @extend .btn-reset;
+        &:after {
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.50503 7.42299C4.77839 7.14963 5.22161 7.14963 5.49497 7.42299L9.99992 11.9279L14.5049 7.42299C14.7782 7.14963 15.2214 7.14963 15.4948 7.42299C15.7682 7.69636 15.7682 8.13958 15.4948 8.41294L10.4949 13.4129C10.2215 13.6862 9.77831 13.6862 9.50494 13.4129L4.50503 8.41294C4.23166 8.13958 4.23166 7.69636 4.50503 7.42299Z'/%3E%3C/svg%3E");
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            margin-top: -10px;
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transition: all .4s;
+            transition-property: transform;
+        }
+    }
+    &__item.is-show &__btn:after {
+        transform: rotate(-180deg);
     }
     &__title {
-        margin: 0 0 20px;
+        margin: 0;
+        padding-right: 28px;
         font-weight: normal;
         font-size: 16px;
     }
     &__list {
-        margin: 0 0 50px;
+        margin: 0 0 20px;
         font-size: 16px;
         color: $blue;
     }
+    &__item:not(.is-show) &__list {
+        display: none;
+    }
     &__footer {
-        margin: 32px 0 0;
-        padding: 24px;
+        padding: 24px 0 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -106,11 +140,12 @@
 
 @media screen and (max-width: 768px) {
     .faq-nav {
-        &__list {
-            padding: 24px 16px 32px;
+        &__inner {
+            padding-right: 16px;
+            padding-left: 16px;
         }
         &__footer {
-            padding: 32px 16px 40px;
+            padding-top: 16px;
             flex-direction: column;
             align-items: flex-start;
         }

@@ -1079,7 +1079,7 @@ img {
   line-height: 1.4;
 }
 
-.btn-reset, .btn-reply, .comment-btn, .donate-btn, .btn-vote, .attach-file__btn-remove, .widgets-btn {
+.btn-reset, .faq-nav__btn, .btn-reply, .comment-btn, .donate-btn, .btn-vote, .attach-file__btn-remove, .widgets-btn {
   background: transparent;
   margin: 0;
   padding: 0;
@@ -9675,21 +9675,55 @@ img {
   border-radius: 4px;
 }
 .faq-nav__inner {
-  padding: 32px 24px;
+  padding: 24px;
+}
+.faq-nav__item + .faq-nav__item {
+  border-top: 1px solid #e5e7eb;
+}
+.faq-nav__btn {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  display: block;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+.faq-nav__btn:after {
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.50503 7.42299C4.77839 7.14963 5.22161 7.14963 5.49497 7.42299L9.99992 11.9279L14.5049 7.42299C14.7782 7.14963 15.2214 7.14963 15.4948 7.42299C15.7682 7.69636 15.7682 8.13958 15.4948 8.41294L10.4949 13.4129C10.2215 13.6862 9.77831 13.6862 9.50494 13.4129L4.50503 8.41294C4.23166 8.13958 4.23166 7.69636 4.50503 7.42299Z'/%3E%3C/svg%3E");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transition: all 0.4s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.faq-nav__item.is-show .faq-nav__btn:after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 .faq-nav__title {
-  margin: 0 0 20px;
+  margin: 0;
+  padding-right: 28px;
   font-weight: normal;
   font-size: 16px;
 }
 .faq-nav__list {
-  margin: 0 0 50px;
+  margin: 0 0 20px;
   font-size: 16px;
   color: #2563EB;
 }
+.faq-nav__item:not(.is-show) .faq-nav__list {
+  display: none;
+}
 .faq-nav__footer {
-  margin: 32px 0 0;
-  padding: 24px;
+  padding: 24px 0 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -9770,11 +9804,12 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
-  .faq-nav__list {
-    padding: 24px 16px 32px;
+  .faq-nav__inner {
+    padding-right: 16px;
+    padding-left: 16px;
   }
   .faq-nav__footer {
-    padding: 32px 16px 40px;
+    padding-top: 16px;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-align: start;
