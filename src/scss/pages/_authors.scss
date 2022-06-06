@@ -1021,10 +1021,13 @@
         }
     }
     &__input:disabled ~ &__inner {
-        color: #D1D5DB;
+        color: $gray-1;
         &:before {
             box-shadow: inset 0 0 0 1px #D1D5DB;
         }
+    }
+    &__input:disabled ~ &__inner &__text {
+        color: $gray-1;
     }
     &__title,
     &__text {
@@ -1033,6 +1036,19 @@
     }
     &__title {
         font-weight: 500;
+    }
+    &__title-badge {
+        background: #F3F4F6;
+        margin-left: 8px;
+        padding: 4px 6px;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1;
+        color: $darknes;
+        border-radius: 4px;
+        white-space: nowrap;
+        vertical-align: middle;
     }
     &__text {
         color: $gray;

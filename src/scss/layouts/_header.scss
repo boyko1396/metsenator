@@ -22,6 +22,7 @@
         transition: all .4s;
         transition-property: color;
         &:hover {
+            color: $green3;
             text-decoration: none;
         }
         &:focus {
@@ -30,7 +31,10 @@
         &:before {
             content: '';
             position: absolute;
-            inset: -10px;
+            top: -10px;
+            right: -10px;
+            bottom: -10px;
+            left: -10px;
         }
     }
 }
@@ -50,7 +54,7 @@
     }
     &__close {
         height: 100%;
-        width: auto;
+        width: 44px;
         padding: 0 10px;
         position: absolute;
         top: 0;

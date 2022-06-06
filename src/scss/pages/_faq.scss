@@ -4,13 +4,20 @@
     color: #4B5563;
     border-radius: 4px;
     &__inner {
+        padding: 32px 24px;
+    }
+    &__title {
+        margin: 0 0 20px;
+        font-weight: normal;
+        font-size: 16px;
     }
     &__list {
-        padding: 32px 24px;
+        margin: 0 0 50px;
         font-size: 16px;
         color: $blue;
     }
     &__footer {
+        margin: 32px 0 0;
         padding: 24px;
         display: flex;
         justify-content: space-between;
@@ -41,6 +48,7 @@
 
 .p-faq {
     padding: 32px 0;
+    overflow: clip;
     &__container {
     }
     &__title {
@@ -48,6 +56,7 @@
         @extend .title-3;
     }
     &__header {
+        margin-bottom: 60px;
     }
     &__content-list {
     }
@@ -69,13 +78,84 @@
             bottom: 0;
             left: -24px;
             border-radius: 4px;
-            transition: all .4s;
+            transition: all .3s;
             transition-property: opacity, visibility;
+            transition-delay: .2s;
             z-index: -1;
         }
         &:not(.is-flash):before {
             opacity: 0;
             visibility: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 1169px) {
+    .faq-nav {
+        &__content {
+            padding-right: 24px;
+        }
+    }
+    .p-faq {
+        padding: 24px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 768px) {
+    .faq-nav {
+        &__list {
+            padding: 24px 16px 32px;
+        }
+        &__footer {
+            padding: 32px 16px 40px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__content {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 16px;
+            padding-right: 0;
+        }
+        &__content-icon {
+            display: none;
+        }
+    }
+    .p-faq {
+        &__container {
+            width: initial;
+            max-width: initial;
+        }
+        &__title {
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+        &__header {
+            margin: 0 -16px;
+            border-radius: 0;
+        }
+        &__content-item {
+            margin: 0 -16px;
+            padding: 32px 16px;
+            h2 {
+                margin-bottom: 1.25em;
+                font-size: 1.25em;
+            }
+            h3 {
+                margin: 1.25em 0 .5em;
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq-nav {
+        &__content-btn {
+            width: 100%;
         }
     }
 }

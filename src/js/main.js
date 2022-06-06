@@ -17,6 +17,8 @@ $(document).ready(function() {
     fileAttachPreviewLogo();
     fileAttachPreviewPoster();
     tooltipDonate();
+    scrollToAnchor();
+    scrollToTop();
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -271,6 +273,37 @@ $(document).ready(function() {
         $('.js-tooltip-close').on('click', function(e) {
             $('.tooltip-donate').removeClass('is-active');
             e.preventDefault();
+        });
+    }
+
+    // scroll anchor faq page
+    function scrollToAnchor(){
+        $('.js-faq-nav-link-target').click(function(event) {
+            var id = $(this).attr('href');
+            $(id).addClass('is-flash');
+            setTimeout(function() {
+                $(id).removeClass('is-flash');
+            }, 2000);
+            var target = $(id).offset().top;
+            $('html, body').animate({scrollTop: target}, 400);
+            event.preventDefault();
+        });
+    }
+
+    // scroll to top
+    function scrollToTop() {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('.js-scroll-top').addClass('is-show');
+            } else {
+                $('.js-scroll-top').removeClass('is-show');
+            }
+        });
+        $('.js-scroll-top').click(function(event) {
+            var id = $(this).attr('href');
+            var target = $(id).offset().top - 100;
+            $('html, body').animate({scrollTop: target}, 400);
+            event.preventDefault();
         });
     }
 });

@@ -1052,14 +1052,15 @@
     position: relative;
     white-space: nowrap;
     transition: all .34s;
-    transition-property: background, opacity, visibility;
+    transition-property: background, transform, opacity, visibility;
     z-index: 100;
     &:hover {
         background: #eef1f4;
     }
     &:not(.is-show) {
-        // opacity: 0;
-        // visibility: hidden;
+        transform: translateY(120px);
+        opacity: 0;
+        visibility: hidden;
     }
     &--position-right-bottom {
         position: fixed;
@@ -1561,6 +1562,19 @@
     .widgets-item {
         &__title {
             margin-bottom: 20px;
+        }
+    }
+    .scroll-up {
+        padding: 12px;
+        &--position-right-bottom {
+            right: 24px;
+            bottom: 24px;
+        }
+        &__icon {
+            margin-right: 0;
+        }
+        &__title {
+            display: none;
         }
     }
 }
