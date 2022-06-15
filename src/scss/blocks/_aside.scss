@@ -9,6 +9,14 @@
             padding-bottom: 0;
             border: none;
         }
+
+        &-ttl {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: $darknes;
+            margin-bottom: 12px;
+        }
     }
 
     &-person {

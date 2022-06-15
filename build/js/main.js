@@ -20,6 +20,11 @@ $(document).ready(function() {
     scrollToAnchor();
     scrollToTop();
     faqCardCollapse();
+    notificationViewAll();
+    shareDropdown();
+    shareQrcode();
+    commentViewInput();
+
 
     if ($('body').attr("id") == "myProfile") {
         profileCover();
@@ -36,19 +41,14 @@ $(document).ready(function() {
         jQuery.get(
           imgURL,
           function (data) {
-            // Get the SVG tag, ignore the rest
             var $svg = jQuery(data).find("svg");
-            // Add replaced image's ID to the new SVG
             if (typeof imgID !== "undefined") {
               $svg = $svg.attr("id", imgID);
             }
-            // Add replaced image's classes to the new SVG
             if (typeof imgClass !== "undefined") {
               $svg = $svg.attr("class", imgClass + " replaced-svg");
             }
-            // Remove any invalid XML tags as per http://validator.w3.org
             $svg = $svg.removeAttr("xmlns:a");
-            // Replace image with new SVG
             $img.replaceWith($svg);
           },
           "xml"
@@ -314,6 +314,44 @@ $(document).ready(function() {
 
             $('.faq-nav__item').not(faqCard).removeClass('is-show');
             faqCard.toggleClass('is-show');
+            e.preventDefault();
+        });
+    }
+
+    // notification collapse
+    function notificationViewAll(){
+        $('.js-notification-view-message').click(function(event) {
+            $(this).hide();
+            $(this).siblings('.notification-card__text').removeClass('text-clamp');
+            event.preventDefault();
+        });
+    }
+
+    // share project dropdown
+    function shareDropdown() {
+        $('.js-share-btn').on('click', function(e) {
+            $('.share-el__dropdown').removeClass('is-qrcode');
+            $(this).parent().toggleClass('is-active');
+            e.preventDefault();
+        });
+    }
+
+    // share project dropdown
+    function shareQrcode() {
+        $('.js-share-qrcode').on('click', function(e) {
+            $(this).parents('.share-el__dropdown').toggleClass('is-qrcode');
+            e.preventDefault();
+        });
+    }
+
+    // share project dropdown
+    function commentViewInput() {
+        $('.js-comment-view-btns').focus(function(){
+            var commentCurrentInput = $(this).parents('.comments-input').find('.comments-input-buttons');
+            commentCurrentInput.addClass('is-show');
+        });
+        $('.js-comments-cancel').on('click', function(e) {
+            $('.comments-input-buttons').removeClass('is-show');
             e.preventDefault();
         });
     }

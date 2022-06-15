@@ -1,0 +1,47 @@
+.notification-layout {
+    padding: 32px 0 80px;
+    font-size: 14px;
+    color: $darknes;
+    flex-grow: 1;
+    &__container {
+    }
+    &__inner {
+        max-width: 672px;
+        margin: 0 auto;
+    }
+    &__header {
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $gray-light;
+        &-title {
+            margin: 0;
+            padding-right: 15px;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        &-settings {
+            margin-left: auto;
+            flex-shrink: 0;
+            font-size: 14px;
+            color: $blue;
+            box-shadow: inset 0 -1px 0 transparent;
+            white-space: nowrap;
+            transition: all .4s;
+            transition-property: box-shadow;
+            &:hover {
+                @media screen and (min-width: 1200px) {
+                    box-shadow: inset 0 -1px 0 currentColor;
+                }
+            }
+        }
+    }
+    &__list {
+    }
+    &__list-card {
+        border-bottom: 1px solid $gray-light;
+        &:not(:last-child) {
+        }
+    }
+}

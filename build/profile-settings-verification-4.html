@@ -81,13 +81,15 @@
                 <div class="settings-tabs-info-bottom settings-profile-email">adress@website.com</div>
               </div>
             </div>
-            <div class="settings-tabs-list">
-              <div class="settings-tabs-tab">Основное</div>
-              <div class="settings-tabs-tab">Безопасность</div>
-              <div class="settings-tabs-tab">Способ оплаты</div>
-              <div class="settings-tabs-tab">Уведомления</div>
-              <div class="settings-tabs-tab active">Верификация</div>
-            </div>
+            <nav class="nav-step nav-step--mobile-scroll settings-tabs-head-nav-step" role="navigation">
+              <ul class="nav-step__list">
+                <li class="nav-step__item"><a class="nav-step__link" href="profile-settings-main.html">Основное</a></li>
+                <li class="nav-step__item"><a class="nav-step__link" href="profile-settings-safety.html">Безопасность</a></li>
+                <li class="nav-step__item"><a class="nav-step__link" href="profile-settings-payment-1.html">Способ оплаты</a></li>
+                <li class="nav-step__item"><a class="nav-step__link" href="profile-settings-notifications.html">Уведомления</a></li>
+                <li class="nav-step__item"><a class="nav-step__link is-active" href="profile-settings-verification-1.html">Верификация</a></li>
+              </ul>
+            </nav>
           </div>
           <div class="settings-inner">
             <div class="settings-inner-form-group">
@@ -184,8 +186,8 @@
       </div>
     </div>
     <div class="popup-cover"> 
-      <div class="popup-cover-wrap">
-        <form class="popup-cover-header">
+      <form class="popup-cover-wrap">
+        <div class="popup-cover-header">
           <div class="popup-cover-ttl">Обложка профиля</div>
           <div class="popup-cover-buttons"> 
             <div class="popup-cover-delete">Удалить</div>
@@ -195,32 +197,104 @@
             </div>
           </div>
           <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
-        </form>
-        <div class="popup-cover-grid"> 
-          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+        </div>
+        <div class="popup-cover-grid">
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/" checked>
+            <div class="popup-cover-grid-item__inner"><img src="img/cover1.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover2.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover3.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover4.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover5.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover6.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover7.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover8.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover9.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover10.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover11.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover12.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover1.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover2.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover3.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover4.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover5.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover6.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover7.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover8.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover9.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover10.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover11.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover12.jpg" alt=""></div>
+          </label>
         </div>
         <form class="popup-cover-footer"> 
           <div class="popup-cover-delete">Удалить</div>
@@ -229,7 +303,7 @@
             <label class="btn btn-white" for="cover-input">Загрузить</label>
           </div>
         </form>
-      </div>
+      </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/main.js"></script>

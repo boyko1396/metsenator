@@ -38,13 +38,13 @@
 
         &-wrap {
             display: flex;
-            align-items: center;
         }
 
         &-media-wrap {
             max-width: 64.6153846154%;
             margin-right: 80px;
             flex: 0 0 64.6153846154%;
+            align-self: center;
         }
 
         &-media {
@@ -128,13 +128,17 @@
                 margin-left: 8px;
             }
 
+            &-city {
+                margin-top: auto;
+                padding: 12px 0;
+            }
+
             &-footer {
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 24px;
                 color: #9CA3AF;
-                margin-top: auto;
-                padding-top: 16px;
+                padding-top: 12px;
                 border-top: 1px solid $gray-light;
             }
         }
@@ -571,6 +575,15 @@
                 color: $dark-blue;
             }
         }
+    }
+}
+
+.l-project-tabs-buttons {
+    display: flex;
+    position: relative;
+    top: -8px;
+    &__item {
+        margin-left: 8px;
     }
 }
 

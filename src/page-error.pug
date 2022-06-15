@@ -1,0 +1,23 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.p-error
+            .container-medium.p-error__container
+                .p-error__inner
+                    .p-error__title-wrapper
+                        h1.p-error__title 4 <span>0</span> 4
+                    .p-error__content
+                        h2.p-error__content-subtitle Эта страница больше недоступна
+                        .content.p-error__content-text
+                            p Возможно, вы воспользовались недействительной ссылкой или страница была удалена
+                        a(href="#").prev-link.p-error__content-prev-link
+                            span.prev-link__icon(style="background-image: url(img/prev-link-arrow.svg)")
+                            | Вернуться на главную
+
+        include includes/footer.pug

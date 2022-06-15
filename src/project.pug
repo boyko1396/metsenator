@@ -59,10 +59,36 @@ html(lang='ru')
                                     span.project-tabs-tab-count 15
                                 .project-tabs-tab.mobile
                                     span Ещё
-                        .project-tabs-buttons
-                            .project-tabs-subscribe.btn.btn-trp Подписаться 
-                            .project-tabs-share.btn.btn-trp
-                                img(src="img/share.svg", alt="")
+                        .l-project-tabs-buttons
+                            a(href="#").btn.btn-trp.btn--size-lt.l-project-tabs-buttons__item Подписаться
+                            .share-el.l-project-tabs-buttons__item
+                                button(type="button").js-share-btn.share-el__btn
+                                    svg.u-icon.share-el__btn-icon
+                                        use(xlink:href="img/sprite.svg#share")
+                                .share-el__dropdown
+                                    .share-el__dropdown-body
+                                        button(type="button").share-el__item.share-el__item--vk
+                                            svg.u-icon.share-el__item-icon
+                                                use(xlink:href="img/sprite.svg#vk-social")
+                                            .share-el__item-title Вконтакте
+                                        button(type="button").share-el__item.share-el__item--telegram
+                                            svg.u-icon.share-el__item-icon
+                                                use(xlink:href="img/sprite.svg#telegram-social")
+                                            .share-el__item-title Telegram
+                                        button(type="button").js-share-copylink.share-el__item.share-el__item--copy-link
+                                            svg.u-icon.share-el__item-icon
+                                                use(xlink:href="img/sprite.svg#copy-link")
+                                            .share-el__item-title Копировать ссылку
+                                        button(type="button").js-share-qrcode.share-el__item.share-el__item--qrcode
+                                            svg.u-icon.share-el__item-icon
+                                                use(xlink:href="img/sprite.svg#qrcode")
+                                            .share-el__item-title QR-код
+                                        button(type="button").share-el__dropdown-cancel Отменить
+                                    .share-el__dropdown-qrcode
+                                        .share-el__dropdown-qrcode-title QR-код проекта
+                                        .share-el__dropdown-qrcode-body
+                                            img(src="img/qrcode.svg")
+                                        a(href="https://www.google.com/", target="_blank").btn.btn-trp.btn--size-lt.share-el__dropdown-qrcode-btn Скачать
 
             section.project-content 
                 .container
@@ -84,9 +110,9 @@ html(lang='ru')
                                         .comments-item-person
                                             img(src="img/person.png", alt="")
                                         .input.input-no-label
-                                            input#1(type="text", name="input-1", placeholder="Написать комментарий")
+                                            input#1(type="text", name="input-1", placeholder="Написать комментарий").js-comment-view-btns
                                     .comments-input-buttons
-                                        .comments-input-cancel Отмена
+                                        .js-comments-cancel.comments-input-cancel Отмена
                                         .comments-input-public.btn.btn-green Опубликовать
 
                                 .comments-list 
@@ -107,8 +133,8 @@ html(lang='ru')
                                                             use(xlink:href="img/sprite.svg#dotted")
                                                     .filter-item__dropdown
                                                         .filter-item__dropdown-action-list
-                                                            .filter-item__dropdown-action Редактировать
-                                                            .filter-item__dropdown-action Удалить
+                                                            button(type="button").filter-item__dropdown-action Редактировать
+                                                            button(type="button").filter-item__dropdown-action Удалить
                                             .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
                                             .likes-group
                                                 .likes-like
@@ -135,7 +161,7 @@ html(lang='ru')
                                                                     use(xlink:href="img/sprite.svg#dotted")
                                                             .filter-item__dropdown
                                                                 .filter-item__dropdown-action-list
-                                                                    .filter-item__dropdown-action Удалить
+                                                                    button(type="button").filter-item__dropdown-action Удалить
                                                     .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
                                                     .likes-group
                                                         .likes-like
@@ -160,7 +186,7 @@ html(lang='ru')
                                                                     use(xlink:href="img/sprite.svg#dotted")
                                                             .filter-item__dropdown
                                                                 .filter-item__dropdown-action-list
-                                                                    .filter-item__dropdown-action Удалить
+                                                                    button(type="button").filter-item__dropdown-action Удалить
                                                     .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
                                                     .likes-group
                                                         .likes-like
@@ -186,7 +212,7 @@ html(lang='ru')
                                                                 use(xlink:href="img/sprite.svg#dotted")
                                                         .filter-item__dropdown
                                                             .filter-item__dropdown-action-list
-                                                                .filter-item__dropdown-action Удалить
+                                                                button(type="button").filter-item__dropdown-action Удалить
                                             .comments-item-text Общество потребления осмысленно притягивает сублимированный нишевый проект. Контекстная реклама консолидирует культурный формат события
                                             .likes-group
                                                 .likes-like
@@ -197,19 +223,19 @@ html(lang='ru')
                                                 .likes-answer(area-disabled="true") Ответить
 
                         aside.aside.project-aside
-                            .aside-section.aside-persons 
+                            .aside-section.aside-persons
+                                .aside-person
+                                    .aside-person-img
+                                        img(src="img/person.png", alt="")
+                                    .aside-person-block 
+                                        .aside-person-name Алексей Иванов
+                                        .aside-person-role автор проекта
                                 .aside-person 
                                     .aside-person-img
                                         img(src="img/person.png", alt="")
                                     .aside-person-block 
-                                        .aside-person-name Алексей Иванов              
-                                        .aside-person-role автор проекта             
-                                .aside-person 
-                                    .aside-person-img
-                                        img(src="img/person.png", alt="")
-                                    .aside-person-block 
-                                        .aside-person-name Александр Смирнов              
-                                        .aside-person-role модератор         
+                                        .aside-person-name Александр Смирнов
+                                        .aside-person-role модератор
                             .aside-section.aside-links
                                 .aside-links-block
                                     .aside-links-ttl Соцсети
@@ -218,30 +244,31 @@ html(lang='ru')
                                     a.aside-links-link(href="#") YouTube
                                 .aside-links-block
                                     .aside-links-ttl Другие платформы
-                                    a.aside-links-link(href="#") Rickstarter
+                                    a.aside-links-link(href="#") Kickstarter
                                     a.aside-links-link(href="#") Donationalerts
                                     a.aside-links-link(href="#") Boomstarter
-                            .aside-section.aside-top 
+                            .aside-section.aside-top
+                                .aside-section-ttl Топ поддержки
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
 
 
         include includes/footer.pug

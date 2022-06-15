@@ -121,6 +121,7 @@
 
     &-input {
         width: 100%;
+        margin-bottom: 20px;
         
         &-wrap {
             display: flex;
@@ -132,6 +133,9 @@
             align-items: center;
             justify-content: flex-end;
             margin-top: 24px;
+            &:not(.is-show) {
+                display: none;
+            }
         }
 
         &-cancel {

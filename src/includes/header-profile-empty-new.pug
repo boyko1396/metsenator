@@ -25,9 +25,110 @@ header.header
                 button(type="button").js-header-search.btn-close.header-search__close
                     svg.u-icon.btn-close__icon
                         use(xlink:href="img/sprite.svg#close")
-        a(href="#").btn-action.header__btn-notification
+        button(type="button").js-header-notification.btn-action.header__btn-notification
             svg.u-icon.btn-action__icon
                 use(xlink:href="img/sprite.svg#notification")
+            .notification-board.btn-action__notification
+                .notification-board__main
+                    .notification-board__list
+                        .notification-card.notification-card--unread.notification-board__list-card
+                            .notification-card__inner
+                                picture.img-cover.notification-card__avatar
+                                    img(src="img/person-1.png", alt="")
+                                .notification-card__content
+                                    .notification-card__top
+                                        .notification-card__name
+                                            a(href="https://www.google.com/") Александр Смирнов
+                                        .notification-card__action ответил
+                                    .text-clamp.notification-card__text В соответствии с законами сохранения энергии, угловая скорость искажает суммарный поворот. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora dolores exercitationem, iure ipsam accusamus sit? Laudantium vel quasi ipsum, debitis ut voluptate recusandae aspernatur sunt magnam, molestias illum doloremque nisi!
+                                    span(role="button").js-notification-view-message.notification-card__view-all Показать полностью…
+                                    .notification-card__footer
+                                        time.notification-card__time 5 марта в 19:30
+                                        .notification-card__footer-subtitle , на ваш комментарий <a href="#">Законами сохранения сохранения сохранения энергии, угловая скорость искажает …</a>
+                        .notification-card.notification-board__list-card
+                            .notification-card__inner
+                                picture.img-cover.notification-card__avatar
+                                    img(src="img/team-card-2.jpg", alt="")
+                                .notification-card__content
+                                    .notification-card__donate-wrapper
+                                        .notification-card__top
+                                            .notification-card__name
+                                                a(href="https://www.google.com/") Опыт развития различных форм
+                                            .notification-card__action новый донат от Ивана Иванова
+                                        .notification-card__donate +1000 ₽
+                                    .text-clamp.notification-card__text В соответствии с законами сохранения энергии, угловая скорость искажает суммарный поворот. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora dolores exercitationem, iure ipsam accusamus sit? Laudantium vel quasi ipsum, debitis ut voluptate recusandae aspernatur sunt magnam, molestias illum doloremque nisi!
+                                    span(role="button").js-notification-view-message.notification-card__view-all Показать полностью…
+                                    .notification-card__footer
+                                        time.notification-card__time 5 марта в 19:30
+                        .notification-card.notification-board__list-card
+                            .notification-card__inner
+                                picture.img-cover.notification-card__avatar
+                                    img(src="img/person.png", alt="")
+                                .notification-card__content
+                                    .notification-card__donate-wrapper
+                                        .notification-card__top
+                                            .notification-card__name
+                                                a(href="https://www.google.com/") Опыт развития различных форм
+                                            .notification-card__action новый подписчик <a href="#">Иван Иванов</a>
+                                    .notification-card__footer
+                                        time.notification-card__time 5 марта в 19:30
+                        .notification-card.notification-board__list-card
+                            .notification-card__inner
+                                picture.img-cover.notification-card__avatar
+                                    img(src="img/person.png", alt="")
+                                .notification-card__content
+                                    .notification-card__donate-wrapper
+                                        .notification-card__top
+                                            .notification-card__name
+                                                a(href="https://www.google.com/") Опыт развития различных форм
+                                            .notification-card__action запрос на подписку от <a href="#">Ивана Иванова</a>
+                                    .notification-card__footer
+                                        time.notification-card__time 5 марта в 19:30
+                                    .group-btns.notification-card__group-btns
+                                        a(href="#").btn.btn--size-lt.btn-green-accent.group-btns__item Добавить
+                                        a(href="#").btn.btn--size-lt.btn-trp.group-btns__item Отклонить
+                        .notification-card.notification-board__list-card
+                            .notification-card__inner
+                                picture.img-cover.notification-card__avatar
+                                    img(src="img/person.png", alt="")
+                                .notification-card__content
+                                    .notification-card__donate-wrapper
+                                        .notification-card__top
+                                            .notification-card__name
+                                                a(href="https://www.google.com/") Александр Смирнов
+                                            .notification-card__action подписался на ваши обновления
+                                    .notification-card__footer
+                                        time.notification-card__time 5 марта в 19:30
+                        .notification-card.notification-board__list-card
+                            .notification-card__inner
+                                picture.img-cover.notification-card__avatar
+                                    img(src="img/person.png", alt="")
+                                .notification-card__content
+                                    .notification-card__donate-wrapper
+                                        .notification-card__top
+                                            .notification-card__name
+                                                a(href="https://www.google.com/") Опыт развития различных форм
+                                            .notification-card__action Иван Иванов оставил комментарий
+                                    .text-clamp.notification-card__text В соответствии с законами сохранения энергии, угловая скорость искажает суммарный поворот. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий.
+                                    span(role="button").js-notification-view-message.notification-card__view-all Показать полностью…
+                                    .notification-card__footer
+                                        time.notification-card__time 5 марта в 19:30
+                                        .notification-card__footer-subtitle к новости <a href="#">Постоянный количественный рост</a>
+                        .notification-card.notification-board__list-card
+                            .notification-card__inner
+                                picture.img-cover.notification-card__avatar
+                                    img(src="img/person.png", alt="")
+                                .notification-card__content
+                                    .notification-card__donate-wrapper
+                                        .notification-card__top
+                                            .notification-card__name
+                                                a(href="https://www.google.com/") Опыт развития различных форм
+                                            .notification-card__action проект отклонён по причине
+                                    .text-clamp.notification-card__text Нарушение п 2.5 <a href="#">Правил платформы</a>. Не допускается публикация проектов с одинаковым названием.
+                                    .notification-card__footer
+                                        time.notification-card__time 5 марта в 19:30
+                .notification-board__footer
+                    a(href="notification.html").notification-board__view-all Показать все
         a(href="#").btn.btn-trp.btn--size-lt.header__btn-create-project Создать проект
         .header__profile
             .header__profile-header

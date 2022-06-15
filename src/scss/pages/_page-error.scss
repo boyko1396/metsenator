@@ -1,0 +1,94 @@
+.p-error {
+    padding: 32px 0;
+    text-align: center;
+    color: $darknes;
+    overflow: clip;
+    &__container {
+    }
+    &__inner {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+    }
+    &__title-wrapper {
+    }
+    &__title {
+        margin: 0 0 35px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 148px;
+        line-height: 1;
+        color: #D1D5DB;
+        animation: .5s linear 2s normal forwards running errorTextColor;
+        user-select: none;
+        pointer-events: none;
+        span {
+            width: 150px;
+            height: 108px;
+            margin: 0 15px;
+            display: block;
+            font-size: 0;
+            color: #D1D5DB;
+            border: 23px solid currentColor;
+            border-radius: 54px;
+            animation: .5s linear 2s normal forwards running errorDotColor;
+            position: relative;
+            &:before {
+                background: currentColor;
+                width: 36px;
+                height: 36px;
+                margin-top: -18px;
+                content: '';
+                display: block;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 16px;
+                animation: 1s ease-in 1s normal forwards running errorDotSlide;
+            }
+        }
+    }
+    &__content {
+        max-width: 400px;
+        display: inline-block;
+        vertical-align: top;
+        &-subtitle {
+            margin: 0 0 8px;
+            font-weight: 600px;
+            font-size: 24px;
+        }
+        &-text {
+            margin: 0 0 20px;
+            font-size: 14px;
+        }
+        &-prev-link {
+        }
+    }
+}
+
+@keyframes errorTextColor {
+    0% {
+    }
+    100% {
+        color: $darknes;
+    }
+}
+
+@keyframes errorDotColor {
+    0% {
+    }
+    100% {
+        color: $green3;
+    }
+}
+
+@keyframes errorDotSlide {
+    0% {
+    }
+    100% {
+        transform: translateX(36px);
+    }
+}

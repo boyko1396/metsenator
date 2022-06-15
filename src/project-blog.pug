@@ -39,35 +39,61 @@ html(lang='ru')
                             .city-label.city-label--theme-dark.project-main-info-city
                                 svg.u-icon.city-label__icon
                                     use(xlink:href="img/sprite.svg#map-marker")
-                                | Санкт-Петербург
+                                | Сургут, Россия
                             .project-main-info-footer
                                 span Опубликован&nbsp;
                                 span.project-main-info-date 2 недели назад
 
-            section.project-tabs 
-                .container 
+            section.project-tabs
+                .container
                     .project-tabs-wrap
-                        .project-tabs-overflow 
+                        .project-tabs-overflow
                             .project-tabs-nav
                                 .project-tabs-tab.active
                                     span О&nbsp;прoекте
                                 .project-tabs-tab
                                     span Блог&nbsp;
-                                    span.project-tabs-tab-count 7  
+                                    span.project-tabs-tab-count 7
                                 .project-tabs-tab
                                     span Поддержали&nbsp;
                                     span.project-tabs-tab-count 15
                                 .project-tabs-tab.mobile
                                     span Ещё
-                        .project-tabs-buttons
-                            .project-tabs-subscribe.btn.btn-trp Подписаться 
-                            .project-tabs-share.btn.btn-trp
-                                img(src="img/share.svg", alt="")
+                        .l-project-tabs-buttons
+                            a(href="#").btn.btn-trp.btn--size-lt.l-project-tabs-buttons__item Подписаться
+                            .share-el.l-project-tabs-buttons__item
+                                button(type="button").js-share-btn.share-el__btn
+                                    svg.u-icon.share-el__btn-icon
+                                        use(xlink:href="img/sprite.svg#share")
+                                .share-el__dropdown
+                                    .share-el__dropdown-body
+                                        button(type="button").share-el__item.share-el__item--vk
+                                            svg.u-icon.share-el__item-icon
+                                                use(xlink:href="img/sprite.svg#vk-social")
+                                            .share-el__item-title Вконтакте
+                                        button(type="button").share-el__item.share-el__item--telegram
+                                            svg.u-icon.share-el__item-icon
+                                                use(xlink:href="img/sprite.svg#telegram-social")
+                                            .share-el__item-title Telegram
+                                        button(type="button").js-share-copylink.share-el__item.share-el__item--copy-link
+                                            svg.u-icon.share-el__item-icon
+                                                use(xlink:href="img/sprite.svg#copy-link")
+                                            .share-el__item-title Копировать ссылку
+                                        button(type="button").js-share-qrcode.share-el__item.share-el__item--qrcode
+                                            svg.u-icon.share-el__item-icon
+                                                use(xlink:href="img/sprite.svg#qrcode")
+                                            .share-el__item-title QR-код
+                                        button(type="button").share-el__dropdown-cancel Отменить
+                                    .share-el__dropdown-qrcode
+                                        .share-el__dropdown-qrcode-title QR-код проекта
+                                        .share-el__dropdown-qrcode-body
+                                            img(src="img/qrcode.svg")
+                                        a(href="https://www.google.com/", target="_blank").btn.btn-trp.btn--size-lt.share-el__dropdown-qrcode-btn Скачать
 
-            section.project-content 
+            section.project-content
                 .container
                     .project-content-wrap
-                        .project-content-inner.project-blog   
+                        .project-content-inner.project-blog
                             .project-blog-post
                                 .project-blog-img
                                     img(src="img/project.jpg", alt="")
@@ -94,19 +120,19 @@ html(lang='ru')
                                     .project-blog-time 4 часа назад
 
                         aside.aside.project-aside
-                            .aside-section.aside-persons 
+                            .aside-section.aside-persons
+                                .aside-person
+                                    .aside-person-img
+                                        img(src="img/person.png", alt="")
+                                    .aside-person-block 
+                                        .aside-person-name Алексей Иванов
+                                        .aside-person-role автор проекта
                                 .aside-person 
                                     .aside-person-img
                                         img(src="img/person.png", alt="")
                                     .aside-person-block 
-                                        .aside-person-name Алексей Иванов              
-                                        .aside-person-role автор проекта             
-                                .aside-person 
-                                    .aside-person-img
-                                        img(src="img/person.png", alt="")
-                                    .aside-person-block 
-                                        .aside-person-name Александр Смирнов              
-                                        .aside-person-role модератор         
+                                        .aside-person-name Александр Смирнов
+                                        .aside-person-role модератор
                             .aside-section.aside-links
                                 .aside-links-block
                                     .aside-links-ttl Соцсети
@@ -115,30 +141,31 @@ html(lang='ru')
                                     a.aside-links-link(href="#") YouTube
                                 .aside-links-block
                                     .aside-links-ttl Другие платформы
-                                    a.aside-links-link(href="#") Rickstarter
+                                    a.aside-links-link(href="#") Kickstarter
                                     a.aside-links-link(href="#") Donationalerts
                                     a.aside-links-link(href="#") Boomstarter
-                            .aside-section.aside-top 
+                            .aside-section.aside-top
+                                .aside-section-ttl Топ поддержки
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
                                 .aside-top-person
                                     .aside-top-person-img 
                                         img(src="img/person.png", alt="")
-                                    .aside-top-person-name Иван Иванов                
+                                    .aside-top-person-name Иван Иванов
 
 
         include includes/footer.pug

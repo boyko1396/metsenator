@@ -18,11 +18,18 @@ html(lang='ru')
                             .settings-tabs-info
                                 .settings-tabs-info-top.settings-profile-name Илья Панов    
                                 .settings-tabs-info-bottom.settings-profile-email adress@website.com
-                        .settings-tabs-list
-                            .settings-tabs-tab Основное
-                            .settings-tabs-tab.active Безопасность
-                            .settings-tabs-tab Способ оплаты
-                            .settings-tabs-tab Уведомления
+                        nav(role="navigation").nav-step.nav-step--mobile-scroll.settings-tabs-head-nav-step
+                            ul.nav-step__list
+                                li.nav-step__item
+                                    a(href="profile-settings-main.html").nav-step__link Основное
+                                li.nav-step__item
+                                    a(href="profile-settings-safety.html").nav-step__link.is-active Безопасность
+                                li.nav-step__item
+                                    a(href="profile-settings-payment-1.html").nav-step__link Способ оплаты
+                                li.nav-step__item
+                                    a(href="profile-settings-notifications.html").nav-step__link Уведомления
+                                li.nav-step__item
+                                    a(href="profile-settings-verification-1.html").nav-step__link Верификация
 
                     .settings-inner
                         .settings-inner-ttl Безопасность

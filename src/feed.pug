@@ -1,0 +1,214 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header-profile.pug
+
+        main.feed-layout
+            .container-large.feed-layout__container
+                .feed-layout__inner
+                    aside.feed-aside.feed-layout__aside
+                        h1.feed-aside__title Популярные проекты
+                        .feed-aside__project-thumbnail-list
+                            article.project-thumbnail-card.feed-aside__project-thumbnail-list-card
+                                .project-thumbnail-card__inner
+                                    picture.img-cover.project-thumbnail-card__avatar
+                                        img(src="img/project-ava.jpg")
+                                    .project-thumbnail-card__content
+                                        h3.project-thumbnail-card__title
+                                            a(href="#") Опыт развития различных форм деятельности Опыт развития различных форм деятельности
+                                        .project-thumbnail-card__subscribe 15 подписчиков
+                            article.project-thumbnail-card.feed-aside__project-thumbnail-list-card
+                                .project-thumbnail-card__inner
+                                    picture.img-cover.project-thumbnail-card__avatar
+                                        img(src="img/project-ava.jpg")
+                                    .project-thumbnail-card__content
+                                        h3.project-thumbnail-card__title
+                                            a(href="#") Опыт развития различных форм
+                                        .project-thumbnail-card__subscribe 15 подписчиков
+                            article.project-thumbnail-card.feed-aside__project-thumbnail-list-card
+                                .project-thumbnail-card__inner
+                                    picture.img-cover.project-thumbnail-card__avatar
+                                        img(src="img/project-ava.jpg")
+                                    .project-thumbnail-card__content
+                                        h3.project-thumbnail-card__title
+                                            a(href="#") Опыт развития различных форм деятельности
+                                        .project-thumbnail-card__subscribe 15 подписчиков
+                            article.project-thumbnail-card.feed-aside__project-thumbnail-list-card
+                                .project-thumbnail-card__inner
+                                    picture.img-cover.project-thumbnail-card__avatar
+                                        img(src="img/project-ava.jpg")
+                                    .project-thumbnail-card__content
+                                        h3.project-thumbnail-card__title
+                                            a(href="#") Опыт развития различных форм
+                                        .project-thumbnail-card__subscribe 15 подписчиков
+                            article.project-thumbnail-card.feed-aside__project-thumbnail-list-card
+                                .project-thumbnail-card__inner
+                                    picture.img-cover.project-thumbnail-card__avatar
+                                        img(src="img/project-ava.jpg")
+                                    .project-thumbnail-card__content
+                                        h3.project-thumbnail-card__title
+                                            a(href="#") Опыт развития различных форм деятельности
+                                        .project-thumbnail-card__subscribe 15 подписчиков
+                    .feed-layout__main
+                        .feed-main__card-list
+                            article.feed-card.feed-main__card-list-item
+                                header.feed-card__header
+                                    .feed-card__user
+                                        picture.img-cover.feed-card__user-avatar
+                                            img(src="img/project-ava.jpg")
+                                        .feed-card__user-content
+                                            .feed-card__user-top
+                                                .feed-card__user-top-name
+                                                    a(href="#") Иван Иванов
+                                                .feed-card__user-top-action создал проект
+                                            .feed-card__user-bottom
+                                                time.feed-card__user-bottom-time вчера в 17:40
+                                .feed-card__body
+                                    .feed-card__body-info
+                                        .feed-card__body-user
+                                            picture.img-cover.feed-card__body-info-avatar
+                                                img(src="img/project-ava.jpg")
+                                            h3.feed-card__body-info-name
+                                                a(href="#") Опыт развития различных форм деятельности
+                                        .filter-item.filter-item--dotted.feed-card__body-info-btn-action
+                                            button(type="button").js-filter-open.filter-item__btn
+                                                svg.u-icon.filter-item__btn-dotted
+                                                    use(xlink:href="img/sprite.svg#dotted")
+                                            .filter-item__dropdown
+                                                .filter-item__dropdown-action-list
+                                                    .filter-item__dropdown-action Опция 1
+                                                    .filter-item__dropdown-action Опция 2
+                                    picture.img-cover.feed-card__body-poster
+                                        a(href="#")
+                                            img(src="img/project-settings-img.jpg")
+                                    .text-clamp.card-box-text.feed-card__body-text
+                                        p В соответствии с законами сохранения энергии, угловая скорость искажает суммарный поворот. Направление заставляет иначе взглянуть на то, что такое курс. Собственный кинетический момент мал. Гироскопический прибор вращает гиротахометр.
+                                footer.feed-card__footer
+                                    .rating-vote.feed-card__footer-rating
+                                        button(type="button").btn-vote.btn-vote--like.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                        .rating-vote__count 212
+                                        button(type="button").btn-vote.btn-vote--dislike.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                            article.feed-card.feed-main__card-list-item
+                                header.feed-card__header
+                                    .feed-card__user
+                                        picture.img-cover.feed-card__user-avatar
+                                            img(src="img/project-ava.jpg")
+                                        .feed-card__user-content
+                                            .feed-card__user-top
+                                                .feed-card__user-top-name
+                                                    a(href="#") Андрей Эдуардович
+                                                .feed-card__user-top-action поддержал проект
+                                            .feed-card__user-bottom
+                                                time.feed-card__user-bottom-time вчера в 17:40
+                                                .feed-card__user-bottom-donate-amount 200 ₽
+                                    .card-box-text.feed-card__header-description
+                                        p В соответствии с законами сохранения энергии, угловая скорость искажает суммарный поворот. Направление заставляет иначе взглянуть на то, что такое курс.
+                                .feed-card__body
+                                    .feed-card__body-info
+                                        .feed-card__body-user
+                                            picture.img-cover.feed-card__body-info-avatar
+                                                img(src="img/project-ava.jpg")
+                                            h3.feed-card__body-info-name
+                                                a(href="#") Опыт развития различных форм деятельностиОпыт развития различных форм деятельностиОпыт развития различных форм деятельностиОпыт развития различных форм деятельностиОпыт развития различных форм деятельностиОпыт развития различных форм деятельностиОпыт развития различных форм деятельностиОпыт развития различных форм деятельности
+                                        .filter-item.filter-item--dotted.feed-card__body-info-btn-action
+                                            button(type="button").js-filter-open.filter-item__btn
+                                                svg.u-icon.filter-item__btn-dotted
+                                                    use(xlink:href="img/sprite.svg#dotted")
+                                            .filter-item__dropdown
+                                                .filter-item__dropdown-action-list
+                                                    .filter-item__dropdown-action Опция 1
+                                                    .filter-item__dropdown-action Опция 2
+                                    picture.img-cover.feed-card__body-poster
+                                        a(href="#")
+                                            img(src="img/project-settings-img.jpg")
+                                    .text-clamp.card-box-text.feed-card__body-text
+                                        p В соответствии с законами сохранения энергии, угловая скорость искажает суммарный поворот. Направление заставляет иначе взглянуть на то, что такое курс. Собственный кинетический момент мал. Гироскопический прибор вращает гиротахометр.
+                                footer.feed-card__footer
+                                    .rating-vote.feed-card__footer-rating
+                                        button(type="button").btn-vote.btn-vote--like.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                        .rating-vote__count 212
+                                        button(type="button").btn-vote.btn-vote--dislike.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                            article.feed-card.feed-main__card-list-item
+                                .feed-card__user
+                                    picture.img-cover.feed-card__user-avatar
+                                        img(src="img/project-ava.jpg")
+                                    .feed-card__user-content
+                                        .feed-card__user-top
+                                            .feed-card__user-top-name
+                                                a(href="#") Опыт развития различных форм деятельности
+                                            .feed-card__user-top-action запись в блоге
+                                        .feed-card__user-bottom
+                                            time.feed-card__user-bottom-time вчера в 17:40
+                                .feed-card__body
+                                    picture.img-cover.feed-card__body-poster
+                                        a(href="#")
+                                            img(src="img/project-settings-img.jpg")
+                                    h3.feed-card__body-title
+                                        a(href="#") Связанный имидж: методология и особенности
+                                    .text-clamp.card-box-text.feed-card__body-text
+                                        p Таким образом рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и способствует подготовки способствует подготовки
+                                footer.feed-card__footer
+                                    .rating-vote.feed-card__footer-rating
+                                        button(type="button").btn-vote.btn-vote--like.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                        .rating-vote__count 212
+                                        button(type="button").btn-vote.btn-vote--dislike.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                    a(href="#").rating-vote.feed-card__footer-link-moore Читать дальше
+                            article.feed-card.feed-main__card-list-item
+                                .feed-card__user
+                                    picture.img-cover.feed-card__user-avatar
+                                        img(src="img/project-ava.jpg")
+                                    .feed-card__user-content
+                                        .feed-card__user-top
+                                            .feed-card__user-top-name
+                                                a(href="#") Опыт развития различных форм деятельности
+                                            .feed-card__user-top-action запись в блоге
+                                        .feed-card__user-bottom
+                                            time.feed-card__user-bottom-time вчера в 17:40
+                                .feed-card__body
+                                    h3.feed-card__body-title
+                                        a(href="#") Связанный имидж: методология и особенности
+                                    .text-clamp.text-clamp--12.card-box-text.feed-card__body-text
+                                        p Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание существенных финансовых условий. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание существенных финансовых условий. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации, определения и уточнения соответствующий сфера нашей активности в значительной степени в значительной степени в значительной степени в значительной степени что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание существенных финансовых условий. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации, определения и уточнения соответствующий сфера нашей активности в значительной степени в значительной степени в значительной степени в значительной степени
+                                footer.feed-card__footer
+                                    .rating-vote.feed-card__footer-rating
+                                        button(type="button").btn-vote.btn-vote--like.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                        .rating-vote__count 212
+                                        button(type="button").btn-vote.btn-vote--dislike.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                    a(href="#").rating-vote.feed-card__footer-link-moore Читать дальше
+                            article.feed-card.feed-main__card-list-item
+                                .feed-card__user
+                                    picture.img-cover.feed-card__user-avatar
+                                        img(src="img/project-ava.jpg")
+                                    .feed-card__user-content
+                                        .feed-card__user-top
+                                            .feed-card__user-top-name
+                                                a(href="#") Опыт развития различных форм деятельности
+                                        .feed-card__user-bottom
+                                            .feed-card__user-top-action рекомендации
+                                .feed-card__body
+                                    picture.img-cover.feed-card__body-poster
+                                        a(href="#")
+                                            img(src="img/project-settings-img.jpg")
+                                    .text-clamp.card-box-text.feed-card__body-text
+                                        p Таким образом рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и способствует подготовки способствует подготовки
+                                footer.feed-card__footer
+                                    .rating-vote.feed-card__footer-rating
+                                        button(type="button").btn-vote.btn-vote--like.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                        .rating-vote__count 212
+                                        button(type="button").btn-vote.btn-vote--dislike.rating-vote__btn
+                                            img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+
+        include includes/footer.pug

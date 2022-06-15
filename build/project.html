@@ -115,9 +115,47 @@
                 <div class="project-tabs-tab mobile"><span>Ещё</span></div>
               </div>
             </div>
-            <div class="project-tabs-buttons">
-              <div class="project-tabs-subscribe btn btn-trp">Подписаться </div>
-              <div class="project-tabs-share btn btn-trp"><img src="img/share.svg" alt=""></div>
+            <div class="l-project-tabs-buttons"><a class="btn btn-trp btn--size-lt l-project-tabs-buttons__item" href="#">Подписаться</a>
+              <div class="share-el l-project-tabs-buttons__item">
+                <button class="js-share-btn share-el__btn" type="button">
+                  <svg class="u-icon share-el__btn-icon">
+                    <use xlink:href="img/sprite.svg#share"></use>
+                  </svg>
+                </button>
+                <div class="share-el__dropdown">
+                  <div class="share-el__dropdown-body">
+                    <button class="share-el__item share-el__item--vk" type="button">
+                      <svg class="u-icon share-el__item-icon">
+                        <use xlink:href="img/sprite.svg#vk-social"></use>
+                      </svg>
+                      <div class="share-el__item-title">Вконтакте</div>
+                    </button>
+                    <button class="share-el__item share-el__item--telegram" type="button">
+                      <svg class="u-icon share-el__item-icon">
+                        <use xlink:href="img/sprite.svg#telegram-social"></use>
+                      </svg>
+                      <div class="share-el__item-title">Telegram</div>
+                    </button>
+                    <button class="js-share-copylink share-el__item share-el__item--copy-link" type="button">
+                      <svg class="u-icon share-el__item-icon">
+                        <use xlink:href="img/sprite.svg#copy-link"></use>
+                      </svg>
+                      <div class="share-el__item-title">Копировать ссылку</div>
+                    </button>
+                    <button class="js-share-qrcode share-el__item share-el__item--qrcode" type="button">
+                      <svg class="u-icon share-el__item-icon">
+                        <use xlink:href="img/sprite.svg#qrcode"></use>
+                      </svg>
+                      <div class="share-el__item-title">QR-код</div>
+                    </button>
+                    <button class="share-el__dropdown-cancel" type="button">Отменить</button>
+                  </div>
+                  <div class="share-el__dropdown-qrcode">
+                    <div class="share-el__dropdown-qrcode-title">QR-код проекта</div>
+                    <div class="share-el__dropdown-qrcode-body"><img src="img/qrcode.svg"></div><a class="btn btn-trp btn--size-lt share-el__dropdown-qrcode-btn" href="https://www.google.com/" target="_blank">Скачать</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -140,11 +178,11 @@
                   <div class="comments-input-wrap">
                     <div class="comments-item-person"><img src="img/person.png" alt=""></div>
                     <div class="input input-no-label">
-                      <input id="1" type="text" name="input-1" placeholder="Написать комментарий">
+                      <input class="js-comment-view-btns" id="1" type="text" name="input-1" placeholder="Написать комментарий">
                     </div>
                   </div>
                   <div class="comments-input-buttons">
-                    <div class="comments-input-cancel">Отмена</div>
+                    <div class="js-comments-cancel comments-input-cancel">Отмена</div>
                     <div class="comments-input-public btn btn-green">Опубликовать</div>
                   </div>
                 </div>
@@ -165,8 +203,8 @@
                           </button>
                           <div class="filter-item__dropdown">
                             <div class="filter-item__dropdown-action-list">
-                              <div class="filter-item__dropdown-action">Редактировать</div>
-                              <div class="filter-item__dropdown-action">Удалить</div>
+                              <button class="filter-item__dropdown-action" type="button">Редактировать</button>
+                              <button class="filter-item__dropdown-action" type="button">Удалить</button>
                             </div>
                           </div>
                         </div>
@@ -196,7 +234,7 @@
                               </button>
                               <div class="filter-item__dropdown">
                                 <div class="filter-item__dropdown-action-list">
-                                  <div class="filter-item__dropdown-action">Удалить</div>
+                                  <button class="filter-item__dropdown-action" type="button">Удалить</button>
                                 </div>
                               </div>
                             </div>
@@ -224,7 +262,7 @@
                               </button>
                               <div class="filter-item__dropdown">
                                 <div class="filter-item__dropdown-action-list">
-                                  <div class="filter-item__dropdown-action">Удалить</div>
+                                  <button class="filter-item__dropdown-action" type="button">Удалить</button>
                                 </div>
                               </div>
                             </div>
@@ -255,7 +293,7 @@
                             </button>
                             <div class="filter-item__dropdown">
                               <div class="filter-item__dropdown-action-list">
-                                <div class="filter-item__dropdown-action">Удалить</div>
+                                <button class="filter-item__dropdown-action" type="button">Удалить</button>
                               </div>
                             </div>
                           </div>
@@ -274,19 +312,19 @@
               </form>
             </div>
             <aside class="aside project-aside">
-              <div class="aside-section aside-persons"> 
-                <div class="aside-person"> 
+              <div class="aside-section aside-persons">
+                <div class="aside-person">
                   <div class="aside-person-img"><img src="img/person.png" alt=""></div>
                   <div class="aside-person-block"> 
-                    <div class="aside-person-name">Алексей Иванов              </div>
-                    <div class="aside-person-role">автор проекта             </div>
+                    <div class="aside-person-name">Алексей Иванов</div>
+                    <div class="aside-person-role">автор проекта</div>
                   </div>
                 </div>
                 <div class="aside-person"> 
                   <div class="aside-person-img"><img src="img/person.png" alt=""></div>
                   <div class="aside-person-block"> 
-                    <div class="aside-person-name">Александр Смирнов              </div>
-                    <div class="aside-person-role">модератор         </div>
+                    <div class="aside-person-name">Александр Смирнов</div>
+                    <div class="aside-person-role">модератор</div>
                   </div>
                 </div>
               </div>
@@ -295,29 +333,30 @@
                   <div class="aside-links-ttl">Соцсети</div><a class="aside-links-link" href="#">Вконтакте</a><a class="aside-links-link" href="#">Telegram</a><a class="aside-links-link" href="#">YouTube</a>
                 </div>
                 <div class="aside-links-block">
-                  <div class="aside-links-ttl">Другие платформы</div><a class="aside-links-link" href="#">Rickstarter</a><a class="aside-links-link" href="#">Donationalerts</a><a class="aside-links-link" href="#">Boomstarter</a>
+                  <div class="aside-links-ttl">Другие платформы</div><a class="aside-links-link" href="#">Kickstarter</a><a class="aside-links-link" href="#">Donationalerts</a><a class="aside-links-link" href="#">Boomstarter</a>
                 </div>
               </div>
-              <div class="aside-section aside-top"> 
+              <div class="aside-section aside-top">
+                <div class="aside-section-ttl">Топ поддержки</div>
                 <div class="aside-top-person">
                   <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
+                  <div class="aside-top-person-name">Иван Иванов</div>
                 </div>
                 <div class="aside-top-person">
                   <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
+                  <div class="aside-top-person-name">Иван Иванов</div>
                 </div>
                 <div class="aside-top-person">
                   <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
+                  <div class="aside-top-person-name">Иван Иванов</div>
                 </div>
                 <div class="aside-top-person">
                   <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
+                  <div class="aside-top-person-name">Иван Иванов</div>
                 </div>
                 <div class="aside-top-person">
                   <div class="aside-top-person-img"> <img src="img/person.png" alt=""></div>
-                  <div class="aside-top-person-name">Иван Иванов                </div>
+                  <div class="aside-top-person-name">Иван Иванов</div>
                 </div>
               </div>
             </aside>
@@ -387,8 +426,8 @@
       </div>
     </div>
     <div class="popup-cover"> 
-      <div class="popup-cover-wrap">
-        <form class="popup-cover-header">
+      <form class="popup-cover-wrap">
+        <div class="popup-cover-header">
           <div class="popup-cover-ttl">Обложка профиля</div>
           <div class="popup-cover-buttons"> 
             <div class="popup-cover-delete">Удалить</div>
@@ -398,32 +437,104 @@
             </div>
           </div>
           <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
-        </form>
-        <div class="popup-cover-grid"> 
-          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover1.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover2.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover3.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover4.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover5.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover6.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover7.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover8.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover9.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover10.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover11.jpg" alt=""></div>
-          <div class="popup-cover-grid-item"><img src="img/cover12.jpg" alt=""></div>
+        </div>
+        <div class="popup-cover-grid">
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/" checked>
+            <div class="popup-cover-grid-item__inner"><img src="img/cover1.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover2.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover3.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover4.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover5.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover6.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover7.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover8.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover9.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover10.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover11.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover12.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover1.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover2.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover3.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover4.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover5.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover6.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover7.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover8.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover9.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover10.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover11.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover12.jpg" alt=""></div>
+          </label>
         </div>
         <form class="popup-cover-footer"> 
           <div class="popup-cover-delete">Удалить</div>
@@ -432,7 +543,7 @@
             <label class="btn btn-white" for="cover-input">Загрузить</label>
           </div>
         </form>
-      </div>
+      </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/main.js"></script>

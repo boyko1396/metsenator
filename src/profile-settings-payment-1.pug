@@ -1,0 +1,44 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.settings.settings-profile
+            .container
+                .settings-wrap
+
+                    .settings-tabs
+                        .settings-tabs-head
+                            .settings-tabs-img.setting-profile-img
+                                img(src="img/person.png", alt="")
+                            .settings-tabs-info
+                                .settings-tabs-info-top.settings-profile-name Илья Панов    
+                                .settings-tabs-info-bottom.settings-profile-email adress@website.com
+                        nav(role="navigation").nav-step.nav-step--mobile-scroll.settings-tabs-head-nav-step
+                            ul.nav-step__list
+                                li.nav-step__item
+                                    a(href="profile-settings-main.html").nav-step__link Основное
+                                li.nav-step__item
+                                    a(href="profile-settings-safety.html").nav-step__link Безопасность
+                                li.nav-step__item
+                                    a(href="profile-settings-payment-1.html").nav-step__link.is-active Способ оплаты
+                                li.nav-step__item
+                                    a(href="profile-settings-notifications.html").nav-step__link Уведомления
+                                li.nav-step__item
+                                    a(href="profile-settings-verification-1.html").nav-step__link Верификация
+
+                    form(action="#").settings-inner
+                        .settings-inner-form-group
+                            .settings-inner-ttl Способ оплаты
+                        
+                        //- Добавить карту
+                        .settings-inner-form-group
+                            .settings-inner-form-add.settings-inner-form-add-payment
+                                img(src="img/plus-blue.svg", alt="")
+                                span Добавить&nbsp;карту
+
+        include includes/footer.pug
