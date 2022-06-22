@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
 
-    input {
+    & > input {
         width: 100%;
         padding: 9px 12px;
         font-size: 400px;
@@ -37,13 +37,16 @@
         }
     }
 
-    label {
+    & > label {
         display: inline-block;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         color: $darknes;
         margin-bottom: 12px;
+        span {
+            color: $gray;
+        }
     }
 
     p {
@@ -130,6 +133,10 @@
         display: flex;
         gap: 12px;
         margin-bottom: 60px;
+
+        &--mb-sm {
+            margin-bottom: 32px;
+        }
 
         &:last-of-type {
             margin-bottom: 0;

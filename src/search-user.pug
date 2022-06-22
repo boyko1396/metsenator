@@ -1,0 +1,101 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.p-project
+            .container-large.p-project__container
+                .p-project__search-header
+                    h1.p-project__title Пользователи по запросу «йцукен»
+                    .p-project__search-header-result-counter 12 человек
+                .filter-group.p-project__filter
+                    .filter-item.filter-group__item
+                        button(type="button").js-filter-open.filter-item__btn Все города
+                        .filter-item__dropdown
+                            .filter-item__dropdown-action-list
+                                .filter-item__dropdown-action Опция 1
+                                .filter-item__dropdown-action Опция 2
+                .search-users.p-project__search-users
+                    .header-block-info.search-users__header
+                        .header-block-info__inner
+                            .header-block-info__title Пользователей (12)
+                            a(href="#").link-accent-simple.header-block-info__link Смотреть всех
+                    .search-users__list
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-1.jpg", alt="Александр").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Александр
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-2.jpg", alt="Алёна").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Алёна
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-1.jpg", alt="Дарья").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Дарья
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-2.jpg", alt="Тимофей").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Тимофей
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-1.jpg", alt="Евгения").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Евгения
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-2.jpg", alt="Мария").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Мария
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-1.jpg", alt="Андрей Николаев").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Андрей Николаев
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-2.jpg", alt="Дмитрий").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Дмитрий
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-1.jpg", alt="Майя ").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Майя 
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-1.jpg", alt="Андрей Николаев").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Андрей Николаев
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-2.jpg", alt="Дмитрий").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Дмитрий
+                        .search-users__list-col
+                            .user-item
+                                picture.user-item__picture
+                                    img(src="img/user-item-avatar-1.jpg", alt="Майя ").user-item__avatar
+                                .user-item__name
+                                    a(href="#") Майя 
+
+        include includes/footer.pug

@@ -34,9 +34,13 @@ html(lang='ru')
                             li.nav-step__item
                                 a(href="project-settings-5.html").nav-step__link Ссылки
                             li.nav-step__item
-                                a(href="project-settings-6.html").nav-step__link Виджеты
-                            li.nav-step__item
                                 a(href="project-settings-7.html").nav-step__link Подписчики
+                            li.nav-step__item
+                                a(href="project-settings-8.html").nav-step__link Верификация
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link.is-developing Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-9.html").nav-step__link.is-developing Статистика
                 section.project-settings__main
                     h1.project-settings__main-title Донаты
                     .balance-alert.project-settings__main-balance-alert
@@ -140,8 +144,19 @@ html(lang='ru')
                     .content.modal-body__text
                         p Введите номер карты (Visa, Mastercard, МИР), на которую будут выводиться донаты. Текущая карта: VISA **** 1234 будет изменена на новую:
                     form(action="#").modal-body__card-form
-                        input(type="text", name="", required, placeholder="XXXX XXXX XXXX XXXX").input-el.modal-body__card-form-input
-                        .group-btns.smodal-body__card-form-group-btns
+                        .input-block.input-block--label-size-md.modal-body__card-form-input-block
+                            input(type="text", name="", required, placeholder="XXXX XXXX XXXX XXXX")#modal-card-input-card-number.js-mask-card-number.input-el.input-block__el
+                        .input-block.input-block--label-size-md.modal-body__card-form-input-block
+                            label(for="modal-card-input-password").input-block__label
+                                span.input-block__label-name Пароль от аккаунта Uppora
+                            .input-block__el-container
+                                .js-input-password-switch.input-block__el-icon-wrapper.input-block__el-icon-wrapper--position-right
+                                    svg.u-icon.input-block__el-icon
+                                        use(xlink:href="img/sprite.svg#view-off")
+                                    svg.u-icon.input-block__el-icon
+                                        use(xlink:href="img/sprite.svg#view-on")
+                                input(type="password", name="", required, value="")#modal-card-input-password.input-el.input-block__el
+                        .group-btns.modal-body__card-form-group-btns
                             button(type="submit").btn.btn-green.btn--size-sm.group-btns__item Изменить
                             button(type="button").js-modal-close.btn.btn-cancel.btn--size-sm.group-btns__item Отмена
 

@@ -901,6 +901,30 @@
     }
     &__projects-list {
     }
+    &__search-users {
+        margin: 0 0 72px;
+        padding-top: 16px;
+    }
+    &__search-info {
+        margin: 0 0 16px;
+    }
+    &__bottom-search {
+        padding-top: 40px;
+        text-align: center;
+        &-btn {
+            min-width: 176px;
+        }
+    }
+    &__search-header {
+        display: flex;
+        align-items: center;
+        &-result-counter {
+            margin: 6px 0 32px 12px;
+            font-weight: normal;
+            font-size: 14px;
+            color: $gray;
+        }
+    }
 }
 
 .nav-step {
@@ -929,9 +953,15 @@
         transition: all .4s;
         transition-property: color;
 
+        &:hover {
+            @media screen and (min-width: 1200px) {
+                color: $green1;
+            }
+        }
+
         &.is-active {
             font-weight: 500;
-            color: $green1;
+            color: $green1 !important;
         }
 
         &.is-disabled {
@@ -939,6 +969,10 @@
             color: #D1D5DB;
             pointer-events: none;
             cursor: default;
+        }
+
+        &.is-developing:not(:hover) {
+            color: $gray-light;
         }
     }
 }
@@ -1102,6 +1136,9 @@
     &__main-form__area-item {
         max-width: 480px;
         margin: 0 0 48px;
+        &--category {
+            max-width: 280px;
+        }
     }
     &__main-form__area-d-all {
         max-width: 100%;
@@ -1743,7 +1780,6 @@
 .s-support-main {
     min-height: 100%;
     overflow: clip;
-
     &__container {
     }
     &__header {
@@ -1769,6 +1805,10 @@
     }
     &__form-area-item {
         margin: 0 0 40px;
+        &--subject,
+        &--email {
+            max-width: 448px;
+        }
     }
     &__form-files-attach-list {
         margin: -20px 0 24px;

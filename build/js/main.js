@@ -24,6 +24,8 @@ $(document).ready(function() {
     shareDropdown();
     shareQrcode();
     commentViewInput();
+    inputPasswordSwitch();
+    select2Init();
 
 
     if ($('body').attr("id") == "myProfile") {
@@ -355,4 +357,37 @@ $(document).ready(function() {
             e.preventDefault();
         });
     }
+
+    // show/hide password input
+    function inputPasswordSwitch() {
+        $('.js-input-password-switch').on('click', function() {    
+            if ($(this).siblings('input').attr('type') == 'password') {
+                $(this).addClass('is-password-show');
+                $(this).siblings('input').attr('type', 'text');
+            } else {
+                $(this).removeClass('is-password-show');
+                $(this).siblings('input').attr('type', 'password');
+            }        
+        });
+    }
+
+    // select2 init
+    function select2Init() {
+        if ($('.js-select-init')[0]){
+            $('.js-select-init').select2({
+                minimumResultsForSearch: Infinity,
+                width: '100%'
+            });
+        }
+    }
 });
+
+// mask input card number
+if (document.getElementsByClassName('js-mask-card-number').length > 0) {
+    var dateMask = IMask(
+        document.getElementsByClassName('js-mask-card-number')[0], {
+            mask: '0000 0000 0000 0000',
+            lazy: true
+        }
+    );
+}

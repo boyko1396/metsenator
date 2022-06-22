@@ -75,8 +75,14 @@
         <section class="project-header">           
           <div class="project-header-img"><img src="img/project-ava.jpg" alt=""></div>
           <div class="project-header-block"> 
-            <div class="project-header-ttl">Опыт развития форм деятельности</div>
+            <div class="project-header-ttl verification-checked">Опыт развития форм деятельности</div>
             <div class="project-header-subs header-info-subs"> <span class="project-header-subs-num header-info-subs-num">270&nbsp;</span><span>подписчиков</span></div>
+            <div class="project-status project-header-status">
+              <svg class="u-icon project-status__icon">
+                <use xlink:href="img/sprite.svg#lock"></use>
+              </svg>
+              <div class="project-status__title">Закрытый</div>
+            </div>
           </div>
         </section>
       </div>
@@ -115,12 +121,17 @@
                 <div class="project-tabs-tab mobile"><span>Ещё</span></div>
               </div>
             </div>
-            <div class="l-project-tabs-buttons"><a class="btn btn-trp btn--size-lt l-project-tabs-buttons__item" href="#">Подписаться</a>
+            <div class="l-project-tabs-buttons">
+              <button class="btn-action-simple l-project-tabs-buttons__item" type="button">
+                <svg class="u-icon btn-action-simple__icon">
+                  <use xlink:href="img/sprite.svg#bookmarks"></use>
+                </svg><span class="btn-action-simple__title">В закладки</span>
+              </button>
               <div class="share-el l-project-tabs-buttons__item">
-                <button class="js-share-btn share-el__btn" type="button">
-                  <svg class="u-icon share-el__btn-icon">
+                <button class="js-share-btn btn-action-simple share-el__btn" type="button">
+                  <svg class="u-icon btn-action-simple__icon">
                     <use xlink:href="img/sprite.svg#share"></use>
-                  </svg>
+                  </svg><span class="btn-action-simple__title">Поделиться</span>
                 </button>
                 <div class="share-el__dropdown">
                   <div class="share-el__dropdown-body">
@@ -155,7 +166,7 @@
                     <div class="share-el__dropdown-qrcode-body"><img src="img/qrcode.svg"></div><a class="btn btn-trp btn--size-lt share-el__dropdown-qrcode-btn" href="https://www.google.com/" target="_blank">Скачать</a>
                   </div>
                 </div>
-              </div>
+              </div><a class="btn btn-trp btn--size-lt l-project-tabs-buttons__item" href="#">Подписаться</a>
             </div>
           </div>
         </div>
@@ -171,6 +182,12 @@
               <div class="project-content-text">
                 <p>Российская специфика традиционно нейтрализует эмпирический рекламоноситель. Целевая аудитория определяет из ряда вон выходящий SWOT-анализ, не считаясь с затратами. Партисипативное планирование директивно переворачивает креативный пак-шот. В рамках концепции Акоффа и Стэка, соц-дем характеристика аудитории директивно масштабирует связанный принцип восприятия. Имиджевая реклама, не меняя концепции, изложенной выше, усиливает диктат потребителя. Потребление однородно тормозит баинг и селлинг, опираясь на опыт коллег.</p>
                 <p>Бизнес-план неверно уравновешивает принцип восприятия, опираясь на опыт западных коллег. Узнавание бренда порождает межличностный рейтинг. Инструмент маркетинга продуцирует принцип восприятия. Рекламоноситель парадоксально искажает из ряда вон выходящий сегмент рынка.</p>
+              </div>
+              <div class="project-content-tags"><a class="tag project-content-tags__item" href="#">#концепция</a><a class="tag project-content-tags__item" href="#">#специфика</a><a class="tag project-content-tags__item" href="#">#восприятие</a><a class="tag project-content-tags__item" href="#">#потребление</a><a class="tag project-content-tags__item" href="#">#планирование</a></div>
+              <div class="rating-vote project-content-rating">
+                <button class="btn-vote btn-vote--like rating-vote__btn" type="button"><img class="svg-inline btn-vote__icon" src="img/arrow-rating.svg"></button>
+                <div class="rating-vote__count">212</div>
+                <button class="btn-vote btn-vote--dislike rating-vote__btn" type="button"><img class="svg-inline btn-vote__icon" src="img/arrow-rating.svg"></button>
               </div>
               <form class="comments project-content-comments">
                 <div class="comments-ttl">Комментарии</div>
@@ -546,6 +563,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

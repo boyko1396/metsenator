@@ -48,17 +48,29 @@ html(lang='ru')
                                     span.settings-inner-form-changepass-link Изменить
 
                                 .settings-inner-form-group-wrap
-                                    .input-group
+                                    .input-group.input-group--mb-sm
                                         .input
-                                            label(for="#profile-password-curr") Текущий пароль *
-                                            input#profile-password-curr(type="password", name="#profile-password-curr")
-                                            .input-view-toggle
-                                                span.input-view-toggle-icon(style="background-image: url(img/no-view.svg)")
-                                                span.input-view-toggle-icon(style="background-image: url(img/view.svg)")
+                                            .input-block.input-block--label-size-sm
+                                                label(for="profile-password-new").input-block__label
+                                                    span.input-block__label-name Пароль от аккаунта Uppora
+                                                .input-block__el-container
+                                                    .js-input-password-switch.input-block__el-icon-wrapper.input-block__el-icon-wrapper--position-right
+                                                        svg.u-icon.input-block__el-icon
+                                                            use(xlink:href="img/sprite.svg#view-off")
+                                                        svg.u-icon.input-block__el-icon
+                                                            use(xlink:href="img/sprite.svg#view-on")
+                                                    input(type="password", name="#profile-password-new", required, value="")#profile-password-new.input-el.input-block__el
                                         .input
-                                            label(for="#profile-password-new") Новый пароль (минимум 8 символов) *
-                                            input#profile-password-new(type="password", name="#profile-password-new")
-                                            .input-view-toggle
+                                            .input-block.input-block--label-size-sm
+                                                label(for="profile-password-new-repeat").input-block__label
+                                                    span.input-block__label-name Новый пароль (минимум 8 символов)
+                                                .input-block__el-container
+                                                    .js-input-password-switch.input-block__el-icon-wrapper.input-block__el-icon-wrapper--position-right
+                                                        svg.u-icon.input-block__el-icon
+                                                            use(xlink:href="img/sprite.svg#view-off")
+                                                        svg.u-icon.input-block__el-icon
+                                                            use(xlink:href="img/sprite.svg#view-on")
+                                                    input(type="password", name="#profile-password-new-repeat", required, value="")#profile-password-new-repeat.input-el.input-block__el
                                     .settings-inner-form-buttons
                                         button.settings-inner-form-save.btn.btn-green(type="submit") Изменить пароль 
                                         .settings-inner-form-cancel(type="#") Отмена

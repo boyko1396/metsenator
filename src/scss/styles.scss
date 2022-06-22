@@ -9,6 +9,8 @@
 @import "blocks/content";
 @import "blocks/likes";
 @import "blocks/aside";
+@import "blocks/select2.min";
+@import "blocks/select";
 @import "blocks/components";
 
 @import "layouts/header";
@@ -24,6 +26,7 @@
 @import "pages/profile";
 @import "pages/project";
 @import "pages/home";
+@import "pages/l-home";
 @import "pages/settings";
 @import "pages/authors";
 @import "pages/project-settings";

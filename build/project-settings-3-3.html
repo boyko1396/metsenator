@@ -182,8 +182,10 @@
               <li class="nav-step__item"><a class="nav-step__link is-active" href="project-settings-3.html">Изображения</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-4.html">Описание</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-5.html">Ссылки</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-6.html">Виджеты</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-7.html">Подписчики</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-8.html">Верификация</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-6.html">Виджеты</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-9.html">Статистика</a></li>
             </ul>
           </nav>
         </aside>
@@ -191,7 +193,7 @@
           <h1 class="project-settings__main-title">Изображения</h1>
           <form class="project-settings__main-form" action="#">
             <div class="input-block n-new-project__main-form__area-logo">
-              <label class="input-block__label" for="n-new-logo"><span class="input-block__label-name">Логотип *</span><span class="input-block__label-description">Форматы: JPEG, PNG, BMP или GIF. Изображение которое будет отображаться в публикациях от имени проекта</span></label>
+              <label class="input-block__label" for="n-new-logo"><span class="input-block__label-name">Логотип <span>*</span></span><span class="input-block__label-description">Форматы: JPEG, PNG, BMP или GIF. Изображение которое будет отображаться в публикациях от имени проекта</span></label>
               <label class="input-file input-file--logo input-block__file" for="n-new-logo">
                 <input class="files-hidden input-file__input" type="file" name="" id="n-new-logo" value=""><span class="input-file__inner">
                   <svg class="u-icon input-file__icon">
@@ -201,7 +203,7 @@
               </label>
             </div>
             <div class="input-block n-new-project__main-form__area-line">
-              <label class="input-block__label"><span class="input-block__label-name">Обложка *</span><span class="input-block__label-description">Вставьте ссылку на видео или загрузите изображение, которое будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта</span></label>
+              <label class="input-block__label"><span class="input-block__label-name">Обложка <span>*</span></span><span class="input-block__label-description">Вставьте ссылку на видео или загрузите изображение, которое будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта</span></label>
             </div>
             <div class="input-block n-new-project__main-form__area-line">
               <label class="label-radio input-block__label-radio">
@@ -411,6 +413,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

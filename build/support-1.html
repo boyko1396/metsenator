@@ -78,20 +78,20 @@
               <h1 class="support-title s-support-main__title">Служба поддержки</h1>
             </div>
             <form class="s-support-main__form" action="#">
-              <div class="input-block s-support-main__form-area-item">
-                <label class="input-block__label" for="support-subject"><span class="input-block__label-name">Тема обращения *</span></label>
-                <select class="input-el input-el--select input-block__el" name="" id="support-subject" style="background-image: url(../img/select-arrow.svg)">
+              <div class="input-block s-support-main__form-area-item s-support-main__form-area-item--subject">
+                <label class="input-block__label" for="support-subject"><span class="input-block__label-name">Тема обращения <span>*</span></span></label>
+                <select class="js-select-init input-el input-el--select input-block__el" name="" id="support-subject">
                   <option value="Выберите" disabled selected>Выберите</option>
                   <option value="Выбор 1">Выбор 1</option>
                   <option value="Выбор 2">Выбор 2</option>
                 </select>
               </div>
-              <div class="input-block s-support-main__form-area-item">
-                <label class="input-block__label" for="support-email"><span class="input-block__label-name">Email *</span></label>
+              <div class="input-block s-support-main__form-area-item s-support-main__form-area-item--email">
+                <label class="input-block__label" for="support-email"><span class="input-block__label-name">Email <span>*</span></span></label>
                 <input class="input-el input-block__el" type="text" name="" id="support-email" value="">
               </div>
               <div class="input-block s-support-main__form-area-item">
-                <label class="input-block__label" for="support-message"><span class="input-block__label-name">Сообщение *</span></label>
+                <label class="input-block__label" for="support-message"><span class="input-block__label-name">Сообщение <span>*</span></span></label>
                 <div class="input-block__textarea-wrapper">
                   <textarea class="input-el input-el--textarea input-el--textarea-size-lg input-block__el" type="text" name="" id="support-message" rows="" cols="" value=""></textarea>
                 </div>
@@ -289,6 +289,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

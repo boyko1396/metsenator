@@ -12,14 +12,23 @@ html(lang='ru')
                 h1.p-project__title Проекты
                 .filter-group.p-project__filter
                     .filter-item.filter-group__item
-                        button(type="button").filter-item__btn Новые
-                        .filter-item__dropdown Dropdown
+                        button(type="button").js-filter-open.filter-item__btn Новые
+                        .filter-item__dropdown
+                            .filter-item__dropdown-action-list
+                                .filter-item__dropdown-action Опция 1
+                                .filter-item__dropdown-action Опция 2
                     .filter-item.filter-group__item
-                        button(type="button").filter-item__btn Все каттегории
-                        .filter-item__dropdown Dropdown
+                        button(type="button").js-filter-open.filter-item__btn Все категории
+                        .filter-item__dropdown
+                            .filter-item__dropdown-action-list
+                                .filter-item__dropdown-action Опция 1
+                                .filter-item__dropdown-action Опция 2
                     .filter-item.filter-group__item
-                        button(type="button").filter-item__btn Все города
-                        .filter-item__dropdown Dropdown
+                        button(type="button").js-filter-open.filter-item__btn Все города
+                        .filter-item__dropdown
+                            .filter-item__dropdown-action-list
+                                .filter-item__dropdown-action Опция 1
+                                .filter-item__dropdown-action Опция 2
                 .appeal-alert.p-project__appeal-alert
                     button(type="button", title="Close").btn-close.appeal-alert__close
                         svg.u-icon
@@ -27,7 +36,7 @@ html(lang='ru')
                     .appeal-alert__inner
                         .content.appeal-alert__content
                             p Мы совсем недавно открылись, поэтому если вы знаете о проекте, которого не хватает на нашей площадке, расскажите нам о нём или пришлите ссылку и мы обязательно свяжемся с автором, чтобы проект получил поддержку
-                        a(href="#").btn.btn--size-md.btn-green-accent.appeal-alert__btn Рассказать о проекте
+                        a(href="#modal-tell-project").js-modal-open.btn.btn--size-md.btn-green-accent.appeal-alert__btn Рассказать о проекте
                 .projects-list.p-project__projects-list
                     .row.projects-list__row
                         .row__col.row__col--4.projects-list__col
@@ -162,5 +171,20 @@ html(lang='ru')
                                             svg.u-icon.city-label__icon
                                                 use(xlink:href="img/sprite.svg#map-marker")
                                             | Сургут
+
+        #modal-tell-project.modal
+            .modal-body.modal__body
+                .modal-body__center.modal-body__center--size-md
+                    .modal-title.modal-title--size-md.modal-body__title Рассказать о проекте
+                    button(type="button", title="Close").js-modal-close.btn-close.modal-body__close
+                        svg.u-icon
+                            use(xlink:href="img/sprite.svg#close")
+                    form(action="#").modal-body__tell-project
+                        .content.modal-body__text
+                            p Кратко расскажите о проекте, как мы можем связаться с автором или просто укажите ссылку на проект
+                        textarea(type="text", name="", rows="", cols="", placeholder="Сообщение").input-el.input-el--textarea.modal-body__tell-project-textarea
+                        .group-btns.modal-body__binding-phone-group-btns
+                            button(type="submit").btn.btn-green.btn--size-sm.group-btns__item Отправить
+                            button(type="button").js-modal-close.btn.btn-cancel.btn--size-sm.group-btns__item Отмена
 
         include includes/footer.pug

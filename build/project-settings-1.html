@@ -182,8 +182,10 @@
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-3.html">Изображения</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-4.html">Описание</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-5.html">Ссылки</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-6.html">Виджеты</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-7.html">Подписчики</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-8.html">Верификация</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-6.html">Виджеты</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-9.html">Статистика</a></li>
             </ul>
           </nav>
         </aside>
@@ -329,8 +331,24 @@
             <p>Введите номер карты (Visa, Mastercard, МИР), на которую будут выводиться донаты. Текущая карта: VISA **** 1234 будет изменена на новую:</p>
           </div>
           <form class="modal-body__card-form" action="#">
-            <input class="input-el modal-body__card-form-input" type="text" name="" required placeholder="XXXX XXXX XXXX XXXX">
-            <div class="group-btns smodal-body__card-form-group-btns">
+            <div class="input-block input-block--label-size-md modal-body__card-form-input-block">
+              <input class="js-mask-card-number input-el input-block__el" type="text" name="" required placeholder="XXXX XXXX XXXX XXXX" id="modal-card-input-card-number">
+            </div>
+            <div class="input-block input-block--label-size-md modal-body__card-form-input-block">
+              <label class="input-block__label" for="modal-card-input-password"><span class="input-block__label-name">Пароль от аккаунта Uppora</span></label>
+              <div class="input-block__el-container">
+                <div class="js-input-password-switch input-block__el-icon-wrapper input-block__el-icon-wrapper--position-right">
+                  <svg class="u-icon input-block__el-icon">
+                    <use xlink:href="img/sprite.svg#view-off"></use>
+                  </svg>
+                  <svg class="u-icon input-block__el-icon">
+                    <use xlink:href="img/sprite.svg#view-on"></use>
+                  </svg>
+                </div>
+                <input class="input-el input-block__el" type="password" name="" required value="" id="modal-card-input-password">
+              </div>
+            </div>
+            <div class="group-btns modal-body__card-form-group-btns">
               <button class="btn btn-green btn--size-sm group-btns__item" type="submit">Изменить</button>
               <button class="js-modal-close btn btn-cancel btn--size-sm group-btns__item" type="button">Отмена</button>
             </div>
@@ -520,6 +538,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

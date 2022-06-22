@@ -182,9 +182,10 @@
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-3.html">Изображения</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-4.html">Описание</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-5.html">Ссылки</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-6.html">Виджеты</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-7.html">Подписчики</a></li>
               <li class="nav-step__item"><a class="nav-step__link is-active" href="project-settings-8.html">Верификация</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-6.html">Виджеты</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-9.html">Статистика</a></li>
             </ul>
           </nav>
         </aside>
@@ -204,7 +205,7 @@
               </label>
             </div>
             <div class="project-settings__verification-photo">
-              <div class="project-settings__verification-subtitle">Фото паспорта *</div>
+              <div class="project-settings__verification-subtitle">Фото паспорта <span>*</span></div>
               <ul class="list-counter project-settings__verification-photo-list">
                 <li>
                   <p>Сфотографируйтесь на фоне монитора с открытой страницей <a href="https://www.google.com/" target="_blank">проекта</a>.</p>
@@ -235,7 +236,7 @@
               </ul>
             </div>
             <div class="project-settings__verification-photo">
-              <div class="project-settings__verification-subtitle">Свидетельство о регистрации *</div>
+              <div class="project-settings__verification-subtitle">Свидетельство о регистрации <span>*</span></div>
               <ul class="list-text project-settings__verification-photo-list">
                 <li>
                   <p>Сфотографируйте свидетельство о регистрации юрлица или индивидуального предпринимателя на фоне монитора с открытой страницей <a href="https://www.google.com/" target="_blank">проекта</a>. На фото должны быть отчетливо видны все данные.</p>
@@ -260,11 +261,11 @@
               </ul>
             </div>
             <div class="input-block project-settings__verification-address">
-              <label class="input-block__label" for="verification-address"><span class="input-block__label-name">Юридический адрес компании *</span></label>
+              <label class="input-block__label" for="verification-address"><span class="input-block__label-name">Юридический адрес компании <span>*</span></span></label>
               <input class="input-el input-block__el" type="text" name="" id="verification-address" value="">
             </div>
             <div class="input-block project-settings__verification-phone-company">
-              <label class="input-block__label" for="verification-phone"><span class="input-block__label-name">Телефон компании *</span></label>
+              <label class="input-block__label" for="verification-phone"><span class="input-block__label-name">Телефон компании <span>*</span></span></label>
               <input class="input-el input-block__el" type="text" name="" id="verification-phone" value="">
             </div>
             <div class="input-block project-settings__verification-link">
@@ -465,6 +466,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

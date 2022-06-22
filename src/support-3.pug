@@ -14,16 +14,16 @@ html(lang='ru')
                         .s-support-main__top
                             h1.support-title.s-support-main__title Служба поддержки
                         form(action="#").s-support-main__form
-                            .input-block.s-support-main__form-area-item
+                            .input-block.s-support-main__form-area-item.s-support-main__form-area-item--subject
                                 label(for="support-subject").input-block__label
-                                    span.input-block__label-name Тема обращения *
-                                select(name="", id="support-subject").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
+                                    span.input-block__label-name Тема обращения <span>*</span>
+                                select(name="", id="support-subject").js-select-init.input-el.input-el--select.input-block__el
                                     option(value="Выберите", disabled, selected) Выберите
                                     option(value="Выбор 1") Выбор 1
                                     option(value="Выбор 2") Выбор 2
                             .input-block.s-support-main__form-area-item
                                 label(for="support-message").input-block__label
-                                    span.input-block__label-name Сообщение *
+                                    span.input-block__label-name Сообщение <span>*</span>
                                 .input-block__textarea-wrapper
                                     textarea(type="text", name="", id="support-message", rows="", cols="", value="").input-el.input-el--textarea.input-el--textarea-size-lg.input-block__el
                             input(type="file", id="support-file").files-hidden

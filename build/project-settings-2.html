@@ -182,8 +182,10 @@
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-3.html">Изображения</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-4.html">Описание</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-5.html">Ссылки</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-6.html">Виджеты</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-7.html">Подписчики</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-8.html">Верификация</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-6.html">Виджеты</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-9.html">Статистика</a></li>
             </ul>
           </nav>
         </aside>
@@ -191,15 +193,20 @@
           <h1 class="project-settings__main-title">Основное</h1>
           <form class="project-settings__main-form" action="#">
             <div class="input-block n-new-project__main-form__area-item">
-              <label class="input-block__label" for="n-new-project"><span class="input-block__label-name">Название проекта *</span></label>
+              <label class="input-block__label" for="n-new-project"><span class="input-block__label-name">Название проекта <span>*<span></span></label>
               <input class="input-el input-block__el" type="text" name="" id="n-new-project" value="">
             </div>
             <div class="input-block n-new-project__main-form__area-item">
-              <label class="input-block__label" for="n-new-project-category"><span class="input-block__label-name">Категория *</span></label>
-              <select class="input-el input-el--select input-block__el" name="" id="n-new-project-category" style="background-image: url(../img/select-arrow.svg)">
-                <option value="Выберите" disabled selected>Выберите</option>
-                <option value="Выбор 1">Выбор 1</option>
-                <option value="Выбор 2">Выбор 2</option>
+              <label class="input-block__label" for="n-new-project-category"><span class="input-block__label-name">Категория <span>*<span></span></label>
+              <select class="js-select-init input-el input-el--select input-block__el" name="" id="n-new-project-category">
+                <option value="Искусство" selected>Искусство</option>
+                <option value="Искусство 1">Искусство 1</option>
+                <option value="Искусство 2">Искусство 2</option>
+                <option value="Искусство 3">Искусство 3</option>
+                <option value="Искусство 4">Искусство 4</option>
+                <option value="Искусство 5">Искусство 5</option>
+                <option value="Искусство 6">Искусство 6</option>
+                <option value="Искусство 7">Искусство 7</option>
               </select>
             </div>
             <div class="input-block n-new-project__main-form__area-item">
@@ -449,6 +456,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

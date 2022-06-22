@@ -1,0 +1,421 @@
+body {
+    //background: url(../img/proba.png) center top no-repeat;
+    //opacity: .4;
+}
+
+.l-home {
+    font-size: 14px;
+    line-height: 1.4;
+    color: $darknes;
+    flex-grow: 1;
+    overflow: clip;
+}
+
+.l-home-intro {
+    padding-bottom: 190px;
+    &__container {
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__content {
+        max-width: 49%;
+        margin-right: 40px;
+        padding-top: 90px;
+        flex: 0 0 49%;
+        &-footer {
+            max-width: 488px;
+        }
+        &-title {
+            margin: 0 0 36px;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 1.10714285714;
+        }
+        &-btns {
+            margin: -16px;
+            padding-bottom: 89px;
+            display: flex;
+            flex-wrap: wrap;
+            &-item {
+                margin: 16px;
+                &.btn,
+                &.btn-video {
+                    font-size: 16px;
+                }
+                &.btn {
+                    padding-right: 40px;
+                    padding-left: 40px;
+                }
+            }
+        }
+        &-desctiption {
+            margin: 0 0 16px;
+            line-height: 1.57142857143;
+            color: $gray;
+        }
+        &-tinkoff {
+            padding-top: 16px;
+            border-top: 1px solid $gray-light;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-tinkoff-text {
+            margin-right: 18px;
+            line-height: 1.57142857143;
+            flex-grow: 1;
+            color: $gray;
+        }
+        &-tinkoff-logo {
+            max-width: 144px;
+            flex: 0 0 144px;
+        }
+    }
+    &__media {
+        max-width: 580px;
+        margin-right: -50px;
+        flex: 0 0 51%;
+    }
+    &__picture {
+        margin: 0 100px 100px;
+        padding-bottom: 94.827586206%;
+        border-radius: 0 0 300px 300px;
+        box-shadow: 0 0 0 100px #F2F6FA;
+        position: relative;
+        overflow: hidden;
+        @extend .img-cover;
+    }
+    &__img {
+    }
+}
+
+.l-benefits-card {
+    padding: 50px 0;
+    &--1 {
+        padding-top: 100px;
+    }
+    &--2 {
+        padding-top: 14px;
+        padding-bottom: 203px;
+    }
+    &--3 {
+        padding-top: 216px;
+    }
+    &--4 {
+        padding-top: 161px;
+        padding-bottom: 180px;
+    }
+    &--5 {
+        padding-top: 127px;
+        padding-bottom: 127px;
+    }
+    &--theme-gray {
+        position: relative;
+        z-index: 0;
+        &:before {
+            background: $blue-light;
+            width: 100vw;
+            height: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+    &--direction-normal {
+    }
+    &--direction-reverse {
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__col {
+        &--content {
+            flex-grow: 1;
+            align-self: center;
+        }
+        &--picture {
+            max-width: 57%;
+            flex: 0 0 57%;
+        }
+    }
+    &--1 &__col--content {
+        margin-top: 200px;
+        margin-bottom: 156px;
+        align-self: flex-end;
+    }
+    &--3 &__col--content {
+        margin-top: 90px;
+    }
+    &--4 &__col--content {
+        margin-bottom: 42px;
+    }
+    &--direction-normal &__col--content {
+        margin-right: 30px;
+    }
+    &--direction-normal &__col--picture {
+        margin-right: 0;
+        margin-left: -10%;
+        order: initial;
+    }
+    &--direction-reverse &__col--content {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    &--direction-reverse &__col--picture {
+        margin-right: -10%;
+        margin-left: 0;
+        order: -1;
+    }
+    &__content {
+        max-width: 544px;
+        position: relative;
+        z-index: 0;
+        &-counter {
+            font-weight: 600;
+            font-size: 240px;
+            line-height: 1;
+            color: $gray-light;
+            position: absolute;
+            top: -.48em;
+            left: -.04em;
+            pointer-events: none;
+            user-select: none;
+            z-index: -1;
+        }
+        &-title {
+            margin: 0 0 17px;
+            font-weight: 600;
+            line-height: 1.1;
+            &--size-sm {
+                font-size: 32px;
+            }
+            &--size-md {
+                font-size: 36px;
+            }
+            span {
+                color: $green3;
+            }
+        }
+        &-text {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.75;
+            p {
+                margin-bottom: .7em;
+            }
+        }
+    }
+    &--direction-normal &__content {
+        max-width: 544px;
+        margin-left: 0;
+    }
+    &--direction-reverse &__content {
+        max-width: 454px;
+        margin-left: auto;
+    }
+    &__picture {
+        display: block;
+        font-size: 0;
+        pointer-events: none;
+        user-select: none;
+    }
+    &--direction-normal &__picture {
+        text-align: right;
+    }
+    &--direction-reverse &__picture {
+        text-align: left;
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.l-benefits-appeal {
+    color: $white;
+    position: relative;
+    z-index: 0;
+    &:before {
+        background: $darknes;
+        width: 100vw;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__col {
+        &--content {
+            max-width: 640px;
+            margin: 0 40px 0 0;
+            align-self: center;
+            align-self: flex-start;
+            flex-grow: 1;
+        }
+        &--picture {
+            max-width: 380px;
+            margin-top: -65px;
+            margin-bottom: 65px;
+            flex: 0 0 33.5%;
+        }
+    }
+    &__content {
+        padding: 60px 0;
+        padding-top: 64px;
+        &-title {
+            margin: 0 0 24px;
+            padding: 13px 0 0 69px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            color: $green3;
+            position: relative;
+            &:before {
+                background: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.927 5C3.62668 13.1088 0 22.1844 0 29.6884C0 37.6737 4.23201 43 10.7609 43C16.3227 43 19.8281 39.1272 19.8281 34.2864C19.8281 29.3253 16.2014 25.9369 11.3651 25.6942C12.5747 21.0951 15.9599 16.134 23.8186 11.4136L16.927 5ZM41.1084 5C27.8081 13.1088 24.1814 22.1844 24.1814 29.6884C24.1814 37.6737 28.4134 43 34.9423 43C40.5041 43 44.0105 39.1272 44.0105 34.2864C44.0105 29.3253 40.3828 25.9369 35.5465 25.6942C36.7551 21.0951 40.1413 16.134 48 11.4136L41.1073 5H41.1084Z' fill='%2316A34A'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                background-size: contain;
+                width: 48px;
+                height: 48px;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            span {
+                display: block;
+                transform: skewX(-13deg);
+            }
+        }
+        &-text {
+            max-width: 580px;
+            margin: 0 0 16px;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.4;
+            > :first-child {
+                margin-top: 0;
+            }
+            > :last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-author {
+            margin: 0 0 16px;
+            font-size: 16px;
+            line-height: 1.55;
+            color: $blue-light;
+        }
+        &-moore {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #FFF8A7;
+            transition: all .4s;
+            transition-property: opacity;
+            &:hover {
+                text-decoration: none;
+                @media screen and (min-width: 1200px) {
+                    opacity: .8;
+                }
+            }
+            &:after {
+                background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.00502 4.50502C7.27839 4.23166 7.72161 4.23166 7.99497 4.50502L12.995 9.50502C13.2683 9.77839 13.2683 10.2216 12.995 10.495L7.99497 15.495C7.72161 15.7683 7.27839 15.7683 7.00502 15.495C6.73166 15.2216 6.73166 14.7784 7.00502 14.505L11.51 10L7.00502 5.49497C6.73166 5.22161 6.73166 4.77839 7.00502 4.50502Z' fill='%23FFF8A7'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+                margin: 2px 0 0 2px;
+                content: '';
+                flex: 0 0 20px;
+                transition: all .4s;
+                transition-property: transform;
+            }
+            &:hover:after {
+                @media screen and (min-width: 1200px) {
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+    &__picture {
+        display: block;
+        text-align: right;
+        pointer-events: none;
+        user-select: none;
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.l-benefits-join {
+    padding: 56px 0;
+    position: relative;
+    z-index: 0;
+    &:before {
+        background: #F1F5F9;
+        width: 100vw;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        margin: 0 25px 0 0;
+        flex-grow: 1;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.21;
+    }
+    &__btn {
+        flex-shrink: 0;
+    }
+}
+
+.l-home-main {
+    &__container {
+    }
+    &__title {
+        max-width: 48%;
+        margin: 0 0 -88px;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 50px;
+        position: relative;
+        z-index: 1;
+    }
+    &__benefits-card {
+    }
+    &__benefits-appeal {
+    }
+    &__benefits-join {
+    }
+}

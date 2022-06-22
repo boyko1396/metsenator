@@ -41,12 +41,12 @@ html(lang='ru')
                     form(action="#").n-new-project__main-form
                         .input-block.n-new-project__main-form__area-item
                             label(for="n-new-project").input-block__label
-                                span.input-block__label-name Название проекта *
+                                span.input-block__label-name Название проекта <span>*</span>
                             input(type="text", name="", id="n-new-project", value="").input-el.input-block__el
-                        .input-block.n-new-project__main-form__area-item
+                        .input-block.n-new-project__main-form__area-item.n-new-project__main-form__area-item--category
                             label(for="n-new-project-category").input-block__label
-                                span.input-block__label-name Категория *
-                            select(name="", id="n-new-project-category").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
+                                span.input-block__label-name Категория <span>*</span>
+                            select(name="", id="n-new-project-category").js-select-init.input-el.input-el--select.input-block__el
                                 option(value="Выберите", disabled, selected) Выберите
                                 option(value="Выбор 1") Выбор 1
                                 option(value="Выбор 2") Выбор 2
@@ -59,7 +59,10 @@ html(lang='ru')
                             label(for="n-new-project-address-page").input-block__label
                                 span.input-block__label-name Адрес страницы
                                 span.input-block__label-description Придумайте короткий URL-адрес вашей страницы. Может содержать латинские буквы, цифры, дефисы и подчёркивания
-                            input(type="text", name="", id="n-new-project-address-page", placeholder="http://uppora.org/").input-el.input-block__el
+                            .input-mask-el.input-block__mask-el
+                                .input-mask-el__inner
+                                    .input-mask-el__title http://uppora.org/
+                                    input(type="text", name="", id="n-new-project-address-page", placeholder="").input-mask-el__input
                         .input-block.n-new-project__main-form__area-item
                             label.input-block__label
                                 span.input-block__label-name Ссылки на соцсети

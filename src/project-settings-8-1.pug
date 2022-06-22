@@ -34,11 +34,13 @@ html(lang='ru')
                             li.nav-step__item
                                 a(href="project-settings-5.html").nav-step__link Ссылки
                             li.nav-step__item
-                                a(href="project-settings-6.html").nav-step__link Виджеты
-                            li.nav-step__item
                                 a(href="project-settings-7.html").nav-step__link Подписчики
                             li.nav-step__item
                                 a(href="project-settings-8.html").nav-step__link.is-active Верификация
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link.is-developing Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-9.html").nav-step__link.is-developing Статистика
                 section.project-settings__main
                     h1.project-settings__main-title Верификация
                     form(action="#").project-settings__verification
@@ -56,7 +58,7 @@ html(lang='ru')
                                 span.label-radio__inner
                                     span.label-radio__title Юридическое лицо
                         .project-settings__verification-photo
-                            .project-settings__verification-subtitle Фото паспорта *
+                            .project-settings__verification-subtitle Фото паспорта <span>*</span>
                             ul.list-counter.project-settings__verification-photo-list
                                 li
                                     p Сфотографируйтесь на фоне монитора с открытой страницей <a href="https://www.google.com/" target="_blank">проекта</a>.
@@ -69,7 +71,7 @@ html(lang='ru')
                                     p
                                         label(for="verification-photo-1").btn.btn--size-sm.btn-trp Загрузить фото
                         .project-settings__verification-photo
-                            .project-settings__verification-subtitle Свидетельство о регистрации *
+                            .project-settings__verification-subtitle Свидетельство о регистрации <span>*</span>
                             ul.list-text.project-settings__verification-photo-list
                                 li
                                     p Сфотографируйте свидетельство о регистрации юрлица или индивидуального предпринимателя на фоне монитора с открытой страницей <a href="https://www.google.com/" target="_blank">проекта</a>. На фото должны быть отчетливо видны все данные.
@@ -79,11 +81,11 @@ html(lang='ru')
                                         label(for="verification-photo-2").btn.btn--size-sm.btn-trp Загрузить фото
                         .input-block.project-settings__verification-address
                             label(for="verification-address").input-block__label
-                                span.input-block__label-name Юридический адрес компании *
+                                span.input-block__label-name Юридический адрес компании <span>*</span>
                             input(type="text", name="", id="verification-address", value="").input-el.input-block__el
                         .input-block.project-settings__verification-phone-company
                             label(for="verification-phone").input-block__label
-                                span.input-block__label-name Телефон компании *
+                                span.input-block__label-name Телефон компании <span>*</span>
                             input(type="text", name="", id="verification-phone", value="").input-el.input-block__el
                         .input-block.project-settings__verification-link
                             label(for="verification-link").input-block__label

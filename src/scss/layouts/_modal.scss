@@ -56,6 +56,10 @@
         margin: 0 0 48px;
     }
     &__card-form-group-btns {
+        padding-top: 16px;
+    }
+    &__card-form-input-block {
+        margin: 0 0 32px;
     }
     &__binding-phone {
         padding-top: 8px;
@@ -83,6 +87,12 @@
         &-btn-change {
             margin-left: 4px;
             flex-shrink: 0;
+        }
+    }
+    &__tell-project {
+        &-textarea {
+            min-height: 168px;
+            margin-bottom: 42px;
         }
     }
 }

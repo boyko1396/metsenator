@@ -38,7 +38,7 @@ html(lang='ru')
                         form.settings-inner-form.settings-profile-form 
                             .input-group.input-group-524
                                 .input
-                                    label(for="#profile-name") Имя *
+                                    label(for="#profile-name") Имя <span>*</span>
                                     input#profile-name(type="text", name="#profile-name") 
                                 .input
                                     label(for="#profile-surname") Фамилия
@@ -56,7 +56,10 @@ html(lang='ru')
                                 .input
                                     label(for="#profile-web") Адрес страницы
                                     p Придумайте короткий URL-адрес вашей страницы. Может содержать латинские буквы, цифры, дефисы и подчёркивания.
-                                    input#profile-web(type="text", name="#profile-web")
+                                    .input-mask-el
+                                        .input-mask-el__inner
+                                            .input-mask-el__title http://uppora.org/
+                                            input(type="text", name="#profile-web").input-mask-el__input
                             .settings-inner-form-group
                                 .settings-inner-form-label Ссылки
                                 .settings-inner-form-text Ссылки на ваш сайт, профиль в соцсетях или месендерах

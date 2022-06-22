@@ -55,6 +55,14 @@
     &-posts {
         width: 100%;
         margin-right: 48px;
+        &-content-empty {
+            font-size: 14px;
+            line-height: 1.55;
+            color: $gray;
+            a {
+                box-shadow: none;
+            }
+        }
         &__list-item {
             & + & {
                 margin-top: 24px;

@@ -34,15 +34,19 @@ html(lang='ru')
                             li.nav-step__item
                                 a(href="project-settings-5.html").nav-step__link Ссылки
                             li.nav-step__item
-                                a(href="project-settings-6.html").nav-step__link Виджеты
-                            li.nav-step__item
                                 a(href="project-settings-7.html").nav-step__link Подписчики
+                            li.nav-step__item
+                                a(href="project-settings-8.html").nav-step__link Верификация
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link.is-developing Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-9.html").nav-step__link.is-developing Статистика
                 section.project-settings__main
                     h1.project-settings__main-title Изображения
                     form(action="#", runat="server").project-settings__main-form
                         .input-block.n-new-project__main-form__area-logo
                             label(for="n-new-logo").input-block__label
-                                span.input-block__label-name Логотип *
+                                span.input-block__label-name Логотип <span>*</span>
                                 span.input-block__label-description Форматы: JPEG, PNG, BMP или GIF. Изображение которое будет отображаться в публикациях от имени проекта
                             label(for="n-new-logo").input-file.input-file--logo.input-block__file
                                 input(type="file", name="", id="n-new-logo", class="files-hidden input-file__input", value="")
@@ -54,7 +58,7 @@ html(lang='ru')
                                     img(src="img/project-settings-logo.jpg")
                         .input-block.n-new-project__main-form__area-line
                             label.input-block__label
-                                span.input-block__label-name Обложка *
+                                span.input-block__label-name Обложка <span>*</span>
                                 span.input-block__label-description Вставьте ссылку на видео или загрузите изображение, которое будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта
                         .input-block.n-new-project__main-form__area-line
                             label.label-radio.input-block__label-radio

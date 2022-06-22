@@ -104,12 +104,12 @@
           </div>
           <form class="n-new-project__main-form" action="#">
             <div class="input-block n-new-project__main-form__area-item">
-              <label class="input-block__label" for="n-new-project"><span class="input-block__label-name">Название проекта *</span></label>
+              <label class="input-block__label" for="n-new-project"><span class="input-block__label-name">Название проекта <span>*</span></span></label>
               <input class="input-el input-block__el" type="text" name="" id="n-new-project" value="">
             </div>
-            <div class="input-block n-new-project__main-form__area-item">
-              <label class="input-block__label" for="n-new-project-category"><span class="input-block__label-name">Категория *</span></label>
-              <select class="input-el input-el--select input-block__el" name="" id="n-new-project-category" style="background-image: url(../img/select-arrow.svg)">
+            <div class="input-block n-new-project__main-form__area-item n-new-project__main-form__area-item--category">
+              <label class="input-block__label" for="n-new-project-category"><span class="input-block__label-name">Категория <span>*</span></span></label>
+              <select class="js-select-init input-el input-el--select input-block__el" name="" id="n-new-project-category">
                 <option value="Выберите" disabled selected>Выберите</option>
                 <option value="Выбор 1">Выбор 1</option>
                 <option value="Выбор 2">Выбор 2</option>
@@ -121,7 +121,12 @@
             </div>
             <div class="input-block n-new-project__main-form__area-item">
               <label class="input-block__label" for="n-new-project-address-page"><span class="input-block__label-name">Адрес страницы</span><span class="input-block__label-description">Придумайте короткий URL-адрес вашей страницы. Может содержать латинские буквы, цифры, дефисы и подчёркивания</span></label>
-              <input class="input-el input-block__el" type="text" name="" id="n-new-project-address-page" placeholder="http://uppora.org/">
+              <div class="input-mask-el input-block__mask-el">
+                <div class="input-mask-el__inner">
+                  <div class="input-mask-el__title">http://uppora.org/</div>
+                  <input class="input-mask-el__input" type="text" name="" id="n-new-project-address-page" placeholder="">
+                </div>
+              </div>
             </div>
             <div class="input-block n-new-project__main-form__area-item">
               <label class="input-block__label"><span class="input-block__label-name">Ссылки на соцсети</span><span class="input-block__label-description">Ссылки на соцсети или каналы в месендерах, где уже размещён ваш проект. Будут отображаться на странице проекта</span></label>
@@ -339,6 +344,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

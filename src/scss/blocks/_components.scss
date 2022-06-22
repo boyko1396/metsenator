@@ -519,7 +519,7 @@
     }
 
     &::placeholder {
-        color: #E5E7EB;
+        color: $gray-light;
     }
 
     &::-webkit-outer-spin-button,
@@ -710,6 +710,19 @@
         display: block;
         font-weight: 500;
         font-size: 16px;
+        span {
+            color: $gray;
+        }
+    }
+    &--label-size-md &__label-name {
+        font-weight: normal;
+        font-size: 14px;
+    }
+    &--label-size-sm &__label-name {
+        margin-bottom: 4px;
+        font-weight: normal;
+        font-size: 12px;
+        color: #4B5563;
     }
     &__label-description {
         margin: -8px 0 12px;
@@ -720,7 +733,52 @@
     &__add-link {
         margin: 12px 0 0;
     }
+    &__el-container {
+        display: block;
+        position: relative;
+    }
+    &__el-icon-wrapper {
+        width: 48px;
+        height: 100%;
+        color: #D1D5DB;
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        z-index: 1;
+        transition: all .4s;
+        transition-property: color;
+        &--position-left {
+            left: 0;
+        }
+        &--position-right {
+            right: 0;
+        }
+        &:hover {
+            @media screen and (min-width: 1200px) {
+                color: $darknes;
+            }
+        }
+    }
+    &__el-icon {
+        width: 24px;
+        height: 24px;
+        margin: -12px 0 0 -12px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: all .4s;
+        transition-property: opacity, visibility;
+    }
+    &__el-icon-wrapper.is-password-show &__el-icon:first-child,
+    &__el-icon-wrapper:not(.is-password-show) &__el-icon:last-child {
+        opacity: 0;
+        visibility: hidden;
+    }
     &__el {
+    }
+    &__el-icon-wrapper ~ &__el {
+        padding-right: 50px;
     }
     &__textarea-wrapper {
         position: relative;
@@ -848,6 +906,19 @@
         font-weight: 500;
         color: $white;
         background-color: $green3;
+        &:hover {
+            background: $green1;
+        }
+        &:focus,
+        &:active {
+            background: $green4;
+        }
+    }
+
+    &-dark {
+        font-weight: 500;
+        color: $white;
+        background-color: $darknes;
         &:hover {
             background: $green1;
         }
@@ -1810,9 +1881,9 @@
     &:after {
         background: url(../img/verification-checked.svg) 50% no-repeat;
         background-size: contain;
-        width: 1.14285714286em;
-        height: 1.14285714286em;
-        margin-left: .25em;
+        width: 1em;
+        height: 1em;
+        margin-left: .22em;
         content: '';
         display: inline-block;
         flex-shrink: 0;
@@ -1943,37 +2014,46 @@
     }
 }
 
+.btn-action-simple {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+    color: $gray;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        bottom: -6px;
+        left: -6px;
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+        flex: 0 0 20px;
+    }
+    &__title {
+    }
+}
+
 .share-el {
     font-weight: normal;
     font-size: 14px;
     color: $dark-blue;
-    &__btn {
-        width: 32px;
-        height: 32px;
-        padding: 0;
-        font-weight: 400;
-        color: $dark-blue;
-        border: 1px solid #D1D5DB;
-        position: relative;
-        @extend .btn-reset, .btn;
-        &:hover {
-            background: #F9FAFB;
-        }
-        &-icon {
-            width: 20px;
-            height: 20px;
-            margin: -10px 0 0 -10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
-    }
-    &.is-active &__btn {
-        background: #F9FAFB;
-    }
+    position: relative;
     &__dropdown {
         background: #fff;
-        margin-top: 19px;
+        margin-top: 24px;
         font-size: 14px;
         position: absolute;
         top: 100%;
@@ -2072,6 +2152,196 @@
             color: $vk-social;
         }
         &-title {
+        }
+    }
+}
+
+.input-mask-el {
+    &__inner {
+        background: #fff;
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 11px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.55;
+        color: $darknes;
+        border: 1px solid $gray-light;
+        border-radius: 8px;
+        user-select: none;
+        outline: none;
+        transition: all .4s;
+        transition-property: border-color;
+        &:hover,
+        &:focus,
+        &:focus-within {
+            outline: none;
+            border-color: $gray-1;
+        }
+    }
+    &__title {
+        color: $gray-1;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+    &__input {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+        display: block;
+        line-height: inherit;
+        color: inherit;
+        flex-grow: 1;
+        border: none;
+        border-radius: 0;
+        outline: none;
+    }
+}
+
+.project-status {
+    background: #F3F4F6;
+    padding: 5px 6px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1;
+    color: $gray;
+    border-radius: 4px;
+    user-select: none;
+    &__icon {
+        width: 1.14285714286em;
+        height: 1.14285714286em;
+        margin-right: 0;
+        flex: 0 0 1.14285714286em;
+    }
+    &__title {
+        white-space: nowrap;
+    }
+}
+
+.tag {
+    font-size: 14px;
+    line-height: 1.3;
+    color: $blue;
+    transition: all .4s;
+    transition-property: box-shadow;
+    &:hover {
+        @media screen and (min-width: 1200px) {
+            box-shadow: inset 0 -1px 0 currentColor;
+        }
+    }
+}
+
+.btn-video {
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: $blue;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .4s;
+    transition-property: color;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+    }
+    &__title {
+        margin-right: 8px;
+        box-shadow: 0 1px 0 transparent;
+    }
+    &:hover &__title {
+        @media screen and (min-width: 1200px) {
+        }
+    }
+    &__icon {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 32px;
+        transition: all .34s;
+        transition-property: transform;
+    }
+    &:hover &__icon {
+        @media screen and (min-width: 1200px) {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.user-item {
+    text-align: center;
+    position: relative;
+    &__picture {
+        margin: 0 0 12px;
+        padding-bottom: 100%;
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+        @extend .img-cover;
+    }
+    &__avatar {
+    }
+    &__name {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.28;
+        a {
+            color: inherit;
+            &:hover {
+                @media screen and (min-width: 1200px) {
+                }
+            }
+            &:before {
+                width: 100%;
+                height: 100%;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+.header-block-info {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    &__link {
+        flex-shrink: 0;
+    }
+}
+
+.search-users {
+    &__header {
+        margin: 0 0 24px;
+    }
+    &__list {
+        margin: 0 -16px -32px;
+        display: flex;
+        flex-wrap: wrap;
+        &-col {
+            max-width: 11.1111111111%;
+            margin-bottom: 32px;
+            padding: 0 16px;
+            flex: 0 0 11.1111111111%;
         }
     }
 }

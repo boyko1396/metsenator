@@ -97,7 +97,7 @@
             <form class="settings-inner-form settings-profile-form"> 
               <div class="input-group input-group-524">
                 <div class="input">
-                  <label for="#profile-name">Имя *</label>
+                  <label for="#profile-name">Имя <span>*</span></label>
                   <input id="profile-name" type="text" name="#profile-name">
                 </div>
                 <div class="input">
@@ -122,7 +122,12 @@
                 <div class="input">
                   <label for="#profile-web">Адрес страницы</label>
                   <p>Придумайте короткий URL-адрес вашей страницы. Может содержать латинские буквы, цифры, дефисы и подчёркивания.</p>
-                  <input id="profile-web" type="text" name="#profile-web">
+                  <div class="input-mask-el">
+                    <div class="input-mask-el__inner">
+                      <div class="input-mask-el__title">http://uppora.org/</div>
+                      <input class="input-mask-el__input" type="text" name="#profile-web">
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="settings-inner-form-group">
@@ -339,6 +344,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

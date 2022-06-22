@@ -103,16 +103,38 @@
                 <div class="settings-inner-form-label">Пароль </div>
                 <div class="settings-inner-form-changepass"><span>Обновлен 2 дня назад&nbsp;</span><span class="settings-inner-form-changepass-link">Изменить</span></div>
                 <div class="settings-inner-form-group-wrap">
-                  <div class="input-group">
+                  <div class="input-group input-group--mb-sm">
                     <div class="input">
-                      <label for="#profile-password-curr">Текущий пароль *</label>
-                      <input id="profile-password-curr" type="password" name="#profile-password-curr">
-                      <div class="input-view-toggle"><span class="input-view-toggle-icon" style="background-image: url(img/no-view.svg)"></span><span class="input-view-toggle-icon" style="background-image: url(img/view.svg)"></span></div>
+                      <div class="input-block input-block--label-size-sm">
+                        <label class="input-block__label" for="profile-password-new"><span class="input-block__label-name">Пароль от аккаунта Uppora</span></label>
+                        <div class="input-block__el-container">
+                          <div class="js-input-password-switch input-block__el-icon-wrapper input-block__el-icon-wrapper--position-right">
+                            <svg class="u-icon input-block__el-icon">
+                              <use xlink:href="img/sprite.svg#view-off"></use>
+                            </svg>
+                            <svg class="u-icon input-block__el-icon">
+                              <use xlink:href="img/sprite.svg#view-on"></use>
+                            </svg>
+                          </div>
+                          <input class="input-el input-block__el" type="password" name="#profile-password-new" required value="" id="profile-password-new">
+                        </div>
+                      </div>
                     </div>
                     <div class="input">
-                      <label for="#profile-password-new">Новый пароль (минимум 8 символов) *</label>
-                      <input id="profile-password-new" type="password" name="#profile-password-new">
-                      <div class="input-view-toggle"></div>
+                      <div class="input-block input-block--label-size-sm">
+                        <label class="input-block__label" for="profile-password-new-repeat"><span class="input-block__label-name">Новый пароль (минимум 8 символов)</span></label>
+                        <div class="input-block__el-container">
+                          <div class="js-input-password-switch input-block__el-icon-wrapper input-block__el-icon-wrapper--position-right">
+                            <svg class="u-icon input-block__el-icon">
+                              <use xlink:href="img/sprite.svg#view-off"></use>
+                            </svg>
+                            <svg class="u-icon input-block__el-icon">
+                              <use xlink:href="img/sprite.svg#view-on"></use>
+                            </svg>
+                          </div>
+                          <input class="input-el input-block__el" type="password" name="#profile-password-new-repeat" required value="" id="profile-password-new-repeat">
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="settings-inner-form-buttons">
@@ -348,6 +370,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/settings-profile.js"> </script>
   </body>

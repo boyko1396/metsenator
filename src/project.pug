@@ -13,10 +13,14 @@ html(lang='ru')
                     .project-header-img
                         img(src="img/project-ava.jpg", alt="")
                     .project-header-block 
-                        .project-header-ttl Опыт развития форм деятельности
+                        .project-header-ttl.verification-checked Опыт развития форм деятельности
                         .project-header-subs.header-info-subs 
                             span.project-header-subs-num.header-info-subs-num 270&nbsp;
                             span подписчиков
+                        .project-status.project-header-status
+                            svg.u-icon.project-status__icon
+                                use(xlink:href="img/sprite.svg#lock")
+                            .project-status__title Закрытый
 
             section.project-main
                 .container 
@@ -60,11 +64,15 @@ html(lang='ru')
                                 .project-tabs-tab.mobile
                                     span Ещё
                         .l-project-tabs-buttons
-                            a(href="#").btn.btn-trp.btn--size-lt.l-project-tabs-buttons__item Подписаться
+                            button(type="button").btn-action-simple.l-project-tabs-buttons__item
+                                svg.u-icon.btn-action-simple__icon
+                                    use(xlink:href="img/sprite.svg#bookmarks")
+                                span.btn-action-simple__title В закладки
                             .share-el.l-project-tabs-buttons__item
-                                button(type="button").js-share-btn.share-el__btn
-                                    svg.u-icon.share-el__btn-icon
+                                button(type="button").js-share-btn.btn-action-simple.share-el__btn
+                                    svg.u-icon.btn-action-simple__icon
                                         use(xlink:href="img/sprite.svg#share")
+                                    span.btn-action-simple__title Поделиться
                                 .share-el__dropdown
                                     .share-el__dropdown-body
                                         button(type="button").share-el__item.share-el__item--vk
@@ -89,6 +97,7 @@ html(lang='ru')
                                         .share-el__dropdown-qrcode-body
                                             img(src="img/qrcode.svg")
                                         a(href="https://www.google.com/", target="_blank").btn.btn-trp.btn--size-lt.share-el__dropdown-qrcode-btn Скачать
+                            a(href="#").btn.btn-trp.btn--size-lt.l-project-tabs-buttons__item Подписаться
 
             section.project-content 
                 .container
@@ -101,6 +110,18 @@ html(lang='ru')
                             .project-content-text
                                 p Российская специфика традиционно нейтрализует эмпирический рекламоноситель. Целевая аудитория определяет из ряда вон выходящий SWOT-анализ, не считаясь с затратами. Партисипативное планирование директивно переворачивает креативный пак-шот. В рамках концепции Акоффа и Стэка, соц-дем характеристика аудитории директивно масштабирует связанный принцип восприятия. Имиджевая реклама, не меняя концепции, изложенной выше, усиливает диктат потребителя. Потребление однородно тормозит баинг и селлинг, опираясь на опыт коллег.
                                 p Бизнес-план неверно уравновешивает принцип восприятия, опираясь на опыт западных коллег. Узнавание бренда порождает межличностный рейтинг. Инструмент маркетинга продуцирует принцип восприятия. Рекламоноситель парадоксально искажает из ряда вон выходящий сегмент рынка.
+                            .project-content-tags
+                                a(href="#").tag.project-content-tags__item #концепция
+                                a(href="#").tag.project-content-tags__item #специфика
+                                a(href="#").tag.project-content-tags__item #восприятие
+                                a(href="#").tag.project-content-tags__item #потребление
+                                a(href="#").tag.project-content-tags__item #планирование
+                            .rating-vote.project-content-rating
+                                button(type="button").btn-vote.btn-vote--like.rating-vote__btn
+                                    img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
+                                .rating-vote__count 212
+                                button(type="button").btn-vote.btn-vote--dislike.rating-vote__btn
+                                    img(src="img/arrow-rating.svg").svg-inline.btn-vote__icon
 
                             form.comments.project-content-comments
                                 .comments-ttl Комментарии

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Меценатор</title>
+    <!--link(rel='icon', href='favicon.ico')-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-large header__container">
+        <div class="header__logo"><a class="header__logo-link" href="/"><img src="img/logo.svg" alt="Uppora"></a><a class="header__logo-beta" href="http://uppora.org/users/1/projects/7/news_posts/5">beta</a></div>
+        <div class="header__menu">
+          <nav class="header-nav header__nav" role="navigation">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">О платформе</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Проекты</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Авторам</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">СМИ о нас</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Поддержка</a></li>
+            </ul>
+          </nav>
+          <button class="js-header-search btn-action header__btn-search" type="button">
+            <svg class="u-icon btn-action__icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <form class="header-search header__search" action="#">
+            <input class="input-el header-search__input" type="search" name="search" placeholder="Поиск…">
+            <button class="js-header-search btn-close header-search__close" type="button">
+              <svg class="u-icon btn-close__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div><a class="btn-action header__btn-notification" href="#">
+          <svg class="u-icon btn-action__icon">
+            <use xlink:href="img/sprite.svg#notification"></use>
+          </svg></a><a class="btn btn-trp btn--size-lt header__btn-create-project" href="#">Создать проект</a>
+        <div class="header__profile">
+          <div class="header__profile-header">
+            <picture class="js-header-dropdown-profile img-cover header__profile-avatar"><img src="img/person.png" alt=""></picture>
+          </div>
+          <div class="profile-dropdown header__profile-dropdown">
+            <div class="profile-dropdown__user-list">
+              <div class="user-profile user-profile--is-active profile-dropdown__user-list-item">
+                <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+                <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Илья Панов</a>
+                  <div class="text-overflow user-profile__content-email">email@website.com</div>
+                </div>
+                <div class="user-profile__icon-wrap">
+                  <svg class="u-icon user-profile__icon user-profile__icon--active">
+                    <use xlink:href="img/sprite.svg#checked"></use>
+                  </svg>
+                  <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="user-profile profile-dropdown__user-list-item">
+                <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+                <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Александр Смирнов</a>
+                  <div class="text-overflow user-profile__content-email">email@site.com</div>
+                </div>
+                <div class="user-profile__icon-wrap">
+                  <svg class="u-icon user-profile__icon user-profile__icon--active">
+                    <use xlink:href="img/sprite.svg#checked"></use>
+                  </svg>
+                  <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="profile-dropdown__nav-wrap">
+              <ul class="profile-dropdown__nav">
+                <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Профиль</a></li>
+                <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Настройки</a></li>
+              </ul>
+              <ul class="profile-dropdown__nav">
+                <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Добавить аккаунт</a></li>
+                <li class="profile-dropdown__nav-item"><a class="profile-dropdown__nav-link" href="#">Выйти</a></li>
+              </ul>
+            </div>
+            <div class="js-header-dropdown-profile profile-dropdown__overlay"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu-mobile header__menu-mobile">
+        <div class="header-menu-mobile__inner">
+          <div class="header-menu-mobile__user-list">
+            <div class="user-profile user-profile--is-active header-menu-mobile__user-list-item">
+              <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+              <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Илья Панов</a>
+                <div class="text-overflow user-profile__content-email">email@website.com</div>
+              </div>
+              <div class="user-profile__icon-wrap">
+                <svg class="u-icon user-profile__icon user-profile__icon--active">
+                  <use xlink:href="img/sprite.svg#checked"></use>
+                </svg>
+                <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="user-profile header-menu-mobile__user-list-item">
+              <picture class="img-cover user-profile__avatar"><img src="img/person.png" alt=""></picture>
+              <div class="user-profile__content"><a class="text-overflow user-profile__content-name" href="#">Александр Смирнов</a>
+                <div class="text-overflow user-profile__content-email">email@site.com</div>
+              </div>
+              <div class="user-profile__icon-wrap">
+                <svg class="u-icon user-profile__icon user-profile__icon--active">
+                  <use xlink:href="img/sprite.svg#checked"></use>
+                </svg>
+                <svg class="u-icon user-profile__icon user-profile__icon--arrow">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu-mobile__nav-list">
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Профиль</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Настройки</a></li>
+            </ul>
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">О платформе</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Проекты</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">СМИ о нас</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Поддержка</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Ответы на вопросы</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link header-menu-mobile__nav-link--accent" href="#">Создать проект
+                  <svg class="u-icon header-menu-mobile__nav-link-plus">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg></a></li>
+            </ul>
+            <ul class="header-menu-mobile__nav">
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Добавить аккаунт</a></li>
+              <li class="header-menu-mobile__nav-item"><a class="header-menu-mobile__nav-link" href="#">Выйти</a></li>
+            </ul>
+          </div>
+          <div class="js-language-select language-site header-menu-mobile__language">
+            <div class="language-site__current">
+              <div class="language-site__current-title">Русский</div>
+              <svg class="u-icon language-site__current-icon">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+            <div class="language-site__dropdown"><a class="language-site__link" href="#">English</a></div>
+          </div>
+          <div class="header-menu-mobile__footer"><a class="header-menu-mobile__footer-link" href="#">Правовые документы</a>
+            <div class="header-menu-mobile__footer-copyright">© 2022 Uppora</div>
+          </div>
+        </div>
+      </div>
+      <div class="js-header-menu-mobile header__overlay-mobile"></div>
+    </header>
+    <main class="project-settings">
+      <div class="container project-settings__container">
+        <aside class="project-settings__aside">
+          <div class="project-settings__aside-pager"><a class="pager-link pager-link--prev project-settings__aside-pager-link" href="#">
+              <div class="pager-link__icon" style="background-image: url(img/pager-link-arrow.svg)"></div>Назад</a>
+            <div class="project-settings__aside-pager-title">Управление проектом</div>
+          </div>
+          <div class="project-tip project-settings__aside-project-tip">
+            <picture class="img-cover project-tip__picture"><img class="project-tip__img" src="img/project-ava.jpg" alt="Опыт развития форм деятельности"></picture>
+            <div class="project-tip__content">
+              <div class="text-overflow project-tip__name">Опыт развития форм деятельности</div><a class="project-tip__prev-link" href="#">вернуться к проекту</a>
+            </div>
+          </div>
+          <nav class="nav-step nav-step--mobile-scroll project-settings__aside-nav" role="navigation">
+            <ul class="nav-step__list">
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-1.html">Донаты</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-2.html">Основное</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-3.html">Изображения</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-4.html">Описание</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-5.html">Ссылки</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-7.html">Подписчики</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-8.html">Верификация</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing is-active" href="project-settings-6.html">Виджеты</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-9.html">Статистика</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="project-settings__main">
+          <h1 class="project-settings__main-title">Виджеты</h1>
+          <div class="project-settings__main-widgets-list">
+            <div class="widgets-item widgets-item--btn project-settings__main-widgets-item">
+              <div class="widgets-item__title">Кнопка поддержки</div>
+              <div class="widgets-item__view">
+                <div class="widgets-item__subtitle">Предпросмотр</div>
+                <div class="widgets-item__view-body"><a class="widgets-btn widgets-btn--size-md" href="#">
+                    <div class="widgets-btn__icon-wrap"><img class="widgets-btn__icon" src="img/widgets-btn-icon.svg"></div>
+                    <div class="widgets-btn__title">Поддержать проект</div></a></div>
+              </div>
+              <div class="widgets-item__code-wrap">
+                <div class="widgets-item__subtitle">Код для вставки</div>
+                <pre class="code-area widgets-item__code"><code class="code-area__body">html&gt;&lt;html class=&quot;i-ua_js_no i-ua_css_standart i-ua_browser_chrome i-ua_browser-engine_webkit m-stat i-ua_browser_desktop i-ua_platform_windows&quot; lang=&quot;ru&quot;&gt;&lt;head xmlns:og=&quot;http://ogp.me/ns#&quot;&gt;&lt;meta http-equiv='Content-Type' content='text/html;charset=UTF-8'&gt;</code></pre>
+              </div>
+            </div>
+            <div class="widgets-item widgets-item--card-small project-settings__main-widgets-item">
+              <div class="widgets-item__title">Карточка проекта</div>
+              <div class="widgets-item__view">
+                <div class="widgets-item__subtitle">Предпросмотр</div>
+                <div class="widgets-item__view-body">
+                  <div class="widgets-card">
+                    <div class="widgets-card__inner">
+                      <header class="widgets-card__header">
+                        <picture class="widgets-card__picture"><img class="widgets-card__img" src="img/project-settings-logo.jpg"></picture>
+                        <div class="widgets-card__header-content">
+                          <div class="text-overflow widgets-card__header-title">Опыт развития форм деятельностиОпыт развития форм деятельностиОпыт развития форм деятельностиОпыт развития форм деятельности</div>
+                          <div class="text-overflow widgets-card__header-subtitle">270 подписчиков</div>
+                        </div>
+                      </header>
+                      <div class="widgets-card__text">Равным образом постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Таким образом реализация намеченных плановых заданий позволяет оценить значение условий, существенных, финансовых и административных.</div><a class="widgets-btn widgets-btn--size-sm widgets-card__btn" href="#">
+                        <div class="widgets-btn__icon-wrap"><img class="widgets-btn__icon" src="img/widgets-btn-icon.svg"></div>
+                        <div class="widgets-btn__title">Поддержать проект</div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widgets-item__code-wrap">
+                <div class="widgets-item__subtitle">Код для вставки</div>
+                <pre class="code-area widgets-item__code"><code class="code-area__body">html&gt;&lt;html class=&quot;i-ua_js_no i-ua_css_standart i-ua_browser_chrome i-ua_browser-engine_webkit m-stat i-ua_browser_desktop i-ua_platform_windows&quot; lang=&quot;ru&quot;&gt;&lt;head xmlns:og=&quot;http://ogp.me/ns#&quot;&gt;&lt;meta http-equiv='Content-Type' content='text/html;charset=UTF-8'&gt;</code></pre>
+              </div>
+            </div>
+            <div class="widgets-item widgets-item--card-big project-settings__main-widgets-item">
+              <div class="widgets-item__title">Большая карточка проекта</div>
+              <div class="widgets-item__view">
+                <div class="widgets-item__subtitle">Предпросмотр</div>
+                <div class="widgets-item__view-body">
+                  <div class="widgets-card">
+                    <div class="widgets-card__inner">
+                      <header class="widgets-card__header">
+                        <picture class="widgets-card__picture"><img class="widgets-card__img" src="img/project-settings-logo.jpg"></picture>
+                        <div class="widgets-card__header-content">
+                          <div class="text-overflow widgets-card__header-title">Опыт развития форм деятельности</div>
+                          <div class="text-overflow widgets-card__header-subtitle">270 подписчиков</div>
+                        </div>
+                      </header>
+                      <picture class="widgets-card__poster"><img class="widgets-card__img" src="img/project-settings-img.jpg"></picture>
+                      <div class="widgets-card__text">Равным образом постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Таким образом реализация намеченных плановых</div><a class="widgets-btn widgets-btn--size-sm widgets-card__btn" href="#">
+                        <div class="widgets-btn__icon-wrap"><img class="widgets-btn__icon" src="img/widgets-btn-icon.svg"></div>
+                        <div class="widgets-btn__title">Поддержать проект</div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widgets-item__code-wrap">
+                <div class="widgets-item__subtitle">Код для вставки</div>
+                <pre class="code-area widgets-item__code"><code class="code-area__body">html&gt;&lt;html class=&quot;i-ua_js_no i-ua_css_standart i-ua_browser_chrome i-ua_browser-engine_webkit m-stat i-ua_browser_desktop i-ua_platform_windows&quot; lang=&quot;ru&quot;&gt;&lt;head xmlns:og=&quot;http://ogp.me/ns#&quot;&gt;&lt;meta http-equiv='Content-Type' content='text/html;charset=UTF-8'&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container-large">
+        <div class="footer-wrap">
+          <div class="footer-block"> 
+            <div class="footer-copyrights">© 2022 Uppora</div>
+            <div class="footer-divider"></div><a class="footer-about" href="#">О платформе	</a>
+          </div>
+          <div class="footer-block">
+            <div class="footer-lang">Русский</div>
+            <div class="footer-divider"></div><a class="footer-docs" href="#">Правовые документы</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup-profile">
+      <div class="popup-profile-wrap">
+        <div class="popup-profile-section">
+          <div class="popup-profile-user"> 
+            <div class="popup-profile-user-img"> <img src="img/person.png" alt=""></div>
+            <div class="popup-profile-user-info"> 
+              <div class="popup-profile-user-name">Илья Панов</div>
+              <div class="popup-profile-user-email">email@website.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-profile-section"> <a class="popup-profile-link">Профиль</a><a class="popup-profile-link">Настройки</a><a class="popup-profile-link">Служба поддержки</a><a class="popup-profile-link mobile">О платформе</a><a class="popup-profile-link mobile green">Создать проект +</a></div>
+        <div class="popup-profile-section"><a class="popup-profile-link">Добавить аккаунт</a><a class="popup-profile-link">Выйти</a></div>
+        <div class="popup-profile-section popup-profile-section-bottom">
+          <div class="popup-profile-lang">Русский</div>
+          <div class="popup-profile-footer"> <a class="popup-profile-docs">Правовые документы</a>
+            <div class="popup-profile-copyrights">© 2022 Uppora</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-subs"> 
+      <div class="popup-subs-wrap">
+        <div class="popup-subs-header">
+          <div class="popup-subs-back"><img src="img/back.svg" alt=""></div>
+          <div class="popup-subs-count"> <span class="popup-subs-count-num">270&nbsp;</span><span>подписчиков</span></div>
+          <div class="popup-subs-close"><img src="img/close.svg" alt=""></div>
+        </div>
+        <div class="popup-subs-list"> 
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person.png" alt=""></div>
+              <div class="popup-subs-user-name">Иван Ногузадерищенский</div></a>
+            <div class="popup-subs-user-btn btn btn-green">Подписаться    </div>
+          </div>
+          <div class="popup-subs-user"><a class="popup-subs-user-info" href="#">
+              <div class="popup-subs-user-photo"><img src="img/person-1.png" alt=""></div>
+              <div class="popup-subs-user-name">Алексей Иванов</div></a>
+            <div class="popup-subs-user-btn btn btn-white">Вы подписаны    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-cover"> 
+      <form class="popup-cover-wrap">
+        <div class="popup-cover-header">
+          <div class="popup-cover-ttl">Обложка профиля</div>
+          <div class="popup-cover-buttons"> 
+            <div class="popup-cover-delete">Удалить</div>
+            <div class="popup-cover-input">
+              <input id="cover-input" type="file" name="cover-input">
+              <label class="btn btn-white" for="cover-input">Загрузить</label>
+            </div>
+          </div>
+          <div class="popup-cover-close"><img src="img/close.svg" alt=""></div>
+        </div>
+        <div class="popup-cover-grid">
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/" checked>
+            <div class="popup-cover-grid-item__inner"><img src="img/cover1.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover2.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover3.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover4.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover5.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover6.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover7.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover8.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover9.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover10.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover11.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover12.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover1.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover2.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover3.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover4.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover5.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover6.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover7.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover8.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover9.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover10.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover11.jpg" alt=""></div>
+          </label>
+          <label class="popup-cover-grid-item">
+            <input class="popup-cover-grid-item__input" type="radio" name="profile-background" value="https://www.google.com/">
+            <div class="popup-cover-grid-item__inner"><img src="img/cover12.jpg" alt=""></div>
+          </label>
+        </div>
+        <form class="popup-cover-footer"> 
+          <div class="popup-cover-delete">Удалить</div>
+          <div class="popup-cover-input">
+            <input id="cover-input" type="file" name="cover-input">
+            <label class="btn btn-white" for="cover-input">Загрузить</label>
+          </div>
+        </form>
+      </form>
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

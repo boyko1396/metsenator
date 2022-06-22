@@ -34,23 +34,32 @@ html(lang='ru')
                             li.nav-step__item
                                 a(href="project-settings-5.html").nav-step__link Ссылки
                             li.nav-step__item
-                                a(href="project-settings-6.html").nav-step__link Виджеты
-                            li.nav-step__item
                                 a(href="project-settings-7.html").nav-step__link Подписчики
+                            li.nav-step__item
+                                a(href="project-settings-8.html").nav-step__link Верификация
+                            li.nav-step__item
+                                a(href="project-settings-6.html").nav-step__link.is-developing Виджеты
+                            li.nav-step__item
+                                a(href="project-settings-9.html").nav-step__link.is-developing Статистика
                 section.project-settings__main
                     h1.project-settings__main-title Основное
                     form(action="#").project-settings__main-form
                         .input-block.n-new-project__main-form__area-item
                             label(for="n-new-project").input-block__label
-                                span.input-block__label-name Название проекта *
+                                span.input-block__label-name Название проекта <span>*<span>
                             input(type="text", name="", id="n-new-project", value="").input-el.input-block__el
                         .input-block.n-new-project__main-form__area-item
                             label(for="n-new-project-category").input-block__label
-                                span.input-block__label-name Категория *
-                            select(name="", id="n-new-project-category").input-el.input-el--select.input-block__el(style="background-image: url(../img/select-arrow.svg)")
-                                option(value="Выберите", disabled, selected) Выберите
-                                option(value="Выбор 1") Выбор 1
-                                option(value="Выбор 2") Выбор 2
+                                span.input-block__label-name Категория <span>*<span>
+                            select(name="", id="n-new-project-category").js-select-init.input-el.input-el--select.input-block__el
+                                option(value="Искусство", selected) Искусство
+                                option(value="Искусство 1") Искусство 1
+                                option(value="Искусство 2") Искусство 2
+                                option(value="Искусство 3") Искусство 3
+                                option(value="Искусство 4") Искусство 4
+                                option(value="Искусство 5") Искусство 5
+                                option(value="Искусство 6") Искусство 6
+                                option(value="Искусство 7") Искусство 7
                         .input-block.n-new-project__main-form__area-item
                             label(for="n-new-project-city").input-block__label
                                 span.input-block__label-name Город

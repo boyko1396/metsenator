@@ -7,202 +7,113 @@ html(lang='ru')
 
         include includes/header.pug
 
-        main.home
-            section.home-main 
-                .container-large 
-                    .home-main-grid
-                        .home-main-info
-                            .home-main-info-ttl Аппора — платформа финансовой поддержки и&nbsp;общения
-                            .home-main-info-subttl Для тех кто донатит и тех, кто собирает донаты.<br>Поддержите движение вверх интересных людей и проектов.
-                            .home-main-buttons
-                                a.home-main-registration.btn.btn-green(href="#") Стать Аппорой
-                                a.home-main-about(href="#") Подробнее о проекте
-                        .home-main-video
-                            .home-main-video-wrap
-                                iframe(src="https://www.youtube.com/embed/X8Z8okhkjv8", frameborder="0") 
-                        .home-main-bank
-                            .home-main-bank-logo
-                                img(src="img/tinkoff.png", alt="")
-                            .home-main-bank-desc Безопасность и надежность всех финансовых операций гарантирует Тинькофф Банк
+        .l-home
+            section.l-home-intro
+                .container-large.l-home-intro__container
+                    .l-home-intro__row
+                        .l-home-intro__content
+                            h1.l-home-intro__content-title <span class="text-accent">Платформа донатов</span> с личным профилем и без подписок
+                            .l-home-intro__content-btns
+                                a(href="#").btn.btn--size-md.btn-green-accent.l-home-intro__content-btns-item Регистрация
+                                a(href="#").js-home-video-btn.btn-video.l-home-intro__content-btns-item
+                                    .btn-video__title Посмотреть видео
+                                    svg.u-icon.btn-video__icon
+                                        use(xlink:href="img/sprite.svg#btn-play")
+                            .l-home-intro__content-footer
+                                p.l-home-intro__content-desctiption * Донат – безвозмездная денежная поддержка того, что вам нравится
+                                .l-home-intro__content-tinkoff
+                                    .l-home-intro__content-tinkoff-text Безопасность и надежность всех финансовых операций гарантирует Тинькофф Банк
+                                    img(src="img/tinkoff-logo.svg", alt="").l-home-intro__content-tinkoff-logo
+                        .l-home-intro__media
+                            picture.l-home-intro__picture
+                                <source srcset="img/home-hero.jpg 1x, img/home-hero@2x.jpg 2x">
+                                img(src="img/home-hero.jpg", alt="Платформа донатов с личным профилем и без подписок").l-home-intro__img
+            main.l-home-main
+                .container-large.l-home-main__container
+                    article.l-benefits-card.l-benefits-card--1.l-benefits-card--theme-gray.l-benefits-card--direction-normal.l-home-main__benefits-card
+                        h2.l-home-main__title Отличия Аппоры от других сервисов пожертвований
+                        .l-benefits-card__inner
+                            .l-benefits-card__col.l-benefits-card__col--content
+                                .l-benefits-card__content
+                                    .l-benefits-card__content-counter 1
+                                    h3.l-benefits-card__content-title.l-benefits-card__content-title--size-md
+                                        span Простота и удобство
+                                    .content.l-benefits-card__content-text
+                                        p На похожих сервисах Patreon или Boosty, чтобы поддержать проект необходима обязательная регистрация. Но на Аппоре отправить донат так же просто, как поддержать уличного музыканта. Достаточно перейти по ссылке из соцсетей или навести камеру на QR-код и ввести сумму.
+                            .l-benefits-card__col.l-benefits-card__col--picture
+                                picture.l-benefits-card__picture
+                                    <source srcset="img/benefits-card-hero-1.png 1x, img/benefits-card-hero-1@2x.png 2x">
+                                    img(src="img/benefits-card-hero-1.png", alt="Простота и удобство").l-benefits-card__img
+                    article.l-benefits-card.l-benefits-card--2.l-benefits-card--theme-gray.l-benefits-card--direction-reverse.l-home-main__benefits-card
+                        .l-benefits-card__inner
+                            .l-benefits-card__col.l-benefits-card__col--content
+                                .l-benefits-card__content
+                                    .l-benefits-card__content-counter 2
+                                    h3.l-benefits-card__content-title.l-benefits-card__content-title--size-md
+                                        span Без обязательств
+                                    .content.l-benefits-card__content-text
+                                        p На большинстве сервисах донатов поддержать проект можно только оформив подписку. На Аппоре поддержать проект можно единоразово, без обязательных ежемесячных платежей. Как в кафе, оставляя чаевые за хороший сервис вы не обязуетесь делать это регулярно.
+                            .l-benefits-card__col.l-benefits-card__col--picture
+                                picture.l-benefits-card__picture
+                                    <source srcset="img/benefits-card-hero-2.png 1x, img/benefits-card-hero-2@2x.png 2x">
+                                    img(src="img/benefits-card-hero-2.png", alt="Без обязательств").l-benefits-card__img
+                    article.l-benefits-appeal.l-home-main__benefits-appeal
+                        .l-benefits-appeal__inner
+                            .l-benefits-appeal__col.l-benefits-appeal__col--content
+                                .l-benefits-appeal__content
+                                    h3.l-benefits-appeal__content-title 
+                                        span Зачем вообще кому-то донатить?
+                                    .l-benefits-appeal__content-text
+                                        p Научные исследования показали, что когда мы тратим деньги на других, то получаем больше счастья, чем когда тратим их на себя. Помогая другим, мы помогаем себе становиться счастливее
+                                    .l-benefits-appeal__content-author Майкл Нортон<br>Профессор Гарварда
+                                    a(href="#").l-benefits-appeal__content-moore Подробнее об исследовании
+                            .l-benefits-appeal__col.l-benefits-appeal__col--picture
+                                picture.l-benefits-appeal__picture
+                                    <source srcset="img/benefits-appeal-hero-1.jpg 1x, img/benefits-appeal-hero-1@2x.jpg 2x">
+                                    img(src="img/benefits-appeal-hero-1.jpg", alt="Зачем вообще кому-то донатить?").l-benefits-appeal__img
+                    article.l-benefits-card.l-benefits-card--3.l-benefits-card--direction-reverse.l-benefits-card--theme-gray.l-home-main__benefits-card
+                        .l-benefits-card__inner
+                            .l-benefits-card__col.l-benefits-card__col--content
+                                .l-benefits-card__content
+                                    .l-benefits-card__content-counter 3
+                                    h3.l-benefits-card__content-title.l-benefits-card__content-title--size-md
+                                        span Прозрачность
+                                    .content.l-benefits-card__content-text
+                                        p Все существующие сервисы созданы для тех, кто собирает средства. Аппора, в первую очередь, ориентирована на тех, кто совершает пожертвования. В личном профиле собрана информация о всех ваших донатах, которой вы можете поделиться с другими либо наоборот сделать скрытой от всех.
+                            .l-benefits-card__col.l-benefits-card__col--picture
+                                picture.l-benefits-card__picture
+                                    <source srcset="img/benefits-card-hero-3.png 1x, img/benefits-card-hero-3@2x.png 2x">
+                                    img(src="img/benefits-card-hero-3.png", alt="Прозрачность").l-benefits-card__img
+                    article.l-benefits-card.l-benefits-card--4.l-benefits-card--direction-normal.l-benefits-card--theme-gray.l-home-main__benefits-card
+                        .l-benefits-card__inner
+                            .l-benefits-card__col.l-benefits-card__col--content
+                                .l-benefits-card__content
+                                    .l-benefits-card__content-counter 4
+                                    h3.l-benefits-card__content-title.l-benefits-card__content-title--size-md
+                                        span Благодарность автору
+                                    .content.l-benefits-card__content-text
+                                        p На сервисах Kickstarter, Boomstarter и Planeta, собирают фиксированную сумму, на реализацию идеи. На Аппоре авторы получают поддержку как благодарность за то, что уже создают. Музыканты на улице уже играют и дарят настроение, блогер уже создает контент, а приют для животных – заботится о животных.  Вы помогаете им развиваться и двигаться вверх.
+                            .l-benefits-card__col.l-benefits-card__col--picture
+                                picture.l-benefits-card__picture
+                                    <source srcset="img/benefits-card-hero-4.png 1x, img/benefits-card-hero-4@2x.png 2x">
+                                    img(src="img/benefits-card-hero-4.png", alt="Благодарность автору").l-benefits-card__img
+                    article.l-benefits-card.l-benefits-card--5.l-benefits-card--direction-reverse.l-home-main__benefits-card
+                        .l-benefits-card__inner
+                            .l-benefits-card__col.l-benefits-card__col--content
+                                .l-benefits-card__content
+                                    h3.l-benefits-card__content-title.l-benefits-card__content-title--size-sm Ваша помощь не останется незамеченной
+                                    .content.l-benefits-card__content-text
+                                        p Аппора – сервис в котором помогать просто и безопасно. Ваши донаты удобно организованы как в самом проекте, так и в личном кабинете.
+                                        p Поддерживайте любимых авторов и становитесь счастливее. Важна не сумма доната, а их регулярность.
+                            .l-benefits-card__col.l-benefits-card__col--picture
+                                picture.l-benefits-card__picture
+                                    <source srcset="img/benefits-card-hero-5.png 1x, img/benefits-card-hero-5@2x.png 2x">
+                                    img(src="img/benefits-card-hero-5.png", alt="Ваша помощь не останется незамеченной").l-benefits-card__img
+                    section.l-benefits-join.l-home-main__benefits-join
+                        .l-benefits-join__inner
+                            h3.l-benefits-join__title Знаете о проекте, которому нужна поддержка?
+                            a(href="#").btn.btn--size-md.btn-dark.l-benefits-join__btn Рассказать о проекте
 
-            section.home-section.home-easy
-                .container-large
-                    .home-section-head
-                        .home-section-ttl Удобно и безопасно
-                .home-easy-wrap
-                    .home-easy-item
-                        .home-easy-item-icon
-                            img(src="img/home-cards.svg", alt="")
-                        .home-easy-item-ttl Никаких ограничений
-                        .home-easy-item-text Наше основное отличие – отсутствие каких либо ограничений на сумму которую вы можете собрать за проект
-                    .home-easy-item
-                        .home-easy-item-icon
-                            img(src="img/home-lock.svg", alt="")
-                        .home-easy-item-ttl Защита платежей
-                        .home-easy-item-text Введите данные карты и отправьте донат в пару кликов. Тинькофф банк гарантирует безопасность платежей
-                    .home-easy-item
-                        .home-easy-item-icon
-                            img(src="img/home-circle.svg", alt="")
-                        .home-easy-item-ttl Без скрытых комиссий
-                        .home-easy-item-text Вы платите только банку за перевод и больше никаких сервисных сборов и платежей
-
-            section.home-how
-                .container-large
-                    .home-how-wrap
-                        .home-how-img
-                            img(src="img/post.jpg", alt="")
-                        .home-how-info
-                            .home-how-info-block
-                                .home-how-info-block-ttl Прозрачность
-                                .home-how-info-block-text Донатьте любому проекту или создайте свой. В профиле и карточке проекта сохраняется вся статистика донатов и сборов
-                            .home-how-info-block
-                                .home-how-info-block-ttl Открыто или анонимно
-                                .home-how-info-block-text Донатить анонимно или с гордостью делиться информацией в личном профиле – степень открытости выбираете именно вы
-                            .home-how-info-block
-                                .home-how-info-block-ttl Новый формат общения
-                                .home-how-info-block-text Вместе с донатом можно написать сообщение автору и получить ответ. Обратная связь не менее ценна, чем сам донат
-
-            section.home-section.home-projects
-                .container-large
-                    .home-section-head
-                        .home-section-ttl Проекты
-                        a.home-section-link(href="#") Смотреть все
-                
-                .home-projects-slider-container
-                    .home-projects-slider.swiper
-                        .home-projects-wrap.swiper-wrapper
-                            .home-projects-item.swiper-slide
-                                .home-projects-item-head
-                                    .home-projects-item-head-img
-                                        img(src="img/project-ava.jpg", alt="")
-                                    .home-projects-item-head-ttl Опыт развития разных форм деятельности
-                                .home-projects-item-img 
-                                    img(src="img/post.jpg", alt="")
-                                .home-projects-item-amount
-                                    span.home-projects-item-summ 5256
-                                    span &nbsp;₽
-                                    span &nbsp;собрано
-                                .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                .home-projects-item-info
-                                    .home-projects-item-date 2 недели назад
-                                    .home-projects-item-city
-                                        .home-projects-item-city-mark(style="background-image: url(../img/spot.svg)")
-                                        | Сургут
-                            .home-projects-item.swiper-slide
-                                .home-projects-item-head
-                                    .home-projects-item-head-img
-                                        img(src="img/project-ava.jpg", alt="")
-                                    .home-projects-item-head-ttl Опыт развития разных форм деятельности
-                                .home-projects-item-img 
-                                    img(src="img/post.jpg", alt="")
-                                .home-projects-item-amount
-                                    span.home-projects-item-summ 5256
-                                    span &nbsp;₽
-                                    span &nbsp;собрано
-                                .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                .home-projects-item-info
-                                    .home-projects-item-date 2 недели назад
-                                    .home-projects-item-city
-                                        .home-projects-item-city-mark(style="background-image: url(../img/spot.svg)")
-                                        | Сургут
-                            .home-projects-item.swiper-slide
-                                .home-projects-item-head
-                                    .home-projects-item-head-img
-                                        img(src="img/project-ava.jpg", alt="")
-                                    .home-projects-item-head-ttl Опыт развития разных форм деятельности
-                                .home-projects-item-img 
-                                    img(src="img/post.jpg", alt="")
-                                .home-projects-item-amount
-                                    span.home-projects-item-summ 5256
-                                    span &nbsp;₽
-                                    span &nbsp;собрано
-                                .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                .home-projects-item-info
-                                    .home-projects-item-date 2 недели назад
-                                    .home-projects-item-city
-                                        .home-projects-item-city-mark(style="background-image: url(../img/spot.svg)")
-                                        | Сургут
-                            .home-projects-item.swiper-slide
-                                .home-projects-item-head
-                                    .home-projects-item-head-img
-                                        img(src="img/project-ava.jpg", alt="")
-                                    .home-projects-item-head-ttl Опыт развития разных форм деятельности
-                                .home-projects-item-img 
-                                    img(src="img/post.jpg", alt="")
-                                .home-projects-item-amount
-                                    span.home-projects-item-summ 5256
-                                    span &nbsp;₽
-                                    span &nbsp;собрано
-                                .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                .home-projects-item-info
-                                    .home-projects-item-date 2 недели назад
-                                    .home-projects-item-city Сургут 
-                            .home-projects-item.swiper-slide
-                                .home-projects-item-head
-                                    .home-projects-item-head-img
-                                        img(src="img/project-ava.jpg", alt="")
-                                    .home-projects-item-head-ttl Опыт развития разных форм деятельности
-                                .home-projects-item-img 
-                                    img(src="img/post.jpg", alt="")
-                                .home-projects-item-amount
-                                    span.home-projects-item-summ 5256
-                                    span &nbsp;₽
-                                    span &nbsp;собрано
-                                .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                .home-projects-item-info
-                                    .home-projects-item-date 2 недели назад
-                                    .home-projects-item-city Сургут 
-                            .home-projects-item.swiper-slide
-                                .home-projects-item-head
-                                    .home-projects-item-head-img
-                                        img(src="img/project-ava.jpg", alt="")
-                                    .home-projects-item-head-ttl Опыт развития разных форм деятельности
-                                .home-projects-item-img 
-                                    img(src="img/post.jpg", alt="")
-                                .home-projects-item-amount
-                                    span.home-projects-item-summ 5256
-                                    span &nbsp;₽
-                                    span &nbsp;собрано
-                                .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                .home-projects-item-info
-                                    .home-projects-item-date 2 недели назад
-                                    .home-projects-item-city Сургут 
-                            .home-projects-item.swiper-slide
-                                .home-projects-item-head
-                                    .home-projects-item-head-img
-                                        img(src="img/project-ava.jpg", alt="")
-                                    .home-projects-item-head-ttl Опыт развития разных форм деятельности
-                                .home-projects-item-img 
-                                    img(src="img/post.jpg", alt="")
-                                .home-projects-item-amount
-                                    span.home-projects-item-summ 5256
-                                    span &nbsp;₽
-                                    span &nbsp;собрано
-                                .home-projects-item-text Потребительская культура требовальна к креативу. Инвестиция усиливает поведенческий таргетинг. Ценовая стратегия спонтанно программирует комплексный.
-                                .home-projects-item-info
-                                    .home-projects-item-date 2 недели назад
-                                    .home-projects-item-city Сургут 
-
-                    .home-projects-pagination.swiper-pagination 
-                    .home-projects-button-prev
-                        img(src="img/prev.svg", alt="")
-                    .home-projects-button-next
-                        img(src="img/next.svg", alt="")
-
-            section.home-interest 
-                .container-large
-                    .home-interest-inner(style="background-image: url(../img/u.png)")
-                        .home-interest-info
-                            .home-interest-info-ttl Есть интересный проект?
-                            .home-interest-info-subttl Предложите своей аудитории поддержать вас и получайте донаты и обратную связь
-                            .home-interest-buttons
-                                a.home-interest-create.btn.btn-green(href="#") Создать проект 
-                                a.home-interest-about(href="#") Узнать подробности 
-                        .home-interest-img
-                            img(src="img/cards.png", alt="")
-
-
-        
         include includes/footer-main.pug
 
         script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")

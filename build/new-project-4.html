@@ -92,12 +92,33 @@
           </div>
           <form class="n-new-project__main-form" action="#">
             <div class="input-block n-new-project__main-form__area-item">
-              <label class="input-block__label" for="n-new-project-cards-number"><span class="input-block__label-name">Карта *</span><span class="input-block__label-description">Введите номер карты, на которую будут выводиться донаты. Visa, Mastercard, Maestro, МИР</span>
-                <input class="input-el input-block__el" type="text" name="" id="n-new-project-cards-number" placeholder="XXXX XXXX XXXX XXXX">
+              <label class="input-block__label" for="n-new-project-cards-number"><span class="input-block__label-name">Карта <span>*</span></span><span class="input-block__label-description">Введите номер карты, на которую будут выводиться донаты. Visa, Mastercard, Maestro, МИР</span>
+                <input class="js-mask-card-number input-el input-block__el" type="text" name="" id="n-new-project-cards-number" placeholder="XXXX XXXX XXXX XXXX">
               </label>
             </div>
             <div class="input-block n-new-project__main-form__area-item">
-              <label class="input-block__label"><span class="input-block__label-name">Шаблоны донатов *</span><span class="input-block__label-description">Вы можете назначить шаблоны для быстрого ввода суммы доната пользователем (ручной ввод также будет доступен)</span></label>
+              <label class="input-block__label"><span class="input-block__label-name">Шаблоны донатов<span class="tooltip-donate input-block__label-tooltip">
+                    <svg class="js-tooltip-toggle u-icon tooltip-donate__icon">
+                      <use xlink:href="img/sprite.svg#question"></use>
+                    </svg>
+                    <div class="tooltip-donate__dropdown">
+                      <button class="js-tooltip-close btn-close tooltip-donate__dropdown-close" type="button" title="Close">
+                        <svg class="u-icon">
+                          <use xlink:href="img/sprite.svg#close"></use>
+                        </svg>
+                      </button>
+                      <div class="content tooltip-donate__dropdown-text">
+                        <p>Отображаются на странице оплаты в виде кнопок быстрого ввода суммы:</p>
+                      </div>
+                      <div class="tooltip-donate__dropdown-amount">500 ₽</div>
+                      <div class="donate-btn-list tooltip-donate__dropdown-donate-list">
+                        <div class="donate-btn-list__inner">
+                          <button class="donate-btn donate-btn-list__item" type="button">100 ₽</button>
+                          <button class="donate-btn donate-btn-list__item is-active" type="button">500 ₽</button>
+                          <button class="donate-btn donate-btn-list__item" type="button">1000 ₽</button>
+                        </div>
+                      </div>
+                    </div></span></span><span class="input-block__label-description">Вы можете назначить шаблоны для быстрого ввода суммы доната пользователем (ручной ввод также будет доступен)</span></label>
               <div class="input-block__template-cards">
                 <div class="input-block__template-cards-item input-block__template-cards-item--size-4">
                   <div class="template-card">
@@ -310,6 +331,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

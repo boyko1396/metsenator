@@ -348,6 +348,9 @@
             font-size: 30px;
             line-height: 1.35;
         }
+        &-developing {
+            margin-top: -15px;
+        }
         &-balance-alert {
             margin: 0 0 40px;
         }
@@ -386,6 +389,9 @@
             margin: 0 0 16px;
             font-weight: 500;
             font-size: 16px;
+            span {
+                color: $gray;
+            }
         }
         &-user-type {
             margin: 48px 0 58px;

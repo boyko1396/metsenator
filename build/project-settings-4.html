@@ -182,8 +182,10 @@
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-3.html">Изображения</a></li>
               <li class="nav-step__item"><a class="nav-step__link is-active" href="project-settings-4.html">Описание</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-5.html">Ссылки</a></li>
-              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-6.html">Виджеты</a></li>
               <li class="nav-step__item"><a class="nav-step__link" href="project-settings-7.html">Подписчики</a></li>
+              <li class="nav-step__item"><a class="nav-step__link" href="project-settings-8.html">Верификация</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-6.html">Виджеты</a></li>
+              <li class="nav-step__item"><a class="nav-step__link is-developing" href="project-settings-9.html">Статистика</a></li>
             </ul>
           </nav>
         </aside>
@@ -191,14 +193,14 @@
           <h1 class="project-settings__main-title">Описание</h1>
           <form class="project-settings__main-form" action="#">
             <div class="input-block n-new-project__main-form__area-new">
-              <label class="input-block__label" for="n-new-project-description"><span class="input-block__label-name">Краткое описание *</span><span class="input-block__label-description">Будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта</span></label>
+              <label class="input-block__label" for="n-new-project-description"><span class="input-block__label-name">Краткое описание <span>*</span></span><span class="input-block__label-description">Будет представлять карточку проекта в ленте рекомендаций, списках и на странице проекта</span></label>
               <div class="input-block__textarea-wrapper">
                 <textarea class="input-el input-el--textarea input-el--textarea-size-md input-block__el" type="text" name="" id="n-new-project-description" rows="" cols="" maxlength="160" placeholder="Максимум 160 символов с пробелами"></textarea>
                 <div class="input-block__textarea-counter">0/160</div>
               </div>
             </div>
             <div class="input-block n-new-project__main-form__area-new">
-              <label class="input-block__label" for="n-new-project-description"><span class="input-block__label-name">Полное описание *</span><span class="input-block__label-description">Расскажите, почему вы решили создать этот проект, как возникла идея и зачем вам нужна поддержка. Форматы для загружаемых изображений: JPEG, PNG, BMP или GIF</span></label>
+              <label class="input-block__label" for="n-new-project-description"><span class="input-block__label-name">Полное описание <span>*</span></span><span class="input-block__label-description">Расскажите, почему вы решили создать этот проект, как возникла идея и зачем вам нужна поддержка. Форматы для загружаемых изображений: JPEG, PNG, BMP или GIF</span></label>
               <div class="e-editor input-block__editor"><img class="e-editor__img" src="img/editor.jpg"></div>
             </div>
             <div class="group-btns n-new-project__main-form-btns">
@@ -391,6 +393,8 @@
       </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
