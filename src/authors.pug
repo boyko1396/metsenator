@@ -23,8 +23,8 @@ html(lang='ru')
                                     img(src="img/tinkoff-logo.svg", alt="Тинькофф банк").tinkoff-bank__logo
                                     .tinkoff-bank__description Безопасность и надежность всех финансовых операций гарантирует Тинькофф&nbsp;Банк
                         .row__col.row__col--6.authors-intro__col.authors-intro__col--media
-                            picture.img-cover.authors-intro__picture
-                                img(src="img/authors-intro-img.jpg", alt="Есть интересный проект?")
+                            picture.authors-intro__picture
+                                img(src="img/authors-intro-img.png", alt="Есть интересный проект?")
 
             section.a-benefits-section
                 .container-large.a-benefits-section__container
@@ -68,11 +68,11 @@ html(lang='ru')
                     .a-section-card__inner
                         .a-section-card__media
                             picture.a-section-card__picture
-                                img(width="530", height="490", srcset="img/section-card-1@2x.png 2x", src="img/section-card-1.png")
+                                img(width="530", height="486", srcset="img/section-card-1@2x.png 2x", src="img/section-card-1.png")
                         .a-section-card__content
                             h2.section-title.a-section-card__title <span class='text-accent'>Без</span> обязательной <span class='text-accent'>регистрации</span>, подписок и&nbsp;продаж
                             .content.a-section-card__text
-                                p Сделать донат можно в пару кликов, без регистраци, скрытых условий и подписок. Вы получите денежные средства просто так, не продавая и не предлагая ничего взамен
+                                p Сделать донат можно в пару кликов, без регистрации, скрытых условий и подписок. Вы получите денежные средства не продавая и не предлагая ничего взамен.
 
             section.a-section-info
                 .container-large.a-section-info__container
@@ -80,7 +80,7 @@ html(lang='ru')
                         .a-section-info__content
                             h2.section-title.a-section-info__title Удобная и прозрачная платформа <span class='text-accent'>для всех</span>
                             .content.a-section-info__text
-                                p Аудитории легко поддержать вас рублем, оставить комментарий, получить обратную связь и видеть результаты сбора донатов
+                                p Аудитории легко поддержать вас рублем, оставить комментарий, получить обратную связь и видеть результаты сбора донатов.
                             a(href="#").btn.btn--size-md.btn-green-accent.a-section-info__btn Зарегистрироваться
                         .a-section-info__media
                             picture.a-section-info__picture
@@ -89,22 +89,33 @@ html(lang='ru')
 
             section.a-section-card
                 .container-large.a-section-card__container
-                    h2.visible-1000.section-title.a-section-card__section-title Поделитесь QR-кодом или установите виджет
+                    .a-section-card__inner
+                        .a-section-card__media
+                            picture.a-section-card__picture
+                                img(width="530", height="417", srcset="img/section-card-4@2x.png 2x", src="img/section-card-4.png")
+                        .a-section-card__content
+                            h2.section-title.a-section-card__title Что останавливает людей поддержать ваш проект?
+                            .content.a-section-card__text
+                                p Многие боятся делать перевод на номер неизвестной карты, а регистрирация на сервисе донатов ради вашего проекта, с оформлением ежемесячной подписки – для многих неудобна или даже накладна. При этом не все проекты, по тематике, подходят под формат подписки.
+                                p На Аппоре, пользователи могут поддержать любой проект. Будь то ютуб-канал, блогер, приют для животных, интернет-сообщество, музыкант или организация. Мы даём выбор!
+
+            section.a-section-card
+                .container-large.a-section-card__container
                     .a-section-card__inner
                         .a-section-card__media
                             picture.a-section-card__picture
                                 img(width="530", height="425", srcset="img/section-card-3@2x.png 2x", src="img/section-card-3.png")
                         .a-section-card__content
-                            h2.hidden-1000.section-title.a-section-card__title Поделитесь QR-кодом или установите виджет
+                            h2.section-title.a-section-card__title Поделитесь QR-кодом или установите виджет
                             .content.a-section-card__text
                                 p Чтобы сообщить своей аудитории о возможности поддержать ваш проект у нас есть виджеты, которые можно установить себе на сайт или сгенерировать QR-код на страницу вашего проекта на Аппоре.
-                                p А еще мы подготовили несколько рекомендаций о том, как лучше обратиться к своей аудитории с предложением поддержать ваш проект
+                                p А еще мы подготовили несколько рекомендаций о том, как лучше обратиться к своей аудитории с предложением поддержать ваш проект.
                             .group-btns.a-section-card__group-btns
                                 a(href="#").btn.btn--size-md.btn-trp.group-btns__item Посмотреть рекомендации
 
             section.why-uppora
                 .container-large.why-uppora__container
-                    h2.section-title.why-uppora__title Почему <span class='text-accent'>Uppora</span>
+                    h2.section-title.why-uppora__title Почему <span class='text-accent'>Аппора</span>
                     .why-uppora-list
                         .row.why-uppora-list__row
                             .row__col.row__col--4.why-uppora-list__col
@@ -114,30 +125,30 @@ html(lang='ru')
                                     .why-uppora-card__content
                                         h3.why-uppora-card__title Обратная связь
                                         .content.why-uppora-card__text
-                                            p Получайте вместе с донатами сообщения от пользователей, вступайте в переписку, используйте обратную связь и делитесь новостями чтобы двигаться вверх
+                                            p Получайте вместе с донатами сообщения от пользователей, вступайте в переписку, используйте обратную связь и делитесь новостями чтобы двигаться вверх.
                             .row__col.row__col--4.why-uppora-list__col
                                 article.why-uppora-card.why-uppora-list__card
                                     picture.img-cover.why-uppora-card__picture
-                                        img(src="img/why-uppora-card-2.svg", alt="Детализация и статистика")
+                                        img(src="img/why-uppora-card-2.svg", alt="Прозрачность")
                                     .why-uppora-card__content
-                                        h3.why-uppora-card__title Детализация и статистика
+                                        h3.why-uppora-card__title Прозрачность
                                         .content.why-uppora-card__text
-                                            p В личном кабинете есть статистика о собранных донатах, посещениях и другие полезные данные, чтобы вы могли проанализировать эффективность
+                                            p В личном кабинете есть статистика о собранных донатах, посещениях и другие полезные данные, чтобы вы могли проанализировать эффективность.
                             .row__col.row__col--4.why-uppora-list__col
                                 article.why-uppora-card.why-uppora-list__card
                                     picture.img-cover.why-uppora-card__picture
-                                        img(src="img/why-uppora-card-3.svg", alt="Комиссия всего 1%")
+                                        img(src="img/why-uppora-card-3.svg", alt="Низкая комиссия")
                                     .why-uppora-card__content
-                                        h3.why-uppora-card__title Комиссия всего 1%
+                                        h3.why-uppora-card__title Низкая комиссия
                                         .content.why-uppora-card__text
-                                            p Вывести собранные средства можно в любой момент. Комиссия банка составляет всего 1%, а комиссия платформы полностью отсутствует
+                                            p Вы можете вывести собранные средства в любой момент. Комиссия платформы всего 3% с учетом комиссии банка.
 
             section.appeal-section
                 .container-large.appeal-section__container
                     .appeal-section__content
                         h2.section-title.appeal-section__title Есть вопросы или пожелания?
                         .content.appeal-section__text
-                            p Воспользуйтесь формой обратной связи, чтобы написать нам сообщение, или опубликуйте их в нашем блоге, чтобы обсудить с сообществом
+                            p Воспользуйтесь формой обратной связи или оставьте запись в блоге нашего проекта
                         .group-btns.appeal-section__btns
                             a(href="#").btn.btn--size-md.btn-green-accent.group-btns__item Написать сообщение
                             a(href="#").btn.btn--size-md.btn-trp.group-btns__item Перейти в блог

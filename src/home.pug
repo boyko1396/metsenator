@@ -8,11 +8,14 @@ html(lang='ru')
         include includes/header.pug
 
         .l-home
-            section.l-home-intro
+            section.js-home-animated.l-home-intro
                 .container-large.l-home-intro__container
                     .l-home-intro__row
                         .l-home-intro__content
-                            h1.l-home-intro__content-title <span class="text-accent">Платформа донатов</span> с личным профилем и без подписок
+                            h1.l-home-intro__content-title <span class="text-accent">Платформа донатов</span> с&nbsp;личным профилем и&nbsp;без&nbsp;подписок
+                            picture.l-home-intro__picture.visible-767
+                                <source srcset="img/home-hero.jpg 1x, img/home-hero@2x.jpg 2x">
+                                img(src="img/home-hero.jpg", alt="Платформа донатов с личным профилем и без подписок").l-home-intro__img
                             .l-home-intro__content-btns
                                 a(href="#").btn.btn--size-md.btn-green-accent.l-home-intro__content-btns-item Регистрация
                                 a(href="#").js-home-video-btn.btn-video.l-home-intro__content-btns-item
@@ -24,7 +27,7 @@ html(lang='ru')
                                 .l-home-intro__content-tinkoff
                                     .l-home-intro__content-tinkoff-text Безопасность и надежность всех финансовых операций гарантирует Тинькофф Банк
                                     img(src="img/tinkoff-logo.svg", alt="").l-home-intro__content-tinkoff-logo
-                        .l-home-intro__media
+                        .l-home-intro__media.hidden-767
                             picture.l-home-intro__picture
                                 <source srcset="img/home-hero.jpg 1x, img/home-hero@2x.jpg 2x">
                                 img(src="img/home-hero.jpg", alt="Платформа донатов с личным профилем и без подписок").l-home-intro__img

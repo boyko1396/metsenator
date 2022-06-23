@@ -21,7 +21,7 @@
         position: relative;
         @extend .btn-reset;
         &:after {
-            background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.50503 7.42299C4.77839 7.14963 5.22161 7.14963 5.49497 7.42299L9.99992 11.9279L14.5049 7.42299C14.7782 7.14963 15.2214 7.14963 15.4948 7.42299C15.7682 7.69636 15.7682 8.13958 15.4948 8.41294L10.4949 13.4129C10.2215 13.6862 9.77831 13.6862 9.50494 13.4129L4.50503 8.41294C4.23166 8.13958 4.23166 7.69636 4.50503 7.42299Z'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.50503 7.42299C4.77839 7.14963 5.22161 7.14963 5.49497 7.42299L9.99992 11.9279L14.5049 7.42299C14.7782 7.14963 15.2214 7.14963 15.4948 7.42299C15.7672 7.69636 15.7672 8.13958 15.4948 8.41294L10.4949 13.4129C10.2215 13.6862 9.77831 13.6862 9.50494 13.4129L4.50503 8.41294C4.23166 8.13958 4.23166 7.69636 4.50503 7.42299Z'/%3E%3C/svg%3E");
             background-size: contain;
             width: 20px;
             height: 20px;
@@ -138,7 +138,7 @@
 @media screen and (max-width: 1000px) {
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .faq-nav {
         &__inner {
             padding-right: 16px;

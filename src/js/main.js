@@ -26,6 +26,7 @@ $(document).ready(function() {
     commentViewInput();
     inputPasswordSwitch();
     select2Init();
+    homeIntroAnimated();
 
 
     if ($('body').attr("id") == "myProfile") {
@@ -56,6 +57,16 @@ $(document).ready(function() {
           "xml"
         );
       });
+    }
+
+    // home page animation
+    function homeIntroAnimated() {
+        var homeIntroAnimated = $('.js-home-animated');
+        if ($(homeIntroAnimated)[0]){
+            window.setTimeout(function(){
+                homeIntroAnimated.addClass('is-loaded');
+            }, 222);
+        }
     }
 
     // Показать поле ответа на коммент

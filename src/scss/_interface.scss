@@ -80,14 +80,20 @@ img {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .visible-767 {
+        display: none !important;
+    }
+}
+
 @media screen and (min-width: 1281px) {
     body.is-hidden {
         padding-right: 17px;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .hidden-1000 {
+@media screen and (max-width: 767px) {
+    .hidden-767 {
         display: none !important;
     }
 }
