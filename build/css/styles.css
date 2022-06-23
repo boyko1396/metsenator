@@ -8499,6 +8499,122 @@ img {
   margin-bottom: 24px;
 }
 
+.a-benefits-card__header {
+  margin: 0 0 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .a-benefits-card__header {
+    margin-bottom: 10px;
+  }
+}
+.a-benefits-card__header:after {
+  content: "";
+  display: block;
+  border-top: 2px dotted #D1D5DB;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.a-benefits-card__picture {
+  background: #16A34A;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  -ms-flex: 0 0 24px;
+  flex: 0 0 24px;
+  font-size: 0;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+}
+.a-benefits-card__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.a-benefits-card__title {
+  margin: 0 0 12px;
+  font-weight: 500;
+  font-size: 21px;
+}
+@media screen and (max-width: 480px) {
+  .a-benefits-card__title {
+    margin-bottom: 7px;
+  }
+}
+.a-benefits-card__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.a-benefits-section {
+  padding: 140px 0 70px;
+}
+@media screen and (max-width: 1169px) {
+  .a-benefits-section {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .a-benefits-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.a-benefits-section__title {
+  max-width: 490px;
+  margin: 0 0 90px;
+}
+@media screen and (max-width: 1169px) {
+  .a-benefits-section__title {
+    max-width: 360px;
+    margin-bottom: 60px;
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .a-benefits-section__title {
+    max-width: 280px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .a-benefits-section__title {
+    margin-bottom: 40px;
+  }
+}
+.a-benefits-section__list {
+  margin: 0 -20px -40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.a-benefits-section__list-col {
+  max-width: 25%;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+}
+@media screen and (max-width: 768px) {
+  .a-benefits-section__list-col {
+    max-width: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .a-benefits-section__list-col {
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+
 .a-section-info {
   padding: 50px 0;
 }
@@ -8605,6 +8721,9 @@ img {
   position: relative;
   z-index: 0;
 }
+.appeal-section--about {
+  margin-bottom: 0 !important;
+}
 .appeal-section:before {
   background: #F8FAFC;
   width: 100%;
@@ -8615,6 +8734,9 @@ img {
   left: 0;
   border-radius: 16px;
   z-index: -1;
+}
+.appeal-section--about:before {
+  background: #ffffff;
 }
 .appeal-section__content {
   padding: 0 16px;
@@ -8633,6 +8755,88 @@ img {
 .appeal-section__btns {
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.mass-media-card {
+  transition: all 0.4s;
+  transition-property: opacity;
+}
+@media screen and (min-width: 1200px) {
+  .mass-media-card:not(:hover) {
+    opacity: 0.2;
+  }
+}
+.mass-media-card__picture {
+  display: block;
+  padding-bottom: 30%;
+  display: block;
+  position: relative;
+}
+.mass-media-card__link:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mass-media-card__link > *, .mass-media-card__img {
+  max-width: calc(100% - 14px);
+  max-height: calc(100% - 14px);
+  margin: auto;
+  fill: #111827;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mass-media-section {
+  background: #F8FAFC;
+  padding: 80px 0 100px;
+}
+@media screen and (max-width: 768px) {
+  .mass-media-section {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
+.mass-media-section__title {
+  margin: 0 0 70px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .mass-media-section__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+.mass-media-section__list {
+  margin: 0 -10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .mass-media-section__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.mass-media-section__list-col {
+  max-width: 25%;
+  padding: 0 10px;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+}
+@media screen and (max-width: 768px) {
+  .mass-media-section__list-col {
+    max-width: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
 }
 
 .template-card {
@@ -9501,6 +9705,62 @@ img {
   color: #111827;
 }
 
+.blockquote-card__text {
+  margin: 0 0 15px;
+  font-style: italic;
+}
+@media screen and (max-width: 1169px) {
+  .blockquote-card__text {
+    margin-bottom: 12px;
+  }
+}
+.blockquote-card__footer {
+  margin: 0;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.blockquote-card__author,
+.blockquote-card cite {
+  font-style: normal;
+}
+
+.author-cite__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 480px) {
+  .author-cite__inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.author-cite__avatar {
+  width: 56px;
+  height: 56px;
+  margin: 4px 20px 0 0;
+  -ms-flex: 0 0 56px;
+  flex: 0 0 56px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .author-cite__avatar {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+.author-cite__blockquote {
+  margin: 0;
+  display: block;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .a-about-info {
   padding: 120px 0;
   display: -ms-flexbox;
@@ -9521,6 +9781,13 @@ img {
   font-weight: 600;
   font-size: 42px;
   line-height: 1.3;
+}
+.a-about-info__text {
+  margin-bottom: 32px;
+}
+.a-about-info__author {
+  padding-top: 32px;
+  border-top: 1px solid #e5e7eb;
 }
 .a-about-info__aside {
   padding-top: 100px;
@@ -9712,6 +9979,7 @@ img {
 }
 
 .team-card {
+  background: transparent;
   padding: 20px;
   display: -ms-flexbox;
   display: flex;
@@ -9721,8 +9989,15 @@ img {
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   position: relative;
+  transition: all 0.34s;
+  transition-property: background;
   overflow: hidden;
   z-index: 0;
+}
+@media screen and (min-width: 1200px) {
+  .team-card:hover {
+    background: rgba(229, 231, 235, 0.2);
+  }
 }
 .team-card__picture {
   width: 48px;
@@ -9768,6 +10043,16 @@ img {
   position: absolute;
   top: 50%;
   right: 20px;
+  transition: all 0.34s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+@media screen and (min-width: 1200px) {
+  .team-card:hover .team-card__arrow {
+    -webkit-transform: translateX(44px);
+    transform: translateX(44px);
+  }
 }
 
 .team-list__row {
@@ -10212,6 +10497,12 @@ img {
   .a-about-info__title {
     margin-bottom: 16px;
     font-size: 42px;
+  }
+  .a-about-info__text {
+    margin-bottom: 24px;
+  }
+  .a-about-info__author {
+    padding-top: 24px;
   }
   .a-about-info__aside {
     padding-top: 76px;
@@ -10819,9 +11110,6 @@ img {
 
   .a-about-info {
     padding-bottom: 30px;
-  }
-  .a-about-info__content {
-    margin-bottom: 16px;
   }
   .a-about-info__title {
     margin-bottom: 12px;

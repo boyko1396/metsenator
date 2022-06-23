@@ -30,8 +30,15 @@ html(lang='ru')
                     .a-about-info__content
                         h2.a-about-info__title О платформе
                         .content.a-about-info__text
-                            p Мы собираем сообщество творческих предприимчивых людей – авторов проектов, и людей, которые хотят помогать рублем и словом проектам, которые им нравятся. <strong>Наша цель</strong>, превратить помощь и финансовую поддержку в привычку на уровне страны, создав для этого платформу, обеспечивающую прозрачность, безопасность и удобство взаимодействия авторов с аудиторией.
-                            p <strong>Наша миссия</strong> делать людей счастливее обеспечив стабильную работу платформы позволяющей помогать и поддерживать понравившиеся проекты, дав возможность проявляться себя, рассказать о своем проекте, развивать его, выражать свое отношение и не бояться быть обманутым.
+                            p Аппора – современная платформа для донатов с личным профилем и без подписок. Донат – это безвозмездная денежная поддержка чего-либо, что вам нравится.
+                            p Наша цель – превратить помощь и финансовую поддержку в привычку на уровне страны у миллионов пользователей, поддерживающих тысячи проектов.
+                        .author-cite.a-about-info__author
+                            .author-cite__inner
+                                picture.img-cover.author-cite__avatar
+                                    img(src="img/person-edit.jpg", alt="Илья Панов")
+                                blockquote.blockquote-card.author-cite__blockquote
+                                    p.content.blockquote-card__text – Я знаю много хороших проектов, которые хочу поддержать. Но мне не нравится ни один из существующих способов. Поэтому делаю свой.
+                                    footer.blockquote-card__footer Основатель проекта, <cite class="blockquote-card__author">Илья Панов</cite>
                     .a-about-info__aside
                         .card-badge-text.a-about-info__aside-card
                             .card-badge-text__title Для прессы:
@@ -47,9 +54,9 @@ html(lang='ru')
                                 a(href="mailto:42@uppora.org") 42@uppora.org
                 section.clients-info
                     .clients-info__aside
-                            .clients-info__aside-percent 70%
+                            .clients-info__aside-percent 67%
                             .progress.clients-info__aside-progress
-                                span(style="width: 70%;")
+                                span(style="width: 67%;")
                     .clients-info__content
                         h2.clients-info__title пользователей в интернете, согласно статистики, воздерживаются от благоворительности и донатов из-за недоверия к существующими сервисам
                         .content.clients-info__text
@@ -60,16 +67,15 @@ html(lang='ru')
                         ul.list-info.a-about-company__list
                             li
                                 span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
-                                | Создайте проект от лица вашей компании или сообщества, разместите на него ссылку в соцсетях и пригласите аудиторию вас поддержать
+                                | Профиль вашей компании на Аппоре, как и профиль вашей компании в Инстаграме или Вконтакте – ещё один способ коммуникации с вашей аудиторией и клиентами.
                             li
                                 span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
-                                | Общайтесь с подпичиками в блоге проекта и расскажите на что пойдут собранные средства
+                                | Проекты, которые вы поддержите от лица вашего бренда помогут повысить уровень лояльности клиентов к вашей компании. Например если вы продаете спортивные товары, то поддержка проектов связанных со спортом положительно скажется на репутации вашей компании.
                             li
                                 span.list-info__icon(style="background-image: url(img/list-info-arrow.svg)")
-                                | Поддерживая другие проекты и создавая свои, вы повышаете уровень лояльности ваших клиентов, сокращая расходы на стандартную рекламу
+                                | Вы так же можете создать свой проект от лица компании и предложить своей аудитории поддержать его. На том же примере, если вы продаете спортивные товары, то можете начать дарить спортивный инвентарь тем, кому он действительно нужен (молодым командам, детям и т.д.), рассказывать об этом в блоге своего проекта на Аппоре и предложить своим клиентам поддержать вас.
                         .group-btns.a-about-company__btns
                             button(type="submit").btn.btn--size-md.btn-green-accent.group-btns__item Создать проект
-                            button(type="button").btn.btn--size-md.btn-trp.group-btns__item Посмотреть демо проект
                 section.news-section
                     .news-section__header
                         h2.section-title.news-section__title Новости
@@ -114,7 +120,7 @@ html(lang='ru')
                                     .team-card__content
                                         p.team-card__name
                                             a(href="#").team-card__link Илья Панов
-                                        p.team-card__position CEO
+                                        p.team-card__position Основатель проекта
                                     p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
                             .row__col.row__col--4.team-list__col
                                 article.team-card.team-list__card
@@ -123,7 +129,7 @@ html(lang='ru')
                                     .team-card__content
                                         p.team-card__name
                                             a(href="#").team-card__link Илья
-                                        p.team-card__position дизайн
+                                        p.team-card__position Дизайн
                                     p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
                             .row__col.row__col--4.team-list__col
                                 article.team-card.team-list__card
@@ -131,8 +137,8 @@ html(lang='ru')
                                         img(src="img/team-card-empty.jpg", alt="Дмитрий Щукин")
                                     .team-card__content
                                         p.team-card__name
-                                            a(href="#").team-card__link Дмитрий Щукин
-                                        p.team-card__position разработка
+                                            a(href="#").team-card__link Дмитрий
+                                        p.team-card__position Разработка
                                     p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
                             .row__col.row__col--4.team-list__col
                                 article.team-card.team-list__card
@@ -150,9 +156,34 @@ html(lang='ru')
                                     .team-card__content
                                         p.team-card__name
                                             a(href="#").team-card__link Михаил Швецов 
-                                        p.team-card__position юридические вопросы
+                                        p.team-card__position Юрист
                                     p.team-card__arrow(style="background-image: url(img/team-card-arrow.svg)")
-            section.appeal-section
+            section.mass-media-section
+                .container-large.mass-media-section__container
+                    h2.section-title.mass-media-section__title СМИ о нас
+                    .mass-media-section__list
+                        .mass-media-section__list-col
+                            .mass-media-card
+                                picture.mass-media-card__picture
+                                    a(href="#", target="_blank").mass-media-card__link
+                                        img(src="img/mass-media-logo-1.svg", alt="Стольник").svg-inline.mass-media-card__img
+                        .mass-media-section__list-col
+                            .mass-media-card
+                                picture.mass-media-card__picture
+                                    a(href="#", target="_blank").mass-media-card__link
+                                        img(src="img/mass-media-logo-1.svg", alt="Стольник").svg-inline.mass-media-card__img
+                        .mass-media-section__list-col
+                            .mass-media-card
+                                picture.mass-media-card__picture
+                                    a(href="#", target="_blank").mass-media-card__link
+                                        img(src="img/mass-media-logo-1.svg", alt="Стольник").svg-inline.mass-media-card__img
+                        .mass-media-section__list-col
+                            .mass-media-card
+                                picture.mass-media-card__picture
+                                    a(href="#", target="_blank").mass-media-card__link
+                                        img(src="img/mass-media-logo-1.svg", alt="Стольник").svg-inline.mass-media-card__img
+
+            section.appeal-section.appeal-section--about
                 .container-large.appeal-section__container
                     .appeal-section__content
                         h2.section-title.appeal-section__title Есть вопросы или предложения?
