@@ -1,0 +1,57 @@
+.p-privacy {
+    background: $white;
+    padding: 32px 0;
+    flex-grow: 1;
+    color: $darknes;
+    position: relative;
+    overflow: clip;
+    z-index: 4;
+    @media screen and (max-width: 1000px) {
+        max-width: initial;
+        margin-top: -48px;
+        padding-top: 24px;
+    }
+    @media screen and (max-width: 480px) {
+        padding-top: 16px;
+    }
+    &__container {
+    }
+    &__inner {
+        max-width: 602px;
+        margin: 0 auto;
+    }
+    &__header {
+        margin: 0 0 32px;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 24px;
+        }
+    }
+    &__pager-link {
+        margin-right: 12px;
+        display: none;
+        flex: 0 0 24px;
+        @media screen and (max-width: 1000px) {
+            display: block;
+        }
+    }
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 30px;
+        @media screen and (max-width: 1000px) {
+            font-size: 20px;
+        }
+    }
+    &__list {
+        &-card {
+            &:not(:last-child) {
+                margin-bottom: 22px;
+                @media screen and (max-width: 1169px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

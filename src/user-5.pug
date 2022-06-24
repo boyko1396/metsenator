@@ -1,0 +1,33 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        main.l-login
+            .container.l-login__container
+                .l-login__inner
+                    a(href="/").l-login__logo
+                        img(src="img/logo.svg", alt="Uppora")
+                    .login-el.l-login__block
+                        header.login-el__header
+                            h1.login-el__title Сброс пароля
+                            p.login-el__subtitle Придумайте новый пароль для учётной записи <strong>email@website.com</strong>
+                        form(action="#").login-el__form
+                            .input-block.input-block--label-size-sm.login-el__form-line
+                                label(for="user-form-password").input-block__label
+                                    span.input-block__label-name
+                                        strong Пароль (минимум 8 символов)
+                                .input-block__el-container
+                                    .js-input-password-switch.input-block__el-icon-wrapper.input-block__el-icon-wrapper--position-right
+                                        svg.u-icon.input-block__el-icon
+                                            use(xlink:href="img/sprite.svg#view-off")
+                                        svg.u-icon.input-block__el-icon
+                                            use(xlink:href="img/sprite.svg#view-on")
+                                    input(type="password", name="password", id="user-form-password", required, minlength="8", value="").input-el.input-block__el
+                            button(type="submit").btn.btn--size-md.btn-green-accent.login-el__form-btn Сменить пароль
+                        .login-el__form-another
+                            a(href="#") Войти с другой учетной записью
+
+        include includes/footer-user-login.pug

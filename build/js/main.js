@@ -27,6 +27,7 @@ $(document).ready(function() {
     inputPasswordSwitch();
     select2Init();
     homeIntroAnimated();
+    titleScrollAnimation();
 
 
     if ($('body').attr("id") == "myProfile") {
@@ -390,6 +391,16 @@ $(document).ready(function() {
                 width: '100%'
             });
         }
+    }
+
+    // about title animation
+    function titleScrollAnimation() {
+        var $classLoop = $('.js-animation-title span'),
+            i = 0;
+        setInterval(function() {
+            $classLoop.removeClass('is-active').filter($classLoop[i]).toggleClass('is-active');
+            i < $classLoop.length - 1 ? i++ : i = 0;
+        }, 2000);
     }
 });
 

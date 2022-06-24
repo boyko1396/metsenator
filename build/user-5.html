@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Меценатор</title>
+    <!--link(rel='icon', href='favicon.ico')-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main class="l-login">
+      <div class="container l-login__container">
+        <div class="l-login__inner"><a class="l-login__logo" href="/"><img src="img/logo.svg" alt="Uppora"></a>
+          <div class="login-el l-login__block">
+            <header class="login-el__header">
+              <h1 class="login-el__title">Сброс пароля</h1>
+              <p class="login-el__subtitle">Придумайте новый пароль для учётной записи <strong>email@website.com</strong></p>
+            </header>
+            <form class="login-el__form" action="#">
+              <div class="input-block input-block--label-size-sm login-el__form-line">
+                <label class="input-block__label" for="user-form-password"><span class="input-block__label-name"><strong>Пароль (минимум 8 символов)</strong></span></label>
+                <div class="input-block__el-container">
+                  <div class="js-input-password-switch input-block__el-icon-wrapper input-block__el-icon-wrapper--position-right">
+                    <svg class="u-icon input-block__el-icon">
+                      <use xlink:href="img/sprite.svg#view-off"></use>
+                    </svg>
+                    <svg class="u-icon input-block__el-icon">
+                      <use xlink:href="img/sprite.svg#view-on"></use>
+                    </svg>
+                  </div>
+                  <input class="input-el input-block__el" type="password" name="password" id="user-form-password" required minlength="8" value="">
+                </div>
+              </div>
+              <button class="btn btn--size-md btn-green-accent login-el__form-btn" type="submit">Сменить пароль</button>
+            </form>
+            <div class="login-el__form-another"><a href="#">Войти с другой учетной записью</a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

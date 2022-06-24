@@ -25,28 +25,32 @@
         animation: .5s linear 2s normal forwards running errorTextColor;
         user-select: none;
         pointer-events: none;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 5px;
+            font-size: 100px;
+        }
         span {
-            width: 150px;
-            height: 108px;
-            margin: 0 15px;
+            width: 1.01351351351em;
+            height: .72972972973em;
+            margin: 0 .10135135135em;
             display: block;
-            font-size: 0;
+            font-size: inherit;
             color: #D1D5DB;
-            border: 23px solid currentColor;
-            border-radius: 54px;
+            border: .1554054054em solid currentColor;
+            border-radius: .36486486486em;
             animation: .5s linear 2s normal forwards running errorDotColor;
             position: relative;
             &:before {
                 background: currentColor;
-                width: 36px;
-                height: 36px;
-                margin-top: -18px;
+                width: .24324324324em;
+                height: .24324324324em;
+                margin-top: -.12162162162em;
                 content: '';
                 display: block;
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
-                left: 16px;
+                left: .1081081081em;
                 animation: 1s ease-in 1s normal forwards running errorDotSlide;
             }
         }
@@ -57,7 +61,7 @@
         vertical-align: top;
         &-subtitle {
             margin: 0 0 8px;
-            font-weight: 600px;
+            font-weight: 600;
             font-size: 24px;
         }
         &-text {
@@ -89,6 +93,6 @@
     0% {
     }
     100% {
-        transform: translateX(36px);
+        transform: translateX(.24324324324em);
     }
 }

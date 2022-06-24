@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Меценатор</title>
+    <!--link(rel='icon', href='favicon.ico')-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main class="l-login">
+      <div class="container l-login__container">
+        <div class="l-login__inner"><a class="l-login__logo" href="/"><img src="img/logo.svg" alt="Uppora"></a>
+          <div class="login-el l-login__block">
+            <header class="login-el__header">
+              <h1 class="login-el__title">Регистрация</h1>
+              <p class="login-el__subtitle">У вас уже есть аккаунт? <a href="#">Войти</a></p>
+            </header>
+            <form class="login-el__form" action="#">
+              <div class="input-block input-block--label-size-sm login-el__form-line">
+                <label class="input-block__label" for="user-form-name"><span class="input-block__label-name"><strong>Имя</strong></span></label>
+                <input class="input-el input-block__el" type="text" name="name" id="user-form-name" required value="">
+              </div>
+              <div class="input-block input-block--label-size-sm login-el__form-line">
+                <label class="input-block__label" for="user-form-email"><span class="input-block__label-name"><strong>Email</strong></span></label>
+                <input class="input-el input-block__el" type="email" name="email" id="user-form-email" required value="">
+              </div>
+              <div class="input-block input-block--label-size-sm login-el__form-line">
+                <label class="input-block__label" for="user-form-password"><span class="input-block__label-name"><strong>Пароль (минимум 8 символов)</strong></span></label>
+                <div class="input-block__el-container">
+                  <div class="js-input-password-switch input-block__el-icon-wrapper input-block__el-icon-wrapper--position-right">
+                    <svg class="u-icon input-block__el-icon">
+                      <use xlink:href="img/sprite.svg#view-off"></use>
+                    </svg>
+                    <svg class="u-icon input-block__el-icon">
+                      <use xlink:href="img/sprite.svg#view-on"></use>
+                    </svg>
+                  </div>
+                  <input class="input-el input-block__el" type="password" name="password" id="user-form-password" required minlength="8" value="">
+                </div>
+              </div>
+              <button class="btn btn--size-md btn-green-accent login-el__form-btn" type="submit">Создать аккаунт</button>
+            </form>
+            <div class="login-el__social">
+              <div class="login-el__social-title"><span>Или войдите через</span></div>
+              <ul class="login-social login-el__social-list">
+                <li class="login-social__item"><a class="login-social__link" href="#">
+                    <svg class="u-icon login-social__icon">
+                      <use xlink:href="img/sprite.svg#support-social-icon-vk"></use>
+                    </svg></a></li>
+                <li class="login-social__item"><a class="login-social__link" href="#">
+                    <svg class="u-icon login-social__icon">
+                      <use xlink:href="img/sprite.svg#support-social-icon-google"></use>
+                    </svg></a></li>
+                <li class="login-social__item"><a class="login-social__link" href="#">
+                    <svg class="u-icon login-social__icon">
+                      <use xlink:href="img/sprite.svg#support-social-icon-yandex"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <footer class="l-login__footer">Заходя на сайт или создавая аккаунт, вы принимаете <a href="Пользовательское_соглашение.pdf" target="_blank">пользовательское соглашение</a> и <a href="Политика_конфиденциальности.pdf" target="_blank">политику конфиденциальности</a></footer>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        main.l-login
+            .container.l-login__container
+                .l-login__inner
+                    a(href="/").l-login__logo
+                        img(src="img/logo.svg", alt="Uppora")
+                    .login-el.l-login__block
+                        .login-el__reset
+                            header.login-el__header
+                                h1.login-el__title Проверьте почту
+                                p.login-el__reset-text Папки Входяще или Спам. Мы отправили ссылку для сброса пароля: <strong>email@website.com</strong>
+                            .login-el__form-another
+                                a(href="#") Войти с другой учетной записью
+
+        include includes/footer-user-login.pug

@@ -1,0 +1,56 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        include includes/header.pug
+
+        main.p-privacy
+            .container.p-privacy__container
+                .p-privacy__inner
+                    .p-privacy__header
+                        a(href="#").visible-1000.pager-link.pager-link--prev.p-privacy__pager-link
+                            .pager-link__icon(style="background-image: url(img/pager-link-arrow.svg)")
+                            | Назад
+                        h1.p-privacy__title Правовые документы
+                    .p-privacy__list
+                        .doc-el.p-privacy__list-card
+                            .doc-el__inner
+                                svg.u-icon.doc-el__icon
+                                    use(xlink:href="img/sprite.svg#document-download")
+                                a(href="Пользовательское_соглашение.pdf", target="_blank").doc-el__link Пользовательское соглашение
+                                p.doc-el__description Общий документ устанавливающий порядок использования сервиса, регистрацию, обмен юридически значимыми сообщениями и т.п.
+                        .doc-el.p-privacy__list-card
+                            .doc-el__inner
+                                svg.u-icon.doc-el__icon
+                                    use(xlink:href="img/sprite.svg#document-download")
+                                a(href="Договор_оказания_информационных_услуг.pdf", target="_blank").doc-el__link Договор-оферта на информационные услуги
+                                p.doc-el__description Договор, по которому мы информационно содействует пользователям и авторам проектов в организации сбора пожертвований.
+                        .doc-el.p-privacy__list-card
+                            .doc-el__inner
+                                svg.u-icon.doc-el__icon
+                                    use(xlink:href="img/sprite.svg#document-download")
+                                a(href="Договор_пожертвования.pdf", target="_blank").doc-el__link Договор дарения
+                                p.doc-el__description Договор, по которому мы информационно содействует пользователям и авторам проектов в организации сбора пожертвований.
+                        .doc-el.p-privacy__list-card
+                            .doc-el__inner
+                                svg.u-icon.doc-el__icon
+                                    use(xlink:href="img/sprite.svg#document-download")
+                                a(href="Политика_конфиденциальности.pdf", target="_blank").doc-el__link Политика конфиденциальности
+                                p.doc-el__description Договор, по которому мы информационно содействует пользователям и авторам проектов в организации сбора пожертвований.
+                        .doc-el.p-privacy__list-card
+                            .doc-el__inner
+                                svg.u-icon.doc-el__icon
+                                    use(xlink:href="img/sprite.svg#document-download")
+                                a(href="Договор_поручения_обработки.pdf", target="_blank").doc-el__link Соглашение о поручении на обработку персональных данных
+                                p.doc-el__description Документ, о согласии пользователя на передачу персональных данных при регистрации на сайте, оформлении личного кабинета, направлении заявок в службу поддержки и т.д.
+                        .doc-el.p-privacy__list-card
+                            .doc-el__inner
+                                svg.u-icon.doc-el__icon
+                                    use(xlink:href="img/sprite.svg#document-download")
+                                a(href="Согласие_на_обработку_персональных_данных.pdf", target="_blank").doc-el__link Согласие на обработку и передачу персональных данных
+                                p.doc-el__description Документ, описывающий порядок передачи собираемых нами персональных данных в соответствии с 152-ФЗ.
+
+        include includes/footer.pug

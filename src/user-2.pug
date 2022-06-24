@@ -1,0 +1,53 @@
+doctype html
+html(lang='ru')
+
+    include includes/head.pug
+
+    body
+
+        main.l-login
+            .container.l-login__container
+                .l-login__inner
+                    a(href="/").l-login__logo
+                        img(src="img/logo.svg", alt="Uppora")
+                    .login-el.l-login__block
+                        header.login-el__header
+                            h1.login-el__title Вход
+                            p.login-el__subtitle Нет аккаунта? <a href="#">Зарегистрируйтесь</a>
+                        form(action="#").login-el__form
+                            .input-block.input-block--label-size-sm.login-el__form-line
+                                label(for="user-form-email").input-block__label
+                                    span.input-block__label-name
+                                        strong Email
+                                input(type="email", name="email", id="user-form-email", required, value="").input-el.input-block__el
+                            .input-block.input-block--label-size-sm.login-el__form-line
+                                label(for="user-form-password").input-block__label
+                                    span.input-block__label-name
+                                        strong Пароль
+                                .input-block__el-container
+                                    .js-input-password-switch.input-block__el-icon-wrapper.input-block__el-icon-wrapper--position-right
+                                        svg.u-icon.input-block__el-icon
+                                            use(xlink:href="img/sprite.svg#view-off")
+                                        svg.u-icon.input-block__el-icon
+                                            use(xlink:href="img/sprite.svg#view-on")
+                                    input(type="password", name="password", id="user-form-password", required, minlength="8", value="").input-el.input-block__el
+                            button(type="submit").btn.btn--size-md.btn-green-accent.login-el__form-btn Войти
+                        .login-el__social
+                            .login-el__social-title
+                                span Или войдите через
+                            ul.login-social.login-el__social-list
+                                li.login-social__item
+                                    a(href="#").login-social__link
+                                        svg.u-icon.login-social__icon
+                                            use(xlink:href="img/sprite.svg#support-social-icon-vk")
+                                li.login-social__item
+                                    a(href="#").login-social__link
+                                        svg.u-icon.login-social__icon
+                                            use(xlink:href="img/sprite.svg#support-social-icon-google")
+                                li.login-social__item
+                                    a(href="#").login-social__link
+                                        svg.u-icon.login-social__icon
+                                            use(xlink:href="img/sprite.svg#support-social-icon-yandex")
+                    footer.l-login__footer Заходя на сайт или создавая аккаунт, вы принимаете <a href="Пользовательское_соглашение.pdf" target="_blank">пользовательское соглашение</a> и <a href="Политика_конфиденциальности.pdf" target="_blank">политику конфиденциальности</a>
+
+        include includes/footer-user-login.pug
