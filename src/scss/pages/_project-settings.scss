@@ -318,6 +318,7 @@
     font-size: 14px;
     color: $darknes;
     flex-grow: 1;
+    overflow: clip;
     &__container {
         display: flex;
         align-items: flex-start;

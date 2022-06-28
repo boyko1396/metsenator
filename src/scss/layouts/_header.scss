@@ -289,9 +289,9 @@
         bottom: 0;
         left: 0;
         overflow-y: auto;
-        z-index: 1000;
         transition: all .4s;
         transition-property: transform, visibility, opacity;
+        z-index: 1001;
     }
     &__overlay-mobile {
         background: rgba($darknes, .5);
@@ -301,7 +301,7 @@
         top: 0;
         bottom: 0;
         left: 0;
-        z-index: 999;
+        z-index: 1000;
         transition: all .4s;
         transition-property: visibility, opacity;
     }
@@ -447,6 +447,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             will-change: transform;
+            z-index: 1;
         }
         &__logo-link {
             width: 90px;
@@ -454,6 +455,7 @@
         &__logo-beta {
         }
         &__menu {
+            margin-left: 16px;
         }
         &__nav {
             display: none;
@@ -475,6 +477,9 @@
             &-create-project {
                 display: none;
             }
+        }
+        &__search {
+            z-index: 2;
         }
         &__menu-mobile {
             display: block;

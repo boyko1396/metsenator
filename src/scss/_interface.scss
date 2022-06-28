@@ -63,15 +63,15 @@ img {
     padding: 0 16px;
     margin: 0 auto;
     &-small {
-        max-width: 672px;
+        max-width: 672px !important;
         @extend .container;
     }
     &-medium {
-        max-width: 708px;
+        max-width: 708px !important;
         @extend .container;
     }
     &-large {
-        max-width: 1170px;
+        max-width: 1170px !important;
         @extend .container;
     }
 }
