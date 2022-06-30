@@ -35,7 +35,7 @@ html(lang='ru')
                         .settings-inner-form-group
                             h1.settings-inner-ttl Верификация
                             form(action="#").user-verification
-                                input(type="file", id="verification-photo-1").files-hidden
+                                input(type="file", name="fileUpload[]", multiple, id="file-attach-verification").files-hidden
                                 p.user-verification__paragraph Верификация - это процесс подтверждения того, что страница вашего профиля действительно принадлежит вам. Если проверка пройдена, страница получает особую отметку – зелёную галочку справа от имени.
                                 h2.title-5.user-verification__subtitle Как пройти верефикацию?
                                 p.user-verification__paragraph Пройти верификацию можно предоставив фото документов или через любую другую соцсеть
@@ -54,7 +54,8 @@ html(lang='ru')
                                         li
                                             p Загрузите обе фотографии. Ваши файлы нигде не хранятся и никому не передаются, автоматически удаляются сразу после сверки.
                                             p
-                                                label(for="verification-photo-1").btn.btn--size-md.btn-trp Загрузить фото
+                                                button(type="button").js-file-attach-verification.btn.btn--size-md.btn-trp Загрузить фото
+                                                #attach-files-verification
                                 label.js-radio-tab.label-radio.label-radio--size-sm.user-verification__choose-item
                                     input(type="radio", name="verification-type", value="Через другую соцсеть").input-hidden.label-radio__input
                                     span.label-radio__inner

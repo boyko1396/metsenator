@@ -95,7 +95,7 @@
             <div class="settings-inner-form-group">
               <h1 class="settings-inner-ttl">Верификация</h1>
               <form class="user-verification" action="#">
-                <input class="files-hidden" type="file" id="verification-photo-1">
+                <input class="files-hidden" type="file" name="fileUpload[]" multiple id="file-attach-verification">
                 <p class="user-verification__paragraph">Верификация - это процесс подтверждения того, что страница вашего профиля действительно принадлежит вам. Если проверка пройдена, страница получает особую отметку – зелёную галочку справа от имени.</p>
                 <h2 class="title-5 user-verification__subtitle">Как пройти верефикацию?</h2>
                 <p class="user-verification__paragraph">Пройти верификацию можно предоставив фото документов или через любую другую соцсеть</p>
@@ -114,7 +114,8 @@
                     <li>
                       <p>Загрузите обе фотографии. Ваши файлы нигде не хранятся и никому не передаются, автоматически удаляются сразу после сверки.</p>
                       <p>
-                        <label class="btn btn--size-md btn-trp" for="verification-photo-1">Загрузить фото</label>
+                        <button class="js-file-attach-verification btn btn--size-md btn-trp" type="button">Загрузить фото</button>
+                        <div id="attach-files-verification"></div>
                       </p>
                     </li>
                   </ul>

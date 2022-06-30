@@ -50,11 +50,12 @@ html(lang='ru')
                                             .content.chat-message__body-text
                                                 p Спасибо
                             form(action="#").s-support-chat__footer
-                                input(type="file", id="chat-file").files-hidden
+                                input(type="file", name="fileUpload[]", multiple, id="file-attach").files-hidden
                                 textarea(name="", id="support-message", rows="", cols="", value="").input-el.input-el--textarea.s-support-chat__footer-message
+                                #attach-files.s-support-chat__footer-attach-list
                                 .group-btns.s-support-chat__footer-btns-group
                                     button(type="submit").btn.btn--size-sm.btn-green.group-btns__item Отправить
-                                    label(for="chat-file").btn.btn--size-sm.btn-trp.group-btns__item Прикрепить файл
+                                    button(type="button").js-file-attach.btn.btn--size-sm.btn-trp.group-btns__item Прикрепить файл
                                     .group-btns__item.s-support-chat__form-file-text Вы можете прикрепить до 5 файлов
 
         include includes/footer.pug

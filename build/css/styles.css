@@ -11368,6 +11368,12 @@ img {
   min-height: 80px;
   margin: 0 0 24px;
 }
+.s-support-chat__footer-attach-list {
+  margin-bottom: 20px;
+}
+.s-support-chat__footer-attach-item {
+  margin: 0 0 6px;
+}
 .s-support-chat__form-file-text {
   color: #6b7280;
 }

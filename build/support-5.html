@@ -124,11 +124,12 @@
                 </div>
               </div>
               <form class="s-support-chat__footer" action="#">
-                <input class="files-hidden" type="file" id="chat-file">
+                <input class="files-hidden" type="file" name="fileUpload[]" multiple id="file-attach">
                 <textarea class="input-el input-el--textarea s-support-chat__footer-message" name="" id="support-message" rows="" cols="" value=""></textarea>
+                <div class="s-support-chat__footer-attach-list" id="attach-files"></div>
                 <div class="group-btns s-support-chat__footer-btns-group">
                   <button class="btn btn--size-sm btn-green group-btns__item" type="submit">Отправить</button>
-                  <label class="btn btn--size-sm btn-trp group-btns__item" for="chat-file">Прикрепить файл</label>
+                  <button class="js-file-attach btn btn--size-sm btn-trp group-btns__item" type="button">Прикрепить файл</button>
                   <div class="group-btns__item s-support-chat__form-file-text">Вы можете прикрепить до 5 файлов</div>
                 </div>
               </form>

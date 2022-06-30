@@ -402,6 +402,72 @@ $(document).ready(function() {
             i < $classLoop.length - 1 ? i++ : i = 0;
         }, 2000);
     }
+
+    $(function(){
+      let inputFile = $('#file-attach');
+      let button = $('.js-file-attach');
+      let filesContainer = $('#attach-files');
+      let files = [];
+      
+      inputFile.change(function() {
+        let newFiles = []; 
+        for(let index = 0; index < inputFile[0].files.length; index++) {
+          let file = inputFile[0].files[index];
+          newFiles.push(file);
+          files.push(file);
+        }
+        
+        newFiles.forEach(file => {
+          let fileElement = $(`<div class="attach-file s-support-chat__footer-attach-item"><a class="text-overflow attach-file__name" href="#" target="_blank">${file.name}</a><button class="attach-file__btn-remove" type="button"><svg class="u-icon attach-file__btn-remove-icon"><use xlink:href="img/sprite.svg#close"></use></svg> </button> </div>`);
+          fileElement.data('fileData', file);
+          filesContainer.append(fileElement);
+          
+          fileElement.find('.attach-file__btn-remove').click(function(event) {
+            let fileElement = $(event.target);
+            let indexToRemove = files.indexOf(fileElement.data('fileData'));
+            fileElement.parent().remove();
+            files.splice(indexToRemove, 1);
+          });
+        });
+      });
+      
+      button.click(function() {
+        inputFile.click();
+      });
+    });
+
+    $(function(){
+      let inputFile = $('#file-attach-verification');
+      let button = $('.js-file-attach-verification');
+      let filesContainer = $('#attach-files-verification');
+      let files = [];
+      
+      inputFile.change(function() {
+        let newFiles = []; 
+        for(let index = 0; index < inputFile[0].files.length; index++) {
+          let file = inputFile[0].files[index];
+          newFiles.push(file);
+          files.push(file);
+        }
+        
+        newFiles.forEach(file => {
+          let fileElement = $(`<div class="attach-file s-support-chat__footer-attach-item"><a class="text-overflow attach-file__name" href="#" target="_blank">${file.name}</a><button class="attach-file__btn-remove" type="button"><svg class="u-icon attach-file__btn-remove-icon"><use xlink:href="img/sprite.svg#close"></use></svg> </button> </div>`);
+          fileElement.data('fileData', file);
+          filesContainer.append(fileElement);
+          
+          fileElement.find('.attach-file__btn-remove').click(function(event) {
+            let fileElement = $(event.target);
+            let indexToRemove = files.indexOf(fileElement.data('fileData'));
+            fileElement.parent().remove();
+            files.splice(indexToRemove, 1);
+          });
+        });
+      });
+      
+      button.click(function() {
+        inputFile.click();
+      });
+    });
 });
 
 // mask input card number
