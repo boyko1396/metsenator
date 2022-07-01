@@ -399,6 +399,7 @@
         border: 2px solid $white;
         overflow: hidden;
         background-color: $gray;
+        filter: none !important;
         cursor: pointer;
 
         img {

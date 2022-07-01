@@ -4925,6 +4925,8 @@ img {
   border: 2px solid #ffffff;
   overflow: hidden;
   background-color: #6b7280;
+  -webkit-filter: none !important;
+  filter: none !important;
   cursor: pointer;
 }
 .header-info-photo img {
